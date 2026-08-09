@@ -1,0 +1,11 @@
+WIN WIN 6.6 – KATALOGAUSBAU PHASE 6
+
+- Katalog von 257 auf 265 echte Promotions erweitert.
+- 8 neue, am 09.08.2026 verifizierte Aktionen.
+- Schwerpunkt auf Gewinnspielen mit vielen Gewinnern:
+  GAZİ 40 Traumreisen, Corny 789 Gewinne, Bionade 633 Gewinne,
+  Mastercard/TUI 100 Reisegutscheine sowie weitere aktuelle Aktionen.
+- Eine Promotion wird bewusst nur einmal gezählt; Preisstufen werden nicht künstlich
+  als mehrere Gewinnspiele vervielfacht.
+- Alle 257 bestehenden Katalogdatensätze unverändert.
+- Bestehende IDs, Statuslogik, LocalStorage-Schlüssel, Layout und Navigation unverändert.
