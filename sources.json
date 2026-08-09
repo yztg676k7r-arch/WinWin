@@ -1,6 +1,6 @@
 {
   "version": "3.8",
-  "updated": "2026-07-30T13:45:00+02:00",
+  "updated": "2026-08-09T13:45:00+02:00",
   "sources": [
     {
       "id": "80s80s-radio",
@@ -4873,6 +4873,869 @@
       "successfulChecks": 0,
       "emptyChecks": 0,
       "lastResultCount": 0
+    },
+    {
+      "id": "moviebreak",
+      "name": "Moviebreak",
+      "domain": "moviebreak.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Filmportal",
+      "categories": [
+        "Film & Serien",
+        "Gaming"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 2,
+      "lastChecked": "2026-08-01",
+      "notes": "Offizielle Gewinnspielrubrik mit regelmäßig neuen Medienpreisen.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 5
+    },
+    {
+      "id": "ndr-kultur",
+      "name": "NDR Kultur",
+      "domain": "ndr.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Radio & Kultur",
+      "categories": [
+        "Kultur",
+        "Medien",
+        "Events"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-01",
+      "notes": "Offizielle NDR-Kultur-Aktionen und Gewinnspiele.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ndr2",
+      "name": "NDR 2",
+      "domain": "ndr.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Radio",
+      "categories": [
+        "Radio",
+        "Tickets",
+        "Freizeit"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 2,
+      "lastChecked": "2026-08-02",
+      "notes": "Offizielle NDR-2-Gewinnspiele und Radioaktionen.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 7
+    },
+    {
+      "id": "njoy",
+      "name": "N-JOY",
+      "domain": "ndr.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Radio",
+      "categories": [
+        "Musik",
+        "Tickets",
+        "Radio"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 2,
+      "lastChecked": "2026-08-02",
+      "notes": "Offizielle N-JOY-Gewinnspiele und Konzertaktionen.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "oui",
+      "name": "Oui",
+      "domain": "oui.com",
+      "country": "Deutschland/Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Mode",
+        "Lifestyle"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "manthey",
+      "name": "Manthey",
+      "domain": "manthey-racing.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Auto",
+        "Motorsport"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "monster-energy",
+      "name": "Monster Energy",
+      "domain": "monsterenergy.com",
+      "country": "Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Reisen",
+        "Events"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "deutsche-dienstrad",
+      "name": "Deutsche Dienstrad",
+      "domain": "deutsche-dienstrad.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Sport",
+        "Tickets"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "bergzeit",
+      "name": "Bergzeit",
+      "domain": "bergzeit.de",
+      "country": "Deutschland/Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Outdoor",
+        "Sport"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "neoh",
+      "name": "NEOH",
+      "domain": "neoh.com",
+      "country": "Österreich/Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Reisen"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "warhammer",
+      "name": "Warhammer / Games Workshop",
+      "domain": "warhammer-community.com",
+      "country": "Vereinigtes Königreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Gaming",
+        "Technik"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "pocketbook",
+      "name": "PocketBook",
+      "domain": "pocketbook.de",
+      "country": "Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Bücher",
+        "Technik"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "arverio",
+      "name": "Arverio Bayern",
+      "domain": "arverio-by.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Regional",
+        "Rätsel"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "belli-gadeschi",
+      "name": "Belli & Gadeschi",
+      "domain": "cantuccini.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Auto"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "magentamusik",
+      "name": "MagentaMusik",
+      "domain": "magentamusik.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Musik",
+        "Streaming"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "pattex",
+      "name": "Pattex",
+      "domain": "pattex.de",
+      "country": "Deutschland/Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "DIY",
+        "Wohnen"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "handl-tyrol",
+      "name": "HANDL TYROL",
+      "domain": "handltyrol.at",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Festivals"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "dachstein",
+      "name": "Dachstein Gletscher",
+      "domain": "derdachstein.at",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Outdoor",
+        "Sport"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "tuv-austria",
+      "name": "TÜV AUSTRIA Akademie",
+      "domain": "tuv-akademie.at",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Bildung",
+        "Karriere"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "vinum",
+      "name": "VINUM",
+      "domain": "vinum.eu",
+      "country": "Schweiz/Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Wein"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung Deutschland",
+      "domain": "samsung.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "kinder",
+      "name": "kinder / Ferrero",
+      "domain": "kinder.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Gaming"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ikea",
+      "name": "IKEA Deutschland",
+      "domain": "ikea.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Wohnen",
+        "Gutscheine"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "takko",
+      "name": "Takko Fashion",
+      "domain": "takko.com",
+      "country": "Deutschland/Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Mode",
+        "Familie"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "3bears",
+      "name": "3Bears",
+      "domain": "3bears.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "geizhals",
+      "name": "Geizhals",
+      "domain": "geizhals.at",
+      "country": "Österreich/Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "tulip",
+      "name": "Tulip / Danish Crown",
+      "domain": "danishcrown.com",
+      "country": "Dänemark/Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Haushalt"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "moloko",
+      "name": "Moloko",
+      "domain": "moloko.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Getränke",
+        "Reisen"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "leibniz",
+      "name": "LEIBNIZ",
+      "domain": "leibniz.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Familie",
+        "Fahrrad"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ferrero",
+      "name": "Ferrero Deutschland",
+      "domain": "ferrero.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Food",
+        "Gutscheine"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "2go-software",
+      "name": "2GO Software",
+      "domain": "2gosoftware.eu",
+      "country": "Niederlande/Europa",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "1000things",
+      "name": "1000things",
+      "domain": "1000thingsmagazine.com",
+      "country": "Österreich/DACH",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Offizielle Gewinnspielquelle",
+      "categories": [
+        "Reisen",
+        "Events"
+      ],
+      "automation": "yellow",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-09",
+      "notes": "Für Win Win 6.7 geprüft; Teilnahme aus Deutschland möglich.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ]
 }
