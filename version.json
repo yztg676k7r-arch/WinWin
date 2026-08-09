@@ -1,9 +1,9 @@
 {
-  "version": "6.8",
+  "version": "6.9",
   "buildDate": "2026-08-09",
-  "builtAt": "2026-08-09T14:20:00+02:00",
-  "catalogEntries": 347,
-  "release": "Katalogausbau Phase 8",
-  "note": "40 neue geprüfte Chancen; alle 307 bestehenden Datensätze und Statusspeicher unverändert.",
+  "builtAt": "2026-08-09T20:24:00+02:00",
+  "catalogEntries": 372,
+  "release": "Katalogausbau Phase 9",
+  "note": "25 neue geprüfte Chancen; alle 347 bestehenden Datensätze und Statusspeicher unverändert.",
   "catalogGoal": 1000
 }
