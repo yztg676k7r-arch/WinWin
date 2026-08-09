@@ -1,6 +1,6 @@
 {
   "version": "3.8",
-  "updated": "2026-08-02T15:15:00+02:00",
+  "updated": "2026-07-30T13:45:00+02:00",
   "sources": [
     {
       "id": "80s80s-radio",
@@ -4873,117 +4873,6 @@
       "successfulChecks": 0,
       "emptyChecks": 0,
       "lastResultCount": 0
-    },
-    {
-      "id": "moviebreak",
-      "name": "Moviebreak",
-      "domain": "moviebreak.de",
-      "country": "Deutschland",
-      "countriesAllowed": [
-        "Deutschland"
-      ],
-      "type": "Filmportal",
-      "categories": [
-        "Film & Serien",
-        "Gaming"
-      ],
-      "automation": "yellow",
-      "quality": 4,
-      "active": true,
-      "requiresLogin": false,
-      "socialOnly": false,
-      "checkIntervalDays": 2,
-      "lastChecked": "2026-08-01",
-      "notes": "Offizielle Gewinnspielrubrik mit regelmäßig neuen Medienpreisen.",
-      "germanyEligibility": "yes",
-      "verification": "verified",
-      "successfulChecks": 1,
-      "emptyChecks": 0,
-      "lastResultCount": 5
-    },
-    {
-      "id": "ndr-kultur",
-      "name": "NDR Kultur",
-      "domain": "ndr.de",
-      "country": "Deutschland",
-      "countriesAllowed": [
-        "Deutschland"
-      ],
-      "type": "Radio & Kultur",
-      "categories": [
-        "Kultur",
-        "Medien",
-        "Events"
-      ],
-      "automation": "yellow",
-      "quality": 5,
-      "active": true,
-      "requiresLogin": false,
-      "socialOnly": false,
-      "checkIntervalDays": 3,
-      "lastChecked": "2026-08-01",
-      "notes": "Offizielle NDR-Kultur-Aktionen und Gewinnspiele.",
-      "germanyEligibility": "yes",
-      "verification": "verified",
-      "successfulChecks": 1,
-      "emptyChecks": 0,
-      "lastResultCount": 1
-    },
-    {
-      "id": "ndr2",
-      "name": "NDR 2",
-      "domain": "ndr.de",
-      "country": "Deutschland",
-      "countriesAllowed": [
-        "Deutschland"
-      ],
-      "type": "Radio",
-      "categories": [
-        "Radio",
-        "Tickets",
-        "Freizeit"
-      ],
-      "automation": "yellow",
-      "quality": 5,
-      "active": true,
-      "requiresLogin": false,
-      "socialOnly": false,
-      "checkIntervalDays": 2,
-      "lastChecked": "2026-08-02",
-      "notes": "Offizielle NDR-2-Gewinnspiele und Radioaktionen.",
-      "germanyEligibility": "yes",
-      "verification": "verified",
-      "successfulChecks": 1,
-      "emptyChecks": 0,
-      "lastResultCount": 7
-    },
-    {
-      "id": "njoy",
-      "name": "N-JOY",
-      "domain": "ndr.de",
-      "country": "Deutschland",
-      "countriesAllowed": [
-        "Deutschland"
-      ],
-      "type": "Radio",
-      "categories": [
-        "Musik",
-        "Tickets",
-        "Radio"
-      ],
-      "automation": "yellow",
-      "quality": 5,
-      "active": true,
-      "requiresLogin": false,
-      "socialOnly": false,
-      "checkIntervalDays": 2,
-      "lastChecked": "2026-08-02",
-      "notes": "Offizielle N-JOY-Gewinnspiele und Konzertaktionen.",
-      "germanyEligibility": "yes",
-      "verification": "verified",
-      "successfulChecks": 1,
-      "emptyChecks": 0,
-      "lastResultCount": 1
     }
   ]
 }

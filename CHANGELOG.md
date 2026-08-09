@@ -1,5 +1,14 @@
 ## 5.6.1 – Einheitliche Versionierung
 
+## 6.7 – Massiver Katalogausbau Deutschland & Europa
+
+- 307 Katalog-Chancen (+50).
+- Europäische Veranstalter mit bestätigter Deutschland-Teilnahme ergänzt.
+- 1.000 Einträge als Katalogziel in den Metadaten verankert.
+- Bestehende 257 Gewinnspiel-Datensätze unverändert.
+- Status-/Storage-Logik unverändert.
+
+
 ## 6.4 – Katalogausbau, Phase 4
 
 - Katalog auf 226 Einträge erweitert.

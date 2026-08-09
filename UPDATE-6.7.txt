@@ -1,0 +1,12 @@
+WIN WIN 6.7 – MASSIVER KATALOGAUSBAU
+
+- Katalog: 257 → 307 Gewinnspiel-Chancen.
+- 50 neue, am 09.08.2026 geprüfte Einträge.
+- Erstmals systematischer Ausbau mit europäischen Veranstaltern, wenn Deutschland ausdrücklich teilnehmen darf.
+- Europäische Herkunft und Deutschland-Eignung werden in den neuen Datensätzen separat hinterlegt.
+- Tageschancen werden nur dann einzeln erfasst, wenn tatsächlich an jedem Tag erneut teilgenommen werden kann.
+- Zielgröße des Katalogs: 1.000 sauber angebundene Chancen.
+- Alle 257 bestehenden Katalogdatensätze bleiben inhaltlich unverändert.
+- Bestehende IDs bleiben unverändert.
+- Status-/LocalStorage-Schlüssel bleiben unverändert.
+- Bereits bearbeitete Gewinnspiele behalten Teilgenommen/Nicht interessant/Favorit/Gewonnen/Notizen/Historie.
