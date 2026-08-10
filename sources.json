@@ -1,6 +1,6 @@
 {
-  "version": "3.8",
-  "updated": "2026-08-10T10:59:00+02:00",
+  "version": "3.9",
+  "updated": "2026-08-10T11:20:00+02:00",
   "sources": [
     {
       "id": "80s80s-radio",
@@ -5736,6 +5736,1555 @@
       "successfulChecks": 1,
       "emptyChecks": 0,
       "lastResultCount": 1
+    },
+    {
+      "id": "mibaby",
+      "name": "miBaby",
+      "domain": "mibaby.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Portal",
+      "categories": [
+        "Familie",
+        "Shopping"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "die-jugendherbergen",
+      "name": "Die Jugendherbergen",
+      "domain": "diejugendherbergen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "relax-guide",
+      "name": "RELAX Guide",
+      "domain": "relax-guide.com",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Wellness",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "burgis",
+      "name": "Burgis",
+      "domain": "burgis.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "treffpunkt-deutschland",
+      "name": "Treffpunkt Deutschland",
+      "domain": "treffpunktdeutschland.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "obertauern",
+      "name": "Obertauern Tourismus",
+      "domain": "obertauern.com",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Winter"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "zar",
+      "name": "ZAR",
+      "domain": "zar.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Gesundheit",
+      "categories": [
+        "Gesundheit",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "knabbi",
+      "name": "Knabbi",
+      "domain": "gewinnspiel.knabbi.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Familie",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "bad-mergentheim",
+      "name": "Bad Mergentheim Tourismus",
+      "domain": "visit.bad-mergentheim.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "thienemann",
+      "name": "Thienemann Verlage",
+      "domain": "thienemann.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Verlag",
+      "categories": [
+        "Bücher",
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "resch-frisch",
+      "name": "Resch&Frisch",
+      "domain": "resch-frisch.com",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "caravaning",
+      "name": "CARAVANING",
+      "domain": "caravaning.info",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Magazin",
+      "categories": [
+        "Camping",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "ef-sprachreisen",
+      "name": "EF Sprachreisen",
+      "domain": "ef.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Bildung"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "esmark",
+      "name": "Esmark",
+      "domain": "esmark.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Ferienhaus"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "tennistraveller",
+      "name": "TennisTraveller",
+      "domain": "tennistraveller.net",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Sport"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "doppelherz",
+      "name": "Doppelherz",
+      "domain": "doppelherz.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Gesundheit",
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "meine-vrm",
+      "name": "meine VRM",
+      "domain": "meine-vrm.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Medien",
+      "categories": [
+        "Regional",
+        "Sachpreise"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "schwarzwald-tourismus",
+      "name": "Schwarzwald Tourismus",
+      "domain": "schwarzwald-tourismus.info",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "mondi-hotels",
+      "name": "MONDI Hotels",
+      "domain": "mondihotels.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Hotel",
+      "categories": [
+        "Reisen",
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "comte",
+      "name": "Comté",
+      "domain": "comte.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "mannheimer-morgen",
+      "name": "Mannheimer Morgen",
+      "domain": "mannheimer-morgen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Medien",
+      "categories": [
+        "Regional",
+        "Reisen",
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "label-kitchen",
+      "name": "Label Kitchen",
+      "domain": "labelkitchen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Portal",
+      "categories": [
+        "Reisen",
+        "Lifestyle"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "globetrotter",
+      "name": "Globetrotter",
+      "domain": "globetrotter.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Handel",
+      "categories": [
+        "Outdoor",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "sagrotan",
+      "name": "Sagrotan",
+      "domain": "sagrotan.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Haushalt",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "nordsee-tourismus",
+      "name": "Nordsee Tourismus",
+      "domain": "nordseetourismus.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Tourismus",
+      "categories": [
+        "Reisen",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "adelholzener",
+      "name": "Adelholzener",
+      "domain": "adelholzener.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "buenting-tee",
+      "name": "Bünting Tee",
+      "domain": "buenting-tee.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Events"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "dein-franz",
+      "name": "Hotel Dein Franz",
+      "domain": "dein-franz.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Hotel",
+      "categories": [
+        "Reisen",
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "quellonline",
+      "name": "Quell",
+      "domain": "quellonline.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Magazin",
+      "categories": [
+        "Lifestyle",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "steuertipps",
+      "name": "Steuertipps",
+      "domain": "steuertipps.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Portal",
+      "categories": [
+        "Finanzen",
+        "Technik",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "louis",
+      "name": "Louis",
+      "domain": "louis.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Handel",
+      "categories": [
+        "Motorrad",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "diamantrad",
+      "name": "Diamant Fahrrad",
+      "domain": "diamantrad.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Fahrrad",
+        "Sport"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "monetenfuchs",
+      "name": "MonetenFuchs",
+      "domain": "monetenfuchs.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Portal",
+      "categories": [
+        "Shopping",
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "little-john-bikes",
+      "name": "Little John Bikes",
+      "domain": "littlejohnbikes.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Handel",
+      "categories": [
+        "Fahrrad",
+        "Sport"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "ostfalia",
+      "name": "Ostfalia Hochschule",
+      "domain": "ostfalia.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bildung",
+      "categories": [
+        "Reisen",
+        "Outdoor"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "soventol",
+      "name": "Soventol",
+      "domain": "soventol.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Gesundheit",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "braut-de",
+      "name": "Braut.de",
+      "domain": "braut.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Magazin",
+      "categories": [
+        "Lifestyle",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "wellness-heaven",
+      "name": "Wellness Heaven",
+      "domain": "wellness-heaven.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Wellness",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "haleon-erleben",
+      "name": "Haleon Erlebniswelt",
+      "domain": "erlebe-haleon.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Gesundheit",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "urlaub-tipps",
+      "name": "urlaub-tipps",
+      "domain": "urlaub-tipps.reise",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Kurzurlaub"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "primavera",
+      "name": "PRIMAVERA",
+      "domain": "primaveralife.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Beauty",
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "peterstaler",
+      "name": "Peterstaler",
+      "domain": "peterstaler-jubilaeums-contest.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Reisen",
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "galbani",
+      "name": "Galbani",
+      "domain": "galbani.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Genuss",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "certified",
+      "name": "Certified",
+      "domain": "certified.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Hotel",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "europa-park",
+      "name": "Europa-Park",
+      "domain": "europapark.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Freizeitpark",
+      "categories": [
+        "Freizeit",
+        "Familie",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "voelkel",
+      "name": "Voelkel",
+      "domain": "voelkel.bio",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Bio",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "urlaub-fuer-unternehmer",
+      "name": "Urlaub für Unternehmer",
+      "domain": "urlaub-fuer-unternehmer.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Wellness",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "bio-magazin",
+      "name": "BIO Magazin",
+      "domain": "biomagazin.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Magazin",
+      "categories": [
+        "Bio",
+        "Wellness",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "wanderhotels",
+      "name": "Wanderhotels",
+      "domain": "wanderhotels.com",
+      "country": "Österreich",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Outdoor",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "polizei-dein-partner",
+      "name": "Polizei Dein Partner",
+      "domain": "polizei-dein-partner.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Portal",
+      "categories": [
+        "Mobilität",
+        "Sicherheit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "schauinsland-reisen",
+      "name": "schauinsland-reisen",
+      "domain": "schauinsland-reisen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Reise",
+      "categories": [
+        "Reisen",
+        "Events"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "kieler-woche",
+      "name": "Kieler Woche",
+      "domain": "kieler-woche.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Event",
+      "categories": [
+        "Events",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "marie-claire-de",
+      "name": "Marie Claire Deutschland",
+      "domain": "marieclaire.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Magazin",
+      "categories": [
+        "Beauty",
+        "Mode",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "monte-mare",
+      "name": "monte mare",
+      "domain": "monte-mare.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Wellness",
+      "categories": [
+        "Wellness",
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
+    },
+    {
+      "id": "active-o2",
+      "name": "Active O2",
+      "domain": "activeo2.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Marke",
+      "categories": [
+        "Sport",
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 5,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-08-10",
+      "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
+      "germanyEligibility": "yes",
+      "verification": "verified-current-campaign",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1,
+      "addedInVersion": "7.2"
     }
-  ]
+  ],
+  "release": "7.2 Quellenoffensive",
+  "sourceCount": 270,
+  "newSourcesInRelease": 55
 }

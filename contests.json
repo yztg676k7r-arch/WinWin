@@ -1,6 +1,6 @@
 {
-  "version": "7.1",
-  "updated": "2026-08-10",
+  "version": "7.2",
+  "updated": "2026-08-10T11:20:00+02:00",
   "contests": [
     {
       "id": "dm-ob-starterset-2026",
@@ -9121,7 +9121,7 @@
     }
   ],
   "appName": "Win Win",
-  "quality": "Inhaltsrelease 7.1: neue geprüfte Direktteilnahmen unter Beibehaltung der 7.0-Ausschlussregeln.",
+  "quality": "Quellenoffensive 7.2: +55 neue aktuell belegte Gewinnspielquellen; 7.0-Ausschlussregeln bleiben aktiv.",
   "lastChecked": "2026-08-10",
   "catalogGoal": 1000,
   "activeExpansionStrategy": "Germany + European promotions explicitly eligible for Germany",

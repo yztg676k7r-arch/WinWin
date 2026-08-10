@@ -1,9 +1,11 @@
 {
-  "version": "7.1",
+  "version": "7.2",
   "buildDate": "2026-08-10",
   "builtAt": "2026-08-10T11:20:00+02:00",
   "catalogEntries": 222,
-  "release": "Inhaltsrelease",
-  "note": "8 neue qualitätsgeprüfte Gewinnspiele; 7.0-Qualitätsregeln bleiben aktiv.",
-  "catalogGoal": 1000
+  "release": "Großes Inhaltsrelease – Quellenoffensive",
+  "note": "+55 neue aktuell belegte Gewinnspielquellen; Qualitätsregeln aus 7.0 bleiben aktiv.",
+  "catalogGoal": 1000,
+  "sourceEntries": 270,
+  "newSources": 55
 }

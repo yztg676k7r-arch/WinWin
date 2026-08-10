@@ -1,3 +1,12 @@
+# 7.2 – Großes Inhaltsrelease / Quellenoffensive (10.08.2026)
+
+- Quellenkatalog von 215 auf 270 Quellen erweitert (**+55 netto**).
+- Neue Quellen aus Reise, Wellness, Familie, Medien, Technik, Mobilität, Genuss und Freizeit.
+- Aufgenommen wurden nur Quellen mit im August 2026 belegter kostenloser Web-, Formular- oder Newsletter-Teilnahme.
+- Social-only, Kauf-/Kassenbonpflicht, reine Radio-Anrufteilnahme, Club-only und iamstudent bleiben ausgeschlossen.
+- Bestehende Gewinnspiele bleiben unverändert; der aktive Gewinnspielkatalog umfasst weiterhin 222 Einträge.
+- Persönliche lokale Statusdaten, Favoriten, Gewinne, Notizen und Teilnahmehistorien werden nicht migriert oder überschrieben.
+
 # 7.1 – Inhaltsrelease (10.08.2026)
 
 - Katalog auf 222 aktive Einträge erweitert (+8).

@@ -1,3 +1,7 @@
+# Win Win 7.2 – Quellenoffensive
+
+7.2 ist ein großes inhaltliches Release: Der Quellenkatalog wächst um 55 neue, aktuell belegte Gewinnspielanbieter von 215 auf 270 Quellen. Die Qualitätsregeln aus 7.0 bleiben unverändert streng. Persönliche lokale Statusdaten werden versionsübergreifend nicht überschrieben.
+
 
 ## 5.2 – Tagesmodus
 
