@@ -1,0 +1,9 @@
+WIN WIN 7.0 – QUALITÄTSRELEASE
+- 372 auf 214 qualitätsgeprüfte aktive Einträge bereinigt.
+- iamstudent vollständig entfernt.
+- Keine Social-only-/Radio-Anruf-Gewinnspiele.
+- Keine Kauf-/Kassenbonpflicht.
+- Keine Club-only-/Mitglieder-Gewinnspiele.
+- Keine aktiven reinen Teilnahmebedingungen-/AGB-Links.
+- Startseite blendet 'Teilgenommen' und 'Nicht interessant' dauerhaft aus.
+- Persönliche Statusspeicher bleiben unverändert.
