@@ -1,5 +1,5 @@
 {
-  "version": "7.5",
+  "version": "7.6.1",
   "updated": "2026-08-10",
   "sources": [
     {
@@ -8036,9 +8036,581 @@
       "successfulChecks": 1,
       "emptyChecks": 0,
       "lastResultCount": 1
+    },
+    {
+      "id": "danwest",
+      "name": "DanWest",
+      "domain": "danwest.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "oetztal-tourismus",
+      "name": "Ötztal Tourismus",
+      "domain": "oetztal.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "istra-camping",
+      "name": "Istra Camping",
+      "domain": "istracamping.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "plava-laguna",
+      "name": "Plava Laguna",
+      "domain": "plavalaguna.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "gran-fondo",
+      "name": "GRAN FONDO",
+      "domain": "granfondo-cycling.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Fahrrad & Sport"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "kinder-tipps",
+      "name": "Kinder Tipps",
+      "domain": "kinder-tipps.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "swp-hapag",
+      "name": "Südwest Presse / Hapag-Lloyd Reisebüro",
+      "domain": "meet.swphl.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "imaging-world",
+      "name": "Imaging World",
+      "domain": "imagingworld.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "trendtours",
+      "name": "trendtours",
+      "domain": "trendtours.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "schwarzwaelder-hof",
+      "name": "Ferienparadies Schwarzwälder Hof",
+      "domain": "spacamping.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "tambiente",
+      "name": "Tambiente",
+      "domain": "tambiente.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "roter-hahn",
+      "name": "Roter Hahn",
+      "domain": "roterhahn.it",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "certified-hotels",
+      "name": "Certified Hotels",
+      "domain": "certified.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "schauinsland-reisen-events",
+      "name": "schauinsland-reisen",
+      "domain": "schauinsland-reisen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Events"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "allgaeu",
+      "name": "Allgäu",
+      "domain": "allgaeu.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "baby-junior",
+      "name": "baby & junior",
+      "domain": "babyundjunior.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "mein-tophotel",
+      "name": "Mein Tophotel",
+      "domain": "meintophotel.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Wellness & Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "birchmeier",
+      "name": "Birchmeier",
+      "domain": "birchmeier.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "skiresort",
+      "name": "Skiresort.de",
+      "domain": "skiresort.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Sport"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "reisen-exclusiv",
+      "name": "reisen EXCLUSIV",
+      "domain": "reisenexclusiv.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "e-mountainbike-magazine",
+      "name": "E-MOUNTAINBIKE Magazine",
+      "domain": "ebike-mtb.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Fahrrad & Sport"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "aktion-mensch-newsletter",
+      "name": "Aktion Mensch",
+      "domain": "aktion-mensch-newsletter.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.6 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ],
-  "release": "Qualitäts- & Inhaltsrelease",
-  "sourceCount": 299,
-  "newSourcesInRelease": 4
+  "release": "Großer Inhalts-Sprint",
+  "sourceCount": 321,
+  "newSourcesInRelease": 22
 }

@@ -1,0 +1,13 @@
+Win Win 7.6.1 – Versions- & Cache-Fix
+Build: 10.08.2026
+
+Behoben:
+- APP_VERSION war in 7.6 fälschlich noch 7.4.
+- Versionsdateien und Service-Worker-Cache vollständig synchronisiert.
+- Veraltete Manifest-/README-Zahlen korrigiert.
+
+Unverändert:
+- 321 Katalogdatensätze
+- 220 aktive Chancen
+- 321 Quellen
+- alle stabilen Contest-IDs und lokalen Nutzerstatus

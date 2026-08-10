@@ -1,10 +1,26 @@
-# 7.5 – Qualitäts- & Inhaltsrelease (10.08.2026)
+# Win Win 7.6.1 – Versions- & Cache-Fix
+
+- Kritischen Versionskonflikt behoben: `app.js` meldete irrtümlich noch App 7.4.
+- Alle laufzeitrelevanten Versionsquellen auf 7.6.1 synchronisiert.
+- Service-Worker-Cache auf `win-win-7.6.1` angehoben.
+- Manifest- und README-Zahlen auf 321 Katalogdatensätze / 220 aktive Chancen / 321 Quellen korrigiert.
+- Keine Änderung an Contest-IDs oder persönlichen lokalen Statusdaten.
+
+# Win Win 7.6 – Großer Inhalts-Sprint
+
+- 37 neue aktive Direktteilnahmen integriert.
+- Aktivkatalog: 220 aktive Einträge bei 321 Katalogdatensätzen.
+- Quellenkatalog: 321 Quellen, davon 22 neu in 7.6.
+- Ausschlüsse unverändert: kein Social-only, kein Kauf-/Bon-Zwang, keine reine Radio-Anrufteilnahme, kein Club-only, kein iamstudent.
+- Bestehende Contest-IDs und lokale Nutzerstatus bleiben unverändert.
+
+# 7.6 – Qualitäts- & Inhaltsrelease (10.08.2026)
 
 - 6 neue aktive Web-Gewinnspiele integriert.
 - Katalog: 284 Einträge, davon 183 aktiv.
 - Quellenpool: 299 Quellen.
 - Dubletten werden status-sicher markiert statt gelöscht.
-- Version, Offline-Fallback, Cache, Manifest und Metadaten auf 7.5 synchronisiert.
+- Version, Offline-Fallback, Cache, Manifest und Metadaten auf 7.6 synchronisiert.
 
 # 7.4 – Großer Aktivkatalog-Sprint (10.08.2026)
 
