@@ -1,0 +1,9 @@
+WIN WIN 7.1 – INHALTSRELEASE
+- Katalog von 214 auf 222 aktive Einträge erweitert (+8).
+- Neue Treffer am 10.08.2026 geprüft und ergänzt.
+- Fokus auf kostenlose Formular-, Quiz-, Newsletter- und E-Mail-Teilnahmen.
+- Keine Social-only-/Radio-Anruf-Gewinnspiele.
+- Keine Kauf-/Kassenbonpflicht.
+- Keine Club-only-/Mitglieder-Gewinnspiele.
+- iamstudent bleibt ausgeschlossen.
+- Persönliche Statusspeicher bleiben unverändert; bestehende LocalStorage-Schlüssel werden nicht migriert oder zurückgesetzt.

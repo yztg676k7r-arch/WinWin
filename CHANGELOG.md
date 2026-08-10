@@ -1,3 +1,10 @@
+# 7.1 – Inhaltsrelease (10.08.2026)
+
+- Katalog auf 222 aktive Einträge erweitert (+8).
+- Neue aktuelle Direktteilnahmen ergänzt und gegen die Qualitätsregeln aus 7.0 gefiltert.
+- Social-only, Radio-Anruf, Kauf-/Kassenbonpflicht, Club-only und iamstudent bleiben ausgeschlossen.
+- Persönliche lokale Statusdaten bleiben versionsübergreifend unverändert.
+
 ## 5.6.1 – Einheitliche Versionierung
 
 ## 6.7 – Massiver Katalogausbau Deutschland & Europa
