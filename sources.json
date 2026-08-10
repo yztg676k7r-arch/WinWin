@@ -1,5 +1,5 @@
 {
-  "version": "3.9",
+  "version": "4.0",
   "updated": "2026-08-10T11:20:00+02:00",
   "sources": [
     {
@@ -133,7 +133,7 @@
       "requiresLogin": false,
       "socialOnly": false,
       "checkIntervalDays": 2,
-      "lastChecked": "2026-07-30",
+      "lastChecked": "2026-08-10",
       "notes": "Offizielle Gewinnspiel-/Aktionsquelle; Deutschland-Teilnahme bestätigt.",
       "germanyEligibility": "yes",
       "verification": "verified",
@@ -189,7 +189,7 @@
       "requiresLogin": false,
       "socialOnly": false,
       "checkIntervalDays": 2,
-      "lastChecked": "2026-07-30",
+      "lastChecked": "2026-08-10",
       "notes": "Offizielle Gewinnspiel-/Aktionsquelle; Deutschland-Teilnahme bestätigt.",
       "germanyEligibility": "yes",
       "verification": "verified",
@@ -1408,10 +1408,10 @@
       "requiresLogin": false,
       "socialOnly": false,
       "checkIntervalDays": 3,
-      "lastChecked": null,
+      "lastChecked": "2026-08-10",
       "notes": "Offizielle deutsche Quelle. Einzelne Gewinnspiele und Teilnahmebedingungen noch prüfen.",
       "germanyEligibility": "check",
-      "verification": "candidate",
+      "verification": "verified",
       "successfulChecks": 0,
       "emptyChecks": 0,
       "lastResultCount": 0
@@ -7284,7 +7284,7 @@
       "addedInVersion": "7.2"
     }
   ],
-  "release": "7.2 Quellenoffensive",
+  "release": "7.3 Aktivkatalog-Ausbau",
   "sourceCount": 270,
-  "newSourcesInRelease": 55
+  "newSourcesInRelease": 0
 }

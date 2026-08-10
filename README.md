@@ -1,6 +1,6 @@
-# Win Win 7.2 – Quellenoffensive
+# Win Win 7.3 – Aktivkatalog-Ausbau
 
-7.2 ist ein großes inhaltliches Release: Der Quellenkatalog wächst um 55 neue, aktuell belegte Gewinnspielanbieter von 215 auf 270 Quellen. Die Qualitätsregeln aus 7.0 bleiben unverändert streng. Persönliche lokale Statusdaten werden versionsübergreifend nicht überschrieben.
+7.3 baut den direkt nutzbaren Gewinnspielkatalog aus: 8 neue, am 10.08.2026 belegte Chancen aus dem 270-Quellen-Pool. Insgesamt enthält der Katalog 230 Einträge, davon 151 zum Release aktiv. Abgelaufene Einträge bleiben wegen stabiler IDs und lokaler Statusdaten erhalten und werden nur als abgelaufen gekennzeichnet.
 
 
 ## 5.2 – Tagesmodus

@@ -1,3 +1,13 @@
+# 7.3 – Aktivkatalog-Ausbau (10.08.2026)
+
+- 8 neue konkret laufende Gewinnspiele ergänzt.
+- Katalog von 222 auf 230 Einträge erweitert; davon 151 am Releasetag aktiv.
+- Neue Chancen von BRIGITTE, freundin und GALA aus dem bereits aufgebauten Quellenpool.
+- 79 abgelaufene Einträge bleiben wegen stabiler IDs erhalten und werden nun explizit als `catalogStatus: expired` markiert.
+- Quellenkatalog bleibt bei 270 Quellen; BRIGITTE, freundin und GALA wurden am 10.08.2026 erneut verifiziert.
+- Qualitätsausschlüsse aus 7.0 bleiben unverändert.
+- Persönliche lokale Statusdaten werden nicht migriert, gelöscht oder überschrieben.
+
 # 7.2 – Großes Inhaltsrelease / Quellenoffensive (10.08.2026)
 
 - Quellenkatalog von 215 auf 270 Quellen erweitert (**+55 netto**).

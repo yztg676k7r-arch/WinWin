@@ -1,5 +1,5 @@
 {
-  "version": "7.2",
+  "version": "7.3",
   "updated": "2026-08-10T11:20:00+02:00",
   "contests": [
     {
@@ -40,7 +40,8 @@
       "qualityScore": 100,
       "shortDescription": "100 × limitiertes o.b. Starterset. Teilnahme: Kostenloses Mein-dm-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-adventskalender-2026",
@@ -80,7 +81,8 @@
       "qualityScore": 100,
       "shortDescription": "70 Adventskalender verschiedener Marken. Teilnahme: Kostenloses Mein-dm-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-seeberger-2026",
@@ -119,7 +121,8 @@
       "qualityScore": 100,
       "shortDescription": "5 × VAUDE-Rucksack mit Seeberger-Snacks. Teilnahme: Kostenloses Mein-dm-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "dm-borotalco-2026",
@@ -158,7 +161,8 @@
       "qualityScore": 98,
       "shortDescription": "Borotalco-Produktpakete. Teilnahme: Kostenloses Mein-dm-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "rossmann-neonail-2026",
@@ -198,7 +202,8 @@
       "qualityScore": 100,
       "shortDescription": "100 × NEONAIL-Sommerpaket mit Kosmetiktasche. Teilnahme: Kostenlose ROSSMANN-App und Registrierung.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "rossmann-centaur-juli-2026",
@@ -236,7 +241,8 @@
       "qualityScore": 98,
       "shortDescription": "Reise-, Wellness- und Freizeitgewinne. Teilnahme: ROSSMANN-App erforderlich.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "schoener-wohnen-2026",
@@ -275,7 +281,8 @@
       "qualityScore": 91,
       "shortDescription": "Design-, Wohn-, Technik- und Reisegewinne. Teilnahme: Kostenlose Teilnahme über Bilderpuzzle und Formular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-produkttests-2026",
@@ -314,7 +321,8 @@
       "qualityScore": 98,
       "shortDescription": "Produkte kostenlos testen und bewerten. Teilnahme: Kostenloses Mein-dm-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-alverde-kreuzwortraetsel-juli-2026",
@@ -355,7 +363,8 @@
       "qualityScore": 100,
       "shortDescription": "Wellness-Gewinn im Hotel Vier Jahreszeiten. Teilnahme: Gewinnspielfrage beantworten und Formular absenden.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "dm-alverde-sudoku-juli-2026",
@@ -396,7 +405,8 @@
       "qualityScore": 100,
       "shortDescription": "12 × trend !t up Beauty-Gewinn. Teilnahme: Sudoku lösen und Formular absenden.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "zoo-hannover-nacht-der-erlebnisse-2026",
@@ -439,7 +449,8 @@
       "qualityScore": 100,
       "shortDescription": "2 × 2 Eintrittskarten für die Nacht der Erlebnisse. Teilnahme: Kostenloses Teilnahmeformular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "swr1-perfekter-tag-ulm-2026",
@@ -482,7 +493,8 @@
       "qualityScore": 100,
       "shortDescription": "Ein besonderer Erlebnistag in Ulm. Teilnahme: Online-Bewerbungsformular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "swr1-perfekter-tag-konstanz-2026",
@@ -525,7 +537,8 @@
       "qualityScore": 100,
       "shortDescription": "Schifffahrt, Mainau, Sea Life und Riesenrad. Teilnahme: Online-Bewerbungsformular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "swr1-perfekter-tag-baden-baden-2026",
@@ -568,7 +581,8 @@
       "qualityScore": 100,
       "shortDescription": "Erlebnistag mit Festspielhaus, Badruinen und Merkur-Bergbahn. Teilnahme: Online-Bewerbungsformular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "ndr-marteria-rostock-2026",
@@ -611,7 +625,8 @@
       "qualityScore": 100,
       "shortDescription": "2 Tickets für den Tourauftakt von Marteria im IGA Park. Teilnahme: Teilnahme über die kostenlose NDR MV App.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "ndr-hitsekunde-sommerdom-2026",
@@ -654,7 +669,8 @@
       "qualityScore": 98,
       "shortDescription": "Gutscheinpakete für den Hamburger Sommerdom. Teilnahme: Radioaktion jeweils kurz nach 7 Uhr; Teilnahmezeiten beachten.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "swr-kultur-la-traviata-2026",
@@ -696,7 +712,8 @@
       "qualityScore": 100,
       "shortDescription": "5 × Opernpaket für zwei Personen bei den Bregenzer Festspielen. Teilnahme: Opernfrage im SWR-Kultur-Programm beantworten.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommergewinnspiel-2026",
@@ -737,7 +754,8 @@
       "qualityScore": 98,
       "shortDescription": "Tagespreise plus 7 Nächte für 2 Personen im Hotel Jardín Tecina auf La Gomera (ca. 2.000 €). Teilnahme: Puzzle lösen und Formular ausfüllen; tägliche Teilnahme möglich.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-hummerfrauen-2026",
@@ -777,7 +795,8 @@
       "qualityScore": 98,
       "shortDescription": "„Die Hummerfrauen“, „Die Hummerjahre“ und eine Jochen-Schweizer Wellness-&-Urlaub-Box. Teilnahme: Puzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "henkel-150-kinderwuensche-2026",
@@ -817,7 +836,8 @@
       "qualityScore": 96,
       "shortDescription": "150 Kinderwünsche mit einem Erstattungswert von jeweils bis zu 75 €. Teilnahme: Teilnahmeformular ausfüllen und Kinderwunsch angeben.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-nordhorn-wiedereroeffnung-2026",
@@ -858,7 +878,8 @@
       "qualityScore": 100,
       "shortDescription": "Apple iPad (ca. 500 €), dm-Geschenkkarte 200 € und dm-Geschenkkarte 100 €. Teilnahme: Teilnahmekarte im dm-Markt Stadtring 60 in Nordhorn ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "essen-trinken-sommergewinnspiel-2026",
@@ -899,7 +920,8 @@
       "qualityScore": 100,
       "shortDescription": "Tägliche Sachpreise plus 7 Nächte auf La Gomera für 2 Personen. Teilnahme: Bilderpuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "autobild-goldener-klassiker-2026",
@@ -940,7 +962,8 @@
       "qualityScore": 100,
       "shortDescription": "Blaupunkt Hamburg, 10 Sonax-Pflegesets und 100 Lose. Teilnahme: In fünf Kategorien abstimmen und Gewinnspielformular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "autobild-goldenes-lenkrad-kia-2026",
@@ -981,7 +1004,8 @@
       "qualityScore": 100,
       "shortDescription": "Kia Sportage Plug-in Hybrid im Wert von rund 43.100 €. Teilnahme: In allen zehn Kategorien abstimmen und Gewinnspielformular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "autobild-gebrauchtwagen-abos-2026",
@@ -1021,7 +1045,8 @@
       "qualityScore": 100,
       "shortDescription": "3 × AUTO BILD Jahres-Abonnement. Teilnahme: Für einen Gebrauchtwagen-Favoriten abstimmen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-woom-disney-2026",
@@ -1060,7 +1085,8 @@
       "qualityScore": 100,
       "shortDescription": "woom Laufrad und babylove Pants mit Disney-Motiven. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-penaten-biene-maja-2026",
@@ -1099,7 +1125,8 @@
       "qualityScore": 100,
       "shortDescription": "Penaten-Paket rund um Die Biene Maja. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-stuffbag-2026",
@@ -1138,7 +1165,8 @@
       "qualityScore": 100,
       "shortDescription": "Stuff-Bag Puffy groß und klein. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "dm-glueckskind-comic-2026",
@@ -1177,7 +1205,8 @@
       "qualityScore": 100,
       "shortDescription": "Aufklärungscomic-Pakete. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "dm-glueckskind-coocazoo-2026",
@@ -1216,7 +1245,8 @@
       "qualityScore": 100,
       "shortDescription": "Sporttasche und Kinder-Snackpaket. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-alverde-2026",
@@ -1255,7 +1285,8 @@
       "qualityScore": 100,
       "shortDescription": "Naturkosmetik-Produktpaket. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-gruenspecht-2026",
@@ -1294,7 +1325,8 @@
       "qualityScore": 100,
       "shortDescription": "Naturprodukte-Paket für Familien. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-hipp-stokke-2026",
@@ -1333,7 +1365,8 @@
       "qualityScore": 100,
       "shortDescription": "Baby- und Kleinkindpakete plus Hochstuhl. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-fruchtbar-2026",
@@ -1372,7 +1405,8 @@
       "qualityScore": 100,
       "shortDescription": "Kinder-Sweatshirt und FruchtBar Paket. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-kinderhotel-2026",
@@ -1411,7 +1445,8 @@
       "qualityScore": 100,
       "shortDescription": "Familienurlaub in einem Original Kinderhotel Europa. Teilnahme: Mit glückskind-Konto teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "dm-glueckskind-familienbox-2026",
@@ -1450,7 +1485,8 @@
       "qualityScore": 100,
       "shortDescription": "Familienbox mit Geschenken für Groß und Klein. Teilnahme: Monatliche Teilnahme mit glückskind-Konto.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "brigitte-sommer-tag-2026-07-31",
@@ -1490,7 +1526,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-01",
@@ -1530,7 +1567,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-02",
@@ -1570,7 +1608,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-03",
@@ -1610,7 +1649,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-04",
@@ -1650,7 +1690,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-05",
@@ -1690,7 +1731,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-06",
@@ -1730,7 +1772,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-07",
@@ -1770,7 +1813,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-08",
@@ -1810,7 +1854,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "brigitte-sommer-tag-2026-08-09",
@@ -1850,7 +1895,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-07-31",
@@ -1890,7 +1936,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-01",
@@ -1930,7 +1977,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-02",
@@ -1970,7 +2018,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-03",
@@ -2010,7 +2059,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-04",
@@ -2050,7 +2100,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-05",
@@ -2090,7 +2141,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-06",
@@ -2130,7 +2182,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-07",
@@ -2170,7 +2223,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-08",
@@ -2210,7 +2264,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "eut-sommer-tag-2026-08-09",
@@ -2250,7 +2305,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Tagespreis. Teilnahme: Tagespuzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-toy-story-5-2026",
@@ -2289,7 +2345,8 @@
       "qualityScore": 100,
       "shortDescription": "Fan-Paket mit Flasche, Stickern und Figuren. Teilnahme: Kommentar oder E-Mail zur Gewinnfrage.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-jackie-brown-2026",
@@ -2328,7 +2385,8 @@
       "qualityScore": 100,
       "shortDescription": "2 Blu-ray-Exemplare. Teilnahme: Kommentar oder E-Mail zur Gewinnfrage.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-how-to-make-a-killing-2026",
@@ -2367,7 +2425,8 @@
       "qualityScore": 100,
       "shortDescription": "2 Exemplare auf 4K Ultra HD. Teilnahme: Kommentar oder E-Mail zur Gewinnfrage.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-paw-patrol-dino-2026",
@@ -2406,7 +2465,8 @@
       "qualityScore": 100,
       "shortDescription": "2 Fan-Pakete mit Kinokarten und Rucksack. Teilnahme: Kommentar oder E-Mail zur Gewinnfrage.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-sweet-lowdown-2026",
@@ -2445,7 +2505,8 @@
       "qualityScore": 100,
       "shortDescription": "DVD des Woody-Allen-Films. Teilnahme: Kommentar oder E-Mail zur Gewinnfrage.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-hohenwart-2026",
@@ -2484,7 +2545,8 @@
       "qualityScore": 100,
       "shortDescription": "Übernachtungen für 2 Personen. Teilnahme: Gewinnspielformular mit passendem Stichwort ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "freundin-columbia-wanderschuhe-2026",
@@ -2523,7 +2585,8 @@
       "qualityScore": 100,
       "shortDescription": "Wanderschuhe von Columbia. Teilnahme: Gewinnspielformular mit passendem Stichwort ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "freundin-uvex-reithelm-2026",
@@ -2562,7 +2625,8 @@
       "qualityScore": 100,
       "shortDescription": "Reithelm von Uvex. Teilnahme: Gewinnspielformular mit passendem Stichwort ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "freundin-microplane-bartool-2026",
@@ -2601,7 +2665,8 @@
       "qualityScore": 100,
       "shortDescription": "Bartool-Set von Microplane. Teilnahme: Gewinnspielformular mit passendem Stichwort ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "freundin-kreuzwortraetsel-18-2026",
@@ -2640,7 +2705,8 @@
       "qualityScore": 100,
       "shortDescription": "500 € Bargeld. Teilnahme: Lösungswort aus Heft 18/2026 eintragen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "gala-apache-extra-2026",
@@ -2679,7 +2745,8 @@
       "qualityScore": 100,
       "shortDescription": "4 × 2 Tickets plus EXTRA PLUS Box. Teilnahme: Gewinnspielformular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "gala-klagenfurt-2026",
@@ -2718,7 +2785,8 @@
       "qualityScore": 100,
       "shortDescription": "3 Übernachtungen mit Frühstück für 2. Teilnahme: Puzzle lösen und Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "autobild-cockpit-nuerburgring-2026",
@@ -2757,7 +2825,8 @@
       "qualityScore": 100,
       "shortDescription": "Exklusiver Platz im Cockpit. Teilnahme: AUTO BILD CLUB Formular ausfüllen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "gala-sommer-tag-2026-08-01",
@@ -2797,7 +2866,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-02",
@@ -2837,7 +2907,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-03",
@@ -2877,7 +2948,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-04",
@@ -2917,7 +2989,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-05",
@@ -2957,7 +3030,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-06",
@@ -2997,7 +3071,8 @@
       "qualityScore": 100,
       "shortDescription": "Wechselnder Sommer-Tagespreis. Teilnahme: Tagesgewinnspiel öffnen und teilnehmen.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-samantha-hayes-2026",
@@ -3037,7 +3112,8 @@
       "qualityScore": 100,
       "shortDescription": "Bücher „Eine von uns“ und „Eine zu viel“ plus 300-€-Jochen-Schweizer-Gutschein. Teilnahme: Onlineformular; Mindestalter 18 Jahre.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "freundin-tracys-dog-og3-2026",
@@ -3077,7 +3153,8 @@
       "qualityScore": 100,
       "shortDescription": "5 × OG-3 3-in-1-Wellnessgerät. Teilnahme: Onlineformular; Mindestalter 18 Jahre.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-budersand-2026",
@@ -3117,7 +3194,8 @@
       "qualityScore": 100,
       "shortDescription": "Aufenthalt im Budersand Hotel – Golf & Spa – Sylt. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-eufy-maehroboter-2026",
@@ -3157,7 +3235,8 @@
       "qualityScore": 100,
       "shortDescription": "Premium-Mähroboter von eufy. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-hurom-entsafter-2026",
@@ -3197,7 +3276,8 @@
       "qualityScore": 100,
       "shortDescription": "Premium-Entsafter von Hurom. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-vanessa-mai-tickets-2026",
@@ -3237,7 +3317,8 @@
       "qualityScore": 100,
       "shortDescription": "Konzerttickets für Vanessa Mai. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-skechers-gutscheine-2026",
@@ -3277,7 +3358,8 @@
       "qualityScore": 98,
       "shortDescription": "Shopping-Gutscheine von Skechers. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-merach-indoorbike-2026",
@@ -3317,7 +3399,8 @@
       "qualityScore": 100,
       "shortDescription": "Premium-Indoorbike von Merach. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "freundin-tonzhaus-2026",
@@ -3357,7 +3440,8 @@
       "qualityScore": 100,
       "shortDescription": "Aufenthalt im Hotel Tonzhaus in Südtirol. Teilnahme: Onlineformular oder Postkarte; Wohnsitz DE/AT/CH; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-07",
@@ -3397,7 +3481,8 @@
       "qualityScore": 100,
       "shortDescription": "Tagespreis des GALA Sommergewinnspiels. Teilnahme: Interaktives Online-Gewinnspiel.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-08",
@@ -3437,7 +3522,8 @@
       "qualityScore": 100,
       "shortDescription": "Tagespreis des GALA Sommergewinnspiels. Teilnahme: Interaktives Online-Gewinnspiel.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-sommer-tag-2026-08-09",
@@ -3477,7 +3563,8 @@
       "qualityScore": 100,
       "shortDescription": "Tagespreis des GALA Sommergewinnspiels. Teilnahme: Interaktives Online-Gewinnspiel.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "swr1-perfekter-tag-weinheim-2026",
@@ -3517,7 +3604,8 @@
       "qualityScore": 100,
       "shortDescription": "Erlebnistag in Weinheim. Teilnahme: Bewerbung über das Onlineformular.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "rossmann-naturkinder-projekte-2026",
@@ -3558,7 +3646,8 @@
       "qualityScore": 100,
       "shortDescription": "Förderung für 23 ausgewählte Naturkinder-Projekte. Teilnahme: Projekt über das Teilnahmeformular einreichen; ab 18.",
       "dataCompleteness": 100,
-      "lastVerified": "31.07.2026"
+      "lastVerified": "31.07.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "autobild-roof-space-bundle-2026",
@@ -3598,7 +3687,8 @@
       "qualityScore": 96,
       "shortDescription": "Zwei Camping-Bundles mit Vorzelt, Hängematte und Hängesessel.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "autobild-hydro-waschsauger-2026",
@@ -3638,7 +3728,8 @@
       "qualityScore": 96,
       "shortDescription": "Waschsauger für Autositze, Teppiche und Polster.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "autobild-goe-charger-2026",
@@ -3678,7 +3769,8 @@
       "qualityScore": 97,
       "shortDescription": "Zwei mobile Wallbox-Sets für Elektroautos.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "autobild-remko-klimageraete-2026",
@@ -3718,7 +3810,8 @@
       "qualityScore": 97,
       "shortDescription": "Drei mobile Raumklimageräte von REMKO.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "moviebreak-star-fox-2026",
@@ -3758,7 +3851,8 @@
       "qualityScore": 91,
       "shortDescription": "Zwei Fanpakete zur Neuauflage von Star Fox.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-slanted-bd-2026",
@@ -3797,7 +3891,8 @@
       "qualityScore": 90,
       "shortDescription": "Bodyhorror-Komödie „Slanted“ auf Blu-ray.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-ncis-tony-ziva-2026",
@@ -3837,7 +3932,8 @@
       "qualityScore": 90,
       "shortDescription": "Erste Staffel des NCIS-Spin-offs auf DVD.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-miru-tights-bd-2026",
@@ -3876,7 +3972,8 @@
       "qualityScore": 90,
       "shortDescription": "Komplette Anime-Serie als Blu-ray-Ausgabe.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-das-drama-bd-2026",
@@ -3916,7 +4013,8 @@
       "qualityScore": 90,
       "shortDescription": "Komödie mit Zendaya und Robert Pattinson auf Blu-ray.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-father-brown-2026",
@@ -3956,7 +4054,8 @@
       "qualityScore": 91,
       "shortDescription": "Krimiserie „Father Brown“ auf DVD und Blu-ray.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "expired"
     },
     {
       "id": "ndr-kultur-podcast-sommerpakete-2026",
@@ -3996,7 +4095,8 @@
       "qualityScore": 97,
       "shortDescription": "Zehn Überraschungspakete für Podcast-Hörerinnen und -Hörer.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "mdr-sachsen-sonntagsbrunch-radio-2026",
@@ -4036,7 +4136,8 @@
       "qualityScore": 93,
       "shortDescription": "Sonntags ein Prominenten-Rätsel lösen und ein DAB+-Radio gewinnen.",
       "dataCompleteness": 100,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "rossmann-centaur-august-hotel-steiner-2026",
@@ -4076,7 +4177,8 @@
       "qualityScore": 93,
       "shortDescription": "Vier Nächte Familienurlaub mit Vollpension in Obertauern.",
       "dataCompleteness": 95,
-      "lastVerified": "01.08.2026"
+      "lastVerified": "01.08.2026",
+      "catalogStatus": "active"
     },
     {
       "id": "elle-louis-poulsen-ph11-2026",
@@ -4281,7 +4383,7 @@
       "shortDescription": "Krimifilm „The Mastermind“ auf DVD und Blu-ray.",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-geheimes-stockwerk-2026",
@@ -4322,7 +4424,7 @@
       "shortDescription": "DVD des Mystery-Krimis „Das geheime Stockwerk“",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-reservoir-dogs-2026",
@@ -4363,7 +4465,7 @@
       "shortDescription": "4K-UHD-Ausgabe von Quentin Tarantinos Debüt",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-finstere-tal-2026",
@@ -4404,7 +4506,7 @@
       "shortDescription": "Blu-ray des österreichischen Western-Dramas",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "moviebreak-vip-parade-2026",
@@ -4445,7 +4547,7 @@
       "shortDescription": "Blu-ray mit Leonardo DiCaprio, Winona Ryder und weiteren Stars",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "swr1-geweckt-gecheckt-2026",
@@ -4937,7 +5039,7 @@
       "shortDescription": "26 Gewinne, darunter ein Dyson-Reiseföhn und 25 Beauty-Pakete.",
       "dataCompleteness": 100,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "mdr-kruemel-monatsquiz-august-2026",
@@ -5347,7 +5449,7 @@
       "shortDescription": "Roman „Gegenwind auf dem Sommerdeich“",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "mdr-jump-urlaubspost-1000-2026",
@@ -5471,7 +5573,7 @@
       "shortDescription": "Geschenkkarten im Wert von 250 €, 150 € und 50 €",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "region": "Bitburg"
     },
     {
@@ -5513,7 +5615,7 @@
       "shortDescription": "Reisegutscheine über 1.000 € und 500 € sowie drei dm-Geschenkkarten",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "region": "Emmerich am Rhein"
     },
     {
@@ -5555,7 +5657,7 @@
       "shortDescription": "2 Tickets für Marteria in Rostock",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "dm-alverde-kreuzwortraetsel-august-2026",
@@ -5760,7 +5862,7 @@
       "shortDescription": "Eine kleine Krümel-Überraschung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "mdr-kruemel-quiz-16-08-2026",
@@ -5924,7 +6026,7 @@
       "shortDescription": "DAB+-Radio",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "mdr-sonntagsbrunch-dab-16-08-2026",
@@ -6173,7 +6275,7 @@
       "shortDescription": "16 Waschsauger HYDRO 9000 MAX",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "gala-blackroll-offpitch-2026",
@@ -6707,7 +6809,7 @@
       "shortDescription": "Bis zu 2 Tickets für Radio Hamburg Stars for Free",
       "dataCompleteness": 100,
       "lastVerified": "08.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "region": "Norderstedt"
     },
     {
@@ -7084,7 +7186,7 @@
       "shortDescription": "Preis der aktuellen Sonntagsraten-Ausgabe",
       "dataCompleteness": 100,
       "lastVerified": "08.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "expired"
     },
     {
       "id": "ndr-openair-kino-neukloster-2026",
@@ -9118,10 +9220,363 @@
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland",
       "opportunityType": "campaign"
+    },
+    {
+      "id": "brigitte-hummerfrauen-dtv-2026",
+      "title": "Die Hummerfrauen + Die Hummerjahre + Wellness-Box",
+      "provider": "BRIGITTE / dtv",
+      "prize": "Buchpaket „Die Hummerfrauen“ und „Die Hummerjahre“ plus Jochen-Schweizer Wellness-&-Urlaub-Box",
+      "url": "https://www.brigitte.de/gewinnspiele/mit-dtv-und-beatrix-gerstberger-gewinnen-14090980.html",
+      "category": "Bücher & Lifestyle",
+      "country": "Deutschland",
+      "deadline": "13.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "requirements": "Bilderpuzzle lösen und Onlineformular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Bücher",
+        "Lifestyle",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "brigitte",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 300,
+      "chanceScore": 51,
+      "priority": "mittel",
+      "qualityScore": 100,
+      "shortDescription": "Buchpaket plus Wellness-&-Urlaub-Box. Teilnahme per Puzzle und Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "gala-extra-apache207-2026",
+      "title": "Apache 207 live in Köln + EXTRA PLUS Box",
+      "provider": "GALA / EXTRA",
+      "prize": "4 × 2 Tickets für Apache 207 in Köln am 05.10.2026 plus EXTRA PLUS Überraschungs-Box",
+      "url": "https://www.gala.de/lifestyle/gewinnspiele/mit-extra-kaugummi-gewinnen-24644954.html",
+      "category": "Tickets & Events",
+      "country": "Deutschland",
+      "deadline": "24.08.2026",
+      "winners": 4,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "requirements": "Kostenlose Online-Teilnahme über das eingebettete Gewinnspielformular",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": true,
+      "tags": [
+        "Musik",
+        "Tickets",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "gala",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 500,
+      "chanceScore": 58,
+      "priority": "hoch",
+      "qualityScore": 100,
+      "shortDescription": "4 × 2 Apache-207-Tickets plus EXTRA PLUS Box. Kostenlose Online-Teilnahme.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "gala-doppio-passo-picknick-2026",
+      "title": "Doppio Passo Bella Vita Picknicktaschen",
+      "provider": "GALA / Doppio Passo",
+      "prize": "4 Doppio-Passo-Picknicktaschen mit Bella-Vita-Weinen und Leckereien",
+      "url": "https://www.gala.de/lifestyle/gewinnspiele/mit-doppio-passo-gewinnen-24640260.html",
+      "category": "Genuss",
+      "country": "Deutschland",
+      "deadline": "31.08.2026",
+      "winners": 4,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "requirements": "Bilderpuzzle lösen und Onlineformular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Genuss",
+        "Sommer",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "gala",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 100,
+      "chanceScore": 56,
+      "priority": "mittel",
+      "qualityScore": 100,
+      "shortDescription": "Vier Picknicktaschen mit Bella-Vita-Weinen und Leckereien. Teilnahme per Puzzle und Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "freundin-heft18-hohenwart-2026",
+      "title": "Südtirol-Auszeit im Hotel Hohenwart",
+      "provider": "freundin",
+      "prize": "Übernachtungen für zwei Personen im Hotel Hohenwart in Südtirol",
+      "url": "https://www.freundin.de/gewinnspiele-heft-b",
+      "category": "Reisen",
+      "country": "Deutschland",
+      "deadline": "21.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": true,
+      "requirements": "Gewünschten Gewinn auswählen/Stichwort angeben und Pflichtfelder im Formular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": true,
+      "tags": [
+        "Reisen",
+        "Heft 18/2026",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "freundin",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 1200,
+      "chanceScore": 52,
+      "priority": "hoch",
+      "qualityScore": 98,
+      "shortDescription": "Übernachtungen für zwei Personen im Hotel Hohenwart in Südtirol. Teilnahme über das kostenlose freundin-Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland, Österreich, Schweiz",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "freundin-heft18-columbia-2026",
+      "title": "Columbia Wanderschuhe",
+      "provider": "freundin",
+      "prize": "Wanderschuhe von Columbia",
+      "url": "https://www.freundin.de/gewinnspiele-heft-b",
+      "category": "Mode & Outdoor",
+      "country": "Deutschland",
+      "deadline": "21.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": true,
+      "requirements": "Gewünschten Gewinn auswählen/Stichwort angeben und Pflichtfelder im Formular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Mode & Outdoor",
+        "Heft 18/2026",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "freundin",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 160,
+      "chanceScore": 49,
+      "priority": "mittel",
+      "qualityScore": 98,
+      "shortDescription": "Wanderschuhe von Columbia. Teilnahme über das kostenlose freundin-Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland, Österreich, Schweiz",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "freundin-heft18-uvex-2026",
+      "title": "Uvex Reithelm",
+      "provider": "freundin",
+      "prize": "Reithelm von Uvex",
+      "url": "https://www.freundin.de/gewinnspiele-heft-b",
+      "category": "Sport & Freizeit",
+      "country": "Deutschland",
+      "deadline": "21.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": true,
+      "requirements": "Gewünschten Gewinn auswählen/Stichwort angeben und Pflichtfelder im Formular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Sport & Freizeit",
+        "Heft 18/2026",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "freundin",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 180,
+      "chanceScore": 49,
+      "priority": "mittel",
+      "qualityScore": 98,
+      "shortDescription": "Reithelm von Uvex. Teilnahme über das kostenlose freundin-Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland, Österreich, Schweiz",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "freundin-heft18-microplane-2026",
+      "title": "Microplane Bartool-Set",
+      "provider": "freundin",
+      "prize": "Bartool-Set von Microplane",
+      "url": "https://www.freundin.de/gewinnspiele-heft-b",
+      "category": "Wohnen & Genuss",
+      "country": "Deutschland",
+      "deadline": "21.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": true,
+      "requirements": "Gewünschten Gewinn auswählen/Stichwort angeben und Pflichtfelder im Formular ausfüllen",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Wohnen & Genuss",
+        "Heft 18/2026",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "freundin",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 100,
+      "chanceScore": 49,
+      "priority": "mittel",
+      "qualityScore": 98,
+      "shortDescription": "Bartool-Set von Microplane. Teilnahme über das kostenlose freundin-Formular.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland, Österreich, Schweiz",
+      "opportunityType": "campaign"
+    },
+    {
+      "id": "brigitte-alpenrose-familux-2026",
+      "title": "Familux-Familienurlaub im Hotel Alpenrose",
+      "provider": "BRIGITTE / Hotel Alpenrose",
+      "prize": "2 Übernachtungen für 2 Erwachsene und die eigenen Kinder in einem Familux Resort nach Wahl, Wert 1.300 €",
+      "url": "https://www.brigitte.de/gewinnspiele/mit-hotel-alpenrose-gewinnen-14090156.html",
+      "category": "Reisen",
+      "country": "Deutschland",
+      "deadline": "31.08.2026",
+      "winners": 1,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "requirements": "Kostenlose Online-Teilnahme über das eingebettete Gewinnspielformular",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 5,
+      "effort": 2,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": true,
+      "tags": [
+        "Reisen",
+        "Familie",
+        "Wellness",
+        "neu in 7.3"
+      ],
+      "addedAt": "10.08.2026",
+      "sourceId": "brigitte",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "estimatedPrizeValue": 1300,
+      "chanceScore": 55,
+      "priority": "hoch",
+      "qualityScore": 100,
+      "shortDescription": "Familienauszeit in einem Familux Resort nach Wahl im Wert von 1.300 €. Kostenlose Formularteilnahme.",
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign"
     }
   ],
   "appName": "Win Win",
-  "quality": "Quellenoffensive 7.2: +55 neue aktuell belegte Gewinnspielquellen; 7.0-Ausschlussregeln bleiben aktiv.",
+  "quality": "7.3 Aktivkatalog-Ausbau: neue direkt nutzbare Gewinnspiele aus dem 270-Quellen-Pool; abgelaufene Einträge bleiben statusstabil erhalten und werden gekennzeichnet.",
   "lastChecked": "2026-08-10",
   "catalogGoal": 1000,
   "activeExpansionStrategy": "Germany + European promotions explicitly eligible for Germany",
@@ -9134,5 +9589,8 @@
     "excludedProviders": [
       "iamstudent"
     ]
-  }
+  },
+  "activeCountAtRelease": 151,
+  "expiredCountAtRelease": 79,
+  "newContestsInRelease": 8
 }
