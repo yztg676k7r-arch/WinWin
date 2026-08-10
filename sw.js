@@ -1,4 +1,4 @@
-const CACHE='win-win-7.7';
+const CACHE='win-win-7.8';
 const CORE=[
  './',
  './index.html',

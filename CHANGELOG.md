@@ -1,3 +1,21 @@
+# 7.8 – 10.08.2026
+
+WIN WIN 7.8 – GROSSER KATALOGAUSBAU
+Build: 10.08.2026
+
+NEU
+- 41 zusätzliche aktive, kaufzwangfreie Gewinnspiele
+- 35 neue Quellen netto
+- Katalog: 367 Datensätze; 266 aktive Chancen; 79 abgelaufen; 22 markierte Dubletten
+- Quellen: 361
+
+QUALITÄT
+- Neuaufnahmen: kein Social-only, kein Kauf/Kassenbon, keine reine Radio-Anrufteilnahme, kein Club-only, kein iamstudent.
+- Kaufpflichtige Recherchetreffer (u. a. HARIBO Shop, Lindt, Bertolli, Zespri, Volvic) bewusst verworfen.
+- Bestehende Contest-IDs unverändert.
+- Versionsquellen, Service-Worker-Cache und Offline-Fallback auf 7.8 synchronisiert.
+
+
 # 7.7 – 10.08.2026
 
 WIN WIN 7.7 – QUALITÄTS- & INHALTSRELEASE

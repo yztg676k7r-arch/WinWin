@@ -1,13 +1,13 @@
 {
-  "version": "7.7",
+  "version": "7.8",
   "buildDate": "2026-08-10",
-  "builtAt": "2026-08-10T12:55:00+02:00",
-  "catalogEntries": 326,
-  "release": "Qualitäts- & Inhaltsrelease",
-  "note": "5 neue geprüfte aktive Direktteilnahmen; Versions- und Cache-Synchronisierung aus 7.6.1 beibehalten.",
+  "builtAt": "2026-08-10T13:35:00+02:00",
+  "catalogEntries": 367,
+  "release": "Großer Katalogausbau",
+  "note": "41 neue aktive kaufzwangfreie Chancen; stabile IDs und 7.6.1-Versionsfix beibehalten.",
   "catalogGoal": 1000,
-  "sourceEntries": 326,
-  "newSources": 5,
-  "activeEntries": 225,
-  "updated": "2026-08-10T12:55:00+02:00"
+  "sourceEntries": 361,
+  "newSources": 35,
+  "activeEntries": 266,
+  "updated": "2026-08-10T13:35:00+02:00"
 }

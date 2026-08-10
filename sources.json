@@ -1,5 +1,5 @@
 {
-  "version": "7.7",
+  "version": "7.8",
   "updated": "2026-08-10",
   "sources": [
     {
@@ -8738,9 +8738,919 @@
       "successfulChecks": 1,
       "emptyChecks": 0,
       "lastResultCount": 1
+    },
+    {
+      "id": "viega",
+      "name": "Viega",
+      "domain": "www.viega.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "geldermann",
+      "name": "Geldermann",
+      "domain": "www.geldermann.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Genuss"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "liqui-moly",
+      "name": "LIQUI MOLY",
+      "domain": "www.liqui-moly.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Auto & Mobilität"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "lgrb-baden-wuerttemberg",
+      "name": "LGRB Baden-Württemberg",
+      "domain": "www.seismik-oberschwaben.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Kultur"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "eurotops",
+      "name": "EUROtops",
+      "domain": "www.eurotops.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haus & Garten"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "dak-gesundheit",
+      "name": "DAK-Gesundheit",
+      "domain": "www.dak.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Gesundheit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "kaercher",
+      "name": "Kärcher",
+      "domain": "www.karcher.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haus & Garten"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "bake-with-love",
+      "name": "Bake with Love",
+      "domain": "bakewithlove.bio",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Essen & Trinken"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "aktivkompass",
+      "name": "Aktivkompass",
+      "domain": "www.aktivkompass.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Kultur"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "gesamtverband-ofenbau-e-v",
+      "name": "GesamtVerband OfenBau e.V.",
+      "domain": "gvob.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haus & Garten"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "landorado",
+      "name": "Landorado",
+      "domain": "www.landorado.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "deutsche-stiftung-denkmalschutz",
+      "name": "Deutsche Stiftung Denkmalschutz",
+      "domain": "www.denkmalschutz.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Kultur"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "reiss-engelhorn-museen",
+      "name": "Reiss-Engelhorn-Museen",
+      "domain": "www.rem-mannheim.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Kultur"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "lotto-baden-wuerttemberg",
+      "name": "Lotto Baden-Württemberg",
+      "domain": "www.lotto-bw.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "meridol",
+      "name": "meridol",
+      "domain": "www.meridol.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Beauty & Pflege"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "la-roche-posay",
+      "name": "La Roche-Posay",
+      "domain": "campaigns.larocheposay.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Beauty & Pflege"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "vichy",
+      "name": "Vichy",
+      "domain": "campaigns.vichy.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Beauty & Pflege"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "krups",
+      "name": "Krups",
+      "domain": "cloud.email.krups.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haushalt"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "le-boat",
+      "name": "Le Boat",
+      "domain": "www.leboat.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "lascana",
+      "name": "LASCANA",
+      "domain": "www.lascana.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "personalshop",
+      "name": "Personalshop",
+      "domain": "www.personalshop.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Geld & Gutscheine"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "funke-nikon",
+      "name": "FUNKE / Nikon",
+      "domain": "www.funke.fun",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Technik"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "eat-smarter",
+      "name": "EAT SMARTER",
+      "domain": "eatsmarter.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haushalt"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "promega",
+      "name": "Promega",
+      "domain": "www.promega.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "rottal-terme",
+      "name": "Rottal Terme",
+      "domain": "www.rottal-terme.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Wellness"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "salzburgerland",
+      "name": "SalzburgerLand",
+      "domain": "www.salzburgerland.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "sparkasse-freiburg-noerdlicher-breisgau",
+      "name": "Sparkasse Freiburg-Nördlicher Breisgau",
+      "domain": "www.sparkasse200.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Geld & Gutscheine"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ravensburger-spieleland",
+      "name": "Ravensburger Spieleland",
+      "domain": "www.spieleland.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "saale-unstrut",
+      "name": "Saale-Unstrut",
+      "domain": "www.saale-unstrut-tourismus.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "beitune",
+      "name": "beitune",
+      "domain": "www.beitune.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ahorn-camp",
+      "name": "Ahorn Camp",
+      "domain": "ahorn-camp.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "fressnapf",
+      "name": "Fressnapf",
+      "domain": "www.fressnapf.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "q-tips",
+      "name": "Q-tips",
+      "domain": "www.q-tips.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Beauty & Pflege"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "karawane-reisen",
+      "name": "Karawane Reisen",
+      "domain": "www.karawane.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "cucuma",
+      "name": "Cucuma",
+      "domain": "www.cucuma.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Fahrrad & Sport"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.8 anhand eines laufenden, kaufzwangfreien Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ],
-  "release": "7.7 Qualitäts- & Inhaltsrelease",
-  "sourceCount": 326,
-  "newSourcesInRelease": 5
+  "release": "7.8 Großer Katalogausbau",
+  "sourceCount": 361,
+  "newSourcesInRelease": 35
 }
