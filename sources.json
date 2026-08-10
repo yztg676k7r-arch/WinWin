@@ -1,6 +1,6 @@
 {
-  "version": "7.4",
-  "updated": "2026-08-10T11:20:00+02:00",
+  "version": "7.5",
+  "updated": "2026-08-10",
   "sources": [
     {
       "id": "80s80s-radio",
@@ -7932,9 +7932,113 @@
       "successfulChecks": 1,
       "emptyChecks": 0,
       "lastResultCount": 1
+    },
+    {
+      "id": "knax",
+      "name": "KNAX",
+      "domain": "knax.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Familie"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.5 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "camperstyle",
+      "name": "CamperStyle",
+      "domain": "camperstyle.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.5 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "bahnland-bayern",
+      "name": "Bahnland Bayern",
+      "domain": "bahnland-bayern.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.5 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ksf-grill",
+      "name": "KSF Grill",
+      "domain": "ksf-grill.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Haus & Garten"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.5 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ],
-  "release": "7.4 großer Aktivkatalog-Sprint",
-  "sourceCount": 295,
-  "newSourcesInRelease": 25
+  "release": "Qualitäts- & Inhaltsrelease",
+  "sourceCount": 299,
+  "newSourcesInRelease": 4
 }

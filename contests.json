@@ -1,6 +1,6 @@
 {
-  "version": "7.4",
-  "updated": "2026-08-10T11:20:00+02:00",
+  "version": "7.5",
+  "updated": "2026-08-10",
   "contests": [
     {
       "id": "dm-ob-starterset-2026",
@@ -4670,7 +4670,8 @@
       "shortDescription": "10 Balea Adventskalender vor Verkaufsstart",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-balea-men-2026",
@@ -4711,7 +4712,8 @@
       "shortDescription": "10 Balea MEN Adventskalender vor Verkaufsstart",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-ebelin-kids-2026",
@@ -4752,7 +4754,8 @@
       "shortDescription": "10 ebelin Kids Adventskalender vor Verkaufsstart",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-ebelin-erwachsene-2026",
@@ -4793,7 +4796,8 @@
       "shortDescription": "10 ebelin Adventskalender für Erwachsene",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-alverde-2026",
@@ -4834,7 +4838,8 @@
       "shortDescription": "10 alverde NATURKOSMETIK Adventskalender",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-trenditup-2026",
@@ -4875,7 +4880,8 @@
       "shortDescription": "10 trend !t up Adventskalender",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "dm-adventskalender-ebelin-selection-2026",
@@ -4916,7 +4922,8 @@
       "shortDescription": "10 zusätzliche ebelin Adventskalender aus der Aktion",
       "dataCompleteness": 95,
       "lastVerified": "02.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "dm-adventskalender-2026"
     },
     {
       "id": "elle-leserbefragung-gewinne-2026",
@@ -5284,7 +5291,8 @@
       "shortDescription": "Zehn Ticketpaare für die Schleyerhalle in Stuttgart.",
       "dataCompleteness": 100,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "swr-kultur-hans-zimmer-mannheim-2026"
     },
     {
       "id": "swr-kultur-studio-ghibli-mannheim-2026",
@@ -5903,7 +5911,8 @@
       "shortDescription": "Eine kleine Krümel-Überraschung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "mdr-kruemel-monatsquiz-august-2026"
     },
     {
       "id": "mdr-kruemel-quiz-23-08-2026",
@@ -5944,7 +5953,8 @@
       "shortDescription": "Eine kleine Krümel-Überraschung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "mdr-kruemel-monatsquiz-august-2026"
     },
     {
       "id": "mdr-kruemel-quiz-30-08-2026",
@@ -5985,7 +5995,8 @@
       "shortDescription": "Eine kleine Krümel-Überraschung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "mdr-kruemel-monatsquiz-august-2026"
     },
     {
       "id": "mdr-sonntagsbrunch-dab-09-08-2026",
@@ -6067,7 +6078,8 @@
       "shortDescription": "DAB+-Radio",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "mdr-sachsen-sonntagsbrunch-radio-2026"
     },
     {
       "id": "swr1-perfekter-tag-weinheim-zusatz-2026",
@@ -6108,8 +6120,9 @@
       "shortDescription": "Erlebnistag in Weinheim mit mehreren Programmpunkten",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active",
-      "region": "Weinheim"
+      "catalogStatus": "duplicate",
+      "region": "Weinheim",
+      "duplicateOf": "swr1-perfekter-tag-weinheim-2026"
     },
     {
       "id": "swr1-perfekter-tag-ulm-zusatz-2026",
@@ -6150,8 +6163,9 @@
       "shortDescription": "Dächerführung, Birdly-Flug und Burgpilz-Führung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active",
-      "region": "Ulm"
+      "catalogStatus": "duplicate",
+      "region": "Ulm",
+      "duplicateOf": "swr1-perfekter-tag-ulm-2026"
     },
     {
       "id": "swr1-perfekter-tag-konstanz-zusatz-2026",
@@ -6192,8 +6206,9 @@
       "shortDescription": "Besonderer Erlebnistag in Konstanz",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active",
-      "region": "Konstanz"
+      "catalogStatus": "duplicate",
+      "region": "Konstanz",
+      "duplicateOf": "swr1-perfekter-tag-konstanz-2026"
     },
     {
       "id": "autobild-formeltraining-nuerburgring-2026",
@@ -6234,7 +6249,8 @@
       "shortDescription": "Formel-Racing-Professional-Kurs inklusive Hotelübernachtung",
       "dataCompleteness": 98,
       "lastVerified": "03.08.2026",
-      "catalogStatus": "active"
+      "catalogStatus": "duplicate",
+      "duplicateOf": "autobild-cockpit-nuerburgring-2026"
     },
     {
       "id": "autobild-hydro-16-waschsauger-2026",
@@ -7269,8 +7285,9 @@
       "shortDescription": "Tickets für eine Polizeiruf-Vorpremiere",
       "dataCompleteness": 100,
       "lastVerified": "08.08.2026",
-      "catalogStatus": "active",
-      "region": "Tessin"
+      "catalogStatus": "duplicate",
+      "region": "Tessin",
+      "duplicateOf": "ndr-openair-kino-neukloster-2026"
     },
     {
       "id": "rewe-oreo-ninja-creami-2026",
@@ -7600,8 +7617,9 @@
       "shortDescription": "Übernachtung für 2 im Steigenberger Hotel Köln inklusive Frühstück",
       "dataCompleteness": 100,
       "lastVerified": "08.08.2026",
-      "catalogStatus": "active",
-      "region": "Köln"
+      "catalogStatus": "duplicate",
+      "region": "Köln",
+      "duplicateOf": "beautyforum-stuttgart-hotel-2026"
     },
     {
       "id": "milram-buttermilch-zero-creami-2026",
@@ -9304,10 +9322,11 @@
       "shortDescription": "4 × 2 Apache-207-Tickets plus EXTRA PLUS Box. Kostenlose Online-Teilnahme.",
       "dataCompleteness": 100,
       "lastVerified": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "duplicate",
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland",
-      "opportunityType": "campaign"
+      "opportunityType": "campaign",
+      "duplicateOf": "gala-apache-extra-2026"
     },
     {
       "id": "gala-doppio-passo-picknick-2026",
@@ -9348,10 +9367,11 @@
       "shortDescription": "Vier Picknicktaschen mit Bella-Vita-Weinen und Leckereien. Teilnahme per Puzzle und Formular.",
       "dataCompleteness": 100,
       "lastVerified": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "duplicate",
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland",
-      "opportunityType": "campaign"
+      "opportunityType": "campaign",
+      "duplicateOf": "gala-doppio-passo-bella-vita-2026"
     },
     {
       "id": "freundin-heft18-hohenwart-2026",
@@ -9392,10 +9412,11 @@
       "shortDescription": "Übernachtungen für zwei Personen im Hotel Hohenwart in Südtirol. Teilnahme über das kostenlose freundin-Formular.",
       "dataCompleteness": 100,
       "lastVerified": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "duplicate",
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland, Österreich, Schweiz",
-      "opportunityType": "campaign"
+      "opportunityType": "campaign",
+      "duplicateOf": "freundin-hohenwart-2026"
     },
     {
       "id": "freundin-heft18-columbia-2026",
@@ -9569,10 +9590,11 @@
       "shortDescription": "Familienauszeit in einem Familux Resort nach Wahl im Wert von 1.300 €. Kostenlose Formularteilnahme.",
       "dataCompleteness": 100,
       "lastVerified": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "duplicate",
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland",
-      "opportunityType": "campaign"
+      "opportunityType": "campaign",
+      "duplicateOf": "brigitte-hotel-alpenrose-2026"
     },
     {
       "id": "obertauern-ganzjahr-2026",
@@ -11637,6 +11659,264 @@
       "originCountry": "Deutschland",
       "eligibilityScope": "Deutschland",
       "opportunityType": "campaign"
+    },
+    {
+      "id": "eltern-mepal-back-to-school-2026",
+      "title": "3 Mepal Paw Patrol Back-to-School-Bundles",
+      "provider": "ELTERN",
+      "prize": "3 Back-to-School-Bundles von Mepal Paw Patrol",
+      "url": "https://www.eltern.de/familie-urlaub/gewinnspiele/mit-mepal-gewinnen-14091806.html",
+      "category": "Familie",
+      "country": "Deutschland",
+      "deadline": "24.08.2026",
+      "winners": 3,
+      "requirements": "Online-Gewinnspielformular ausfüllen",
+      "sourceId": "eltern",
+      "entryType": "form",
+      "estimatedPrizeValue": 180,
+      "chanceScore": 60,
+      "highValuePrize": false,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Familie",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "3 Back-to-School-Bundles von Mepal Paw Patrol. Teilnahme: Online-Gewinnspielformular ausfüllen."
+    },
+    {
+      "id": "eltern-aldiana-ampflwang-2026",
+      "title": "Familienauszeit im Aldiana Club Ampflwang",
+      "provider": "ELTERN / Aldiana",
+      "prize": "4 Nächte für 2 Erwachsene und 2 Kinder mit Vollpension Plus",
+      "url": "https://www.eltern.de/familie-urlaub/gewinnspiele/mit-aldiana-ampflwang-gewinnen-14093862.html",
+      "category": "Reisen & Familie",
+      "country": "Deutschland",
+      "deadline": "19.08.2026",
+      "winners": 1,
+      "requirements": "Online-Gewinnspielformular ausfüllen",
+      "sourceId": "eltern",
+      "entryType": "form",
+      "estimatedPrizeValue": 1700,
+      "chanceScore": 58,
+      "highValuePrize": true,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Reisen & Familie",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "4 Nächte für 2 Erwachsene und 2 Kinder mit Vollpension Plus. Teilnahme: Online-Gewinnspielformular ausfüllen."
+    },
+    {
+      "id": "knax-heft-4-2026",
+      "title": "KNAX-Heft-Gewinnspiel 4/2026",
+      "provider": "KNAX",
+      "prize": "Preis aus dem KNAX-Heft-Gewinnspiel 4/2026",
+      "url": "https://www.knax.de/gewinnspiel4.html",
+      "category": "Familie",
+      "country": "Deutschland",
+      "deadline": "31.08.2026",
+      "winners": 1,
+      "requirements": "Rätsel lösen und Onlineformular gemeinsam mit den Eltern absenden",
+      "sourceId": "knax",
+      "entryType": "quiz",
+      "estimatedPrizeValue": 250,
+      "chanceScore": 55,
+      "highValuePrize": false,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Familie",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "Preis aus dem KNAX-Heft-Gewinnspiel 4/2026. Teilnahme: Rätsel lösen und Onlineformular gemeinsam mit den Eltern absenden."
+    },
+    {
+      "id": "camperstyle-caravan-salon-2026",
+      "title": "3 × 2 Tageskarten Caravan Salon Düsseldorf",
+      "provider": "CamperStyle",
+      "prize": "3 × 2 Tageskarten für den Caravan Salon Düsseldorf 2026",
+      "url": "https://camperstyle.de/",
+      "category": "Freizeit & Reisen",
+      "country": "Deutschland",
+      "deadline": "16.08.2026",
+      "winners": 3,
+      "requirements": "Kostenloses Gewinnformular ausfüllen",
+      "sourceId": "camperstyle",
+      "entryType": "form",
+      "estimatedPrizeValue": 120,
+      "chanceScore": 60,
+      "highValuePrize": false,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Freizeit & Reisen",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "3 × 2 Tageskarten für den Caravan Salon Düsseldorf 2026. Teilnahme: Kostenloses Gewinnformular ausfüllen."
+    },
+    {
+      "id": "bahnland-bayern-lieblingsziele-2026",
+      "title": "Bahnland Bayern Lieblingsziele-Gewinnspiel",
+      "provider": "Bahnland Bayern",
+      "prize": "Reise- und Freizeitgewinn im Rahmen der Lieblingsziele-Aktion",
+      "url": "https://bahnland-bayern.de/de/teilnahmebedingungen-bahnland-bayern-lieblingsziele",
+      "category": "Reisen",
+      "country": "Deutschland",
+      "deadline": "31.08.2026",
+      "winners": 1,
+      "requirements": "Kostenlose Online-Teilnahme an der Lieblingsziele-Aktion",
+      "sourceId": "bahnland-bayern",
+      "entryType": "form",
+      "estimatedPrizeValue": 500,
+      "chanceScore": 56,
+      "highValuePrize": false,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Reisen",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "Reise- und Freizeitgewinn im Rahmen der Lieblingsziele-Aktion. Teilnahme: Kostenlose Online-Teilnahme an der Lieblingsziele-Aktion."
+    },
+    {
+      "id": "ksf-grill-newsletter-2026",
+      "title": "KSF Grill Gewinnspiel",
+      "provider": "KSF Grill",
+      "prize": "Aktueller Hauptgewinn des KSF-Grill-Gewinnspiels",
+      "url": "https://ksf-grill.com/gewinnspiel/",
+      "category": "Haus & Garten",
+      "country": "Deutschland",
+      "deadline": "31.10.2026",
+      "winners": 1,
+      "requirements": "Formular ausfüllen und kostenlose Newsletter-Anmeldung bestätigen",
+      "sourceId": "ksf-grill",
+      "entryType": "newsletter",
+      "estimatedPrizeValue": 500,
+      "chanceScore": 56,
+      "highValuePrize": false,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": true,
+      "verified": "10.08.2026",
+      "providerTrust": 4,
+      "effort": 2,
+      "multipleEntry": false,
+      "tags": [
+        "Haus & Garten",
+        "neu in 7.5"
+      ],
+      "addedAt": "10.08.2026",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "priority": "hoch",
+      "qualityScore": 98,
+      "dataCompleteness": 100,
+      "lastVerified": "10.08.2026",
+      "catalogStatus": "active",
+      "originCountry": "Deutschland",
+      "eligibilityScope": "Deutschland",
+      "opportunityType": "campaign",
+      "shortDescription": "Aktueller Hauptgewinn des KSF-Grill-Gewinnspiels. Teilnahme: Formular ausfüllen und kostenlose Newsletter-Anmeldung bestätigen."
     }
   ],
   "appName": "Win Win",
@@ -11654,7 +11934,14 @@
       "iamstudent"
     ]
   },
-  "activeCountAtRelease": 199,
+  "activeCountAtRelease": 183,
   "expiredCountAtRelease": 79,
-  "newContestsInRelease": 48
+  "newContestsInRelease": 6,
+  "release": "Qualitäts- & Inhaltsrelease",
+  "duplicateCountAtRelease": 22,
+  "qualityAudit": {
+    "date": "2026-08-10",
+    "policy": "Keine Social-only-, Kauf-/Bon-, reine Radio-Anruf-, Club-only- oder iamstudent-Einträge. IDs werden bei Bereinigung erhalten.",
+    "duplicateHandling": "Dubletten werden nicht gelöscht, sondern als duplicate markiert, damit lokale Statuszuordnungen stabil bleiben."
+  }
 }

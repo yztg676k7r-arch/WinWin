@@ -1,3 +1,11 @@
+# 7.5 – Qualitäts- & Inhaltsrelease (10.08.2026)
+
+- 6 neue aktive Web-Gewinnspiele integriert.
+- Katalog: 284 Einträge, davon 183 aktiv.
+- Quellenpool: 299 Quellen.
+- Dubletten werden status-sicher markiert statt gelöscht.
+- Version, Offline-Fallback, Cache, Manifest und Metadaten auf 7.5 synchronisiert.
+
 # 7.4 – Großer Aktivkatalog-Sprint (10.08.2026)
 
 - 48 neue, am Releasetag laufende Web-Gewinnspiele ergänzt.

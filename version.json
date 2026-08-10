@@ -1,12 +1,13 @@
 {
-  "version": "7.4",
+  "version": "7.5",
   "buildDate": "2026-08-10",
-  "builtAt": "2026-08-10T11:20:00+02:00",
-  "catalogEntries": 222,
-  "release": "Großes Inhaltsrelease – Quellenoffensive",
-  "note": "+55 neue aktuell belegte Gewinnspielquellen; Qualitätsregeln aus 7.0 bleiben aktiv.",
+  "builtAt": "2026-08-10T11:50:00+02:00",
+  "catalogEntries": 284,
+  "release": "Qualitäts- & Inhaltsrelease",
+  "note": "Neue aktive Web-Gewinnspiele plus Dublettenkennzeichnung ohne Löschen stabiler IDs.",
   "catalogGoal": 1000,
-  "sourceEntries": 270,
-  "newSources": 55,
-  "updated": "2026-08-10T11:20:00+02:00"
+  "sourceEntries": 299,
+  "newSources": 4,
+  "activeEntries": 183,
+  "updated": "2026-08-10T11:50:00+02:00"
 }
