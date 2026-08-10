@@ -1,0 +1,14 @@
+WIN WIN 7.7 – QUALITÄTS- & INHALTSRELEASE
+Build: 10.08.2026
+
+NEU
+- 5 zusätzliche, am Release-Tag aktive und geprüfte Direktteilnahmen
+- Spezi Vespa, GEO Jubiläums-Voting, Durex Gratisteilnahme, vhs Pfullingen, ERGO/Yamaha
+- Katalog: 326 Datensätze; 225 aktive Chancen; 79 abgelaufen; 22 markierte Dubletten
+- Quellen: 326
+
+QUALITÄT
+- Keine Social-only-, Kauf-/Kassenbon-, reine Radio-Anruf-, Club-only- oder iamstudent-Treffer neu aufgenommen.
+- Blauer Engel wurde z. B. bewusst ausgeschlossen, da der Erwerb von sechs Produkten Teilnahmevoraussetzung ist.
+- Bestehende Contest-IDs unverändert.
+- Versionsquellen und Offline-Fallback auf 7.7 synchronisiert.

@@ -1,13 +1,13 @@
 {
-  "version": "7.6.1",
+  "version": "7.7",
   "buildDate": "2026-08-10",
-  "builtAt": "2026-08-10T12:35:00+02:00",
-  "catalogEntries": 321,
-  "release": "Versions- & Cache-Fix",
-  "note": "Versionskonflikt aus 7.6 behoben; Kataloginhalt und stabile Contest-IDs unverändert.",
+  "builtAt": "2026-08-10T12:55:00+02:00",
+  "catalogEntries": 326,
+  "release": "Qualitäts- & Inhaltsrelease",
+  "note": "5 neue geprüfte aktive Direktteilnahmen; Versions- und Cache-Synchronisierung aus 7.6.1 beibehalten.",
   "catalogGoal": 1000,
-  "sourceEntries": 321,
-  "newSources": 22,
-  "activeEntries": 220,
-  "updated": "2026-08-10T12:35:00+02:00"
+  "sourceEntries": 326,
+  "newSources": 5,
+  "activeEntries": 225,
+  "updated": "2026-08-10T12:55:00+02:00"
 }

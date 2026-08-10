@@ -1,5 +1,5 @@
 {
-  "version": "7.6.1",
+  "version": "7.7",
   "updated": "2026-08-10",
   "sources": [
     {
@@ -8608,9 +8608,139 @@
       "successfulChecks": 1,
       "emptyChecks": 0,
       "lastResultCount": 1
+    },
+    {
+      "id": "spezi-original",
+      "name": "Spezi Original",
+      "domain": "gewinnspiel.spezi.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Auto & Mobilität"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.7 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "geo-jubilaeum",
+      "name": "GEO",
+      "domain": "gws.geo.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Geld & Gutscheine"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.7 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "durex-festival26",
+      "name": "Durex",
+      "domain": "durex-festival26.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Lifestyle"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.7 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "vhs-pfullingen",
+      "name": "vhs Pfullingen",
+      "domain": "www.vhs-pfullingen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit & Kultur"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.7 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "ergo-yamaha",
+      "name": "ERGO / Yamaha Motor Insurance",
+      "domain": "www.ergo-yam.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Auto & Mobilität"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.7 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ],
-  "release": "Großer Inhalts-Sprint",
-  "sourceCount": 321,
-  "newSourcesInRelease": 22
+  "release": "7.7 Qualitäts- & Inhaltsrelease",
+  "sourceCount": 326,
+  "newSourcesInRelease": 5
 }
