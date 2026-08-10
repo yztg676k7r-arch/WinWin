@@ -1,3 +1,13 @@
+# 7.4 – Großer Aktivkatalog-Sprint (10.08.2026)
+
+- 48 neue, am Releasetag laufende Web-Gewinnspiele ergänzt.
+- Katalog jetzt 278 Einträge, davon 199 aktiv.
+- Quellenkatalog jetzt 295 verifizierte Quellen.
+- Neue Schwerpunkte: Reisen, Wellness, Familie, Fahrrad/E-Bike, Mobilität, Technik und Genuss.
+- Teilnahmeformen: Formular, Quiz, Umfrage oder Newsletter; Social-only, Kauf-/Kassenbonpflicht, Radio-Anruf, Club-only und iamstudent bleiben ausgeschlossen.
+- Bestehende Contest-IDs bleiben unverändert; lokale Statusdaten werden nicht überschrieben.
+- Offline-Fallback, Versionsdateien und Cache auf 7.4 aktualisiert.
+
 # 7.3 – Aktivkatalog-Ausbau (10.08.2026)
 
 - 8 neue konkret laufende Gewinnspiele ergänzt.

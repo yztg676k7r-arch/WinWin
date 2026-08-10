@@ -1,5 +1,5 @@
 {
-  "version": "4.0",
+  "version": "7.4",
   "updated": "2026-08-10T11:20:00+02:00",
   "sources": [
     {
@@ -7282,9 +7282,659 @@
       "emptyChecks": 0,
       "lastResultCount": 1,
       "addedInVersion": "7.2"
+    },
+    {
+      "id": "amigo",
+      "name": "AMIGO",
+      "domain": "blog.amigo-spiele.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Freizeit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "lufthansa-city-center",
+      "name": "Lufthansa City Center",
+      "domain": "lufthansa-city-center.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "quicksilver-boats",
+      "name": "Quicksilver Boats",
+      "domain": "quicksilver-boats.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "hall-wattens",
+      "name": "Hall-Wattens",
+      "domain": "hall-wattens.at",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "visit-rovaniemi",
+      "name": "Visit Rovaniemi",
+      "domain": "visitrovaniemi.fi",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "focus-business",
+      "name": "FOCUS Business",
+      "domain": "fleresearch.fra1.qualtrics.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Gutscheine"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "bikex",
+      "name": "BikeX",
+      "domain": "umfragen-mps.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sport & Freizeit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "gezeiten-suites",
+      "name": "Gezeiten Suites",
+      "domain": "gezeitensuites.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "eoft",
+      "name": "EOFT",
+      "domain": "de.eoft.eu",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Outdoor"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "lavazza",
+      "name": "Lavazza",
+      "domain": "lavazza.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Genuss"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "tui-cruises",
+      "name": "TUI Cruises",
+      "domain": "meinschiff.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "grossarltal",
+      "name": "Grossarltal",
+      "domain": "grossarltal.at",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "niederrhein-nachrichten",
+      "name": "Niederrhein Nachrichten",
+      "domain": "reisen.niederrhein-nachrichten.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "enduro",
+      "name": "ENDURO",
+      "domain": "enduro-mtb.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sport & Freizeit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "engwe",
+      "name": "ENGWE",
+      "domain": "de.engwe.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sport & Freizeit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "schwarzw-lder-bote",
+      "name": "Schwarzwälder Bote",
+      "domain": "aktionen.schwabo.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Wellness"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "born-magazin",
+      "name": "BORN Magazin",
+      "domain": "bornmagazin.ch",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Sport & Freizeit"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "freda",
+      "name": "FREDA",
+      "domain": "eatfreda.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Lifestyle"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "b-klunder",
+      "name": "Böklunder",
+      "domain": "boeklunder.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "schweiz-tourismus",
+      "name": "Schweiz Tourismus",
+      "domain": "myswitzerland.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen & Sport"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "berghaus",
+      "name": "Berghaus",
+      "domain": "your-berghaus.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Auto & Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "penny-reisen",
+      "name": "PENNY Reisen",
+      "domain": "penny-reisen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "rewe-reisen",
+      "name": "REWE Reisen",
+      "domain": "rewe-reisen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Reisen"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "e-roller-com",
+      "name": "e-Roller.com",
+      "domain": "e-roller.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Technik & Mobilität"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": true,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
+    },
+    {
+      "id": "aok-baden-w-rttemberg",
+      "name": "AOK Baden-Württemberg",
+      "domain": "aok.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Web",
+      "categories": [
+        "Gesundheit & Wellness"
+      ],
+      "automation": "green",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 7,
+      "lastChecked": "2026-08-10",
+      "notes": "In 7.4 anhand eines laufenden, kaufunabhängigen Web-Gewinnspiels verifiziert.",
+      "germanyEligibility": "yes",
+      "verification": "verified",
+      "successfulChecks": 1,
+      "emptyChecks": 0,
+      "lastResultCount": 1
     }
   ],
-  "release": "7.3 Aktivkatalog-Ausbau",
-  "sourceCount": 270,
-  "newSourcesInRelease": 0
+  "release": "7.4 großer Aktivkatalog-Sprint",
+  "sourceCount": 295,
+  "newSourcesInRelease": 25
 }

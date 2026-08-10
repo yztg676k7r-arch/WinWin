@@ -1,5 +1,5 @@
 {
-  "version": "7.3",
+  "version": "7.4",
   "buildDate": "2026-08-10",
   "builtAt": "2026-08-10T11:20:00+02:00",
   "catalogEntries": 222,
@@ -8,5 +8,5 @@
   "catalogGoal": 1000,
   "sourceEntries": 270,
   "newSources": 55,
-  "updated": "2026-08-10"
+  "updated": "2026-08-10T11:20:00+02:00"
 }
