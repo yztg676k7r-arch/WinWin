@@ -1,3 +1,33 @@
+# 7.9 – 11.08.2026
+
+WIN WIN 7.9 – MASSIVER KATALOGAUSBAU
+Build: 11.08.2026
+
+INHALT
+- 66 neue aktive Gewinnspiele netto
+- 33 neue Quellen netto
+- 433 Katalogdatensätze insgesamt
+- 327 am Release-Stichtag aktive Chancen
+- 81 abgelaufene Einträge
+- 24 markierte Dubletten
+- 394 Quellen insgesamt
+
+QUALITÄT
+- Neuaufnahmen nur über kostenlose Web-, Formular-, Quiz-, E-Mail-, Umfrage- oder Newsletter-Teilnahmewege.
+- Kein Social-only, kein Kauf/Kassenbon, keine reine Radio-Anrufteilnahme, kein Club-/Kunden-only, kein iamstudent.
+- First Stop bewusst ausgeschlossen (Social-only).
+- LEW bewusst ausgeschlossen (bestehender Energievertrag erforderlich).
+- Kärcher Produktbewertungsaktion bewusst ausgeschlossen (Produktbesitz als faktische Teilnahmehürde).
+- TennisTraveller und Roter Hahn aus 7.8 als Legacy-Dubletten markiert; IDs bleiben erhalten.
+- Kärcher-Produktbewertung aus 7.8 wegen faktischer Produktbesitz-Hürde auf 'excluded' gesetzt; ID bleibt erhalten.
+- Bestehende Contest-IDs unverändert.
+
+TECHNIK
+- app.js, version.json, contests.json und sources.json auf 7.9 synchronisiert.
+- Service-Worker-Cache auf 7.9.
+- Offline-Fallback vollständig aus contests.json neu erzeugt.
+
+
 # 7.8 – 10.08.2026
 
 WIN WIN 7.8 – GROSSER KATALOGAUSBAU

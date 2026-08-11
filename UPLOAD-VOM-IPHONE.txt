@@ -1,0 +1,14 @@
+WIN WIN 7.9 – iPHONE-UPLOAD
+Dieses Paket ist für GitHub Web Upload optimiert.
+Es enthält weniger als 99 Dateien.
+
+Vorgehen:
+1. ZIP in der Dateien-App entpacken.
+2. Den entpackten Ordner öffnen.
+3. In GitHub 'Add file' > 'Upload files' öffnen.
+4. Alle Dateien/Ordner des entpackten Pakets gemeinsam auswählen und hochladen.
+5. Commit changes.
+
+Historische UPDATE-*.txt-Dateien wurden aus dem Upload-Paket entfernt.
+Die Release-Historie bleibt in CHANGELOG.md erhalten.
+Die App-/Katalogdaten wurden nicht verändert.

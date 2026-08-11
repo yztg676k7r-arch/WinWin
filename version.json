@@ -1,13 +1,13 @@
 {
-  "version": "7.8",
-  "buildDate": "2026-08-10",
-  "builtAt": "2026-08-10T13:35:00+02:00",
-  "catalogEntries": 367,
-  "release": "Großer Katalogausbau",
-  "note": "41 neue aktive kaufzwangfreie Chancen; stabile IDs und 7.6.1-Versionsfix beibehalten.",
+  "version": "7.9",
+  "buildDate": "2026-08-11",
+  "builtAt": "2026-08-11T20:28:00+02:00",
+  "catalogEntries": 433,
+  "release": "Massiver Katalogausbau",
+  "note": "66 neue Gewinnspiele; Legacy-Qualitätsbereinigung ohne ID-Löschung; stabile lokale Zuordnungen.",
   "catalogGoal": 1000,
-  "sourceEntries": 361,
-  "newSources": 35,
-  "activeEntries": 266,
-  "updated": "2026-08-10T13:35:00+02:00"
+  "sourceEntries": 394,
+  "newSources": 33,
+  "activeEntries": 327,
+  "updated": "2026-08-11T20:28:00+02:00"
 }
