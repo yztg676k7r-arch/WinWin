@@ -1,3 +1,43 @@
+# 8.0 – 18.08.2026
+
+WIN WIN 8.0 – KATALOG- & QUELLEN-REFRESH
+Build: 18.08.2026
+
+KATALOGBEREINIGUNG
+- 134 nach Enddatum abgelaufene Gewinnspiele aus dem aktiven Katalog entfernt.
+- 12 alte Dubletten/ausgeschlossene Legacy-Datensätze ebenfalls aus dem aktiven Katalog entfernt.
+- Laufende bestehende Contest-IDs wurden nicht verändert.
+- Lokale Browser-Statusdaten werden durch das Update nicht zurückgesetzt.
+
+NEUE / AKTUALISIERTE INHALTE
+- 11 neue aktuelle Direktteilnahmen netto.
+- Aktiver Katalog 8.0: 298 Gewinnspiele.
+- Beispiele: Lidl Deutschland Tour, EDEKA DFB/FCN, Müller Alnatura, Ernst-August-Galerie, HolidayCheck,
+  AOK Bayern, green Lifestyle, Adelholzener/Burgis/alltours soweit noch nicht bereits vorhanden.
+
+QUELLENKATALOG
+- 397 Quellen-Datensätze vollständig gegen den bereinigten Katalog auditiert.
+- 189 Quellen liefern aktuell mindestens ein passendes Gewinnspiel.
+- 208 Quellen haben aktuell keinen laufenden Katalogtreffer und bleiben als Beobachtungsquellen markiert.
+- Radio-/Senderquellen ohne passenden Web-Teilnahmeweg erhalten niedrigere Monitoring-Priorität.
+- Quellen mit mehreren aktiven Treffern werden höher priorisiert.
+- 3 neue Quellen ergänzt: Ernst-August-Galerie Hannover, AOK Bayern, green Lifestyle.
+
+QUALITÄTSREGELN
+- Keine Social-only-Teilnahmen.
+- Keine Kauf-/Kassenbonpflicht.
+- Keine reine Radio-Anrufteilnahme.
+- Keine Club-/Kunden-only-Teilnahme.
+- iamstudent bleibt ausgeschlossen.
+- Direkte Teilnahme- bzw. Aktionsseiten werden bevorzugt.
+
+TECHNIK
+- app.js, version.json, contests.json und sources.json = 8.0.
+- Service-Worker-Cache = win-win-8.0.
+- Offline-Fallback vollständig aus dem bereinigten contests.json erzeugt.
+- Mobilfreundliches GitHub-Paket: historische UPDATE-*.txt-Dateien werden nicht mit ausgeliefert.
+
+
 # 7.9 – 11.08.2026
 
 WIN WIN 7.9 – MASSIVER KATALOGAUSBAU

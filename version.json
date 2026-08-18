@@ -1,13 +1,14 @@
 {
-  "version": "7.9",
-  "buildDate": "2026-08-11",
-  "builtAt": "2026-08-11T20:28:00+02:00",
-  "catalogEntries": 433,
-  "release": "Massiver Katalogausbau",
-  "note": "66 neue Gewinnspiele; Legacy-Qualitätsbereinigung ohne ID-Löschung; stabile lokale Zuordnungen.",
+  "version": "8.0",
+  "buildDate": "2026-08-18",
+  "builtAt": "2026-08-18T05:39:00+02:00",
+  "catalogEntries": 298,
+  "release": "Katalog- & Quellen-Refresh",
+  "note": "Abgelaufene und nicht aktive Legacy-Katalogeinträge entfernt; Quellenkatalog vollständig auditiert; neue aktuelle Direktteilnahmen ergänzt.",
   "catalogGoal": 1000,
-  "sourceEntries": 394,
-  "newSources": 33,
-  "activeEntries": 327,
-  "updated": "2026-08-11T20:28:00+02:00"
+  "sourceEntries": 397,
+  "newSources": 3,
+  "activeEntries": 298,
+  "updated": "2026-08-18T05:39:00+02:00",
+  "removedExpired": 134
 }
