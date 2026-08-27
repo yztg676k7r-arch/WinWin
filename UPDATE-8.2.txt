@@ -1,0 +1,18 @@
+WIN WIN 8.2 – EFFIZIENZ & GEWINNSTRATEGIE
+
+Neu:
+- Effizienz-Score 0–100 zusätzlich zum bestehenden Chancen-/Prioritäts-Score
+- 1–5 Effizienz-Sterne auf den Gewinnspielkarten
+- Sortierung „Beste Effizienz“ in Entdecken
+- Tagesmodus „Effizienteste zuerst“
+- eigener Bereich „Top-Effizienz“ in der Tagesroutine und im Dashboard
+- Gewinnerzahl, Zeitaufwand, kurze Restlaufzeit, Wiederholbarkeit und Quellenqualität fließen in die Effizienz ein
+- persönliche Gewinnhistorie kann einen kleinen positiven Bonus geben; fehlende Gewinne führen nie zu einer Abwertung
+- eigene Quellenbilanz wird angezeigt, sobald für einen Anbieter ein Gewinn dokumentiert wurde
+- Wiederholungen werden jetzt aus Daten und Beschreibung erkannt: täglich, wöchentlich oder mehrfach
+- wöchentliche Gewinnspiele werden innerhalb der aktuellen Woche korrekt als erledigt behandelt
+
+Wichtig:
+- Bestehende Statusdaten bleiben erhalten.
+- Teilgenommen, Nicht interessant, Favoriten, Gewinne, Historie, Notizen und Sicherungen werden nicht zurückgesetzt.
+- Der bestehende Chancen-/Prioritäts-Score wird nicht ersetzt.

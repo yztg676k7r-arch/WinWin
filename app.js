@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.1';
+const APP_VERSION='8.2';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -226,6 +226,30 @@ function preferenceBoost(i){
  const type=Math.max(-12,Math.min(18,Number(preferences.entryTypes[i.entryType||'form']||0)));
  return Math.max(-10,Math.min(12,Math.round(cat*.32+type*.16)));
 }
+function historicalWinBoost(i){
+ let categoryWins=0,providerWins=0;
+ contests.forEach(c=>{
+  const st=user.items[c.id];if(!st)return;
+  if(c.category===i.category&&st.won)categoryWins++;
+  if(String(c.provider||'').toLowerCase()===String(i.provider||'').toLowerCase()&&st.won)providerWins++;
+ });
+ let boost=0;
+ if(categoryWins)boost+=Math.min(5,categoryWins*2);
+ if(providerWins)boost+=Math.min(5,providerWins*3);
+ return Math.max(0,Math.min(8,Math.round(boost)));
+}
+function sourceSuccessRateOf(i){
+ const provider=String(i.provider||'').toLowerCase();
+ let wins=0,entries=0;
+ contests.forEach(c=>{
+  if(String(c.provider||'').toLowerCase()!==provider)return;
+  const st=user.items[c.id];if(!st)return;
+  entries+=Array.isArray(st.participationDates)?st.participationDates.length:(st.done?1:0);
+  if(st.won)wins++;
+ });
+ return {wins,entries,rate:entries?Math.round(wins/entries*100):0};
+}
+
 function resetPreferences(){preferences=defaultPreferences();preferences.initialized=true;savePreferences();renderAll();toast('Persönliche Gewichtung zurückgesetzt')}
 window.resetPreferences=resetPreferences;
 
@@ -301,11 +325,33 @@ function stateFor(id){
  s.participationDates=[...new Set(s.participationDates.filter(Boolean))].sort();
  return s
 }
-function isRepeatable(i){return Boolean(i&&(i.daily||i.multipleEntry||i.participationFrequency==='daily'))}
+function participationFrequencyOf(i){
+ const raw=String(i?.participationFrequency||'').trim().toLowerCase();
+ const text=`${raw} ${String(i?.requirements||'').toLowerCase()} ${String(i?.note||'').toLowerCase()}`;
+ if(i?.daily||/täglich|taeglich|jeden tag|daily/.test(text))return 'daily';
+ if(/wöchentlich|woechentlich|jede woche|weekly/.test(text))return 'weekly';
+ if(i?.multipleEntry||/mehrfach|mehrmals|multiple/.test(text))return 'multiple';
+ return 'once';
+}
+function isRepeatable(i){return participationFrequencyOf(i)!=='once'}
+function repeatLabel(i){
+ const f=participationFrequencyOf(i);
+ return f==='daily'?'Täglich möglich':f==='weekly'?'Wöchentlich möglich':f==='multiple'?'Mehrfach möglich':'Einmalig';
+}
+function completedForCurrentPeriod(i){
+ const s=stateFor(i.id),f=participationFrequencyOf(i);
+ if(f==='daily')return participatedOn(i.id);
+ if(f==='weekly'){
+  const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
+  return s.participationDates.some(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
+ }
+ if(f==='multiple')return false;
+ return s.done;
+}
 function participatedOn(id,date=dayKey()){
  const s=stateFor(id);return s.participationDates.includes(date)
 }
-function completedForToday(i){return isRepeatable(i)?participatedOn(i.id):stateFor(i.id).done}
+function completedForToday(i){return completedForCurrentPeriod(i)}
 function participationCount(id){return stateFor(id).participationDates.length}
 function latestParticipationAt(id){
  const s=stateFor(id),last=s.participationDates.at(-1);return last?`${last}T12:00:00`:s.doneAt||''
@@ -385,17 +431,28 @@ function scoreContest(i){
 
  // Ziel: hohe reale Trefferchance und viel Nutzen pro Minute; Preisattraktivität bleibt relevant, dominiert aber nicht.
  const personalBoost=preferenceBoost(i);
+ const winBoost=historicalWinBoost(i);
  let priority=chance*.42+time*.28+attractiveness*.18+urgency*.12;
- if(i.daily||i.multipleEntry)priority+=4;
- priority+=personalBoost;
+ if(isRepeatable(i))priority+=4;
+ priority+=personalBoost+winBoost;
  if(personalBoost>=4)reasons.push('passt zu deinen Interessen');
  else if(personalBoost<=-4)reasons.push('seltener von dir gewählt');
+ if(winBoost>=3)reasons.push('passt zu deiner Gewinnhistorie');
  priority=clampScore(priority);
+ let efficiency=chance*.58+time*.32+urgency*.10;
+ if(winners>=20)efficiency+=5;
+ if(winners>=100)efficiency+=4;
+ if(isRepeatable(i))efficiency+=5;
+ if(left>=0&&left<=14)efficiency+=3;
+ if(sourceQualityOf(i)>=4)efficiency+=2;
+ efficiency=clampScore(efficiency);
+ const efficiencyStars=Math.max(1,Math.min(5,Math.ceil(efficiency/20)));
  const confidence=winners>0&&trust>=4?'hoch':winners>0||trust>=4?'mittel':'begrenzt';
  return {
    score:priority,priorityScore:priority,chanceScore:chance,timeScore:time,
-   attractivenessScore:attractiveness,urgencyScore:urgency,personalBoost,
-   reasons:[...new Set(reasons)].slice(0,4),scoreConfidence:confidence
+   attractivenessScore:attractiveness,urgencyScore:urgency,personalBoost,winBoost,
+   efficiencyScore:efficiency,efficiencyStars,
+   reasons:[...new Set(reasons)].slice(0,5),scoreConfidence:confidence
  };
 }
 function scored(includeIgnored=false){return allActive().map(i=>({...i,...scoreContest(i)})).filter(i=>includeIgnored||!stateFor(i.id).ignored)}
@@ -433,8 +490,14 @@ function toggleDone(id){
  const today=dayKey();let adding=false;
  commitStatusChange(id,(s,item)=>{
   if(isRepeatable(item)){
-   const idx=s.participationDates.indexOf(today);adding=idx<0;
-   if(adding){s.participationDates.push(today);s.participationDates.sort();s.done=true;s.doneAt=new Date().toISOString();adjustPreferenceForContest(id,3);sessionStorage.setItem('winwin-done-session',String(Number(sessionStorage.getItem('winwin-done-session')||0)+1))}
+   const freq=participationFrequencyOf(item);
+   let idx=s.participationDates.indexOf(today);
+   if(freq==='weekly'&&completedForCurrentPeriod(item)){
+    const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
+    idx=s.participationDates.findLastIndex(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
+   }
+   adding=idx<0;
+   if(adding){if(!s.participationDates.includes(today))s.participationDates.push(today);s.participationDates.sort();s.done=true;s.doneAt=new Date().toISOString();adjustPreferenceForContest(id,3);sessionStorage.setItem('winwin-done-session',String(Number(sessionStorage.getItem('winwin-done-session')||0)+1))}
    else{s.participationDates.splice(idx,1);s.done=s.participationDates.length>0;s.doneAt=s.done?latestParticipationAt(id):null;adjustPreferenceForContest(id,-3)}
   }else{
    s.done=!s.done;adding=s.done;adjustPreferenceForContest(id,s.done?3:-3);
@@ -506,13 +569,15 @@ function renderSmartDiscovery(){
 }
 
 function label(score){return score>=88?'Unbedingt mitmachen':score>=75?'Sehr empfehlenswert':score>=62?'Gute Chance':'Solide Aktion'}
-function badges(i){const left=daysLeft(i),value=prizeValueOf(i);return `<div class="badges">${isNewSinceVisit(i)?'<span class="new-ribbon">NEU</span>':''}<span class="badge">${esc(i.category)}</span><span class="badge score">${i.score}/100</span>${value?`<span class="badge value">🏆 ${esc(formatPrizeValue(i))}</span>`:''}${Number(i.winners||0)>0?`<span class="badge winners">👥 ${Number(i.winners)}</span>`:''}${i.score>=80?'<span class="badge score">Top-Chance</span>':''}${secret(i)?'<span class="badge secret">Geheimtipp</span>':''}${left<=3?`<span class="badge hot">Noch ${left} Tag${left===1?'':'e'}</span>`:''}${i.international?'<span class="badge intl">International</span>':''}${i.regional?`<span class="badge regional">📍 ${esc(i.region||'Regional')}</span>`:''}${endingSoon(i)?`<span class="badge ending">⏰ Endet bald</span>`:''}</div>`}
-function reasonBox(i){return `<div class="reason-box priority-explain"><strong>Warum diese Priorität?</strong><div class="score-components"><span><b>${i.chanceScore}</b>Chance</span><span><b>${i.timeScore}</b>Zeitnutzen</span><span><b>${i.attractivenessScore}</b>Attraktivität</span><span><b>${i.personalBoost>0?'+':''}${i.personalBoost}</b>Persönlich</span></div><p>${i.reasons.length?i.reasons.map(x=>'✓ '+esc(x)).join(' · '):'Kostenlose, geprüfte Teilnahme'}</p><small>Priorität ${i.score}/100 · Datensicherheit: ${esc(i.scoreConfidence||'begrenzt')}</small></div>`}
+function badges(i){const left=daysLeft(i),value=prizeValueOf(i);return `<div class="badges">${isNewSinceVisit(i)?'<span class="new-ribbon">NEU</span>':''}<span class="badge">${esc(i.category)}</span><span class="badge score">${i.score}/100</span><span class="badge efficiency">⚡ ${i.efficiencyScore}/100 · ${efficiencyStars(i)}</span>${value?`<span class="badge value">🏆 ${esc(formatPrizeValue(i))}</span>`:''}${Number(i.winners||0)>0?`<span class="badge winners">👥 ${Number(i.winners)}</span>`:''}${i.score>=80?'<span class="badge score">Top-Chance</span>':''}${i.efficiencyScore>=80?'<span class="badge efficiency">Top-Effizienz</span>':''}${secret(i)?'<span class="badge secret">Geheimtipp</span>':''}${left<=3?`<span class="badge hot">Noch ${left} Tag${left===1?'':'e'}</span>`:''}${i.international?'<span class="badge intl">International</span>':''}${i.regional?`<span class="badge regional">📍 ${esc(i.region||'Regional')}</span>`:''}${endingSoon(i)?`<span class="badge ending">⏰ Endet bald</span>`:''}</div>`}
+function efficiencyLabel(i){return i.efficiencyScore>=85?'Extrem effizient':i.efficiencyScore>=70?'Sehr effizient':i.efficiencyScore>=55?'Effizient':'Normal'}
+function efficiencyStars(i){return '★'.repeat(i.efficiencyStars||1)+'☆'.repeat(5-(i.efficiencyStars||1))}
+function reasonBox(i){return `<div class="reason-box priority-explain"><strong>Warum diese Priorität?</strong><div class="score-components"><span><b>${i.chanceScore}</b>Chance</span><span><b>${i.timeScore}</b>Zeitnutzen</span><span><b>${i.efficiencyScore}</b>Effizienz</span><span><b>${i.personalBoost>0?'+':''}${i.personalBoost}</b>Persönlich</span></div><p>${i.reasons.length?i.reasons.map(x=>'✓ '+esc(x)).join(' · '):'Kostenlose, geprüfte Teilnahme'}</p><small>Priorität ${i.score}/100 · ${efficiencyLabel(i)} ${efficiencyStars(i)} · Datensicherheit: ${esc(i.scoreConfidence||'begrenzt')}</small></div>`}
 function mini(i){
  const s=stateFor(i.id),doneNow=completedForToday(i),repeat=isRepeatable(i);
- return `<article class="mini-card ${doneNow?'has-status':''}" data-contest-id="${esc(i.id)}">${doneNow?`<span class="dashboard-status">${repeat?'Heute teilgenommen':'Teilgenommen'}</span>`:''}<div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3>${badges(i)}<div class="prize">🎁 ${esc(i.prize)}</div>${reasonBox(i)}<div class="mini-actions"><a class="primary" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen</a><button type="button" class="secondary ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Erledigt':repeat?'Heute teilgenommen':'Teilgenommen'}</button><button type="button" class="secondary" onclick="toggleFavorite('${esc(i.id)}')" aria-label="Favorit">${s.favorite?'♥':'♡'}</button><button type="button" class="secondary ignore-mini" aria-label="Nicht interessant" onclick="toggleIgnored('${esc(i.id)}')">Nicht interessant</button></div></article>`;
+ return `<article class="mini-card ${doneNow?'has-status':''}" data-contest-id="${esc(i.id)}">${doneNow?`<span class="dashboard-status">${repeat?'Heute teilgenommen':'Teilgenommen'}</span>`:''}<div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3>${badges(i)}<div class="prize">🎁 ${esc(i.prize)}</div>${reasonBox(i)}<div class="mini-actions"><a class="primary" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen</a><button type="button" class="secondary ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Erledigt':repeat?'Jetzt teilgenommen':'Teilgenommen'}</button><button type="button" class="secondary" onclick="toggleFavorite('${esc(i.id)}')" aria-label="Favorit">${s.favorite?'♥':'♡'}</button><button type="button" class="secondary ignore-mini" aria-label="Nicht interessant" onclick="toggleIgnored('${esc(i.id)}')">Nicht interessant</button></div></article>`;
 }
-function full(i){const s=stateFor(i.id),left=daysLeft(i),wins=i.winners?`${i.winners} bekannte Gewinne`:'Gewinnerzahl nicht angegeben',doneNow=completedForToday(i),repeat=isRepeatable(i),count=participationCount(i.id);return `<article class="contest-card ${s.ignored?'ignored-card':''} ${left===0?'deadline-today':left<=3?'deadline-soon':''}"><div class="card-top"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${s.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')">${s.favorite?'♥':'♡'}</button></div>${badges(i)}${repeat?`<div class="repeat-note">↻ Täglich möglich${count?` · ${count} Teilnahme${count===1?'':'n'} dokumentiert`:''}${doneNow?' · heute erledigt':''}</div>`:''}${s.ignored?'<div class="ignored-note">Nicht interessant – nur in dieser Ansicht sichtbar.</div>':''}<div class="prize">🎁 ${esc(i.prize)}</div><div class="scoreline"><strong>${label(i.score)}</strong><div class="scorebar"><i style="width:${i.score}%"></i></div><strong>${i.score}</strong></div>${reasonBox(i)}<div class="smart-facts"><span>🏆 ${esc(formatPrizeValue(i))}</span><span>👥 ${i.winners||'offen'}</span><span>⏳ ${left===0?'heute':left+' T.'}</span><span>⭐ Quelle ${sourceQualityOf(i)}/5</span></div><div class="details">Teilnahmeschluss: ${esc(i.deadline)} · ${left===0?'endet heute':`${left} Tag${left===1?'':'e'} übrig`}<br>${esc(wins)} · Aufwand: ${'●'.repeat(Math.min(5,i.effort||3))}${'○'.repeat(Math.max(0,5-(i.effort||3)))}<br>${esc(i.country)}${i.region?` · ${esc(i.region)}`:''} · geprüft: ${esc(i.verified||'–')}</div><div class="card-actions"><a href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen ↗</a><button class="${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Heute erledigt':repeat?'Heute teilgenommen':'Teilgenommen'}</button><button class="win-button ${s.won?'active':''}" onclick="openWinDialog('${esc(i.id)}')">${s.won?'🏆 Gewonnen':'Gewonnen'}</button><button class="ignore-button ${s.ignored?'active':''}" onclick="toggleIgnored('${esc(i.id)}')">${s.ignored?'Wieder anzeigen':'Nicht interessant'}</button></div></article>`}
+function full(i){const s=stateFor(i.id),left=daysLeft(i),wins=i.winners?`${i.winners} bekannte Gewinne`:'Gewinnerzahl nicht angegeben',doneNow=completedForToday(i),repeat=isRepeatable(i),count=participationCount(i.id);return `<article class="contest-card ${s.ignored?'ignored-card':''} ${left===0?'deadline-today':left<=3?'deadline-soon':''}"><div class="card-top"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${s.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')">${s.favorite?'♥':'♡'}</button></div>${badges(i)}${repeat?`<div class="repeat-note">↻ ${esc(repeatLabel(i))}${count?` · ${count} Teilnahme${count===1?'':'n'} dokumentiert`:''}${doneNow?' · aktuell erledigt':''}</div>`:''}${s.ignored?'<div class="ignored-note">Nicht interessant – nur in dieser Ansicht sichtbar.</div>':''}<div class="prize">🎁 ${esc(i.prize)}</div><div class="scoreline"><strong>${label(i.score)}</strong><div class="scorebar"><i style="width:${i.score}%"></i></div><strong>${i.score}</strong></div>${reasonBox(i)}<div class="smart-facts"><span>🏆 ${esc(formatPrizeValue(i))}</span><span>👥 ${i.winners||'offen'}</span><span>⏳ ${left===0?'heute':left+' T.'}</span><span>⭐ Quelle ${sourceQualityOf(i)}/5</span>${sourceSuccessRateOf(i).wins?`<span>🏆 Eigene Quellenbilanz ${sourceSuccessRateOf(i).wins}/${sourceSuccessRateOf(i).entries}</span>`:''}</div><div class="details">Teilnahmeschluss: ${esc(i.deadline)} · ${left===0?'endet heute':`${left} Tag${left===1?'':'e'} übrig`}<br>${esc(wins)} · Aufwand: ${'●'.repeat(Math.min(5,i.effort||3))}${'○'.repeat(Math.max(0,5-(i.effort||3)))}<br>${esc(i.country)}${i.region?` · ${esc(i.region)}`:''} · geprüft: ${esc(i.verified||'–')}</div><div class="card-actions"><a href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen ↗</a><button class="${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Aktuell erledigt':repeat?'Jetzt teilgenommen':'Teilgenommen'}</button><button class="win-button ${s.won?'active':''}" onclick="openWinDialog('${esc(i.id)}')">${s.won?'🏆 Gewonnen':'Gewonnen'}</button><button class="ignore-button ${s.ignored?'active':''}" onclick="toggleIgnored('${esc(i.id)}')">${s.ignored?'Wieder anzeigen':'Nicht interessant'}</button></div></article>`}
 function empty(t){return `<div class="empty">${esc(t)}</div>`}
 
 function currentDailySession(){
@@ -542,13 +607,14 @@ function resetTodaySkips(){
  const session=currentDailySession();session.skipped=[];saveDailySession();renderToday();toast('Heute übersprungene Einträge wieder eingeblendet');
 }
 function todayRank(i){
- const left=daysLeft(i),effort=Number(i.effort||3),chance=Number(i.score||0);
+ const left=daysLeft(i),effort=Number(i.effort||3),chance=Number(i.score||0),efficiency=Number(i.efficiencyScore||0);
  const urgency=left<=0?35:left<=2?24:left<=7?10:0;
  const speed=Math.max(0,6-effort)*6;
- if(dailyPlan.mode==='quick')return chance*.45+speed*1.5+urgency*.45;
- if(dailyPlan.mode==='urgent')return chance*.45+urgency*1.8+speed*.35;
+ if(dailyPlan.mode==='quick')return chance*.35+speed*1.5+urgency*.45+efficiency*.25;
+ if(dailyPlan.mode==='urgent')return chance*.40+urgency*1.8+speed*.35+efficiency*.20;
  if(dailyPlan.mode==='chance')return chance*1.35+urgency*.45+speed*.25;
- return chance+urgency+speed*.55;
+ if(dailyPlan.mode==='efficiency')return efficiency*1.45+chance*.35+urgency*.35;
+ return chance*.78+efficiency*.42+urgency+speed*.45;
 }
 function matchesTodayQuickFilter(i){
  const left=daysLeft(i);
@@ -566,12 +632,13 @@ function todayQueue(includeSkipped=false){
 }
 function todayStage(i){
  if(daysLeft(i)<=2)return {key:'urgent',label:'Dringend',icon:'⏳'};
- if(Number(i.effort||3)<=1)return {key:'quick',label:'Schnell erledigt',icon:'⚡'};
+ if(Number(i.efficiencyScore||0)>=82)return {key:'efficient',label:'Top-Effizienz',icon:'⚡'};
+ if(Number(i.effort||3)<=1)return {key:'quick',label:'Schnell erledigt',icon:'⏱'};
  return {key:'best',label:'Beste Chancen',icon:'🎯'};
 }
 function todayCard(i){
  const st=stateFor(i.id),left=daysLeft(i),rank=Math.round(todayRank(i)),repeat=isRepeatable(i),count=participationCount(i.id),doneNow=completedForToday(i);
- return `<article class="today-card ${doneNow?'today-complete':''}" data-today-id="${esc(i.id)}"><div class="today-card-head"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${st.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')" aria-label="Favorit">${st.favorite?'♥':'♡'}</button></div><div class="today-card-meta"><span>${todayStage(i).icon} ${todayStage(i).label}</span><span>Priorität ${rank}</span><span>${left===0?'endet heute':`${left} Tag${left===1?'':'e'}`}</span>${repeat?`<span>↻ täglich${count?` · ${count}×`:''}</span>`:''}</div><div class="prize">🎁 ${esc(i.prize)}</div><div class="today-card-actions"><a class="today-participate" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="markTodayOpened('${esc(i.id)}')">Teilnehmen ↗</a><button class="today-done ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Heute erledigt':repeat?'Heute teilgenommen':'✓ Teilgenommen'}</button><button onclick="toggleTodaySkip('${esc(i.id)}')">Heute überspringen</button><button class="ignore-button" onclick="toggleIgnored('${esc(i.id)}')">Nicht interessant</button></div></article>`;
+ return `<article class="today-card ${doneNow?'today-complete':''}" data-today-id="${esc(i.id)}"><div class="today-card-head"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${st.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')" aria-label="Favorit">${st.favorite?'♥':'♡'}</button></div><div class="today-card-meta"><span>${todayStage(i).icon} ${todayStage(i).label}</span><span>Priorität ${rank}</span><span>${left===0?'endet heute':`${left} Tag${left===1?'':'e'}`}</span>${repeat?`<span>↻ täglich${count?` · ${count}×`:''}</span>`:''}</div><div class="prize">🎁 ${esc(i.prize)}</div><div class="today-card-actions"><a class="today-participate" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="markTodayOpened('${esc(i.id)}')">Teilnehmen ↗</a><button class="today-done ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Aktuell erledigt':repeat?'Jetzt teilgenommen':'✓ Teilgenommen'}</button><button onclick="toggleTodaySkip('${esc(i.id)}')">Heute überspringen</button><button class="ignore-button" onclick="toggleIgnored('${esc(i.id)}')">Nicht interessant</button></div></article>`;
 }
 function saveDailyPlan(){localStorage.setItem(DAILY_PLAN_KEY,JSON.stringify(dailyPlan));localStorage.setItem(DAILY_SESSION_KEY,JSON.stringify(dailySession));renderToday()}
 function renderToday(){
@@ -588,7 +655,7 @@ function renderToday(){
  const progress=target?Math.min(100,Math.round(doneToday/target*100)):0;
  const visible=queue.slice(0,Math.max(target,10));
  $('#todaySummary').innerHTML=`<div><span>Dein Tagesziel</span><strong>${Math.min(doneToday,target)} / ${target}</strong></div><div class="today-progress"><i style="width:${progress}%"></i></div><div class="today-status-grid"><div><strong>${queue.length}</strong><span>offen</span></div><div><strong>${doneToday}</strong><span>erledigt</span></div><div><strong>${skippedToday}</strong><span>übersprungen</span></div><div><strong>${openedToday}</strong><span>geöffnet</span></div><div><strong>${repeatableDue}</strong><span>täglich offen</span></div></div><p>${remaining?`Noch ${remaining} Teilnahme${remaining===1?'':'n'} bis zu deinem Tagesziel.`:'Tagesziel erreicht – stark!'}</p>`;
- const groups=[['urgent','⏳ Dringend','Endet spätestens in zwei Tagen'],['quick','⚡ Schnell erledigt','Wenig Aufwand für zwischendurch'],['best','🎯 Beste Chancen','Nach deinem persönlichen Nutzen sortiert']];
+ const groups=[['urgent','⏳ Dringend','Endet spätestens in zwei Tagen'],['efficient','⚡ Top-Effizienz','Beste Kombination aus Chance und Zeitaufwand'],['quick','⏱ Schnell erledigt','Wenig Aufwand für zwischendurch'],['best','🎯 Beste Chancen','Nach deinem persönlichen Nutzen sortiert']];
  const used=new Set();let html='';
  groups.forEach(([key,title,copy])=>{const items=visible.filter(i=>todayStage(i).key===key&&!used.has(i.id));items.forEach(i=>used.add(i.id));if(items.length)html+=`<section class="today-stage"><div class="today-stage-head"><div><h3>${title}</h3><p>${copy}</p></div><span>${items.length}</span></div>${items.map(todayCard).join('')}</section>`});
  if(skippedToday)html+=`<button class="restore-today-button" onclick="resetTodaySkips()">${skippedToday} heute übersprungene wieder anzeigen</button>`;
@@ -667,7 +734,7 @@ function discoverItems(){
  const q=($('#searchInput')?.value||'').trim().toLocaleLowerCase('de-DE'),sort=$('#sortSelect')?.value||'score';
  let l=(currentFilter==='ignored'?scored(true):scored()).filter(i=>matches(i,currentFilter)).filter(passesAdvancedFilters);
  if(q){const terms=q.split(/\s+/).filter(Boolean);l=l.filter(i=>{const hay=normalizedSearchText(i);return terms.every(term=>hay.includes(term))})}
- l.sort((a,b)=>sort==='deadline'?daysLeft(a)-daysLeft(b):sort==='winners'?(b.winners||0)-(a.winners||0):sort==='effort'?(a.effort||3)-(b.effort||3):sort==='provider'?a.provider.localeCompare(b.provider,'de'):b.score-a.score);
+ l.sort((a,b)=>sort==='deadline'?daysLeft(a)-daysLeft(b):sort==='winners'?(b.winners||0)-(a.winners||0):sort==='efficiency'?(b.efficiencyScore||0)-(a.efficiencyScore||0)||b.score-a.score:sort==='effort'?(a.effort||3)-(b.effort||3):sort==='provider'?a.provider.localeCompare(b.provider,'de'):b.score-a.score);
  return l
 }
 function activeFilterLabels(){const f=advancedFilters||{},labels=[];if(f.entryType)labels.push(`Teilnahme: ${f.entryType}`);if(f.effort)labels.push(`Aufwand ≤ ${f.effort}`);if(f.winners)labels.push(`ab ${f.winners} Gewinnern`);if(f.deadline)labels.push(`Frist ≤ ${f.deadline} Tage`);if(f.daily)labels.push('täglich möglich');if(f.noApp)labels.push('ohne App');if(f.noSocial)labels.push('ohne Social Media');if(f.knownWinners)labels.push('Gewinnerzahl bekannt');if(f.onlyOpen)labels.push('noch nicht teilgenommen');return labels}
@@ -722,6 +789,7 @@ function renderPersonalCore(){
  const ending=openPool.filter(i=>daysLeft(i)<=3).length;
  const daily=all.filter(i=>isRepeatable(i)&&!stateFor(i.id).ignored&&!completedForToday(i)).length;
  const topOpen=openPool.filter(i=>i.score>=80).length;
+ const topEfficient=openPool.filter(i=>i.efficiencyScore>=80).length;
  const tomorrow=new Date();tomorrow.setDate(tomorrow.getDate()+1);const tomorrowKey=dayKey(tomorrow);
  const addedToday=all.filter(i=>dayKey(i.addedAt||i.createdAt)===today).length;
  const endingTodayCount=openPool.filter(i=>daysLeft(i)===0).length;
@@ -737,7 +805,7 @@ function renderPersonalCore(){
  const totalParticipations=all.reduce((sum,i)=>sum+participationCount(i.id),0);
  const avg=done.length?Math.round(done.reduce((sum,i)=>sum+i.score,0)/done.length):0;
  $('#statsHero').innerHTML=`<strong>${totalParticipations}</strong><p>Teilnahmen insgesamt · ${doneToday} heute · ${doneWeek} in den letzten 7 Tagen · ${done.length} verschiedene Gewinnspiele</p>`;
- const stats=[['＋',addedToday,'Heute neu'],['!',endingTodayCount,'Endet heute'],['→',endingTomorrow,'Endet morgen'],['7',endingWeek,'Endet diese Woche'],['🏆',wins.length,'Gewinne'],['☀',doneToday,'Heute erledigt'],['7',doneWeek,'Letzte 7 Tage'],['⭐',topOpen,'Offene Top-Chancen'],['⏳',ending,'Enden in 3 Tagen'],['↻',daily,'Täglich möglich'],['♡',fav.length,'Favoriten'],['⊘',ignored.length,'Nicht interessant'],['Ø',avg,'Ø Teilnahme-Score']];
+ const stats=[['＋',addedToday,'Heute neu'],['!',endingTodayCount,'Endet heute'],['→',endingTomorrow,'Endet morgen'],['7',endingWeek,'Endet diese Woche'],['🏆',wins.length,'Gewinne'],['☀',doneToday,'Heute erledigt'],['7',doneWeek,'Letzte 7 Tage'],['⭐',topOpen,'Offene Top-Chancen'],['⚡',topEfficient,'Top-Effizienz'],['⏳',ending,'Enden in 3 Tagen'],['↻',daily,'Täglich möglich'],['♡',fav.length,'Favoriten'],['⊘',ignored.length,'Nicht interessant'],['Ø',avg,'Ø Teilnahme-Score']];
  $('#statsGrid').innerHTML=stats.map(([ic,n,l])=>`<button class="stat-card dashboard-stat" data-dashboard="${l}"><span>${ic}</span><strong>${n}</strong><span>${l}</span></button>`).join('');
  const health=$('#dashboardHealth');
  if(health){
@@ -749,7 +817,7 @@ function renderPersonalCore(){
  const modeNote=$('#dashboardModeNote');
  if(modeNote)modeNote.textContent=dashboardShowAll?'Kontrollansicht: Auch erledigte und ausgeblendete Gewinnspiele werden angezeigt.':'Aufgeräumt: Teilgenommene und nicht interessante Gewinnspiele sind ausgeblendet.';
  const win=pool.find(i=>!completedForToday(i)&&!stateFor(i.id).ignored)||pool[0];
- $('#winOfDay').innerHTML=win?`<p class="section-kicker">🏆 WIN DES TAGES</p><div class="win-of-day-card"><div><span class="provider">${esc(win.provider)}</span><h2>${esc(win.title)}</h2><p>Heute besonders sinnvoll: ${esc(win.reasons.slice(0,3).join(' · ')||'gute Kombination aus Chance und Aufwand')}.</p><div class="badges"><span class="badge score">${win.score}/100</span><span class="badge">${win.winners?`${win.winners} Gewinner`:'Gewinnerzahl offen'}</span><span class="badge">Aufwand ${win.effort||3}/5</span></div></div><a href="${esc(win.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(win.id)}')">Jetzt teilnehmen ↗</a></div>`:empty('Aktuell ist kein offenes Gewinnspiel verfügbar.');
+ $('#winOfDay').innerHTML=win?`<p class="section-kicker">🏆 WIN DES TAGES</p><div class="win-of-day-card"><div><span class="provider">${esc(win.provider)}</span><h2>${esc(win.title)}</h2><p>Heute besonders sinnvoll: ${esc(win.reasons.slice(0,3).join(' · ')||'gute Kombination aus Chance und Aufwand')}.</p><div class="badges"><span class="badge score">${win.score}/100</span><span class="badge">${win.winners?`${win.winners} Gewinner`:'Gewinnerzahl offen'}</span><span class="badge efficiency">⚡ Effizienz ${win.efficiencyScore}/100</span><span class="badge">Aufwand ${win.effort||3}/5</span></div></div><a href="${esc(win.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(win.id)}')">Jetzt teilnehmen ↗</a></div>`:empty('Aktuell ist kein offenes Gewinnspiel verfügbar.');
  const focus=[];
  if(ending)focus.push(`<button onclick="openDiscover('endingSoon')"><b>${ending}</b><span>offene Gewinnspiele enden in höchstens 3 Tagen</span><em>Jetzt prüfen →</em></button>`);
  if(topOpen)focus.push(`<button onclick="openDiscover('top')"><b>${topOpen}</b><span>offene Top-Chancen warten auf dich</span><em>Priorisieren →</em></button>`);
@@ -765,12 +833,14 @@ function renderPersonalCore(){
  const top=pool.filter(i=>i.score>=80);
  const highValue=pool.filter(i=>i.highValuePrize).sort((x,y)=>y.score-x.score);
  const quick=pool.filter(i=>(i.effort||3)===1).sort((x,y)=>y.score-x.score);
+ const efficient=pool.filter(i=>i.efficiencyScore>=70).sort((x,y)=>y.efficiencyScore-x.efficiencyScore||y.score-x.score);
  const dashboardGroups=[
   ['Heute zuerst teilnehmen','DEINE BESTE REIHENFOLGE',todayFirst,'recommended'],
   ['Endet heute','JETZT ODER NIE',endingToday,'endingSoon'],
   ['Endet in 3 Tagen','SCHNELL SEIN',ending3,'endingSoon'],
   ['Top-Gewinnchancen','HOHE TREFFERCHANCE',top,'top'],
   ['Hoher Gewinnwert','BESONDERS ATTRAKTIV',highValue,'all'],
+  ['Top-Effizienz','CHANCE PRO ZEIT',efficient,'all'],
   ['Schnell erledigt','UNTER 1 MINUTE',quick,'all']
  ].filter(([, ,items])=>items.length);
  $('#dashboardPriorityGroups').innerHTML=dashboardGroups.length

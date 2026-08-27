@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
-  <title>Win Win 7.6</title>
+  <title>Win Win 8.2</title>
 </head>
 <body>
   <div class="app-shell">
@@ -40,7 +40,7 @@
         <section class="update-status" id="updateStatus">
           <span class="status-dot"></span>
           <span id="updateText">Gewinnspiele werden geprüft …</span>
-          <small id="dataDiagnostics" class="data-diagnostics">Win Win 7.6 · Katalog wird geladen</small>
+          <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.2 · Katalog wird geladen</small>
         </section>
         <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden inert>
           <div class="deployment-status-copy">
@@ -97,7 +97,7 @@
         <div class="view-title"><p class="section-kicker">DEINE PRIORITÄTEN</p><h2>Heute teilnehmen</h2></div>
         <section class="daily-routine-controls">
           <label><span>Tagesziel</span><select id="dailyTarget"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label>
-          <label><span>Reihenfolge</span><select id="dailyMode"><option value="balanced">Ausgewogen</option><option value="quick">Schnell zuerst</option><option value="urgent">Dringend zuerst</option><option value="chance">Beste Chance zuerst</option></select></label>
+          <label><span>Reihenfolge</span><select id="dailyMode"><option value="balanced">Ausgewogen</option><option value="quick">Schnell zuerst</option><option value="urgent">Dringend zuerst</option><option value="chance">Beste Chance zuerst</option><option value="efficiency">Effizienteste zuerst</option></select></label>
         </section>
         <section id="todaySummary" class="today-summary"></section>
         <div id="todayList" class="today-stage-list"></div>
@@ -125,6 +125,7 @@
           <select id="sortSelect">
             <option value="score">Beste Empfehlung</option>
             <option value="deadline">Endet zuerst</option>
+            <option value="efficiency">Beste Effizienz</option>
             <option value="winners">Meiste Gewinner</option>
             <option value="effort">Geringster Aufwand</option>
             <option value="provider">Anbieter A–Z</option>
@@ -169,7 +170,7 @@
         <section class="data-panel catalog-update-panel" aria-live="polite">
           <div class="section-head">
             <div><p class="section-kicker">KATALOG</p><h3>Aktualisierung</h3></div>
-            <span class="version-pill" id="catalogVersionBadge">6.0</span>
+            <span class="version-pill" id="catalogVersionBadge">8.2</span>
           </div>
           <p id="catalogUpdateSummary" class="muted-copy">Katalogstatus wird geprüft …</p>
           <div class="catalog-update-actions">
@@ -187,14 +188,14 @@
         <section class="data-panel version-center-panel" aria-live="polite">
           <div class="section-head">
             <div><p class="section-kicker">SYSTEM</p><h3>Version & Katalog</h3></div>
-            <span class="version-pill" id="systemVersionBadge">6.0</span>
+            <span class="version-pill" id="systemVersionBadge">8.2</span>
           </div>
           <p id="systemVersionText" class="muted-copy">Version wird geprüft …</p>
           <p id="systemCatalogText" class="muted-copy">Katalog wird geladen …</p>
           <button type="button" id="forceUpdateDataBtn" class="secondary-button">Update prüfen</button>
         </section>
         <section class="data-hero">
-          <div><p class="section-kicker">WIN WIN 7.6</p><h3>Katalogpflege & stabile Versionierung</h3><p>Eine gemeinsame Versionsquelle, sichere Statusdaten und kompakte technische Informationen in der Datenzentrale.</p></div>
+          <div><p class="section-kicker">WIN WIN 8.2</p><h3>Katalogpflege & stabile Versionierung</h3><p>Eine gemeinsame Versionsquelle, sichere Statusdaten und kompakte technische Informationen in der Datenzentrale.</p></div>
         </section>
         <section id="systemCheck50" class="system-check-50"></section>
         <section id="importSummary" class="import-summary"></section>

@@ -477,3 +477,7 @@ main{padding:0 16px}.view{display:none;animation:fade .18s ease}.view.active{dis
 .daily-catalog-panel{margin-bottom:16px}
 .daily-catalog-panel .catalog-maintenance-stats{margin-top:12px}
 .daily-catalog-panel .catalog-update-actions{margin-top:12px}
+
+/* Win Win 8.2 – Effizienz */
+.badge.efficiency{background:rgba(255,193,7,.13);border-color:rgba(255,193,7,.32);font-weight:700}
+.score-components span:nth-child(3){font-weight:700}

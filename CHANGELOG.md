@@ -588,3 +588,13 @@ Katalog mit 100 vollständig angereicherten Einträgen. 18 neue Gewinnspiele und
 - Quellen- und Kategorieerkennung sowie URL-Dublettenprüfung
 - Übernahme einzelner Inbox-Treffer in den Katalog-Manager
 - Inbox in persönlicher Komplettsicherung enthalten
+
+## 8.2 – 27.08.2026
+- separaten Effizienz-Score (0–100) plus 1–5 Sterne ergänzt
+- Effizienz-Sortierung in Entdecken und Tagesroutine ergänzt
+- Top-Effizienz in Tagesansicht und Dashboard aufgenommen
+- Wiederholungslogik auf täglich, wöchentlich und mehrfach erweitert
+- Gewinnerzahl, Zeitaufwand, kurze Laufzeit, Wiederholbarkeit und Quellenqualität in Effizienzbewertung kombiniert
+- persönliche Gewinnhistorie als begrenzten positiven Erfahrungsbonus ergänzt
+- persönliche Quellenbilanz bei dokumentierten Gewinnen ergänzt
+- bestehende LocalStorage-Statusdaten und Sicherungslogik unverändert beibehalten
