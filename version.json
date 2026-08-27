@@ -1,14 +1,14 @@
 {
-  "version": "8.0",
-  "buildDate": "2026-08-18",
-  "builtAt": "2026-08-18T05:39:00+02:00",
-  "catalogEntries": 298,
-  "release": "Katalog- & Quellen-Refresh",
-  "note": "Abgelaufene und nicht aktive Legacy-Katalogeinträge entfernt; Quellenkatalog vollständig auditiert; neue aktuelle Direktteilnahmen ergänzt.",
+  "version": "8.1",
+  "buildDate": "2026-08-27",
+  "builtAt": "2026-08-27T09:44:00+02:00",
+  "catalogEntries": 257,
+  "release": "8.1 AT/CH Expansion & Active Cleanup",
+  "note": "Österreich-/Schweiz-Ausbau mit strengem Deutschland-Eligibility-Gate, neuem Schweiz-Tourismus-Wettbewerb und Stichtags-Cleanup.",
   "catalogGoal": 1000,
-  "sourceEntries": 397,
-  "newSources": 3,
-  "activeEntries": 298,
-  "updated": "2026-08-18T05:39:00+02:00",
-  "removedExpired": 134
+  "sourceEntries": 411,
+  "newSources": 15,
+  "activeEntries": 257,
+  "updated": "2026-08-27",
+  "removedExpired": 42
 }

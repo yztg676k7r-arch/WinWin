@@ -1,3 +1,15 @@
+# 8.1 – 27.08.2026
+
+WIN WIN 8.1 – ÖSTERREICH-/SCHWEIZ-AUSBAU
+
+- Quellenkatalog um 15 gezielte AT/CH-Monitoringquellen erweitert.
+- Schweiz Tourismus als High-Priority-Quelle aktualisiert.
+- Aktuellen Grand-Tour-of-Switzerland-×-Europcar-Wettbewerb ergänzt (30.09.2026, kostenlos, kein Kauf).
+- 42 Einträge mit Frist vor 27.08.2026 aus dem aktiven Katalog entfernt.
+- Per-Contest-Gate: variable AT/CH-Quellen liefern erst nach bestätigter Deutschland-Freigabe aktive Einträge.
+- APP_VERSION und Service-Worker-Cache auf 8.1 angehoben.
+- Keine Änderung an lokalen Statusschlüsseln oder localStorage-Migrationen.
+
 # 8.0 – 18.08.2026
 
 WIN WIN 8.0 – KATALOG- & QUELLEN-REFRESH
