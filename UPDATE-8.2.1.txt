@@ -1,0 +1,15 @@
+WIN WIN 8.2.1 – QUELLENKATALOG-REFRESH
+27.08.2026
+
+Neu:
+- 7 tatsächlich neue, geprüfte Gewinnspiele aus dem vollständigen Quellenkatalog ergänzt.
+- ELLE / Louis Poulsen war bereits in 8.2 vorhanden und wurde bewusst nicht dupliziert.
+- Aktiver Katalog: 264 Gewinnspiele.
+- Neue Treffer: BRIGITTE/dtv, ADAC Stiftung, Voelkel, Europa-Park, Höffner sowie 2× Warhammer.
+- Alle neuen Einträge erfüllen die Win-Win-Regeln: keine Kauf-/Kassenbonpflicht, kein reiner Social-Media- oder Radio-Teilnahmeweg, Deutschland zugelassen.
+- Warhammer besitzt jeweils einen ausdrücklich kostenlosen alternativen Teilnahmeweg ohne Warhammer+-Abo.
+- Höffner benötigt Newsletter-/Werbeeinwilligung, aber keine Social-Media-Teilnahme.
+- Bestehende lokale Statusdaten werden nicht verändert.
+
+WICHTIG:
+Beim GitHub-Update alle Dateien dieses Pakets hochladen/ersetzen. Lokale Teilgenommen-/Favoriten-/Nicht-interessant-/Gewinn-Daten bleiben im Browser gespeichert.

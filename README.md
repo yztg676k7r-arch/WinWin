@@ -1,4 +1,4 @@
-# Win Win 8.2
+# Win Win 8.2.1
 
 Build: **27.08.2026**
 
@@ -16,5 +16,5 @@ Build: **27.08.2026**
 ## iPhone/GitHub
 ZIP entpacken und den kompletten Inhalt in das bestehende GitHub-Repository hochladen. Vorhandene Dateien ersetzen.
 
-## Version 8.2
-Version 8.2 ergänzt eine zweite strategische Kennzahl neben der bestehenden Priorität: den Effizienz-Score. Er bewertet, wie attraktiv ein Gewinnspiel im Verhältnis zum erwarteten Zeitaufwand ist. Zusätzlich erkennt die App tägliche, wöchentliche und sonstige Mehrfachteilnahmen besser und berücksichtigt eigene dokumentierte Gewinnerfahrungen vorsichtig bei der Priorisierung.
+## Version 8.2.1
+Version 8.2.1 ergänzt eine zweite strategische Kennzahl neben der bestehenden Priorität: den Effizienz-Score. Er bewertet, wie attraktiv ein Gewinnspiel im Verhältnis zum erwarteten Zeitaufwand ist. Zusätzlich erkennt die App tägliche, wöchentliche und sonstige Mehrfachteilnahmen besser und berücksichtigt eigene dokumentierte Gewinnerfahrungen vorsichtig bei der Priorisierung.

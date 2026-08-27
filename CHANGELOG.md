@@ -1,3 +1,13 @@
+# 8.2.1 – 27.08.2026
+
+## Quellenkatalog-Refresh
+- Gesamten Quellenkatalog auf neue aktive Gewinnspiele geprüft.
+- 7 neue passende Gewinnspiele ergänzt; aktiver Katalog jetzt 264 Einträge.
+- ELLE / Louis Poulsen war bereits in 8.2 enthalten und wurde nicht dupliziert.
+- Neue Quellen-Treffer: BRIGITTE/dtv, ADAC Stiftung, Voelkel, Europa-Park, Höffner, Warhammer (2).
+- Keine lokalen Nutzerstatus verändert.
+- Cache-/Versionskennung auf 8.2.1 aktualisiert.
+
 # 8.1 – 27.08.2026
 
 WIN WIN 8.1 – ÖSTERREICH-/SCHWEIZ-AUSBAU

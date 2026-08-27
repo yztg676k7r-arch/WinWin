@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.2';
+const APP_VERSION='8.2.1';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
