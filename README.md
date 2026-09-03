@@ -1,4 +1,4 @@
-# Win Win 8.3
+# Win Win 8.3.1
 
 Build: **03.09.2026**
 
@@ -18,5 +18,5 @@ Build: **03.09.2026**
 ## iPhone/GitHub
 ZIP entpacken und den kompletten Inhalt in das bestehende GitHub-Repository hochladen. Vorhandene Dateien ersetzen.
 
-## Version 8.3
-Version 8.3 trennt Gewinnspiel- und Quellenstatus konsequent. Eine ausgeblendete Runde beeinflusst weder die Quelle noch andere neue Gewinnspiele desselben Anbieters. Entscheidungen zu neuen Runden werden lokal gespeichert und sind Teil der bestehenden persönlichen Sicherungen.
+## Version 8.3.1
+Version 8.3.1 ergänzt die geprüfte Direktlink-Korrektur für Milla Gorilla. Die Funktionen aus 8.3 zur getrennten Behandlung von Gewinnspielrunden und Quellen bleiben unverändert.

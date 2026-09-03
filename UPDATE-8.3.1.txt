@@ -1,0 +1,7 @@
+WIN WIN 8.3.1 – DIREKTLINK-PRÜFUNG
+03.09.2026
+
+- Alle 28 aktuell sichtbaren und noch laufenden Gewinnspiel-Links geprüft.
+- Milla Gorilla verlinkt jetzt auf die offizielle Aktionsseite mit Teilnahmeformular.
+- Bestehende Gewinnspiel-IDs und lokale Statusdaten bleiben unverändert.
+- Cache-Version aktualisiert, damit die Korrektur auf dem iPhone geladen wird.

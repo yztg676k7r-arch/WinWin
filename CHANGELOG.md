@@ -1,3 +1,11 @@
+# 8.3.1 – 03.09.2026
+
+## Direktlink-Prüfung
+- Alle 28 am 03.09.2026 noch laufenden und in der App sichtbaren Gewinnspiel-Links geprüft.
+- Milla Gorilla von der Teilnahmebedingungsseite auf die offizielle Aktionsseite mit Gewinnspielformular korrigiert.
+- Gewinnspiel-ID und lokale Nutzerstatus bleiben unverändert.
+- Service-Worker-Cache auf 8.3.1 angehoben, damit die Korrektur auf dem iPhone zuverlässig geladen wird.
+
 # 8.3 – 03.09.2026
 
 ## Neue Runden bewusst entscheiden
