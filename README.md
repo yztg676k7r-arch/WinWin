@@ -1,20 +1,22 @@
-# Win Win 8.2.1
+# Win Win 8.3
 
-Build: **27.08.2026**
+Build: **03.09.2026**
 
 ## Schwerpunkt
-Österreich- und Schweiz-Ausbau mit strengem Deutschland-Teilnahmefilter.
+„Nicht interessant“ bleibt auf die konkrete Gewinnspielrunde begrenzt, während die Quelle weiterhin auf neue Aktionen geprüft wird.
 
-- Aktiver Katalog: **257** Gewinnspiele.
+- Aktiver Katalog: **264** Gewinnspiele.
 - Quellenkatalog: **411** Quellen.
-- Neu in 8.1: **1** direkt verifiziertes AT/CH-Gewinnspiel und **15** neue AT/CH-Monitoringquellen.
-- Entfernt: **42** Gewinnspiele mit Teilnahmeschluss vor dem 27.08.2026.
+- Bestehende ausgeblendete Gewinnspiele bleiben in allen offenen Ansichten verborgen.
+- Neue Runden derselben Reihe erscheinen zuerst unter **„Neue Runde prüfen“**.
+- Pro neuer Runde kann separat „Diese Runde anzeigen“ oder „Nicht anzeigen“ gewählt werden.
+- Die Quellenüberwachung wird durch „Nicht interessant“ niemals pausiert.
+- Wiederkehrende Aktionsseiten übertragen alte Status nur noch bei identischer Runde und Frist.
 - Social-only, Produktkauf/Kassenbon und Club-Pflicht bleiben ausgeschlossen.
-- Quellen mit wechselnder Länderfreigabe dürfen überwacht werden, werden aber erst nach belegter Deutschland-Freigabe in den aktiven Katalog übernommen.
-- Lokale Nutzerstatus bleiben durch das Update unverändert; es gibt keine Migration oder Löschung von localStorage-Daten.
+- Alle bisherigen lokalen Nutzerstatus bleiben erhalten; das Nutzerschema wird verlustfrei auf Version 5 erweitert.
 
 ## iPhone/GitHub
 ZIP entpacken und den kompletten Inhalt in das bestehende GitHub-Repository hochladen. Vorhandene Dateien ersetzen.
 
-## Version 8.2.1
-Version 8.2.1 ergänzt eine zweite strategische Kennzahl neben der bestehenden Priorität: den Effizienz-Score. Er bewertet, wie attraktiv ein Gewinnspiel im Verhältnis zum erwarteten Zeitaufwand ist. Zusätzlich erkennt die App tägliche, wöchentliche und sonstige Mehrfachteilnahmen besser und berücksichtigt eigene dokumentierte Gewinnerfahrungen vorsichtig bei der Priorisierung.
+## Version 8.3
+Version 8.3 trennt Gewinnspiel- und Quellenstatus konsequent. Eine ausgeblendete Runde beeinflusst weder die Quelle noch andere neue Gewinnspiele desselben Anbieters. Entscheidungen zu neuen Runden werden lokal gespeichert und sind Teil der bestehenden persönlichen Sicherungen.

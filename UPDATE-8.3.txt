@@ -1,0 +1,22 @@
+WIN WIN 8.3 – NEUE RUNDEN BEWUSST ENTSCHEIDEN
+03.09.2026
+
+NEU:
+- „Nicht interessant“ blendet nur die konkrete Gewinnspielrunde aus.
+- Die zugehörige Quelle bleibt aktiv und wird weiterhin auf neue Gewinnspiele geprüft.
+- Neue Runden derselben Reihe erscheinen zunächst ausschließlich im Bereich „Neue Runde prüfen“.
+- Für jede neue Runde kann separat „Diese Runde anzeigen“ oder „Nicht anzeigen“ gewählt werden.
+- Bis zur Entscheidung erscheint die neue Runde nicht auf Start, Heute, Entdecken oder im Dashboard.
+- Andere neue Gewinnspiele derselben Quelle werden unverändert angezeigt.
+
+DATENSICHERHEIT:
+- Alle bestehenden lokalen Markierungen bleiben erhalten.
+- Nutzerstatus-Schema wird verlustfrei von Version 4 auf Version 5 erweitert.
+- Entscheidungen zu neuen Runden werden im bestehenden lokalen Nutzerstatus gespeichert und gesichert.
+- Bestehende IDs werden nicht verändert.
+- Alte Status werden bei wiederverwendeten URLs nur noch übernommen, wenn auch die Runde/Frist identisch ist.
+
+TECHNIK:
+- App-Version und Service-Worker-Cache auf 8.3 aktualisiert.
+- Aktiver Katalog unverändert: 264 Gewinnspiele.
+- Quellenkatalog unverändert: 411 Quellen.

@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
-  <title>Win Win 8.2.1</title>
+  <title>Win Win 8.3</title>
 </head>
 <body>
   <div class="app-shell">
@@ -40,7 +40,7 @@
         <section class="update-status" id="updateStatus">
           <span class="status-dot"></span>
           <span id="updateText">Gewinnspiele werden geprüft …</span>
-          <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.2.1 · Katalog wird geladen</small>
+          <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.3 · Katalog wird geladen</small>
         </section>
         <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden inert>
           <div class="deployment-status-copy">
@@ -50,6 +50,15 @@
           <button type="button" id="forceUpdateBtn" class="secondary-button">Update erzwingen</button>
         </section>
         <section class="metric-grid" id="metrics"></section>
+
+        <section id="roundReviewPanel" class="round-review-panel" aria-live="polite" hidden>
+          <div class="section-head">
+            <div><p class="section-kicker">DEINE ENTSCHEIDUNG</p><h2>Neue Runde prüfen</h2></div>
+            <span id="roundReviewBadge" class="round-review-badge">0</span>
+          </div>
+          <p class="round-review-intro">Diese Gewinnspielreihen hattest du früher als nicht interessant markiert. Entscheide für jede neue Runde neu.</p>
+          <div id="roundReviewList" class="round-review-list"></div>
+        </section>
 
         <section class="smart-discovery" id="smartDiscovery" aria-label="Smart Discovery">
           <div class="section-head">
@@ -170,7 +179,7 @@
         <section class="data-panel catalog-update-panel" aria-live="polite">
           <div class="section-head">
             <div><p class="section-kicker">KATALOG</p><h3>Aktualisierung</h3></div>
-            <span class="version-pill" id="catalogVersionBadge">8.2</span>
+            <span class="version-pill" id="catalogVersionBadge">8.3</span>
           </div>
           <p id="catalogUpdateSummary" class="muted-copy">Katalogstatus wird geprüft …</p>
           <div class="catalog-update-actions">
@@ -188,14 +197,14 @@
         <section class="data-panel version-center-panel" aria-live="polite">
           <div class="section-head">
             <div><p class="section-kicker">SYSTEM</p><h3>Version & Katalog</h3></div>
-            <span class="version-pill" id="systemVersionBadge">8.2</span>
+            <span class="version-pill" id="systemVersionBadge">8.3</span>
           </div>
           <p id="systemVersionText" class="muted-copy">Version wird geprüft …</p>
           <p id="systemCatalogText" class="muted-copy">Katalog wird geladen …</p>
           <button type="button" id="forceUpdateDataBtn" class="secondary-button">Update prüfen</button>
         </section>
         <section class="data-hero">
-          <div><p class="section-kicker">WIN WIN 8.2</p><h3>Katalogpflege & stabile Versionierung</h3><p>Eine gemeinsame Versionsquelle, sichere Statusdaten und kompakte technische Informationen in der Datenzentrale.</p></div>
+          <div><p class="section-kicker">WIN WIN 8.3</p><h3>Neue Runden bewusst entscheiden</h3><p>Ausgeblendete Gewinnspiele bleiben verborgen. Neue Runden derselben Reihe warten auf deine Entscheidung, während die Quelle weiter geprüft wird.</p></div>
         </section>
         <section id="systemCheck50" class="system-check-50"></section>
         <section id="importSummary" class="import-summary"></section>

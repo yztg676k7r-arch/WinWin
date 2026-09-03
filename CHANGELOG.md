@@ -1,3 +1,16 @@
+# 8.3 – 03.09.2026
+
+## Neue Runden bewusst entscheiden
+- „Nicht interessant“ bleibt auf die konkrete Gewinnspielrunde begrenzt und pausiert niemals die Quelle.
+- Neue Runde einer früher ausgeblendeten Reihe wird zunächst aus Start, Heute, Entdecken und Dashboard zurückgehalten.
+- Neuer Bereich „Neue Runde prüfen“ mit den Entscheidungen „Diese Runde anzeigen“ und „Nicht anzeigen“.
+- Stabilere Wiedererkennung anhand von Quelle/Anbieter, URL, Titel, Gewinn und Teilnahmeschluss.
+- Statusmigration über gleiche URLs ist nur noch innerhalb derselben Runde erlaubt; neue Runden erben keine alten Teilnahmestatus.
+- Rundenentscheidungen werden lokal im geschützten Nutzerstatus gespeichert und in Sicherungen übernommen.
+- Nutzerschema verlustfrei von Version 4 auf Version 5 erweitert.
+- Bestehende Gewinnspiel-IDs, Teilnahmen, Favoriten, Gewinne, Notizen und Sicherungen bleiben unverändert.
+- App- und Service-Worker-Version auf 8.3 angehoben.
+
 # 8.2.1 – 27.08.2026
 
 ## Quellenkatalog-Refresh

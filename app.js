@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.2.1';
+const APP_VERSION='8.3';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -34,7 +34,7 @@ const STATUS_ARCHIVE_KEY='winwin-status-archive-v1';
 const STATUS_RECOVERY_META_KEY='winwin-status-recovery-meta-v1';
 const CATALOG_SEEN_KEY='winwin-catalog-seen-v1';
 const DAILY_CATALOG_CHECK_KEY='winwin-daily-catalog-check-v1';
-const USER_SCHEMA_VERSION=4;
+const USER_SCHEMA_VERSION=5;
 const CUSTOM_DATA_KEY='winwin-custom-contests-v1';
 const IMPORT_BACKUP_KEY='winwin-catalog-backup-v1';
 const IMPORT_HISTORY_KEY='winwin-import-history-v1';
@@ -78,6 +78,8 @@ function normalizeUser(raw){
  if(!u.items||typeof u.items!=='object'||Array.isArray(u.items))u.items={};
  if(!u.clicks||typeof u.clicks!=='object'||Array.isArray(u.clicks))u.clicks={};
  if(!u.urlIndex||typeof u.urlIndex!=='object'||Array.isArray(u.urlIndex))u.urlIndex={};
+ if(!Array.isArray(u.roundReviews))u.roundReviews=[];
+ u.roundReviews=u.roundReviews.filter(x=>x&&typeof x==='object'&&x.identity&&['show','hide'].includes(x.decision)).slice(-500);
  u.schemaVersion=USER_SCHEMA_VERSION;
  u.lastVisit=u.lastVisit||null;
  return u;
@@ -131,6 +133,14 @@ function mergeUserSnapshots(primary,backup){
  Object.entries(source.urlIndex||{}).forEach(([url,id])=>{
   if(!merged.urlIndex[url])merged.urlIndex[url]=id;
  });
+ const reviews=[...(source.roundReviews||[]),...(merged.roundReviews||[])];
+ const reviewMap=new Map();
+ reviews.forEach(entry=>{
+  const identity=entry?.identity||{};
+  const key=[identity.sourceId||'',identity.provider||'',identity.url||'',identity.deadline||'',identity.title||''].join('|');
+  if(key.replace(/\|/g,''))reviewMap.set(key,entry);
+ });
+ merged.roundReviews=[...reviewMap.values()].slice(-500);
  if(!merged.lastVisit&&source.lastVisit)merged.lastVisit=source.lastVisit;
  merged.schemaVersion=USER_SCHEMA_VERSION;
  return merged;
@@ -201,6 +211,10 @@ let pendingImport=null;
 let importHistory=safeJSON(localStorage.getItem(IMPORT_HISTORY_KEY),[]);
 if(!Array.isArray(importHistory))importHistory=[];
 let preferences=safeJSON(localStorage.getItem(PREFERENCE_KEY),null);
+let ignoredRoundHistoryCache=null;
+const roundDecisionCache=new Map();
+const previousIgnoredRoundCache=new Map();
+function invalidateRoundReviewCache(){ignoredRoundHistoryCache=null;roundDecisionCache.clear();previousIgnoredRoundCache.clear()}
 function defaultPreferences(){return {enabled:true,initialized:false,categories:{},entryTypes:{},updatedAt:null}}
 if(!preferences||typeof preferences!=='object')preferences=defaultPreferences();
 if(!preferences.categories||typeof preferences.categories!=='object')preferences.categories={};
@@ -254,6 +268,7 @@ function resetPreferences(){preferences=defaultPreferences();preferences.initial
 window.resetPreferences=resetPreferences;
 
 function saveUser(){
+ invalidateRoundReviewCache();
  user.schemaVersion=USER_SCHEMA_VERSION;
  preserveStatusArchive(user);
  const serialized=JSON.stringify(user);
@@ -269,6 +284,8 @@ function contestIdentity(i){
   id:String(i.id||''),
   title:String(i.title||'').trim().toLowerCase(),
   provider:String(i.provider||'').trim().toLowerCase(),
+  sourceId:String(i.sourceId||'').trim().toLowerCase(),
+  prize:String(i.prize||'').trim().toLowerCase(),
   deadline:String(i.deadline||''),
   url:normalizeUrl(i.url||'')
  };
@@ -276,6 +293,27 @@ function contestIdentity(i){
 function identityFingerprint(identity){
  if(!identity)return '';
  return [identity.title,identity.provider,identity.deadline].join('|');
+}
+function identityTokens(value){return new Set(normalizeText(value).split(' ').filter(x=>x.length>2))}
+function identitySimilarity(a,b){
+ const A=identityTokens(a),B=identityTokens(b);if(!A.size||!B.size)return 0;
+ let hit=0;A.forEach(x=>{if(B.has(x))hit++});
+ return hit/Math.max(A.size,B.size);
+}
+function sameContestFamily(contest,storedIdentity){
+ const a=contestIdentity(contest),b=storedIdentity;if(!a||!b)return false;
+ const sameSource=a.sourceId&&b.sourceId&&a.sourceId===String(b.sourceId).toLowerCase();
+ const sameProvider=a.provider&&b.provider&&a.provider===String(b.provider).toLowerCase();
+ if(!sameSource&&!sameProvider)return false;
+ if(a.url&&b.url&&a.url===normalizeUrl(b.url))return true;
+ const titleScore=identitySimilarity(a.title,b.title||'');
+ const prizeScore=a.prize&&b.prize?identitySimilarity(a.prize,b.prize):0;
+ return titleScore>=.72||(titleScore>=.58&&prizeScore>=.5);
+}
+function sameContestRound(contest,storedIdentity){
+ if(!sameContestFamily(contest,storedIdentity))return false;
+ const current=String(contest?.deadline||''),previous=String(storedIdentity?.deadline||'');
+ return Boolean(current&&previous&&current===previous);
 }
 function migrateContestStates(){
  let changed=false;
@@ -295,10 +333,17 @@ function migrateContestStates(){
     const fp=identityFingerprint(identity);
     const matches=orphanEntries.filter(([,candidate])=>identityFingerprint(candidate&&candidate._identity)===fp);
     if(matches.length===1){state=JSON.parse(JSON.stringify(matches[0][1]));user.items[i.id]=state;changed=true}
-    // 2) URL-Migration nur dann, wenn die URL im gesamten Katalog eindeutig ist.
+    // 2) Fehlertolerante Migration nur innerhalb exakt derselben Runde.
+    if(!state){
+     const fuzzy=orphanEntries.filter(([,candidate])=>candidate?._identity&&sameContestRound(i,candidate._identity));
+     if(fuzzy.length===1){state=JSON.parse(JSON.stringify(fuzzy[0][1]));user.items[i.id]=state;changed=true}
+    }
+    // 3) URL-Migration nur bei eindeutiger URL und identischer Runde. Eine neue
+    // Runde auf derselben Aktionsseite darf keinen alten Status erben.
     if(!state&&key&&(byUrl.get(key)||[]).length===1){
      const oldId=user.urlIndex[key];
-     if(oldId&&user.items[oldId]){state=JSON.parse(JSON.stringify(user.items[oldId]));user.items[i.id]=state;changed=true}
+     const oldState=oldId&&user.items[oldId];
+     if(oldState&&oldState._identity&&sameContestRound(i,oldState._identity)){state=JSON.parse(JSON.stringify(oldState));user.items[i.id]=state;changed=true}
     }
    }
    if(state){
@@ -455,12 +500,68 @@ function scoreContest(i){
    reasons:[...new Set(reasons)].slice(0,5),scoreConfidence:confidence
  };
 }
-function scored(includeIgnored=false){return allActive().map(i=>({...i,...scoreContest(i)})).filter(i=>includeIgnored||!stateFor(i.id).ignored)}
+function ignoredRoundHistory(){
+ if(ignoredRoundHistoryCache)return ignoredRoundHistoryCache;
+ ignoredRoundHistoryCache=Object.entries(user.items||{}).flatMap(([id,state])=>state?.ignored&&state._identity?[{id,state,identity:state._identity}]:[]);
+ return ignoredRoundHistoryCache;
+}
+function roundReviewCacheKey(i){const x=contestIdentity(i)||{};return [x.id,x.sourceId,x.provider,x.url,x.deadline,x.title].join('|')}
+function roundDecisionFor(i){
+ const key=roundReviewCacheKey(i);if(roundDecisionCache.has(key))return roundDecisionCache.get(key);
+ const decision=[...(user.roundReviews||[])].reverse().find(entry=>sameContestRound(i,entry.identity))||null;
+ roundDecisionCache.set(key,decision);return decision;
+}
+function previousIgnoredRoundFor(i){
+ if(!i||user.items?.[i.id]?.ignored)return null;
+ const key=roundReviewCacheKey(i);if(previousIgnoredRoundCache.has(key))return previousIgnoredRoundCache.get(key);
+ const previous=ignoredRoundHistory().find(entry=>{
+  if(entry.id===i.id||!sameContestFamily(i,entry.identity))return false;
+  const current=String(i.deadline||''),previous=String(entry.identity?.deadline||'');
+  return Boolean(current&&previous&&current!==previous);
+ })||null;
+ previousIgnoredRoundCache.set(key,previous);return previous;
+}
+function isRoundReviewPending(i){return Boolean(previousIgnoredRoundFor(i)&&!roundDecisionFor(i))}
+function isContestIgnored(i){
+ if(!i)return false;
+ if(Boolean(user.items?.[i.id]?.ignored))return true;
+ const decision=roundDecisionFor(i);if(decision?.decision==='hide')return true;
+ return ignoredRoundHistory().some(entry=>entry.id!==i.id&&sameContestRound(i,entry.identity));
+}
+function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)}
+function recordRoundDecision(id,decision){
+ const i=contests.find(x=>x.id===id);if(!i||!['show','hide'].includes(decision))return;
+ const identity=contestIdentity(i);
+ user.roundReviews=(user.roundReviews||[]).filter(entry=>!sameContestRound(i,entry.identity));
+ user.roundReviews.push({identity,decision,decidedAt:new Date().toISOString()});
+ user.roundReviews=user.roundReviews.slice(-500);
+ const state=stateFor(id),wasIgnored=state.ignored;
+ state.ignored=decision==='hide';
+ if(state.ignored)state.favorite=false;
+ if(state.ignored&&!wasIgnored)adjustPreferenceForContest(id,-4);
+ if(!state.ignored&&wasIgnored)adjustPreferenceForContest(id,4);
+ if(decision==='hide')markContestSeen(id);
+ saveUser();refreshAllViews('round-review');
+ toast(decision==='show'?'Diese neue Runde wird angezeigt':'Diese neue Runde bleibt ausgeblendet');
+}
+function pendingRoundReviews(){return allActive().filter(isRoundReviewPending)}
+function renderRoundReviews(){
+ const panel=$('#roundReviewPanel'),list=$('#roundReviewList'),badge=$('#roundReviewBadge');if(!panel||!list)return;
+ const pending=pendingRoundReviews();panel.hidden=!pending.length;
+ if(badge)badge.textContent=String(pending.length);
+ list.innerHTML=pending.map(i=>{
+  const previous=previousIgnoredRoundFor(i)?.identity||{};
+  return `<article class="round-review-card"><div class="round-review-copy"><span>${esc(i.provider||'Unbekannte Quelle')}</span><h3>${esc(i.title)}</h3><p>🎁 ${esc(i.prize||'Gewinn nicht angegeben')}</p><small>Neue Runde bis ${esc(i.deadline)} · vorherige ausgeblendete Runde: ${esc(previous.deadline||'unbekannt')}</small></div><div class="round-review-actions"><a href="${esc(i.url)}" target="_blank" rel="noopener">Details ↗</a><button type="button" class="round-show" onclick="recordRoundDecision('${esc(i.id)}','show')">Diese Runde anzeigen</button><button type="button" class="round-hide" onclick="recordRoundDecision('${esc(i.id)}','hide')">Nicht anzeigen</button></div></article>`;
+ }).join('');
+}
+window.recordRoundDecision=recordRoundDecision;
+
+function scored(includeIgnored=false){return allActive().filter(i=>!isRoundReviewPending(i)).map(i=>({...i,...scoreContest(i)})).filter(i=>includeIgnored||!isContestIgnored(i))}
 function recommended(i){return i.score>=72&&!completedForToday(i)}
 function secret(i){return i.score>=62&&i.score<78&&(i.winners||0)<50&&(i.effort||3)<=2}
 function matches(i,f){
- if(f==='ignored')return stateFor(i.id).ignored;
- if(stateFor(i.id).ignored)return false;
+ if(f==='ignored')return isContestIgnored(i);
+ if(isContestIgnored(i))return false;
  if(f==='all')return true;if(f==='recommended')return recommended(i);if(f==='newVisit')return isNewSinceVisit(i);
  if(f==='top')return i.score>=80;if(f==='secret')return secret(i);if(f==='ending')return daysLeft(i)<=7;
  if(f==='daily')return i.daily||i.multipleEntry;
@@ -468,8 +569,7 @@ function matches(i,f){
 }
 function isOpenContest(i){
  if(!i||!active(i))return false;
- const s=stateFor(i.id);
- return !s.ignored&&!completedForToday(i);
+ return !isContestSuppressed(i)&&!completedForToday(i);
 }
 function refreshAllViews(reason='status'){
  renderAll();
@@ -508,7 +608,16 @@ function toggleDone(id){
 }
 function toggleIgnored(id){
  let ignored=false;
- commitStatusChange(id,(s)=>{s.ignored=!s.ignored;ignored=s.ignored;if(s.ignored)s.favorite=false;adjustPreferenceForContest(id,s.ignored?-4:4)},()=>ignored?'Als nicht interessant ausgeblendet':'Gewinnspiel wieder eingeblendet');
+ commitStatusChange(id,(s,i)=>{
+  s.ignored=!s.ignored;ignored=s.ignored;
+  if(s.ignored)s.favorite=false;
+  const existing=roundDecisionFor(i);
+  if(existing&&!s.ignored){
+   user.roundReviews=(user.roundReviews||[]).filter(entry=>!sameContestRound(i,entry.identity));
+   user.roundReviews.push({identity:contestIdentity(i),decision:'show',decidedAt:new Date().toISOString()});
+  }
+  adjustPreferenceForContest(id,s.ignored?-4:4);
+ },()=>ignored?'Als nicht interessant ausgeblendet':'Gewinnspiel wieder eingeblendet');
 }
 function registerClick(id){markContestSeen(id);user.clicks[id]=(user.clicks[id]||0)+1;adjustPreferenceForContest(id,0.35);saveUser();renderCatalogUpdateSummary()}
 let winDialogContestId=null;
@@ -627,7 +736,7 @@ function matchesTodayQuickFilter(i){
 function todayQueue(includeSkipped=false){
  const skipped=new Set(currentDailySession().skipped);
  return scored()
-  .filter(i=>{const st=stateFor(i.id);return !completedForToday(i)&&!st.ignored&&matchesTodayQuickFilter(i)&&(includeSkipped||!skipped.has(i.id))})
+  .filter(i=>!completedForToday(i)&&!isContestSuppressed(i)&&matchesTodayQuickFilter(i)&&(includeSkipped||!skipped.has(i.id)))
   .sort((a,b)=>todayRank(b)-todayRank(a));
 }
 function todayStage(i){
@@ -643,12 +752,12 @@ function todayCard(i){
 function saveDailyPlan(){localStorage.setItem(DAILY_PLAN_KEY,JSON.stringify(dailyPlan));localStorage.setItem(DAILY_SESSION_KEY,JSON.stringify(dailySession));renderToday()}
 function renderToday(){
  const session=currentDailySession(),queue=todayQueue(),today=dayKey();
- const openBase=scored().filter(i=>!completedForToday(i)&&!stateFor(i.id).ignored&&!currentDailySession().skipped.includes(i.id));
+ const openBase=scored().filter(i=>!completedForToday(i)&&!isContestSuppressed(i)&&!currentDailySession().skipped.includes(i.id));
  const quickCounts={all:openBase.length,new:openBase.filter(isNewSinceVisit).length,today:openBase.filter(i=>daysLeft(i)===0).length,week:openBase.filter(i=>daysLeft(i)>=0&&daysLeft(i)<=7).length,repeat:openBase.filter(isRepeatable).length};
  const quickBox=$('#todayQuickFilters');if(quickBox){quickBox.querySelectorAll('[data-today-filter]').forEach(b=>{const key=b.dataset.todayFilter;b.classList.toggle('active',key===todayQuickFilter);const label=b.textContent.replace(/\s*\(\d+\)$/,'');b.textContent=`${label} (${quickCounts[key]||0})`;});}
  const all=scored(true);
  const doneToday=all.filter(i=>participatedOn(i.id,today)).length;
- const skippedToday=session.skipped.filter(id=>{const i=contests.find(x=>x.id===id);return i&&active(i)&&!stateFor(id).done&&!stateFor(id).ignored}).length;
+ const skippedToday=session.skipped.filter(id=>{const i=contests.find(x=>x.id===id);return i&&active(i)&&!stateFor(id).done&&!isContestSuppressed(i)}).length;
  const openedToday=session.opened.length;
  const repeatableDue=queue.filter(isRepeatable).length;
  const target=Number(dailyPlan.target||10),remaining=Math.max(0,target-doneToday);
@@ -697,7 +806,7 @@ function renderMetrics(){
 function homeEligibleContest(i){
  if(!i||!active(i))return false;
  const s=stateFor(i.id);
- return !s.ignored&&!s.done;
+ return !isContestSuppressed(i)&&!s.done;
 }
 function renderHome(){
  const a=scored().filter(homeEligibleContest).sort((x,y)=>y.score-x.score);
@@ -771,23 +880,23 @@ function inLastDays(value,days){
 function dashboardPool(){
  const all=scored(true);
  if(dashboardShowAll)return all;
- return all.filter(i=>{const s=stateFor(i.id);return !completedForToday(i)&&!s.ignored});
+ return all.filter(i=>!completedForToday(i)&&!isContestSuppressed(i));
 }
 function dashboardMini(i){
- const s=stateFor(i.id),doneNow=completedForToday(i),status=s.ignored?'Nicht interessant':doneNow?(isRepeatable(i)?'Heute teilgenommen':'Teilgenommen'):'';
+ const s=stateFor(i.id),doneNow=completedForToday(i),status=isContestIgnored(i)?'Nicht interessant':doneNow?(isRepeatable(i)?'Heute teilgenommen':'Teilgenommen'):'';
  return `<article class="dashboard-mini ${status?'has-status':''}" data-contest-id="${esc(i.id)}">${status?`<span class="dashboard-status">${esc(status)}</span>`:''}<div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3>${badges(i)}<div class="prize">🎁 ${esc(i.prize)}</div><div class="dashboard-mini-meta"><span>${i.winners?`${i.winners} Gewinner`:'Gewinnerzahl offen'}</span><span>${daysLeft(i)===0?'endet heute':`${daysLeft(i)} Tage`}</span><span>Aufwand ${i.effort||3}/5</span></div><div class="mini-actions"><a class="primary" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen</a><button type="button" class="secondary ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Erledigt':isRepeatable(i)?'Heute teilgenommen':'Teilgenommen'}</button><button type="button" class="secondary" onclick="toggleFavorite('${esc(i.id)}')">${s.favorite?'♥':'♡'}</button><button type="button" class="secondary ignore-mini ${s.ignored?'active':''}" onclick="toggleIgnored('${esc(i.id)}')">${s.ignored?'Wieder anzeigen':'Nicht interessant'}</button></div></article>`;
 }
 function dashboardGroup(title,kicker,items,filter,emptyText){
  return `<section class="dashboard-priority-section"><div class="section-head"><div><p class="section-kicker">${esc(kicker)}</p><h2>${esc(title)}</h2></div>${filter?`<button class="text-button" onclick="openDiscover('${esc(filter)}')">Alle</button>`:''}</div><div class="card-row">${items.length?items.slice(0,6).map(dashboardMini).join(''):empty(emptyText)}</div></section>`;
 }
 function renderPersonalCore(){
- const a=scored(),all=scored(true),fav=a.filter(i=>stateFor(i.id).favorite),done=all.filter(i=>stateFor(i.id).done),ignored=all.filter(i=>stateFor(i.id).ignored),wins=all.filter(i=>stateFor(i.id).won);
+ const a=scored(),all=scored(true),fav=a.filter(i=>stateFor(i.id).favorite),done=all.filter(i=>stateFor(i.id).done),ignored=all.filter(isContestIgnored),wins=all.filter(i=>stateFor(i.id).won);
  const today=dayKey();
  const doneToday=all.filter(i=>participatedOn(i.id,today)).length;
  const doneWeek=all.reduce((sum,i)=>sum+participationsInLastDays(i.id,7),0);
- const openPool=all.filter(i=>{const s=stateFor(i.id);return !completedForToday(i)&&!s.ignored});
+ const openPool=all.filter(i=>!completedForToday(i)&&!isContestSuppressed(i));
  const ending=openPool.filter(i=>daysLeft(i)<=3).length;
- const daily=all.filter(i=>isRepeatable(i)&&!stateFor(i.id).ignored&&!completedForToday(i)).length;
+ const daily=all.filter(i=>isRepeatable(i)&&!isContestSuppressed(i)&&!completedForToday(i)).length;
  const topOpen=openPool.filter(i=>i.score>=80).length;
  const topEfficient=openPool.filter(i=>i.efficiencyScore>=80).length;
  const tomorrow=new Date();tomorrow.setDate(tomorrow.getDate()+1);const tomorrowKey=dayKey(tomorrow);
@@ -816,7 +925,7 @@ function renderPersonalCore(){
  const pool=dashboardPool().sort((x,y)=>y.score-x.score);
  const modeNote=$('#dashboardModeNote');
  if(modeNote)modeNote.textContent=dashboardShowAll?'Kontrollansicht: Auch erledigte und ausgeblendete Gewinnspiele werden angezeigt.':'Aufgeräumt: Teilgenommene und nicht interessante Gewinnspiele sind ausgeblendet.';
- const win=pool.find(i=>!completedForToday(i)&&!stateFor(i.id).ignored)||pool[0];
+ const win=pool.find(i=>!completedForToday(i)&&!isContestSuppressed(i))||pool[0];
  $('#winOfDay').innerHTML=win?`<p class="section-kicker">🏆 WIN DES TAGES</p><div class="win-of-day-card"><div><span class="provider">${esc(win.provider)}</span><h2>${esc(win.title)}</h2><p>Heute besonders sinnvoll: ${esc(win.reasons.slice(0,3).join(' · ')||'gute Kombination aus Chance und Aufwand')}.</p><div class="badges"><span class="badge score">${win.score}/100</span><span class="badge">${win.winners?`${win.winners} Gewinner`:'Gewinnerzahl offen'}</span><span class="badge efficiency">⚡ Effizienz ${win.efficiencyScore}/100</span><span class="badge">Aufwand ${win.effort||3}/5</span></div></div><a href="${esc(win.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(win.id)}')">Jetzt teilnehmen ↗</a></div>`:empty('Aktuell ist kein offenes Gewinnspiel verfügbar.');
  const focus=[];
  if(ending)focus.push(`<button onclick="openDiscover('endingSoon')"><b>${ending}</b><span>offene Gewinnspiele enden in höchstens 3 Tagen</span><em>Jetzt prüfen →</em></button>`);
@@ -827,7 +936,7 @@ function renderPersonalCore(){
   focusBox.innerHTML=focus.length?`<p class="section-kicker">JETZT SINNVOLL</p><h2>Dein nächster Schritt</h2><div>${focus.join('')}</div>`:'';
   focusBox.hidden=!focus.length;
  }
- const todayFirst=pool.filter(i=>!completedForToday(i)&&!stateFor(i.id).ignored).sort((x,y)=>((y.score+(daysLeft(y)<=2?12:0))- (x.score+(daysLeft(x)<=2?12:0))));
+ const todayFirst=pool.filter(i=>!completedForToday(i)&&!isContestSuppressed(i)).sort((x,y)=>((y.score+(daysLeft(y)<=2?12:0))- (x.score+(daysLeft(x)<=2?12:0))));
  const endingToday=pool.filter(i=>daysLeft(i)===0);
  const ending3=pool.filter(i=>daysLeft(i)>=0&&daysLeft(i)<=3).sort((x,y)=>daysLeft(x)-daysLeft(y));
  const top=pool.filter(i=>i.score>=80);
@@ -893,6 +1002,7 @@ function renderAll(){
  safeRender('Entdecken',renderDiscover);
  safeRender('Dashboard',renderPersonal);
  safeRender('Vorlieben',renderPreferencePanel);
+ safeRender('Neue Runden',renderRoundReviews);
 }
 function openView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.nav-item').forEach(n=>n.classList.toggle('active',n.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'})}
 function openDiscover(f){currentFilter=f;$$('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));openView('discoverView');renderDiscover()}
@@ -1013,7 +1123,7 @@ function mergeCatalog(base,extra){
  return {contests:out,report:{added,updated,duplicates,invalid,idConflicts,similar,similarPairs,total:out.length}}
 }
 function applyCustomData(report=null){
- const merged=mergeCatalog(baseContests,customContests);contests=merged.contests;migrateContestStates();renderAll();renderDataCenter(report||merged.report);renderContestManagerBadge();updateDiagnostics(dataVersionGlobal);return merged
+ const merged=mergeCatalog(baseContests,customContests);contests=merged.contests;invalidateRoundReviewCache();migrateContestStates();renderAll();renderDataCenter(report||merged.report);renderContestManagerBadge();updateDiagnostics(dataVersionGlobal);return merged
 }
 function extractContestArray(payload){
  if(Array.isArray(payload))return payload;
