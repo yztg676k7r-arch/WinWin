@@ -1,0 +1,80 @@
+name: Win Win Daily Scout
+
+on:
+  schedule:
+    # GitHub cron uses UTC. 03:35 UTC is 05:35 CEST / 04:35 CET.
+    # A second winter slot is included; the job itself gates on Europe/Berlin 05:xx.
+    - cron: '35 3 * * *'
+    - cron: '35 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: winwin-daily-scout
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out Win Win
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gate scheduled run to 05:xx Europe/Berlin
+        id: gate
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [[ "$(TZ=Europe/Berlin date +%H)" == "05" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-scout.txt
+
+      - name: Install scout
+        if: steps.gate.outputs.run == 'true'
+        run: pip install -r requirements-scout.txt
+
+      - name: Run Daily Scout
+        if: steps.gate.outputs.run == 'true'
+        env:
+          WINWIN_SCOUT_MAX_SOURCES: '90'
+          WINWIN_SCOUT_MAX_NEW: '15'
+        run: python scripts/daily_scout.py
+
+      - name: Validate generated JSON
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -m json.tool contests.json >/dev/null
+          python -m json.tool sources.json >/dev/null
+          python -m json.tool data/daily-scout-report.json >/dev/null
+          python -m json.tool data/daily-scout-review.json >/dev/null
+
+      - name: Publish catalog update
+        if: steps.gate.outputs.run == 'true'
+        shell: bash
+        run: |
+          if git diff --quiet -- contests.json sources.json data/daily-scout-report.json data/daily-scout-review.json; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          git config user.name "winwin-daily-scout[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add contests.json sources.json data/daily-scout-report.json data/daily-scout-review.json
+          git commit -m "chore: daily scout $(TZ=Europe/Berlin date +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
