@@ -50,12 +50,31 @@ def title(soup):
  h=soup.find('h1'); x=h.get_text(' ',strip=True) if h else (soup.title.get_text(' ',strip=True) if soup.title else ''); return re.sub(r'\s+',' ',x)[:160]
 def has_entry(soup,raw):
  low=raw.lower(); return bool(soup.find('form')) or any(x in low for x in ('teilnahmeformular','jetzt teilnehmen','am gewinnspiel teilnehmen','type="email"',"type='email'",'mailto:'))
+def extract_prize(text,title):
+ for chunk in re.split(r'(?<=[.!?])\\s+|\\n+',text):
+  clean=re.sub(r'\\s+',' ',chunk).strip()
+  if 12<=len(clean)<=260 and re.search(r'\\b(?:verlosen|verlost|gewinnen|gewinnt|zu gewinnen)\\b',clean,re.I):
+   return clean[:220]
+ return title[:220] if re.search(r'\\b(?:gewinnen|gewinn)\\b',title,re.I) else None
+
 def classify(url,t,text,soup,raw):
  n=norm(t+' '+url); low=text.lower()
  if any(x in n for x in NON_CONTEST): return 'rejected','non-contest-page',None
+ # Reject collection pages that mix several unrelated contests. A newsletter
+ # form or a date elsewhere on such a hub must never qualify as an entry route.
+ contest_links=set()
+ for a in soup.find_all('a',href=True):
+  href=urllib.parse.urljoin(url,a.get('href',''))
+  if 'gewinnspiel' in urllib.parse.urlsplit(href).path.lower():
+   contest_links.add(canon(href))
+ if 'aktuelle gewinnspiele' in low and len(contest_links)>=2:
+  return 'rejected','contest-hub',None
+ path=urllib.parse.urlsplit(url).path.rstrip('/')
+ if path in ('','/'): return 'rejected','generic-homepage',None
  if any(re.search(p,low,re.I) for p in BAD): return 'rejected','policy-exclusion',None
  # Require contest intent in URL/title, not merely somewhere in a generic page.
  if not any(w in n for w in CONTEST_WORDS): return 'review','contest-intent-not-specific',None
+ if not extract_prize(text,t): return 'review','prize-not-unambiguous',None
  d=deadline(text)
  if not d: return 'review','deadline-not-unambiguous',None
  if not has_entry(soup,raw): return 'review','entry-route-not-unambiguous',None
@@ -75,7 +94,7 @@ def main():
   if canon(u) in urls: continue
   src=sm.get(old.get('sourceId'),{}); sid=src.get('id') or old.get('sourceId') or 'scout'; digest=hashlib.sha1((u+d.isoformat()).encode()).hexdigest()[:8]; cid=f'{sid}-{d.strftime("%Y%m%d")}-{digest}'
   if cid in ids: continue
-  item={'id':cid,'title':t,'provider':src.get('name') or urllib.parse.urlsplit(u).netloc,'prize':t,'url':u,'category':(src.get('categories') or ['Sonstiges'])[0],'country':'Deutschland','deadline':d.strftime('%d.%m.%Y'),'winners':None,'new':True,'daily':bool(re.search(r'täglich|taeglich|jeden tag',text,re.I)),'international':False,'requirements':'Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft','purchaseRequired':False,'receiptRequired':False,'winnerKnown':False,'verified':TODAY.strftime('%d.%m.%Y'),'providerTrust':min(5,max(3,int(src.get('quality') or 4))),'effort':1,'entryType':'form' if soup.find('form') else 'email','multipleEntry':bool(re.search(r'täglich|taeglich|jeden tag|mehrfach',text,re.I)),'highValuePrize':False,'tags':['Daily Scout','2× geprüft','kostenlos','neu'],'addedAt':TODAY.strftime('%d.%m.%Y'),'sourceId':sid,'deEligibility':'bestätigt','participationFrequency':'täglich' if re.search(r'täglich|taeglich|jeden tag',text,re.I) else 'einmalig','chanceScore':45,'priority':'mittel','qualityScore':97,'shortDescription':t,'dataCompleteness':88,'lastVerified':TODAY.strftime('%d.%m.%Y'),'catalogStatus':'active','scoutStatus':'verified-second-pass','scoutAdded':True}
+  item={'id':cid,'title':t,'provider':src.get('name') or urllib.parse.urlsplit(u).netloc,'prize':extract_prize(text,t) or t,'url':u,'category':(src.get('categories') or ['Sonstiges'])[0],'country':'Deutschland','deadline':d.strftime('%d.%m.%Y'),'winners':None,'new':True,'daily':bool(re.search(r'täglich|taeglich|jeden tag',text,re.I)),'international':False,'requirements':'Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft','purchaseRequired':False,'receiptRequired':False,'winnerKnown':False,'verified':TODAY.strftime('%d.%m.%Y'),'providerTrust':min(5,max(3,int(src.get('quality') or 4))),'effort':1,'entryType':'form' if soup.find('form') else 'email','multipleEntry':bool(re.search(r'täglich|taeglich|jeden tag|mehrfach',text,re.I)),'highValuePrize':False,'tags':['Daily Scout','2× geprüft','kostenlos','neu'],'addedAt':TODAY.strftime('%d.%m.%Y'),'sourceId':sid,'deEligibility':'bestätigt','participationFrequency':'täglich' if re.search(r'täglich|taeglich|jeden tag',text,re.I) else 'einmalig','chanceScore':45,'priority':'mittel','qualityScore':97,'shortDescription':t,'dataCompleteness':88,'lastVerified':TODAY.strftime('%d.%m.%Y'),'catalogStatus':'active','scoutStatus':'verified-second-pass','scoutAdded':True}
   contests.append(item); promoted.append(cid); ids.add(cid); urls.add(canon(u))
  # Audit auto-published pages from the first pass: obvious non-contest pages are hidden, never deleted.
  archived=[]
