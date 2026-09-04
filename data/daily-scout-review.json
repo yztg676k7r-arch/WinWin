@@ -1,0 +1,1265 @@
+{
+  "date": "2026-09-04",
+  "items": [
+    {
+      "url": "https://www.gala.de/lifestyle/gewinnspiele",
+      "sourceId": "gala",
+      "title": "GALA-Gewinnspiele ▷ Spielen und gewinnen!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.gala.de/beauty-fashion/fashion/styletrends-herbst-winter",
+      "sourceId": "gala",
+      "title": "Trends aus Hollywood: Styletrends Herbst/ Winter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.gala.de/beauty-fashion/fashion/brigitte-macron---koenigin-camilla--in-london-werden-sie-zu-fashion-twins-21411552.html",
+      "sourceId": "gala",
+      "title": "Brigitte Macron + Königin Camilla: In London werden sie zu Fashion-Twins",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/vredestein-leseraktion-28521897.html",
+      "sourceId": "auto-bild",
+      "title": "Vredestein Leseraktion",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/wahl-zum-goldenen-reisemobil-2026-28641887.html",
+      "sourceId": "auto-bild",
+      "title": "Wahl zum \"Goldenen Reisemobil 2026\"",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/auto-bild-firmenwagen-award-2026-28768811.html",
+      "sourceId": "auto-bild",
+      "title": "AUTO BILD Firmenwagen Award 2026",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/goldenes-lenkrad-2025-die-gewinner-28408535.html",
+      "sourceId": "auto-bild",
+      "title": "Goldenes Lenkrad 2025: die Gewinner",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/abstimmen-und-auto-bild-jahres-abonnement-gewinnen-28743383.html",
+      "sourceId": "auto-bild",
+      "title": "Abstimmen und AUTO BILD Jahres-Abonnement gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/die-besten-marken-in-allen-klassen-2025-26-28395241.html",
+      "sourceId": "auto-bild",
+      "title": "Die besten Marken in allen Klassen 2025/26",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/produkttests/winterreifen-test-10811081.html",
+      "sourceId": "auto-bild",
+      "title": "Winterreifen-Test",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://gebrauchtwagen.autobild.de/ergebnisse?initial-registration-from=1960&initial-registration-to=1970&sort-mode=3",
+      "sourceId": "auto-bild",
+      "title": "Fahrzeuge gebraucht kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.autobild.de/artikel/wer-verdient-das-goldene-lenkrad-2026-28705001.html",
+      "sourceId": "auto-bild",
+      "title": "Wer verdient das Goldene Lenkrad 2026?",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.auto-motor-und-sport.de/formel-1/antonelli-strafe-monza-windschatten-fuer-russell",
+      "sourceId": "auto-motor-und-sport",
+      "title": "Formel 1: Doppelte Strafe: Muss Antonelli seinem WM-Rivalen in Monza helfen?",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.auto-motor-und-sport.de/fahrbericht/pure-v8-power-ohne-elektro-bentley-supersports-fahrbericht",
+      "sourceId": "auto-motor-und-sport",
+      "title": "Dieser Bentley bezwingt sogar Laguna Seca: Neuer Supersports im Fahrtest",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d2if/hamburg/winterhuder-marktplatz-8",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d3mi/windeck/rathausstrasse-31-37",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d4hi/frickenhausen/bodelschwinghstr-65",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d3m5/langen-hessen/an-der-winkelwiese-1",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d3cg/koenigswinter/aegidienberger-strasse-2a",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d24m/winterberg/neue-mitte-4",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d5f9/harsewinkel/alte-brockhaeger-strasse-16",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d18h/wuppertal/vohwinkeler-strasse-5-7",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d33d/koenigswinter/proffenweg-2d",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d2g4/vechelde/bodelschwinghstrasse-9",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d4kg/bad-windsheim/im-haespelein-11",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/store/d082/winnenden/marktstrasse-41",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/suesses/wintermarmelade",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/regionen/suedwest/tnb-gewinnspiel",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/nordbayern/gewinnspiel/teilnahmebedingungen/nst.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinnspiel zum Muttertag & Vatertag 2024 | EDEKA",
+      "status": "rejected",
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintersuppen-rezepte",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/anmeldung/index.jsp",
+      "sourceId": "edeka",
+      "title": "Anmeldung erfolgreich | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/index.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinnspiele & Aktionen | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/magic-star.jsp",
+      "sourceId": "edeka",
+      "title": "Magic Star Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/nord/gewinnspiel/tickets-gewinnen.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/minden-hannover/gewinnspiel/hemme-milch-kw-37.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA und Hemme Milch verlosen 10 Familiengutscheine für einen Hofbesuch bei Gunnar Hemme in der Uckermark",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/suedbayern/gewinnspiel/fc-augsburg.jsp",
+      "sourceId": "edeka",
+      "title": "10x2 Tickets für den EDEKA Familienblock beim FC Augsburg gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintergemuese",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/index.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinnspiele & Aktionen | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/index.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/instagram-movie-park.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "rejected",
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/wdr4-weihnachtsbonus.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/wissen/kuechenwissen/kraeuterkunde/winterharte-kraeuter",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/anmeldung/anmeldung-gs-und-nl-erfolgreich.jsp",
+      "sourceId": "edeka",
+      "title": "Anmeldung erfolgreich | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/suedbayern/gewinnspiel/europark.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/winterrezepte",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/index.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinnspiele & Aktionen | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/backen/winterkuchen",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/datenschutzhinweise-instagram-movie-park.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "rejected",
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/steinobst-aus-suedafrika.jsp",
+      "sourceId": "edeka",
+      "title": "Steinobst aus Südafrika | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/regionen/nordbayern-sachsen-thueringen/allgemeine-insta-tnbs",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/tnb-duesseldorf-marathon.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "rejected",
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintersalate",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/appvent.jsp",
+      "sourceId": "edeka",
+      "title": "APPvent: Der EDEKA App-Adventskalender",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/lindt-gewinnspiel.jsp",
+      "sourceId": "edeka",
+      "title": "5 x 1.000 € Gutscheine gewinnen | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/wissen/ernaehrung/bewusste-ernaehrung/wintermuedigkeit",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/chiquita.jsp",
+      "sourceId": "edeka",
+      "title": "Chiquita Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/driscolls.jsp",
+      "sourceId": "edeka",
+      "title": "Driscoll's Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/evelina-gewinnspiel-2026.jsp",
+      "sourceId": "edeka",
+      "title": "Evelina Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/suedbayern/wir-in-suedbayern/edeka-mein-bayern/mein-bayern/24-winetsdorfer1.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/minden-hannover/gewinnspiel/estrel-kw29.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/index.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinnspiele & Aktionen | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/herzstuecke-avocados.jsp",
+      "sourceId": "edeka",
+      "title": "Herzstücke Avocados Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/nord/gewinnspiel/tauschtag-gewinnspiel.jsp",
+      "sourceId": "edeka",
+      "title": "Tauschtag-Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/chiquita-bananen.jsp",
+      "sourceId": "edeka",
+      "title": "Chiquita Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintergrillen",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/minden-hannover/gewinnspiel/hemme-milch-kw-16.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/kanzi.jsp",
+      "sourceId": "edeka",
+      "title": "Kanzi Gewinnspiel | EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/minden-hannover/gewinnspiel/alba-berlin-sportstunde-kw-05.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/peter-maffay-tickets.jsp",
+      "sourceId": "edeka",
+      "title": "EDEKA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-shoemakerchair",
+      "sourceId": "elle",
+      "title": "Scandi Design Lover aufgepasst! Elle Decoration verlost diesen Klassiker",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/fashion/miu-miu-morning-raves-naomi-campbell-anna-wintour-2026-html",
+      "sourceId": "elle",
+      "title": "„Elle the Edit“: Miu Miu, Morning-Raves und warum Noami Campbell & Anna Wintour bei Dolce & Gabbana warten mussten",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/fashion/trends-wintermode-2026",
+      "sourceId": "elle",
+      "title": "Wintermode: Diese Trends vereinen Ästhetik mit Funktionalität",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-blomus",
+      "sourceId": "elle",
+      "title": "So gemütlich! Gewinnen Sie diesen Lese-Sessel von Blomus im Wert von 1.000 Euro",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/decoration/edida-2026",
+      "sourceId": "elle",
+      "title": "EDIDA 2026: Das sind alle Gewinner*innen der Elle Deco International Design Awards",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-leserbefragung-elle-2025",
+      "sourceId": "elle",
+      "title": "Gewinnspiel: Unter allen Teilnehmenden der Leserbefragung verlosen wir exklusive Gewinne",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-gartenstuhl",
+      "sourceId": "elle",
+      "title": "Jetzt zieht der Sommer ein! Gewinnen Sie zwei Gartenstühle von Royal Botania im Wert von 2.600 Euro",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiele",
+      "sourceId": "elle",
+      "title": "Gewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-hotel-widder-zuerich",
+      "sourceId": "elle",
+      "title": "Jetzt gewinnen: Ein Wochenende im Luxus-Hotel „Widder“ in Zürich",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.elle.de/gewinnspiel-ledleuchte",
+      "sourceId": "elle",
+      "title": "Jetzt brauchen wir Licht! Gewinnen Sie die exklusive Original BTCs LED-Leuchte Blossom",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.eltern.de/familie-urlaub/gewinnspiele/mit-paediprotect-und-laessig-gewinnen-14074704.html",
+      "sourceId": "eltern",
+      "title": "Nur das Beste für Kinderhaut: Sicheren Sonnenschutz mit PAEDIPROTECT gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.eltern.de/vergleich/windeln",
+      "sourceId": "eltern",
+      "title": "Windel-Test 2026: Die besten Einwegwindeln im Vergleich",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.eltern.de/baby/baby-wickeln-infos",
+      "sourceId": "eltern",
+      "title": "Windeln & Wickeln: Tipps und Infos zum Wickeln",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.eltern.de/familie-urlaub/gewinnspiele",
+      "sourceId": "eltern",
+      "title": "Gewinnspiele - Fotowettbewerbe - Preise - Verlosungen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.eltern.de/vivien-windel-12796042.html",
+      "sourceId": "eltern",
+      "title": "Vivien Windel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-vilavita",
+      "sourceId": "freundin",
+      "title": "Wellness-Kurzurlaub in Marburg zu gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-freixenet-weihnachten",
+      "sourceId": "freundin",
+      "title": "Stilvolle Weihnachten mit Freixenet",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-twister-air",
+      "sourceId": "freundin",
+      "title": "Twist in the air, like you just don’t care!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/gewinnspiele/heftgewinnspiele-freundinde",
+      "sourceId": "freundin",
+      "title": "Heftgewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-bodenmaiserhof",
+      "sourceId": "freundin",
+      "title": "Stylisch-bayerische Wellnessauszeit zu gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/gewinnspiele",
+      "sourceId": "freundin",
+      "title": "Gewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-rama",
+      "sourceId": "freundin",
+      "title": "In der Weihnachtsbäckerei mit Rama Sooo BUTTRIG!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/frieda-lewin-kuechengespraeche-html",
+      "sourceId": "freundin",
+      "title": "freundin-Küchengespräche: Frieda Lewin kocht ihr italienisches Lieblingsrezept",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/gewinnspiele/paris-alte-gefuehle-letzter-anfang",
+      "sourceId": "freundin",
+      "title": "Paris, alte Gefühle und ein letzter Anfang",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/gewinnspiele/spielspass-im-familien-alltag-mit-monopoly",
+      "sourceId": "freundin",
+      "title": "Milka und MONOPOLY bringen Spielspaß in den Familien-Alltag und echten Mehrwert für die Haushaltskasse",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-perwollrenewcolor",
+      "sourceId": "freundin",
+      "title": "Valentinstagsshopping mit Perwoll",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/lifestyle/gewinnspiele/gewinnen-wochenende-fuer-zwei-plus-roadtrip-mit-nio",
+      "sourceId": "freundin",
+      "title": "Raus aus dem Alltag! Gewinnen Sie ein Wochenende für zwei mit Roadtrip-Feeling",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-babyliss",
+      "sourceId": "freundin",
+      "title": "Zauberhafte Looks mit BaByliss zum Valentinstag",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-nintendo",
+      "sourceId": "freundin",
+      "title": "Party-Spaß mit dem Nintendo-Weihnachtspaket",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-milupa-adventskalender",
+      "sourceId": "freundin",
+      "title": "MILUPA SAGT: DANKE, MAMA!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiele-kreuzwortraetsel-loesungswort-senden-und-gewinnen-69879.html",
+      "sourceId": "freundin",
+      "title": "Das freundin Kreuzworträtsel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.freundin.de/gewinnspiel-em-eukal",
+      "sourceId": "freundin",
+      "title": "Süße Adventsüberraschung – wohltuende Bonbons!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/kontakt/Abonniert-jetzt-den-Radio-Hamburg-WhatsApp-Kanal-id1433426.html",
+      "sourceId": "radio-hamburg",
+      "title": "Abonniert jetzt den Radio Hamburg WhatsApp Kanal",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "Gewinnspiele | Radio Hamburg",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Der-Radio-Hamburg-Festivalsommer-id1658152.html",
+      "sourceId": "radio-hamburg",
+      "title": "Der Radio Hamburg Festivalsommer",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/config/config_spa/config_spa_section/config_spa_section_club/config_spa_section_club_gewinnspiele?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "config.spa.section.club_gewinnspiele | Radio Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Registrieren-mitmachen-bei-Wer-schl%C3%A4gt-John-id389984.html",
+      "sourceId": "radio-hamburg",
+      "title": "Registrieren & mitmachen bei \"Wer schlägt John?!\"",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Werdet-zum-Radio-Hamburg-Wettersch%C3%A4tzer-id1454912.html",
+      "sourceId": "radio-hamburg",
+      "title": "Werdet zum Radio Hamburg Wetterschätzer",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Teilnahmebedingungen-bei-Gewinnspielen-id391123.html",
+      "sourceId": "radio-hamburg",
+      "title": "Teilnahmebedingungen bei Gewinnspielen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/config/config_spa/config_spa_section/config_spa_section_aktionen/config_spa_section_gewinnspiele?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "config.spa.section.gewinnspiele | Radio Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/on_air/T%C3%A4glich-bestens-informiert-Neuer-Radio-Hamburg-Newsletter-id1670746.html",
+      "sourceId": "radio-hamburg",
+      "title": "Täglich bestens informiert: Neuer \"Radio Hamburg\"-Newsletter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktuelles/musik/Verletzung-am-Fu%C3%9F-Ariana-Grande-tritt-ohne-hohe-Schuhe-auf-id1712435.html",
+      "sourceId": "radio-hamburg",
+      "title": "Verletzung am Fuß: Ariana Grande tritt ohne hohe Schuhe auf",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Gewinnt-10-Pizza-Klassiker-von-den-Smileys-Pizza-Profis-id395943.html",
+      "sourceId": "radio-hamburg",
+      "title": "Gewinnt 10 Pizza Klassiker von den Smiley's Pizza Profis",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/stars_for_free/Alle-Ticket-Tour-Termine-im-%C3%9Cberblick-id1687583.html",
+      "sourceId": "radio-hamburg",
+      "title": "Alle Ticket-Tour Termine im Überblick",
+      "status": "rejected",
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Wir-schenken-euch-Tickets-f%C3%BCr-die-Veolia-Towers-Hamburg-id1709297.html",
+      "sourceId": "radio-hamburg",
+      "title": "Wir schenken euch Tickets für die Veolia Towers Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "Aktionen | Radio Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/club/club-gewinnspiele?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "Club Gewinnspiele | Radio Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Die-schnellsten-33-Sekunden-Deines-Lebens-Das-Elbduell-id1654568.html",
+      "sourceId": "radio-hamburg",
+      "title": "Die schnellsten 33 Sekunden Deines Lebens - Das Elbduell",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/",
+      "sourceId": "radio-hamburg",
+      "title": "Home | Radio Hamburg",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Wir-erstatten-euren-Einkauf-und-verdoppeln-sogar-id1638123.html",
+      "sourceId": "radio-hamburg",
+      "title": "Wir erstatten euren Einkauf - und verdoppeln sogar!",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-bio-rind-mit-gruenen-bohnen-und-disteloel/p/4305615554082",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-6-xl-30-stueck-14-20-kg/p/4068134192455",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-leberwurst/p/4068134054715",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-penaten-kleine-helfer-wind-und-wetter-creme/p/3574661264981",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-nuk-disney-baby-perfect-match-babyflasche-winnie-the-pooh-ab-3-monate-260-ml/p/4008600446057",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/pflege-und-duft-ogx-renewing-argan-oil-of-morocco-shampoo/p/3574661799438",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-winning-moves-top-trumps-weltfussballstars-6/p/5036905060257",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-splashers-schwimmwindeln-gr-4-5-9-15-kg-11-stueck/p/8001090698384",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-premium-trockenfutter-reich-an-huhn/p/4068134129345",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-7-xxl-jumbo-56-stueck-ab-16-kg/p/4068134138606",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-chicken-bones-reich-an-huhn-mit-calcium/p/4068134071019",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-catrice-jelly-sparks-lip-balm-020---twinkle-boss/p/4059729589026",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-hundekauknochen-ente/p/4068134074386",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-windeln-gr-4-maxi-9-14kg-single-overfill---34-st/p/8006530381512",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-huggies-windeln-newborn-groesse-1/p/5029054239773",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-nyx-professional-makeup-line-loud-lip-pencil-35-no-wine-ing/p/0800897250034",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/haushalt-rubin-licht-duftglas-winterwald/p/4068134144225",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-mahlzeit-mit-gefluegel-und-leber-in-gelee/p/4305615274652",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-premium-protection-windeln-gr-2-mini-4-8kg/p/8006530189804",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-pants-windeln-gr-9-extra-large-19kg/p/8006530276320",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-nuk-disney-winnie-puuh-first-choice-trinklernflasche-mit-temperature-control-150ml/p/4008600389057",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/lebensmittel-oberkircher-winzer-oberkircher-winzer-rose/p/4003104010360",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-premium-reich-an-gefluegel-und-rind-mit-gartengemuese/p/4305615621326",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-gelenk-fit/p/4305615609713",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-neonail-uv-nagellack---wine-red/p/5907052816793",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-mahlzeit-mit-huehnchen-in-joghurtsauce/p/4305615279701",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/pflege-und-duft-hawaiian-tropic-glowing-protection-lotion-lsf-50/p/5099821002817",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/pflege-und-duft-aviator-wingspeed-pour-homme-edp-100-ml/p/5055312924983",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-deluxe-mit-edelfisch-in-tomatengelee/p/4305615524412",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-schlemmer-menue-mit-gefluegel-und-nudeln/p/4305615185576",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-softies-minis-mit-leberwurst/p/4305615965277",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-premium-reich-an-hofpute/p/4305615757650",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-harmonie-windeln-gr-3-midi-6-10-kg-monatsbox-186-stueck/p/8700216251235",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-windeln-gr-4-maxi-9-14-kg-monatsbox-204-stueck/p/8006540785034",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-ardell-seamless-underlash-extenshions-modern-wing/p/0074764322852",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-deluxe-rind-pur/p/4305615757667",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/haushalt-rubin-licht-duft-im-glas-winterbeere-gross/p/4305615701448",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-fleischige-haeppchen/p/4305615843933",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-wet-n-wild-megalast-lipstick-matte-finish---wine-room/p/0077802117366",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-pate-mit-huhn/p/4305615972992",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/ideenwelt-ideenwelt-windlicht-haus-beige/p/4068134135858",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-premium-trockenfutter-fuer-kleine-hunde-gefluegel-und-hirse/p/4305615877617",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-medela-swing-maxi-hands-free-milchpumpe/p/7612367087896",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/pflege-und-duft-sante-cu-glowing-serum/p/4025089007265",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-bella-baby-happy-windeln-gr-4-maxi-plus-9-15-kg/p/5900516605483",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wine-dine-oktober",
+      "sourceId": "vinum",
+      "title": "Wine & Dine Oktober",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/winetasting",
+      "sourceId": "vinum",
+      "title": "WINE.TASTING",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/magazin/weinguides/2026/08/guide-riesling-champion-2026",
+      "sourceId": "vinum",
+      "title": "Guide: Riesling Champion 2026",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wines-of-portugal-grand-tasting",
+      "sourceId": "vinum",
+      "title": "Wines of Portugal: Grand Tasting",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wine-dine-november",
+      "sourceId": "vinum",
+      "title": "Wine & Dine November",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/steak-wine-der-kulinarische-showdown",
+      "sourceId": "vinum",
+      "title": "STEAK & WINE - DER KULINARISCHE SHOWDOWN",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/newsletter-abonnieren",
+      "sourceId": "vinum",
+      "title": "Der Wein-Newsletter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/gewinnspiele",
+      "sourceId": "vinum",
+      "title": "Gewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/die-ganze-vielfalt-deutscher-weine-wine-dining-mit-dem-vinocentral-in-gottfried-pachers-zu-tisch",
+      "sourceId": "vinum",
+      "title": "Die ganze Vielfalt deutscher Weine – Wine-Dining mit dem vinocentral in Gottfried Pachers Zu Tisch",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wine-dine-mallorca-mit-binigrau",
+      "sourceId": "vinum",
+      "title": "Wine & Dine Mallorca mit Binigrau",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/wine-trade-club",
+      "sourceId": "vinum",
+      "title": "Jetzt Partner werden und Vorteile sichern!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wine-dining-mit-winzer-matteo-catania-gulfisizilien-in-gottfried-pachers-zu-tisch",
+      "sourceId": "vinum",
+      "title": "Wine-Dining mit Winzer Matteo Catania (Gulfi/Sizilien) in Gottfried Pachers Zu Tisch",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/magazin/weinguides",
+      "sourceId": "vinum",
+      "title": "Wineguides | VINUM",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/wine-dining-mit-winzer-vincent-eymann-pfalz-in-gottfried-pachers-zu-tisch",
+      "sourceId": "vinum",
+      "title": "Wine-Dining mit Winzer Vincent Eymann (Pfalz) in Gottfried Pachers Zu Tisch",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/wein/winzer",
+      "sourceId": "vinum",
+      "title": "Winzerlegenden von VINUM",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.vinum.eu/de/events/awards/die-besten-weinkarten-der-schweiz",
+      "sourceId": "vinum",
+      "title": "Swiss Wine List Award | VINUM",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    }
+  ]
+}
