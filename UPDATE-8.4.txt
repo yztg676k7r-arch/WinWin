@@ -1,0 +1,34 @@
+WIN WIN 8.4 – DAILY SCOUT
+04.09.2026
+
+NEU:
+- Automatische tägliche Gewinnspiel-Suche über GitHub Actions.
+- Geplanter Lauf jeden Morgen gegen 05:35 Uhr Europe/Berlin.
+- Bestehende aktive Quellen aus sources.json werden nach Priorität und Prüfintervall gescannt.
+- Zusätzliche regionale Suche mit Schwerpunkt Niedersachsen, Hamburg und Bremen.
+- Neue seriöse Quellen können automatisch in sources.json ergänzt werden.
+- Eindeutig verifizierte Treffer werden direkt in contests.json veröffentlicht.
+- Unsichere Treffer landen in data/daily-scout-review.json und nicht im sichtbaren Katalog.
+- Laufbericht in data/daily-scout-report.json.
+
+QUALITÄTSREGELN:
+- kein erforderlicher Produktkauf / Kassenbon
+- keine kostenpflichtige Teilnahme, Premium-SMS/-Anrufe oder Loseinsätze
+- keine Social-Media-only-Teilnahme
+- keine kostenpflichtige Club-Mitgliedschaft
+- Teilnahmefrist und Web-/E-Mail-Teilnahme müssen eindeutig erkennbar sein
+- bestehende URLs und IDs werden nicht erneut veröffentlicht
+- abgelaufene Einträge werden archiviert statt IDs zu löschen
+
+DATENSICHERHEIT:
+- Der Scout verändert ausschließlich den veröffentlichten Katalog und Quellenkatalog.
+- Lokale iPhone-Nutzerstatus bleiben unangetastet.
+- Bestehende Gewinnspiel-IDs werden nicht geändert.
+- Neue Gewinnspiele erhalten neue stabile IDs und werden von Win Win automatisch als neu erkannt.
+
+TECHNIK:
+- .github/workflows/daily-scout.yml
+- scripts/daily_scout.py
+- requirements-scout.txt
+- GitHub Actions erhält nur contents: write.
+- Manuelles Starten des Scouts über GitHub Actions ist zusätzlich möglich.
