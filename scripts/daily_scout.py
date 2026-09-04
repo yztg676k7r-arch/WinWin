@@ -3,7 +3,7 @@
 
 Conservative, no-secret crawler for official German contest pages. It scans due
 sources, discovers fresh candidate pages, rejects known policy violations and
-adds only high-confidence matches to contests.json. Ambiguous finds are written
+sends every plausible match to an independent second-pass review. No first-pass find is written
 to data/daily-scout-review.json instead of being published.
 """
 from __future__ import annotations
@@ -431,9 +431,16 @@ def main():
                 stats["review"] += 1
                 review.append({"url": page.url, "sourceId": source.get("id"), "title": title, "status": "review", "reason": "deadline-or-entry-route-not-unambiguous"})
                 continue
-            item = make_contest(source, page, deadline)
-            if item["id"] not in existing_ids:
-                additions.append(item); existing_ids.add(item["id"]); existing_urls.add(page.url)
+            # First pass never publishes. Every plausible candidate must pass the
+            # independent review_queue.py quality gate before entering the catalog.
+            review.append({
+                "url": page.url,
+                "sourceId": source.get("id"),
+                "title": title,
+                "status": "review",
+                "reason": "first-pass-passed",
+            })
+            stats["review"] += 1
 
     # Discovery outside the existing source catalog. Only pages that pass all
     # strict checks can publish; otherwise they merely appear in review.
@@ -475,9 +482,16 @@ def main():
             continue
         if d not in source_by_domain:
             sources.append(source); source_by_domain[d] = source
-        item = make_contest(source, page, deadline)
-        if item["id"] not in existing_ids:
-            additions.append(item); existing_ids.add(item["id"]); existing_urls.add(page.url)
+        # External discoveries are also quarantined until the independent
+        # second pass confirms a direct, concrete and policy-compliant contest.
+        review.append({
+            "url": page.url,
+            "sourceId": source.get("id"),
+            "title": title,
+            "status": "review",
+            "reason": "first-pass-passed",
+        })
+        stats["review"] += 1
 
     contests.extend(additions)
     stats["published"] = len(additions)
