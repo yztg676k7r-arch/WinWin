@@ -1,5 +1,5 @@
 {
-  "dailyScoutLastRun": "2026-09-04T07:04:12+00:00",
+  "dailyScoutLastRun": "2026-09-08T06:10:46+00:00",
   "newSourcesInRelease": 15,
   "release": "8.1 AT/CH source expansion",
   "sourceAudit": {
@@ -8,7 +8,7 @@
     "newMonitoringSources": 15,
     "policy": "Monitoringquellen dürfen variable Länderfreigaben haben; aktiver Katalog weiterhin nur mit belegter Deutschland-Teilnahme."
   },
-  "sourceCount": 411,
+  "sourceCount": 415,
   "sources": [
     {
       "active": true,
@@ -13514,8 +13514,108 @@
       "successfulChecks": 1,
       "type": "Regionalmagazin",
       "verification": "verified"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Mode",
+        "Lifestyle",
+        "Beauty"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "gq-magazin.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "gq-magazin",
+      "lastCatalogReview": "2026-09-08",
+      "lastChecked": "2026-09-08",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "GQ Deutschland",
+      "notes": "Offizielle deutsche Magazinquelle; allgemeine Teilnahmebedingungen bestätigen kostenlose Formularteilnahme und Wohnsitz in Deutschland.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Magazin",
+      "verification": "verified"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Haus & Garten",
+        "Heimwerken"
+      ],
+      "checkIntervalDays": 5,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "selbst.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "selbst-de",
+      "lastCatalogReview": "2026-09-08",
+      "lastChecked": "2026-09-08",
+      "lastResultCount": 1,
+      "monitoringPriority": "medium",
+      "name": "selbst.de",
+      "notes": "Offizielle deutsche DIY-Magazinquelle; aktuelles Preisrätsel bietet kostenlose Online- oder Postkartenteilnahme ohne Kaufnachweis.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Magazin",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Food",
+        "Genuss"
+      ],
+      "checkIntervalDays": 7,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "genusswelt-zimmermann.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "genusswelt-zimmermann",
+      "lastCatalogReview": "2026-09-08",
+      "lastChecked": "2026-09-08",
+      "lastResultCount": 1,
+      "monitoringPriority": "medium",
+      "name": "Genusswelt Zimmermann",
+      "notes": "Offizielle Herstellerquelle; Teilnahmebedingungen bestätigen Kaufunabhängigkeit, freiwilligen Newsletter und Wohnsitz in Deutschland.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Hersteller",
+      "verification": "verified"
     }
   ],
-  "updated": "2026-09-04",
+  "updated": "2026-09-08",
   "version": "8.3"
 }
