@@ -418,7 +418,12 @@ function formatUpdate(v){
  return `Datenstand: ${new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(d)} Uhr`
 }
 function daysLeft(i){const d=parseDate(i.deadline);return d?Math.ceil((d-new Date())/86400000):9999}
-function active(i){return !i.purchaseRequired&&!i.receiptRequired&&!i.winnerKnown&&daysLeft(i)>=0}
+function active(i){
+ // winnerKnown describes whether the number of winners is known (see readContestForm).
+ // It does not mean the draw has finished. Availability comes from status and deadline.
+ const status=String(i.catalogStatus||'active').trim().toLowerCase();
+ return status==='active'&&!i.purchaseRequired&&!i.receiptRequired&&daysLeft(i)>=0;
+}
 function allActive(){return contests.filter(active)}
 function esc(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 function toast(m){const n=$('#toast');n.textContent=m;n.classList.add('show');clearTimeout(window.t);window.t=setTimeout(()=>n.classList.remove('show'),1700)}
