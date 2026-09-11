@@ -626,30 +626,86 @@ function toggleIgnored(id){
 }
 function registerClick(id){markContestSeen(id);user.clicks[id]=(user.clicks[id]||0)+1;adjustPreferenceForContest(id,0.35);saveUser();renderCatalogUpdateSummary()}
 let winDialogContestId=null;
+// Personal wins are stored with the existing user snapshot, never in the public catalog.
+function archivedWinContests(){
+ return Object.entries(user.items||{}).filter(([,s])=>s&&s.won).map(([id,s])=>{
+  const current=contests.find(i=>i.id===id),d=s.winDetails||{},identity=s._identity||{};
+  return {id,title:d.contestTitle||current?.title||identity.title||'Gewinn',
+   provider:d.provider||current?.provider||identity.provider||'Anbieter nicht angegeben',
+   prize:d.prizeName||current?.prize||identity.prize||'Gewinn'};
+ });
+}
+function setupIndependentWins(){
+ const summary=$('#winArchiveSummary'),dialog=$('#winDialog');
+ if(!summary||!dialog)return;
+ if(!$('#addIndependentWinBtn')){
+  const button=document.createElement('button');
+  button.id='addIndependentWinBtn';button.type='button';button.className='data-primary';
+  button.textContent='Gewinn eintragen';
+  button.addEventListener('click',()=>openWinDialog());
+  summary.before(button);
+ }
+ if(!$('#winProvider')){
+  const label=document.createElement('label');label.id='winProviderLabel';
+  label.textContent='Anbieter / Gewinnspiel';
+  const input=document.createElement('input');input.id='winProvider';input.type='text';
+  input.placeholder='z. B. Anbieter und Name der Aktion';input.maxLength=200;
+  label.append(input);$('#winPrizeName').closest('label').before(label);
+ }
+}
 function openWinDialog(id){
- const i=contests.find(x=>x.id===id);if(!i)return;
- const s=stateFor(id),d=s.winDetails||{};winDialogContestId=id;
+ setupIndependentWins();
+ const i=contests.find(x=>x.id===id),stored=id?user.items[id]:null;
+ if(id&&!i&&!stored?.won)return;
+ const s=stored||{},d=s.winDetails||{};
+ winDialogContestId=id||null;
  $('#winDialogTitle').textContent=s.won?'Gewinn bearbeiten':'Gewinn eintragen';
- $('#winPrizeName').value=d.prizeName||i.prize||'';
+ $('#winProvider').value=d.provider||i?.provider||s._identity?.provider||'';
+ $('#winProviderLabel').hidden=Boolean(i&&!s.manualWin);
+ $('#winPrizeName').value=d.prizeName||i?.prize||'';
  $('#winValue').value=d.value??'';
- $('#winDate').value=d.date||new Date().toISOString().slice(0,10);
+ $('#winDate').value=d.date||dayKey();
  $('#winDeliveryStatus').value=d.deliveryStatus||'ausstehend';
  $('#winNote').value=d.note||'';
  $('#removeWinBtn').hidden=!s.won;
  $('#winDialog').showModal();
 }
 function saveWin(){
- if(!winDialogContestId)return;const s=stateFor(winDialogContestId);
- if(!s.won)adjustPreferenceForContest(winDialogContestId,5);
- s.won=true;s.wonAt=new Date().toISOString();s.done=true;s.doneAt=s.doneAt||new Date().toISOString();if(!s.participationDates.includes(dayKey()))s.participationDates.push(dayKey());
- s.winDetails={prizeName:$('#winPrizeName').value.trim(),value:Math.max(0,Number($('#winValue').value)||0),date:$('#winDate').value,deliveryStatus:$('#winDeliveryStatus').value,note:$('#winNote').value.trim()};
- saveUser();$('#winDialog').close();renderAll();toast('Gewinn im Archiv gespeichert 🎉');
+ const manual=!winDialogContestId||Boolean(user.items[winDialogContestId]?.manualWin);
+ const provider=$('#winProvider')?.value.trim()||'';
+ const prizeName=$('#winPrizeName').value.trim(),rawValue=$('#winValue').value;
+ const value=Number(rawValue),date=$('#winDate').value;
+ if(!prizeName)return toast('Bitte den Gewinn angeben');
+ if(manual&&!provider)return toast('Bitte Anbieter oder Gewinnspiel angeben');
+ if(!Number.isFinite(value)||value<0)return toast('Bitte einen gültigen Wert ab 0 € angeben');
+ if(!date||Number.isNaN(new Date(date+'T12:00:00').getTime()))return toast('Bitte ein gültiges Gewinndatum angeben');
+ const id=winDialogContestId||('personal-win-'+crypto.randomUUID());
+ const previous=user.items[id]?JSON.parse(JSON.stringify(user.items[id])):null;
+ const s=stateFor(id);
+ if(manual)s.manualWin=true;
+ s.won=true;s.wonAt=s.wonAt||new Date().toISOString();
+ // A later win notification is not another participation on today's date.
+ if(!manual){
+  s.done=true;
+ }
+ s.winDetails={...s.winDetails,provider,prizeName,value,date,
+  deliveryStatus:$('#winDeliveryStatus').value,note:$('#winNote').value.trim()};
+ try{saveUser()}catch(error){
+  if(previous)user.items[id]=previous;else delete user.items[id];
+  console.error('Gewinn konnte nicht gespeichert werden',error);
+  toast('Speichern fehlgeschlagen. Bitte freien Gerätespeicher prüfen.');return;
+ }
+ winDialogContestId=id;
+ $('#winDialog').close();renderAll();toast('Gewinn im Archiv gespeichert 🎉');
 }
 function removeWin(){
- if(!winDialogContestId)return;const s=stateFor(winDialogContestId);if(s.won)adjustPreferenceForContest(winDialogContestId,-5);s.won=false;s.wonAt=null;s.winDetails={};saveUser();$('#winDialog').close();renderAll();toast('Gewinn aus dem Archiv entfernt');
+ if(!winDialogContestId)return;
+ const s=stateFor(winDialogContestId),previous=JSON.parse(JSON.stringify(s));
+ s.won=false;s.wonAt=null;s.winDetails={};
+ try{saveUser()}catch(error){user.items[winDialogContestId]=previous;toast('Änderung konnte nicht gespeichert werden');return}
+ $('#winDialog').close();renderAll();toast('Gewinn aus dem Archiv entfernt');
 }
 window.toggleFavorite=toggleFavorite;window.toggleDone=toggleDone;window.toggleIgnored=toggleIgnored;window.registerClick=registerClick;window.openWinDialog=openWinDialog;
-
 
 function prizeValueOf(i){return Math.max(0,Number(i.estimatedPrizeValue||i.prizeValue)||0)}
 function formatPrizeValue(i){const v=prizeValueOf(i);return v?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(v):'Wert offen'}
@@ -895,7 +951,7 @@ function dashboardGroup(title,kicker,items,filter,emptyText){
  return `<section class="dashboard-priority-section"><div class="section-head"><div><p class="section-kicker">${esc(kicker)}</p><h2>${esc(title)}</h2></div>${filter?`<button class="text-button" onclick="openDiscover('${esc(filter)}')">Alle</button>`:''}</div><div class="card-row">${items.length?items.slice(0,6).map(dashboardMini).join(''):empty(emptyText)}</div></section>`;
 }
 function renderPersonalCore(){
- const a=scored(),all=scored(true),fav=a.filter(i=>stateFor(i.id).favorite),done=all.filter(i=>stateFor(i.id).done),ignored=all.filter(isContestIgnored),wins=all.filter(i=>stateFor(i.id).won);
+ const a=scored(),all=scored(true),fav=a.filter(i=>stateFor(i.id).favorite),done=all.filter(i=>stateFor(i.id).done),ignored=all.filter(isContestIgnored),wins=archivedWinContests();
  const today=dayKey();
  const doneToday=all.filter(i=>participatedOn(i.id,today)).length;
  const doneWeek=all.reduce((sum,i)=>sum+participationsInLastDays(i.id,7),0);
@@ -1995,6 +2051,7 @@ $('#forceUpdateBtn')?.addEventListener('click',forceAppUpdate);
  $('#refreshCatalogBtn')?.addEventListener('click',refreshCatalogueFromNetwork);
  $('#markNewSeenBtn')?.addEventListener('click',markAllCatalogueSeen);
 document.addEventListener('click',e=>{const m=e.target.closest('[data-metric]');if(!m)return;m.dataset.metric==='statsView'?openView('statsView'):openDiscover(m.dataset.metric)});
+setupIndependentWins();
 if($('#saveWinBtn'))$('#saveWinBtn').onclick=saveWin;if($('#removeWinBtn'))$('#removeWinBtn').onclick=removeWin;if($('#cancelWinBtn'))$('#cancelWinBtn').onclick=()=>$('#winDialog')?.close();
 setupDataCenter();
 setupSourceManager();
