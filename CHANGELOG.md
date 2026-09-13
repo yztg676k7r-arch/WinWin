@@ -1,3 +1,11 @@
+## 8.5 – Probleme melden und Markierungen zurücksetzen
+
+- Problem melden auf Start, Heute, Entdecken und Dashboard; lokale Prüfliste mit Teilen/Kopieren für die Prüfung im Chat. Keine automatische Übermittlung.
+- Entdecken: Nicht interessant verwalten, einschließlich älterer Einträge. Rückgängig nach dem Ausblenden.
+- Zurücksetzen berücksichtigt gleiche Gewinnspielrunden unter anderen IDs und bleibt gegenüber älteren Sicherungen bestehen. Andere persönliche Status bleiben erhalten.
+- Service-Worker-Versionswechsel; Icon-Pfade an vorhandene Dateien angepasst.
+- Geprüft: JavaScript-Syntax und Statusregressionen (node tests/status-controls.cjs). Browserprüfung in dieser Umgebung nicht verfügbar.
+
 # 8.3.1 – 03.09.2026
 
 ## Direktlink-Prüfung

@@ -114,7 +114,7 @@
 
       <section id="discoverView" class="view">
         <div class="view-title"><p class="section-kicker">ENTDECKEN</p><h2>Alle Gewinnspiele</h2></div>
-        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Preis, Anbieter oder Kategorie …"></div>
+        <div class="marks-tools"><button type="button" onclick="openManageMarks('ignored')">Nicht interessant verwalten</button><button type="button" onclick="openManageMarks('problems')">⚠ Probleme</button></div><div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Preis, Anbieter oder Kategorie …"></div>
         <div id="categoryQuickFilters" class="category-quick-filters" aria-label="Beliebte Kategorien"></div>
         <div class="chip-row" id="chips">
           <button class="chip active" data-filter="all">Alle</button>
@@ -459,6 +459,14 @@
 })();
 </script>
 
+  <dialog id="problemDialog" class="marks-dialog">
+<h2>Problem melden</h2><p id="problemTitle"></p>
+<label>Was funktioniert nicht?<select id="problemReason"><option>Link funktioniert nicht</option><option>Link führt nur zu Bedingungen</option><option>Gewinnspiel nicht auffindbar</option><option>Teilnahme funktioniert nicht</option><option>Bereits beendet</option><option>Sonstiges</option></select></label>
+<label>Hinweis (optional)<textarea id="problemNote" maxlength="1000"></textarea></label>
+<p>Die Meldung wird auf deinem Gerät vorgemerkt. Teile anschließend unter „Probleme“ die Prüfliste hier im Chat, damit sie geprüft werden kann.</p>
+<button type="button" onclick="saveProblem()">Problem vormerken</button><button type="button" onclick="document.getElementById('problemDialog').close()">Abbrechen</button>
+</dialog>
+<dialog id="marksDialog" class="marks-dialog"><h2 id="marksTitle"></h2><p>Meldungen bleiben lokal. Teile die Prüfliste im Chat zur Überprüfung. Zurückgesetzte Gewinnspiele erscheinen wieder, sofern sie noch aktiv und offen sind.</p><button id="shareProblems" type="button" onclick="shareProblems()">Prüfliste teilen / kopieren</button><textarea id="problemExport" hidden readonly aria-label="Prüfliste zum Kopieren"></textarea><div id="marksList"></div><button type="button" onclick="document.getElementById('marksDialog').close()">Schließen</button></dialog>
   <script src="./app.js"></script>
 </body>
 </html>

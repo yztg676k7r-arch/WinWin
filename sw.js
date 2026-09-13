@@ -1,4 +1,4 @@
-const CACHE='win-win-8.3.1';
+const CACHE='win-win-8.5';
 const CORE=[
  './',
  './index.html',
@@ -7,9 +7,9 @@ const CORE=[
  './manifest.webmanifest',
  './version.json',
  './apple-touch-icon.png',
- './icons/icon-180.png',
- './icons/icon-192.png',
- './icons/icon-512.png'
+ './icon-180.png',
+ './icon-192.png',
+ './icon-512.png'
 ];
 const DATA_PATHS=['./contests.json','./data/sources.json','./sources.json'];
 
