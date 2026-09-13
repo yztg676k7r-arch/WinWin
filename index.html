@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=8.5-fix1">
   <title>Win Win 8.3.1</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
           <span id="updateText">Gewinnspiele werden geprüft …</span>
           <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.3.1 · Katalog wird geladen</small>
         </section>
-        <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden inert>
+        <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden>
           <div class="deployment-status-copy">
             <strong>Veröffentlichung wird geprüft</strong>
             <small id="deploymentStatusText">Veröffentlichte Version wird geprüft …</small>
@@ -467,6 +467,6 @@
 <button type="button" onclick="saveProblem()">Problem vormerken</button><button type="button" onclick="document.getElementById('problemDialog').close()">Abbrechen</button>
 </dialog>
 <dialog id="marksDialog" class="marks-dialog"><h2 id="marksTitle"></h2><p>Meldungen bleiben lokal. Teile die Prüfliste im Chat zur Überprüfung. Zurückgesetzte Gewinnspiele erscheinen wieder, sofern sie noch aktiv und offen sind.</p><button id="shareProblems" type="button" onclick="shareProblems()">Prüfliste teilen / kopieren</button><textarea id="problemExport" hidden readonly aria-label="Prüfliste zum Kopieren"></textarea><div id="marksList"></div><button type="button" onclick="document.getElementById('marksDialog').close()">Schließen</button></dialog>
-  <script src="./app.js"></script>
+  <script src="./app.js?v=8.5-fix1"></script>
 </body>
 </html>
