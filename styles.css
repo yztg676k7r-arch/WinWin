@@ -504,3 +504,31 @@ main{padding:0 16px}.view{display:none;animation:fade .18s ease}.view.active{dis
 
 /* Visible undo controls must accept taps despite the passive toast container. */
 .toast.show button{pointer-events:auto;touch-action:manipulation}
+
+/* 8.6: one contest list and three clear destinations. */
+.bottom-nav.simple-nav{grid-template-columns:repeat(3,minmax(0,1fr));height:calc(68px + env(safe-area-inset-bottom))}
+.simple-nav .nav-item{font-size:12px;min-height:48px;gap:5px}
+.simple-copy{color:var(--muted);font-size:14px;line-height:1.5;margin:8px 0 14px}
+.simple-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;overflow:visible}
+.simple-tabs .chip{padding:10px 3px;font-size:13px;min-height:44px;white-space:normal}
+.simple-filters{border:1px solid var(--line);border-radius:16px;padding:12px;margin:12px 0;background:var(--surface)}
+.simple-filters summary,.contest-extra summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:650}
+.simple-filters summary::after,.contest-extra summary::after{content:'＋';margin-left:auto}
+.simple-filters[open] summary::after,.contest-extra[open] summary::after{content:'−'}
+.simple-filter-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.simple-filter-fields label{display:grid;gap:6px;font-size:14px;min-width:0}
+.simple-filter-fields select{width:100%;min-height:44px;min-width:0}
+.simple-menu{display:grid;gap:12px}.simple-menu button{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:20px;color:var(--text);display:grid;gap:7px;min-height:78px}
+.simple-menu strong{font-size:16px}.simple-menu span{font-size:14px;color:var(--muted);line-height:1.4}
+.simple-back{min-height:44px;margin-bottom:8px}
+#discoverView .contest-card>.badges{display:none}
+#discoverView .contest-extra .badges{display:flex}
+.contest-extra{border-top:1px solid var(--line);margin-top:12px;font-size:14px}
+.simple-deadline{font-weight:650;font-size:14px;color:var(--muted);margin:8px 0}
+#discoverView .card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#discoverView .card-actions>*{min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center}
+#discoverView .card-actions .problem-button{grid-column:1/-1}
+#discoverView .list-toolbar{gap:8px}#discoverView .list-toolbar select{max-width:57%;min-width:0;min-height:44px}
+#discoverView .view-title .section-kicker{display:none}
+.simple-filters button{min-height:44px}
+@media(max-width:430px){input,select,textarea{font-size:16px!important}.simple-tabs .chip{font-size:12px}main{padding-bottom:100px}}

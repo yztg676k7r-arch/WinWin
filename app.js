@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.5';
+const APP_VERSION='8.6';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -572,7 +572,7 @@ function matches(i,f){
  if(isContestIgnored(i))return false;
  if(f==='all')return true;if(f==='recommended')return recommended(i);if(f==='newVisit')return isNewSinceVisit(i);
  if(f==='top')return i.score>=80;if(f==='secret')return secret(i);if(f==='ending')return daysLeft(i)<=7;
- if(f==='daily')return i.daily||i.multipleEntry;
+ if(f==='daily')return Boolean(i.daily)||/täglich|taeglich|daily/i.test(i.participationFrequency||'');
  if(f==='international')return i.international;if(f==='regional')return Boolean(i.regional);return i.category===f
 }
 function isOpenContest(i){
@@ -809,7 +809,7 @@ function mini(i){
  const s=stateFor(i.id),doneNow=completedForToday(i),repeat=isRepeatable(i);
  return `<article class="mini-card ${doneNow?'has-status':''}" data-contest-id="${esc(i.id)}">${doneNow?`<span class="dashboard-status">${repeat?'Heute teilgenommen':'Teilgenommen'}</span>`:''}<div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3>${badges(i)}<div class="prize">🎁 ${esc(i.prize)}</div>${reasonBox(i)}<div class="mini-actions"><a class="primary" href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen</a><button type="button" class="secondary ${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Erledigt':repeat?'Jetzt teilgenommen':'Teilgenommen'}</button><button type="button" class="secondary" onclick="toggleFavorite('${esc(i.id)}')" aria-label="Favorit">${s.favorite?'♥':'♡'}</button><button type="button" class="secondary ignore-mini" aria-label="Nicht interessant" onclick="toggleIgnored('${esc(i.id)}')">Nicht interessant</button>${problemButton(i)}</div></article>`;
 }
-function full(i){const s=stateFor(i.id),left=daysLeft(i),wins=i.winners?`${i.winners} bekannte Gewinne`:'Gewinnerzahl nicht angegeben',doneNow=completedForToday(i),repeat=isRepeatable(i),count=participationCount(i.id);return `<article class="contest-card ${s.ignored?'ignored-card':''} ${left===0?'deadline-today':left<=3?'deadline-soon':''}"><div class="card-top"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${s.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')">${s.favorite?'♥':'♡'}</button></div>${badges(i)}${repeat?`<div class="repeat-note">↻ ${esc(repeatLabel(i))}${count?` · ${count} Teilnahme${count===1?'':'n'} dokumentiert`:''}${doneNow?' · aktuell erledigt':''}</div>`:''}${s.ignored?'<div class="ignored-note">Nicht interessant – nur in dieser Ansicht sichtbar.</div>':''}<div class="prize">🎁 ${esc(i.prize)}</div><div class="scoreline"><strong>${label(i.score)}</strong><div class="scorebar"><i style="width:${i.score}%"></i></div><strong>${i.score}</strong></div>${reasonBox(i)}<div class="smart-facts"><span>🏆 ${esc(formatPrizeValue(i))}</span><span>👥 ${i.winners||'offen'}</span><span>⏳ ${left===0?'heute':left+' T.'}</span><span>⭐ Quelle ${sourceQualityOf(i)}/5</span>${sourceSuccessRateOf(i).wins?`<span>🏆 Eigene Quellenbilanz ${sourceSuccessRateOf(i).wins}/${sourceSuccessRateOf(i).entries}</span>`:''}</div><div class="details">Teilnahmeschluss: ${esc(i.deadline)} · ${left===0?'endet heute':`${left} Tag${left===1?'':'e'} übrig`}<br>${esc(wins)} · Aufwand: ${'●'.repeat(Math.min(5,i.effort||3))}${'○'.repeat(Math.max(0,5-(i.effort||3)))}<br>${esc(i.country)}${i.region?` · ${esc(i.region)}`:''} · geprüft: ${esc(i.verified||'–')}</div><div class="card-actions"><a href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen ↗</a><button class="${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Aktuell erledigt':repeat?'Jetzt teilgenommen':'Teilgenommen'}</button><button class="win-button ${s.won?'active':''}" onclick="openWinDialog('${esc(i.id)}')">${s.won?'🏆 Gewonnen':'Gewonnen'}</button><button class="ignore-button ${s.ignored?'active':''}" onclick="toggleIgnored('${esc(i.id)}')">${s.ignored?'Wieder anzeigen':'Nicht interessant'}</button>${problemButton(i)}</div></article>`}
+function full(i){const s=stateFor(i.id),left=daysLeft(i),wins=i.winners?`${i.winners} bekannte Gewinne`:'Gewinnerzahl nicht angegeben',doneNow=completedForToday(i),repeat=isRepeatable(i),count=participationCount(i.id);return `<article class="contest-card ${s.ignored?'ignored-card':''} ${left===0?'deadline-today':left<=3?'deadline-soon':''}"><div class="card-top"><div><div class="provider">${esc(i.provider)}</div><h3>${esc(i.title)}</h3></div><button class="heart ${s.favorite?'active':''}" onclick="toggleFavorite('${esc(i.id)}')">${s.favorite?'♥':'♡'}</button></div>${badges(i)}${repeat?`<div class="repeat-note">↻ ${esc(repeatLabel(i))}${count?` · ${count} Teilnahme${count===1?'':'n'} dokumentiert`:''}${doneNow?' · aktuell erledigt':''}</div>`:''}${s.ignored?'<div class="ignored-note">Nicht interessant – nur in dieser Ansicht sichtbar.</div>':''}<div class="prize">🎁 ${esc(i.prize)}</div><details class="contest-extra"><summary>Details & Teilnahmeinfos</summary><p>${esc(i.requirements||'Hinweise auf der Teilnahmeseite beachten.')}</p><div class="scoreline"><strong>${label(i.score)}</strong><div class="scorebar"><i style="width:${i.score}%"></i></div><strong>${i.score}</strong></div>${reasonBox(i)}<div class="smart-facts"><span>🏆 ${esc(formatPrizeValue(i))}</span><span>👥 ${i.winners||'offen'}</span><span>⏳ ${left===0?'heute':left+' T.'}</span><span>⭐ Quelle ${sourceQualityOf(i)}/5</span>${sourceSuccessRateOf(i).wins?`<span>🏆 Eigene Quellenbilanz ${sourceSuccessRateOf(i).wins}/${sourceSuccessRateOf(i).entries}</span>`:''}</div><div class="details">Teilnahmeschluss: ${esc(i.deadline)} · ${left===0?'endet heute':`${left} Tag${left===1?'':'e'} übrig`}<br>${esc(wins)} · Aufwand: ${'●'.repeat(Math.min(5,i.effort||3))}${'○'.repeat(Math.max(0,5-(i.effort||3)))}<br>${esc(i.country)}${i.region?` · ${esc(i.region)}`:''} · geprüft: ${esc(i.verified||'–')}</div></details><p class="simple-deadline">${left===0?'Endet heute':'Bis '+esc(i.deadline)}</p><div class="card-actions"><a href="${esc(i.url)}" target="_blank" rel="noopener" onclick="registerClick('${esc(i.id)}')">Teilnehmen ↗</a><button class="${doneNow?'done':''}" onclick="toggleDone('${esc(i.id)}')">${doneNow?'✓ Aktuell erledigt':repeat?'Jetzt teilgenommen':'Teilgenommen'}</button><button class="win-button ${s.won?'active':''}" onclick="openWinDialog('${esc(i.id)}')">${s.won?'🏆 Gewonnen':'Gewonnen'}</button><button class="ignore-button ${s.ignored?'active':''}" onclick="toggleIgnored('${esc(i.id)}')">${s.ignored?'Wieder anzeigen':'Nicht interessant'}</button>${problemButton(i)}</div></article>`}
 function empty(t){return `<div class="empty">${esc(t)}</div>`}
 
 function currentDailySession(){
@@ -937,7 +937,7 @@ function renderHome(){
  const picks=a.filter(recommended).slice(0,6);
  $('#newCarousel').innerHTML=fresh.slice(0,6).map(mini).join('')||empty('Seit deinem letzten Besuch sind noch keine neuen Gewinnspiele hinzugekommen.');
  $('#newSection').style.display=fresh.length?'block':'none';
- $('#recommendedCarousel').innerHTML=picks.map(mini).join('')||empty('Heute ist noch nichts empfohlen.');
+ if($('#recommendedCarousel'))$('#recommendedCarousel').innerHTML=picks.map(mini).join('')||empty('Heute ist noch nichts empfohlen.');
  $('#topCarousel').innerHTML=a.filter(i=>i.score>=80).slice(0,6).map(mini).join('')||empty('Noch keine Top-Chancen.');
  $('#secretCarousel').innerHTML=a.filter(secret).slice(0,6).map(mini).join('')||empty('Aktuell keine Geheimtipps.');
  $('#endingCarousel').innerHTML=a.filter(i=>daysLeft(i)<=7).sort((x,y)=>daysLeft(x)-daysLeft(y)).slice(0,6).map(mini).join('')||empty('In den nächsten sieben Tagen endet nichts.');
@@ -964,7 +964,7 @@ function passesAdvancedFilters(i){
 }
 function discoverItems(){
  const q=($('#searchInput')?.value||'').trim().toLocaleLowerCase('de-DE'),sort=$('#sortSelect')?.value||'score';
- let l=(currentFilter==='ignored'?scored(true):scored()).filter(i=>matches(i,currentFilter)).filter(passesAdvancedFilters);
+ let l=(currentFilter==='ignored'?scored(true):scored()).filter(i=>matches(i,currentFilter)).filter(i=>currentFilter==='ignored'||isOpenContest(i)).filter(passesAdvancedFilters);
  if(q){const terms=q.split(/\s+/).filter(Boolean);l=l.filter(i=>{const hay=normalizedSearchText(i);return terms.every(term=>hay.includes(term))})}
  l.sort((a,b)=>sort==='deadline'?daysLeft(a)-daysLeft(b):sort==='winners'?(b.winners||0)-(a.winners||0):sort==='efficiency'?(b.efficiencyScore||0)-(a.efficiencyScore||0)||b.score-a.score:sort==='effort'?(a.effort||3)-(b.effort||3):sort==='provider'?a.provider.localeCompare(b.provider,'de'):b.score-a.score);
  return l
@@ -980,13 +980,25 @@ function saveAdvancedFilters(){discoverRenderLimit=DISCOVER_PAGE_SIZE;localStora
 function renderCategoryQuickFilters(){
  const box=$('#categoryQuickFilters');if(!box)return;
  const counts={};scored().filter(isOpenContest).forEach(i=>{const c=i.category||'Sonstiges';counts[c]=(counts[c]||0)+1});
- const top=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+ const top=Object.entries(counts).sort((a,b)=>a[0].localeCompare(b[0],'de'));
  box.innerHTML=top.map(([name,count])=>`<button type="button" data-category-quick="${esc(name)}"><strong>${count}</strong><span>${esc(name)}</span></button>`).join('');
 }
+function resetSimpleFilters(){
+ advancedFilters={entryType:'',effort:'',winners:'',deadline:'',daily:false,noApp:false,noSocial:false,knownWinners:false,onlyOpen:false};
+ $('#searchInput').value='';currentFilter='all';discoverRenderLimit=DISCOVER_PAGE_SIZE;
+ $$('#chips .chip').forEach(c=>c.classList.toggle('active',c.dataset.filter==='all'));
+ saveAdvancedFilters();
+}
+function renderSimpleSummary(){
+ const hints={all:'Noch nicht teilgenommen. Erledigte und ausgeblendete Einträge verschwinden hier.',newVisit:'Seit deinem letzten Besuch hinzugekommen. Keine neuen Treffer? Unter „Offen“ findest du die übrigen Chancen.',ending:'Offene Gewinnspiele, die in den nächsten 7 Tagen enden.',daily:'Täglich mögliche Teilnahmen, die heute noch offen sind.'};
+ const hint=$('#simpleFilterHint');if(hint)hint.textContent=hints[currentFilter]||('Kategorie: '+currentFilter);
+ $$('#chips .chip').forEach(c=>{c.classList.toggle('active',c.dataset.filter===currentFilter);c.setAttribute('aria-pressed',String(c.dataset.filter===currentFilter))});
+}
 function renderDiscover(){
+ renderSimpleSummary();
  const l=discoverItems(),extra=activeFilterLabels().length,shown=Math.min(discoverRenderLimit,l.length);
  $('#resultCount').textContent=l.length?`${shown} von ${l.length} Ergebnis${l.length===1?'':'sen'}${extra?` · ${extra} Filter`:''}`:`0 Ergebnisse${extra?` · ${extra} Filter`:''}`;
- $('#contestList').innerHTML=l.length?l.slice(0,discoverRenderLimit).map(full).join(''):empty('Keine passenden aktiven Gewinnspiele gefunden. Passe Suche oder Filter an.');
+ $('#contestList').innerHTML=l.length?l.slice(0,discoverRenderLimit).map(full).join(''):empty('Keine passenden offenen Gewinnspiele. Wähle „Offen“, um Suche und Filter zurückzusetzen.');
  const more=$('#loadMoreContests');if(more){more.hidden=shown>=l.length;more.textContent=`Weitere anzeigen (${l.length-shown})`;}
  renderCategoryQuickFilters();
 }
@@ -1127,8 +1139,14 @@ function renderAll(){
  safeRender('Vorlieben',renderPreferencePanel);
  safeRender('Neue Runden',renderRoundReviews);
 }
-function openView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.nav-item').forEach(n=>n.classList.toggle('active',n.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'})}
-function openDiscover(f){currentFilter=f;$$('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));openView('discoverView');renderDiscover()}
+function openView(id){
+ if(id==='homeView'||id==='todayView')id='discoverView';
+ const navId=['statsView','dataView'].includes(id)?'moreView':id;
+ $$('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+ $$('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
+ window.scrollTo({top:0,behavior:'auto'});
+}
+function openDiscover(f){discoverRenderLimit=DISCOVER_PAGE_SIZE;currentFilter=f;$$('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));openView('discoverView');renderDiscover()}
 
 function parseGermanDate(value){
  const m=String(value||'').match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
@@ -1709,15 +1727,13 @@ async function fetchJsonFromPaths(paths, validator){
 }
 
 async function fetchBestContestCatalog(){
- const path='./contests.json';
- const r=await fetch(`${path}?ww=${Date.now()}`,{cache:'no-store',headers:{'Accept':'application/json'}});
- if(!r.ok)throw new Error(`HTTP ${r.status}`);
- const raw=await r.text();
- if(raw.trim().startsWith('<'))throw new Error('HTML statt JSON');
- const payload=JSON.parse(raw);
- if(!payload||!Array.isArray(payload.contests))throw new Error('Ungültiges Datenformat');
- if(!payload.contests.length)throw new Error('Katalog ist leer');
- return {path,payload,totalCount:payload.contests.length};
+ // Bot commits do not trigger a Pages build. Read the published repository
+ // catalog directly, with the site copy available when GitHub is unreachable.
+ const result=await fetchJsonFromPaths(
+  ['https://raw.githubusercontent.com/yztg676k7r-arch/WinWin/main/contests.json','./contests.json'],
+  p=>p&&Array.isArray(p.contests)&&p.contests.length>0
+ );
+ return {...result,totalCount:result.payload.contests.length};
 }
 
 async function loadSources(){
@@ -1726,7 +1742,7 @@ async function loadSources(){
  if(note)note.textContent='Quellen-Datenbank wird unabhängig von den Gewinnspielen geladen.';
  try{
   const result=await fetchJsonFromPaths(
-   ['./data/sources.json','./sources.json'],
+   ['https://raw.githubusercontent.com/yztg676k7r-arch/WinWin/main/sources.json','./sources.json'],
    p=>p&&Array.isArray(p.sources)
   );
   const p=result.payload;
@@ -2084,6 +2100,8 @@ $$('.nav-item').forEach(b=>b.addEventListener('click',event=>{
 }));
 $$('.chip').forEach(b=>b.addEventListener('click',()=>{
  currentFilter=b.dataset.filter;
+ if(currentFilter==='ending')$('#sortSelect').value='deadline';
+ else $('#sortSelect').value='score';
  discoverRenderLimit=DISCOVER_PAGE_SIZE;
  if(currentFilter==='all'){
   advancedFilters={entryType:'',effort:'',winners:'',deadline:'',daily:false,noApp:false,noSocial:false,knownWinners:false,onlyOpen:false};

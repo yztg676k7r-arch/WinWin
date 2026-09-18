@@ -1,9 +1,9 @@
-const CACHE='win-win-8.5-fix1';
+const CACHE='win-win-8.6';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.5-fix1',
- './app.js?v=8.5-fix1',
+ './styles.css?v=8.6',
+ './app.js?v=8.6',
  './manifest.webmanifest',
  './version.json',
  './apple-touch-icon.png',

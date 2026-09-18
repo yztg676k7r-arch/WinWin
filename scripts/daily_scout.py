@@ -32,7 +32,8 @@ REVIEW_FILE = ROOT / "data" / "daily-scout-review.json"
 TODAY = date.today()
 MAX_SOURCES = int(os.getenv("WINWIN_SCOUT_MAX_SOURCES", "80"))
 MAX_NEW = int(os.getenv("WINWIN_SCOUT_MAX_NEW", "12"))
-TIMEOUT = 14
+TIMEOUT = 10
+STOP_AT = time.monotonic() + int(os.getenv("WINWIN_SCOUT_BUDGET_SECONDS", "600"))
 UA = "WinWin-Daily-Scout/8.4 (+https://github.com/yztg676k7r-arch/WinWin)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA, "Accept-Language": "de-DE,de;q=0.9,en;q=0.5"})
@@ -123,6 +124,8 @@ def same_domain(url: str, domain: str) -> bool:
 
 
 def fetch(url: str) -> Page | None:
+    if time.monotonic() >= STOP_AT:
+        return None
     try:
         r = SESSION.get(url, timeout=TIMEOUT, allow_redirects=True)
         if r.status_code >= 400 or "text/html" not in r.headers.get("content-type", "text/html"):
@@ -153,6 +156,7 @@ def page_links(page: Page, source_domain: str) -> set[str]:
 def sitemap_links(domain: str) -> set[str]:
     out = set()
     for path in ("/sitemap.xml", "/sitemap_index.xml"):
+        if time.monotonic() >= STOP_AT: break
         try:
             r = SESSION.get(f"https://{domain}{path}", timeout=TIMEOUT)
             if r.status_code >= 400 or len(r.content) > 4_000_000:
@@ -163,6 +167,7 @@ def sitemap_links(domain: str) -> set[str]:
             nested = [u for u in locs[:20] if u.endswith(".xml")]
             urls = [u for u in locs if not u.endswith(".xml")]
             for sm in nested[:6]:
+                if time.monotonic() >= STOP_AT: break
                 try:
                     rr = SESSION.get(sm, timeout=TIMEOUT)
                     if rr.ok and len(rr.content) <= 4_000_000:
@@ -362,6 +367,7 @@ def discover_external() -> list[str]:
     ]
     urls = []
     for q in queries:
+        if time.monotonic() >= STOP_AT: break
         try:
             u = "https://www.bing.com/search?format=rss&q=" + urllib.parse.quote(q)
             r = SESSION.get(u, timeout=TIMEOUT)
@@ -406,6 +412,7 @@ def main():
             pass
 
     for source in due:
+        if time.monotonic() >= STOP_AT: break
         stats["checkedSources"] += 1
         urls = candidate_urls(source)
         source["lastChecked"] = TODAY.isoformat()
@@ -414,6 +421,7 @@ def main():
         source["emptyChecks"] = int(source.get("emptyChecks") or 0) + (1 if not urls else 0)
         source["successfulChecks"] = int(source.get("successfulChecks") or 0) + (1 if urls else 0)
         for url in urls:
+            if time.monotonic() >= STOP_AT: break
             if len(additions) >= MAX_NEW or url in existing_urls:
                 continue
             stats["candidatePages"] += 1
@@ -445,6 +453,7 @@ def main():
     # Discovery outside the existing source catalog. Only pages that pass all
     # strict checks can publish; otherwise they merely appear in review.
     for url in discover_external():
+        if time.monotonic() >= STOP_AT: break
         if len(additions) >= MAX_NEW or url in existing_urls:
             continue
         page = fetch(url)
@@ -510,7 +519,13 @@ def main():
 
     write_json(CONTESTS_FILE, contests_doc)
     write_json(SOURCES_FILE, sources_doc)
-    write_json(REVIEW_FILE, {"date": TODAY.isoformat(), "items": review[:250]})
+    previous = load_json(REVIEW_FILE).get("items", []) if REVIEW_FILE.exists() else []
+    by_url = {canonical_url(x.get("url", "")): x for x in previous if x.get("status") != "rejected"}
+    for item in review:
+        by_url[canonical_url(item.get("url", ""))] = item
+    pending = sorted(by_url.values(), key=lambda x: (x.get("status") == "rejected", x.get("reason") != "first-pass-passed"))
+    stats["budgetReached"] = time.monotonic() >= STOP_AT
+    write_json(REVIEW_FILE, {"date": TODAY.isoformat(), "items": pending})
     write_json(REPORT_FILE, {"date": TODAY.isoformat(), **stats, "newIds": [x["id"] for x in additions]})
     print(json.dumps({"ok": True, **stats, "newIds": [x["id"] for x in additions]}, ensure_ascii=False))
 

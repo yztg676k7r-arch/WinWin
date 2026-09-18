@@ -6,7 +6,7 @@ promotes only high-confidence official web contests, rejects obvious non-contest
 pages, and keeps genuinely ambiguous pages for another future pass.
 """
 from __future__ import annotations
-import hashlib, json, re, urllib.parse
+import hashlib, json, re, urllib.parse, os, time
 from datetime import date, datetime, timedelta
 from pathlib import Path
 import requests
@@ -15,7 +15,9 @@ from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 CF=ROOT/'contests.json'; SF=ROOT/'sources.json'; RF=ROOT/'data/daily-scout-review.json'; PF=ROOT/'data/daily-scout-report.json'
 TODAY=date.today(); SESSION=requests.Session(); SESSION.headers.update({'User-Agent':'WinWin-Review-Gate/8.4.1','Accept-Language':'de-DE,de;q=0.9'})
-MAX_REVIEW=220; TIMEOUT=12
+MAX_REVIEW=220; TIMEOUT=10
+STOP_AT=time.monotonic()+int(os.getenv("WINWIN_REVIEW_BUDGET_SECONDS","600"))
+MAX_NEW=int(os.getenv("WINWIN_SCOUT_MAX_NEW","15"))
 CONTEST_WORDS=('gewinnspiel','verlosung','gewinnen','giveaway')
 NON_CONTEST=('gewinner stehen fest','die gewinner','eventkalender','ausbildung','seminar','kurs','produkttest','winterreifen-test','gebrauchtwagen','styletrend','firmenwagen award')
 BAD=(r'kassenbon',r'kaufbeleg',r'bon hochladen',r'produkt(?:e)? kaufen',r'mindestbestellwert',r'premium[- ]?sms',r'0137\d',r'0900\d',r'kostenpflichtig.{0,25}(?:anruf|sms|teilnahme|abo)',r'nur f[uü]r (?:club)?mitglieder',r'kostenpflichtige mitgliedschaft')
@@ -51,11 +53,11 @@ def title(soup):
 def has_entry(soup,raw):
  low=raw.lower(); return bool(soup.find('form')) or any(x in low for x in ('teilnahmeformular','jetzt teilnehmen','am gewinnspiel teilnehmen','type="email"',"type='email'",'mailto:'))
 def extract_prize(text,title):
- for chunk in re.split(r'(?<=[.!?])\\s+|\\n+',text):
-  clean=re.sub(r'\\s+',' ',chunk).strip()
-  if 12<=len(clean)<=260 and re.search(r'\\b(?:verlosen|verlost|gewinnen|gewinnt|zu gewinnen)\\b',clean,re.I):
+ for chunk in re.split(r'(?<=[.!?])\s+|\n+',text):
+  clean=re.sub(r'\s+',' ',chunk).strip()
+  if 12<=len(clean)<=260 and re.search(r'\b(?:verlosen|verlost|gewinnen|gewinnt|zu gewinnen)\b',clean,re.I):
    return clean[:220]
- return title[:220] if re.search(r'\\b(?:gewinnen|gewinn)\\b',title,re.I) else None
+ return title[:220] if re.search(r'\b(?:gewinnen|gewinn)\b',title,re.I) else None
 
 def classify(url,t,text,soup,raw):
  n=norm(t+' '+url); low=text.lower()
@@ -69,6 +71,14 @@ def classify(url,t,text,soup,raw):
    contest_links.add(canon(href))
  if 'aktuelle gewinnspiele' in low and len(contest_links)>=2:
   return 'rejected','contest-hub',None
+ if 'iamstudent' in url.lower(): return 'rejected','excluded-provider',None
+ if re.search(r'teilnahmebedingungen|datenschutz',t,re.I): return 'review','terms-only-page',None
+ if not re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',low):
+  return 'review','germany-eligibility-not-confirmed',None
+ if not re.search(r'(?:teilnahme.{0,40}(?:kostenlos|kostenfrei|unentgeltlich)|(?:kein|ohne).{0,25}kauf)',low):
+  return 'review','free-entry-not-confirmed',None
+ if re.search(r'(?:mitgliedschaft|clubmitglied|club-mitglied).{0,50}(?:voraussetzung|erforderlich)|(?:nur|ausschließlich).{0,30}(?:club|mitglieder)',low):
+  return 'rejected','club-required',None
  path=urllib.parse.urlsplit(url).path.rstrip('/')
  if path in ('','/'): return 'rejected','generic-homepage',None
  if any(re.search(p,low,re.I) for p in BAD): return 'rejected','policy-exclusion',None
@@ -79,12 +89,15 @@ def classify(url,t,text,soup,raw):
  if not d: return 'review','deadline-not-unambiguous',None
  if not has_entry(soup,raw): return 'review','entry-route-not-unambiguous',None
  social=any(x in norm(text) for x in ('instagram','facebook','tiktok')) and any(x in norm(text) for x in ('folgen','kommentieren','liken','markieren','teilen'))
- if social and not soup.find('form') and 'mailto:' not in raw.lower(): return 'rejected','social-only',None
+ if social: return 'review','social-requirements-need-review',None
  return 'verified','second-pass-verified',d
 def main():
  cd=load(CF); sd=load(SF); rd=load(RF) if RF.exists() else {'items':[]}; contests=cd['contests']; sources=sd['sources']; sm={s.get('id'):s for s in sources}; urls={canon(c.get('url','')) for c in contests if c.get('url')}; ids={str(c.get('id')) for c in contests}
  promoted=[]; kept=[]; rejected=[]; checked=0
- for old in rd.get('items',[])[:MAX_REVIEW]:
+ pending=rd.get('items',[])
+ for index, old in enumerate(pending):
+  if checked>=MAX_REVIEW or time.monotonic()>=STOP_AT or len(promoted)>=MAX_NEW:
+   kept.extend(pending[index:]); break
   if old.get('status')=='rejected': rejected.append(old); continue
   got=fetch(old.get('url','')); checked+=1
   if not got: old['reviewAttempts']=int(old.get('reviewAttempts',0))+1; old['reason']='fetch-failed'; kept.append(old); continue
@@ -92,6 +105,8 @@ def main():
   if status=='rejected': old.update({'url':u,'title':t,'status':'rejected','reason':reason,'lastReviewed':TODAY.isoformat()}); rejected.append(old); continue
   if status=='review': old.update({'url':u,'title':t,'status':'review','reason':reason,'lastReviewed':TODAY.isoformat(),'reviewAttempts':int(old.get('reviewAttempts',0))+1}); kept.append(old); continue
   if canon(u) in urls: continue
+  if old.get('sourceId') not in sm:
+   old['reason']='missing-source'; kept.append(old); continue
   src=sm.get(old.get('sourceId'),{}); sid=src.get('id') or old.get('sourceId') or 'scout'; digest=hashlib.sha1((u+d.isoformat()).encode()).hexdigest()[:8]; cid=f'{sid}-{d.strftime("%Y%m%d")}-{digest}'
   if cid in ids: continue
   item={'id':cid,'title':t,'provider':src.get('name') or urllib.parse.urlsplit(u).netloc,'prize':extract_prize(text,t) or t,'url':u,'category':(src.get('categories') or ['Sonstiges'])[0],'country':'Deutschland','deadline':d.strftime('%d.%m.%Y'),'winners':None,'new':True,'daily':bool(re.search(r'täglich|taeglich|jeden tag',text,re.I)),'international':False,'requirements':'Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft','purchaseRequired':False,'receiptRequired':False,'winnerKnown':False,'verified':TODAY.strftime('%d.%m.%Y'),'providerTrust':min(5,max(3,int(src.get('quality') or 4))),'effort':1,'entryType':'form' if soup.find('form') else 'email','multipleEntry':bool(re.search(r'täglich|taeglich|jeden tag|mehrfach',text,re.I)),'highValuePrize':False,'tags':['Daily Scout','2× geprüft','kostenlos','neu'],'addedAt':TODAY.strftime('%d.%m.%Y'),'sourceId':sid,'deEligibility':'bestätigt','participationFrequency':'täglich' if re.search(r'täglich|taeglich|jeden tag',text,re.I) else 'einmalig','chanceScore':45,'priority':'mittel','qualityScore':97,'shortDescription':t,'dataCompleteness':88,'lastVerified':TODAY.strftime('%d.%m.%Y'),'catalogStatus':'active','scoutStatus':'verified-second-pass','scoutAdded':True}

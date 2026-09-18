@@ -13,8 +13,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=8.5-fix1">
-  <title>Win Win 8.3.1</title>
+  <link rel="stylesheet" href="./styles.css?v=8.6">
+  <title>Win Win</title>
 </head>
 <body>
   <div class="app-shell">
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-      <section id="homeView" class="view active">
+      <section id="homeView" class="view">
         <section class="welcome-card">
           <div>
             <p class="welcome-label">HEUTE FÜR DICH</p>
@@ -37,28 +37,7 @@
           <img src="./apple-touch-icon.png" alt="Win Win App-Icon" class="hero-icon">
         </section>
 
-        <section class="update-status" id="updateStatus">
-          <span class="status-dot"></span>
-          <span id="updateText">Gewinnspiele werden geprüft …</span>
-          <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.3.1 · Katalog wird geladen</small>
-        </section>
-        <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden>
-          <div class="deployment-status-copy">
-            <strong>Veröffentlichung wird geprüft</strong>
-            <small id="deploymentStatusText">Veröffentlichte Version wird geprüft …</small>
-          </div>
-          <button type="button" id="forceUpdateBtn" class="secondary-button">Update erzwingen</button>
-        </section>
         <section class="metric-grid" id="metrics"></section>
-
-        <section id="roundReviewPanel" class="round-review-panel" aria-live="polite" hidden>
-          <div class="section-head">
-            <div><p class="section-kicker">DEINE ENTSCHEIDUNG</p><h2>Neue Runde prüfen</h2></div>
-            <span id="roundReviewBadge" class="round-review-badge">0</span>
-          </div>
-          <p class="round-review-intro">Diese Gewinnspielreihen hattest du früher als nicht interessant markiert. Entscheide für jede neue Runde neu.</p>
-          <div id="roundReviewList" class="round-review-list"></div>
-        </section>
 
         <section class="smart-discovery" id="smartDiscovery" aria-label="Smart Discovery">
           <div class="section-head">
@@ -112,26 +91,48 @@
         <div id="todayList" class="today-stage-list"></div>
       </section>
 
-      <section id="discoverView" class="view">
-        <div class="view-title"><p class="section-kicker">ENTDECKEN</p><h2>Alle Gewinnspiele</h2></div>
-        <div class="marks-tools"><button type="button" onclick="openManageMarks('ignored')">Nicht interessant verwalten</button><button type="button" onclick="openManageMarks('problems')">⚠ Probleme</button></div><div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Preis, Anbieter oder Kategorie …"></div>
-        <div id="categoryQuickFilters" class="category-quick-filters" aria-label="Beliebte Kategorien"></div>
-        <div class="chip-row" id="chips">
-          <button class="chip active" data-filter="all">Alle</button>
-          <button class="chip" data-filter="recommended">Empfohlen</button>
-          <button class="chip" data-filter="newVisit">Neu seit letztem Besuch</button>
-          <button class="chip" data-filter="top">Top-Chancen</button>
-          <button class="chip" data-filter="secret">Geheimtipps</button>
+      <section id="discoverView" class="view active">
+        <div class="view-title"><h2>Gewinnspiele</h2><p class="simple-copy">Deine offenen Chancen – alles an einem Ort.</p></div>
+        <section class="update-status" id="updateStatus">
+          <span class="status-dot"></span>
+          <span id="updateText">Gewinnspiele werden geprüft …</span>
+          <small id="dataDiagnostics" class="data-diagnostics">Win Win 8.3.1 · Katalog wird geladen</small>
+        </section>
+        <section class="deployment-status" id="deploymentStatus" aria-live="polite" hidden>
+          <div class="deployment-status-copy">
+            <strong>Veröffentlichung wird geprüft</strong>
+            <small id="deploymentStatusText">Veröffentlichte Version wird geprüft …</small>
+          </div>
+          <button type="button" id="forceUpdateBtn" class="secondary-button">Update erzwingen</button>
+        </section>
+        <section id="roundReviewPanel" class="round-review-panel" aria-live="polite" hidden>
+          <div class="section-head">
+            <div><p class="section-kicker">DEINE ENTSCHEIDUNG</p><h2>Neue Runde prüfen</h2></div>
+            <span id="roundReviewBadge" class="round-review-badge">0</span>
+          </div>
+          <p class="round-review-intro">Diese Gewinnspielreihen hattest du früher als nicht interessant markiert. Entscheide für jede neue Runde neu.</p>
+          <div id="roundReviewList" class="round-review-list"></div>
+        </section>
+
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" aria-label="Gewinnspiele suchen" placeholder="Gewinn oder Anbieter suchen …"></div>
+        <div class="chip-row simple-tabs" id="chips" aria-label="Gewinnspiele auswählen">
+          <button class="chip active" data-filter="all">Offen</button>
+          <button class="chip" data-filter="newVisit">Neu</button>
           <button class="chip" data-filter="ending">Endet bald</button>
-          <button class="chip" data-filter="ignored">Nicht interessant</button><button class="chip" data-filter="international">International</button><button class="chip" data-filter="regional">Regional</button>
-          <button class="chip" data-filter="Beauty">Beauty</button><button class="chip" data-filter="Garten">Garten</button><button class="chip" data-filter="Technik">Technik</button><button class="chip" data-filter="Tickets">Tickets</button>
-          <button class="chip" data-filter="Wohnen">Wohnen</button>
-          <button class="chip" data-filter="Reisen">Reisen</button>
-          <button class="chip" data-filter="Produkttests">Produkttests</button>
+          <button class="chip" data-filter="daily">Täglich</button>
         </div>
+        <p id="simpleFilterHint" class="simple-copy" aria-live="polite"></p>
+        <details class="simple-filters"><summary>Kategorien &amp; Filter</summary>
+          <div id="categoryQuickFilters" class="category-quick-filters" aria-label="Kategorien"></div>
+          <div class="simple-filter-fields">
+            <label>Teilnahme<select id="filterEntryType"><option value="">Alle Teilnahmewege</option><option value="form">Formular</option><option value="email">E-Mail</option><option value="app">App</option><option value="vote">Abstimmung</option></select></label>
+            <label>Aufwand<select id="filterEffort"><option value="">Beliebig</option><option value="1">Sehr schnell</option><option value="2">Wenig Aufwand</option></select></label>
+          </div>
+          <p id="activeFilterSummary" class="simple-copy"></p><button type="button" onclick="resetSimpleFilters()">Alle Filter zurücksetzen</button>
+        </details>
         <div class="list-toolbar">
           <span id="resultCount">0 Ergebnisse</span>
-          <select id="sortSelect">
+          <select id="sortSelect" aria-label="Gewinnspiele sortieren">
             <option value="score">Beste Empfehlung</option>
             <option value="deadline">Endet zuerst</option>
             <option value="efficiency">Beste Effizienz</option>
@@ -149,8 +150,8 @@
         <div id="favoriteList" class="contest-list"></div>
       </section>
 
-      <section id="statsView" class="view">
-        <div class="view-title dashboard-title-row"><div><p class="section-kicker">DEIN ÜBERBLICK</p><h2>Dashboard</h2></div><label class="dashboard-toggle"><input id="dashboardShowAll" type="checkbox"><span>Alle anzeigen</span></label></div>
+      <section id="statsView" class="view"><button class="text-button simple-back" onclick="openView('moreView')">‹ Mehr</button>
+        <div class="view-title dashboard-title-row"><div><p class="section-kicker">DEIN ÜBERBLICK</p><h2>Teilnahmen &amp; Gewinne</h2></div><label class="dashboard-toggle"><input id="dashboardShowAll" type="checkbox"><span>Alle anzeigen</span></label></div>
         <section id="statsHero" class="stats-hero"></section>
         <div id="statsGrid" class="stats-grid"></div>
         <p id="dashboardModeNote" class="dashboard-mode-note">Es werden nur offene, interessante Gewinnspiele angezeigt.</p>
@@ -174,8 +175,8 @@
         </section>
       </section>
 
-      <section id="dataView" class="view">
-        <div class="view-title"><p class="section-kicker">DATENZENTRALE</p><h2>Import & Quellen</h2></div>
+      <section id="dataView" class="view"><button class="text-button simple-back" onclick="openView('moreView')">‹ Mehr</button>
+        <div class="view-title"><p class="section-kicker">DATENZENTRALE</p><h2>Einstellungen &amp; Sicherung</h2></div>
         <section class="data-panel catalog-update-panel" aria-live="polite">
           <div class="section-head">
             <div><p class="section-kicker">KATALOG</p><h3>Aktualisierung</h3></div>
@@ -361,16 +362,22 @@
           </ul>
         </section>
       </section>
-    <div id='todayModeCard' class='card'><h3>Heute neu</h3><p>Zeigt unbearbeitete und aktuelle Gewinnspiele zuerst.</p></div></main>
+      <section id="moreView" class="view">
+        <div class="view-title"><h2>Mehr</h2></div>
+        <div class="simple-menu">
+          <button onclick="openView('statsView')"><strong>Teilnahmen &amp; Gewinne</strong><span>Deine Historie und dein Gewinnarchiv</span></button>
+          <button onclick="openManageMarks('ignored')"><strong>Ausgeblendete Gewinnspiele</strong><span>„Nicht interessant“ rückgängig machen</span></button>
+          <button onclick="openManageMarks('problems')"><strong>Gemeldete Probleme</strong><span>Prüfliste ansehen und teilen</span></button>
+          <button onclick="openView('dataView')"><strong>Einstellungen &amp; Sicherung</strong><span>Daten sichern, aktualisieren und Quellen verwalten</span></button>
+        </div>
+      </section>
+    </main>
 
     <div id="toast" class="toast" role="status"></div>
-    <nav class="bottom-nav six">
-      <button class="nav-item active" data-view="homeView"><span class="nav-icon">⌂</span><span>Start</span></button>
-      <button class="nav-item" data-view="todayView"><span class="nav-icon">◎</span><span>Heute</span></button>
-      <button class="nav-item" data-view="discoverView"><span class="nav-icon">⌕</span><span>Entdecken</span></button>
+    <nav class="bottom-nav simple-nav" aria-label="Hauptmenü">
+      <button class="nav-item active" data-view="discoverView" aria-current="page"><span class="nav-icon">⌕</span><span>Gewinnspiele</span></button>
       <button class="nav-item" data-view="favoritesView"><span class="nav-icon">♡</span><span>Favoriten</span></button>
-      <button class="nav-item" data-view="statsView"><span class="nav-icon">◫</span><span>Dashboard</span></button>
-      <button class="nav-item" data-view="dataView"><span class="nav-icon">⇅</span><span>Daten</span></button>
+      <button class="nav-item" data-view="moreView"><span class="nav-icon">☰</span><span>Mehr</span></button>
     </nav>
   </div>
 
@@ -467,6 +474,6 @@
 <button type="button" onclick="saveProblem()">Problem vormerken</button><button type="button" onclick="document.getElementById('problemDialog').close()">Abbrechen</button>
 </dialog>
 <dialog id="marksDialog" class="marks-dialog"><h2 id="marksTitle"></h2><p>Meldungen bleiben lokal. Teile die Prüfliste im Chat zur Überprüfung. Zurückgesetzte Gewinnspiele erscheinen wieder, sofern sie noch aktiv und offen sind.</p><button id="shareProblems" type="button" onclick="shareProblems()">Prüfliste teilen / kopieren</button><textarea id="problemExport" hidden readonly aria-label="Prüfliste zum Kopieren"></textarea><div id="marksList"></div><button type="button" onclick="document.getElementById('marksDialog').close()">Schließen</button></dialog>
-  <script src="./app.js?v=8.5-fix1"></script>
+  <script src="./app.js?v=8.6"></script>
 </body>
 </html>

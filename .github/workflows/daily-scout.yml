@@ -2,8 +2,13 @@ name: Win Win Daily Scout
 
 on:
   schedule:
+    # One daily run; delayed starts must still scan.
     - cron: '35 3 * * *'
-    - cron: '35 4 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-scout.yml'
+      - 'scripts/**'
   workflow_dispatch:
 
 permissions:
@@ -17,26 +22,15 @@ jobs:
   scout:
     runs-on: ubuntu-latest
     timeout-minutes: 35
+    env:
+      TZ: Europe/Berlin
     steps:
       - name: Check out Win Win
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Gate scheduled run to 05:xx Europe/Berlin
-        id: gate
-        shell: bash
-        run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          elif [[ "$(TZ=Europe/Berlin date +%H)" == "05" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Set up Python
-        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -44,30 +38,33 @@ jobs:
           cache-dependency-path: requirements-scout.txt
 
       - name: Install scout
-        if: steps.gate.outputs.run == 'true'
         run: pip install -r requirements-scout.txt
 
       - name: Run Daily Scout
-        if: steps.gate.outputs.run == 'true'
         env:
-          WINWIN_SCOUT_MAX_SOURCES: '90'
+          WINWIN_SCOUT_MAX_SOURCES: '30'
+          WINWIN_SCOUT_BUDGET_SECONDS: '600'
           WINWIN_SCOUT_MAX_NEW: '15'
         run: python scripts/daily_scout.py
 
       - name: Re-check review queue
-        if: steps.gate.outputs.run == 'true'
+        env:
+          WINWIN_REVIEW_BUDGET_SECONDS: '600'
+          WINWIN_SCOUT_MAX_NEW: '15'
         run: python scripts/review_queue.py
 
       - name: Validate generated JSON
-        if: steps.gate.outputs.run == 'true'
         run: |
           python -m json.tool contests.json >/dev/null
           python -m json.tool sources.json >/dev/null
           python -m json.tool data/daily-scout-report.json >/dev/null
           python -m json.tool data/daily-scout-review.json >/dev/null
 
+      - name: Report actual results
+        run: |
+          python -c "import json; r=json.load(open('data/daily-scout-report.json')); print(json.dumps(r, ensure_ascii=False, indent=2))" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Publish catalog update
-        if: steps.gate.outputs.run == 'true'
         shell: bash
         run: |
           if git diff --quiet -- contests.json sources.json data/daily-scout-report.json data/daily-scout-review.json; then
