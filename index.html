@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=8.6">
+  <link rel="stylesheet" href="./styles.css?v=8.6.1">
   <title>Win Win</title>
 </head>
 <body>
@@ -367,7 +367,7 @@
         <div class="simple-menu">
           <button onclick="openView('statsView')"><strong>Teilnahmen &amp; Gewinne</strong><span>Deine Historie und dein Gewinnarchiv</span></button>
           <button onclick="openManageMarks('ignored')"><strong>Ausgeblendete Gewinnspiele</strong><span>„Nicht interessant“ rückgängig machen</span></button>
-          <button onclick="openManageMarks('problems')"><strong>Gemeldete Probleme</strong><span>Prüfliste ansehen und teilen</span></button>
+          <button onclick="openManageMarks('problems')"><strong>Probleme prüfen &amp; senden</strong><span>Du erfasst nur den Hinweis – die Prüfliste wird automatisch erstellt</span></button>
           <button onclick="openView('dataView')"><strong>Einstellungen &amp; Sicherung</strong><span>Daten sichern, aktualisieren und Quellen verwalten</span></button>
         </div>
       </section>
@@ -466,14 +466,52 @@
 })();
 </script>
 
-  <dialog id="problemDialog" class="marks-dialog">
-<h2>Problem melden</h2><p id="problemTitle"></p>
-<label>Was funktioniert nicht?<select id="problemReason"><option>Link funktioniert nicht</option><option>Link führt nur zu Bedingungen</option><option>Gewinnspiel nicht auffindbar</option><option>Teilnahme funktioniert nicht</option><option>Bereits beendet</option><option>Sonstiges</option></select></label>
-<label>Hinweis (optional)<textarea id="problemNote" maxlength="1000"></textarea></label>
-<p>Die Meldung wird auf deinem Gerät vorgemerkt. Teile anschließend unter „Probleme“ die Prüfliste hier im Chat, damit sie geprüft werden kann.</p>
-<button type="button" onclick="saveProblem()">Problem vormerken</button><button type="button" onclick="document.getElementById('problemDialog').close()">Abbrechen</button>
+  <dialog id="problemDialog" class="marks-dialog problem-dialog" aria-labelledby="problemDialogTitle">
+  <div class="marks-dialog-head">
+    <div><p class="section-kicker">PROBLEM MELDEN</p><h2 id="problemDialogTitle">Gewinnspiel prüfen lassen</h2></div>
+    <button type="button" class="dialog-close" data-close-dialog="problemDialog" onclick="closeDialog('problemDialog')" aria-label="Fenster schließen">×</button>
+  </div>
+  <div class="marks-dialog-content">
+    <p id="problemTitle" class="dialog-contest-title"></p>
+    <label>Was funktioniert nicht?
+      <select id="problemReason">
+        <option>Link funktioniert nicht</option>
+        <option>Link führt nur zu Bedingungen</option>
+        <option>Gewinnspiel nicht auffindbar</option>
+        <option>Teilnahme funktioniert nicht</option>
+        <option>Bereits beendet</option>
+        <option>Sonstiges</option>
+      </select>
+    </label>
+    <label>Dein Hinweis (optional)
+      <textarea id="problemNote" maxlength="1000" placeholder="Was ist dir aufgefallen?"></textarea>
+    </label>
+    <p class="dialog-help">Du brauchst nur den Hinweis zu erfassen. Win Win übernimmt Titel, Anbieter, Frist und Direktlink automatisch in die Prüfliste.</p>
+    <div class="dialog-actions">
+      <button type="button" class="data-primary" onclick="saveProblem()">Hinweis speichern</button>
+      <button type="button" onclick="closeDialog('problemDialog')">Abbrechen</button>
+    </div>
+  </div>
 </dialog>
-<dialog id="marksDialog" class="marks-dialog"><h2 id="marksTitle"></h2><p>Meldungen bleiben lokal. Teile die Prüfliste im Chat zur Überprüfung. Zurückgesetzte Gewinnspiele erscheinen wieder, sofern sie noch aktiv und offen sind.</p><button id="shareProblems" type="button" onclick="shareProblems()">Prüfliste teilen / kopieren</button><textarea id="problemExport" hidden readonly aria-label="Prüfliste zum Kopieren"></textarea><div id="marksList"></div><button type="button" onclick="document.getElementById('marksDialog').close()">Schließen</button></dialog>
-  <script src="./app.js?v=8.6"></script>
+<dialog id="marksDialog" class="marks-dialog" aria-labelledby="marksTitle">
+  <div class="marks-dialog-head">
+    <div><p class="section-kicker">DEINE VORMERKUNGEN</p><h2 id="marksTitle"></h2></div>
+    <button type="button" class="dialog-close" data-close-dialog="marksDialog" onclick="closeDialog('marksDialog')" aria-label="Fenster schließen">×</button>
+  </div>
+  <div class="marks-dialog-content">
+    <p id="marksIntro" class="dialog-help"></p>
+    <div id="marksShareBar" class="marks-share-bar" hidden>
+      <strong>Automatische Prüfliste</strong>
+      <p>Win Win sammelt alle Hinweise mit Titel, Link, Frist und Fehlerbeschreibung. Tippe auf „An ChatGPT senden“ und wähle ChatGPT im iPhone-Teilen-Menü aus.</p>
+      <div class="dialog-actions">
+        <button id="shareProblems" type="button" class="data-primary" onclick="shareProblems()">↗ An ChatGPT senden</button>
+        <button id="copyProblems" type="button" onclick="copyProblems()">Prüfliste kopieren</button>
+      </div>
+    </div>
+    <textarea id="problemExport" hidden readonly aria-label="Automatisch erstellte Prüfliste"></textarea>
+    <div id="marksList"></div>
+  </div>
+</dialog>
+  <script src="./app.js?v=8.6.1"></script>
 </body>
 </html>

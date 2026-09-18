@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.6';
+const APP_VERSION='8.6.1';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -662,15 +662,67 @@ function clearProblem(id){
  try{saveUser()}catch(error){user.items[id].problem=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
  refreshAllViews('problem');renderManageMarks();
 }
-function openManageMarks(mode){$('#marksDialog').dataset.mode=mode;renderManageMarks();$('#marksDialog').showModal()}
+function closeDialog(id){
+ const dialog=typeof id==='string' ? $(id.startsWith('#')?id:`#${id}`) : id;
+ if(!dialog)return;
+ try{if(dialog.open&&typeof dialog.close==='function')dialog.close();else dialog.removeAttribute('open')}catch(error){dialog.removeAttribute('open')}
+}
+function problemChecklistText(){
+ const entries=Object.entries(user.items||{}).filter(([,state])=>state?.problem?.open);
+ if(!entries.length)return '';
+ const lines=['Win Win – Prüfliste','Bitte prüfe und korrigiere die folgenden Gewinnspiele. Die Meldungen wurden in der App erfasst.',''];
+ entries.forEach(([id,state],index)=>{
+  const p=state.problem||{};
+  lines.push(`${index+1}. ${p.title||id}`);
+  lines.push(`Anbieter: ${p.provider||'–'}`);
+  lines.push(`ID: ${id}`);
+  lines.push(`Direktlink: ${p.url||'–'}`);
+  lines.push(`Frist: ${p.deadline||'–'}`);
+  lines.push(`Problem: ${p.reason||'–'}`);
+  if(p.note)lines.push(`Hinweis: ${p.note}`);
+  lines.push('');
+ });
+ return lines.join('\n').trim();
+}
+function openProblem(id){
+ const item=contests.find(i=>i.id===id);if(!item)return;
+ const dialog=$('#problemDialog');dialog.dataset.contestId=id;
+ $('#problemTitle').textContent=item.title;
+ $('#problemReason').value=user.items[id]?.problem?.reason||'Link funktioniert nicht';
+ $('#problemNote').value=user.items[id]?.problem?.note||'';
+ dialog.showModal();
+ requestAnimationFrame(()=>dialog.scrollTop=0);
+}
+function saveProblem(){
+ const id=$('#problemDialog').dataset.contestId,item=contests.find(i=>i.id===id);if(!item)return;
+ const before=JSON.stringify(user);
+ stateFor(id).problem={open:true,changedAt:Date.now(),title:item.title,provider:item.provider,url:item.url,deadline:item.deadline,sourceId:item.sourceId||'',reason:$('#problemReason').value,note:$('#problemNote').value.trim()};
+ try{saveUser()}catch(error){user=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
+ closeDialog('problemDialog');refreshAllViews('problem');toast('Hinweis gespeichert – Prüfliste unter Mehr öffnen');
+}
+function clearProblem(id){
+ const problem=user.items[id]?.problem;if(!problem)return;
+ const before=JSON.stringify(problem);problem.open=false;problem.changedAt=Date.now();
+ try{saveUser()}catch(error){user.items[id].problem=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
+ refreshAllViews('problem');renderManageMarks();
+}
+function openManageMarks(mode){
+ const dialog=$('#marksDialog');if(!dialog)return;
+ dialog.dataset.mode=mode;renderManageMarks();
+ try{if(dialog.open)dialog.close();dialog.showModal();requestAnimationFrame(()=>dialog.scrollTop=0)}catch(error){dialog.setAttribute('open','');dialog.scrollTop=0}
+}
 function renderManageMarks(){
  const dialog=$('#marksDialog');if(!dialog)return;
- const problems=dialog.dataset.mode==='problems';$('#marksTitle').textContent=problems?'Probleme zur Prüfung':'Nicht interessant – zurücksetzen';
- $('#shareProblems').hidden=!problems;
+ const problems=dialog.dataset.mode==='problems';
+ $('#marksTitle').textContent=problems?'Probleme prüfen':'Nicht interessant – zurücksetzen';
+ $('#marksIntro').textContent=problems
+  ?'Du musst nur Hinweise erfassen. Die App erstellt daraus automatisch eine vollständige Prüfliste.'
+  :'Hier kannst du versehentlich ausgeblendete Gewinnspiele wieder anzeigen.';
+ $('#marksShareBar').hidden=!problems;
  const list=$('#marksList');list.replaceChildren();
- const entries=problems?Object.entries(user.items).filter(([,s])=>s.problem?.open):[...new Map([...Object.entries(user.items).filter(([,s])=>s.ignored),...contests.filter(isContestIgnored).map(i=>[i.id,user.items[i.id]||{_identity:contestIdentity(i)}])]).entries()];
+ const entries=problems?Object.entries(user.items).filter(([,state])=>state.problem?.open):[...new Map([...Object.entries(user.items).filter(([,state])=>state.ignored),...contests.filter(isContestIgnored).map(item=>[item.id,user.items[item.id]||{_identity:contestIdentity(item)}])]).entries()];
  for(const [id,state] of entries){
-  const item=contests.find(i=>i.id===id)||state._identity||{};
+  const item=contests.find(entry=>entry.id===id)||state._identity||{};
   const row=document.createElement('article');row.className='marks-row';
   const title=document.createElement('h3');title.textContent=(problems?state.problem.title:item.title)||id;row.append(title);
   const info=document.createElement('p');info.textContent=problems?state.problem.reason+(state.problem.note?' · '+state.problem.note:''):[item.provider,item.deadline].filter(Boolean).join(' · ');row.append(info);
@@ -678,12 +730,31 @@ function renderManageMarks(){
  }
  if(!entries.length)list.textContent=problems?'Keine Probleme vorgemerkt.':'Keine ausgeblendeten Gewinnspiele.';
  $('#shareProblems').disabled=!entries.length;
+ $('#copyProblems').disabled=!entries.length;
 }
 async function shareProblems(){
- const entries=Object.entries(user.items).filter(([,s])=>s.problem?.open);
- const text='Bitte prüfe und korrigiere diese Win-Win-Gewinnspiele:\n\n'+entries.map(([id,s])=>{const p=s.problem;return `${p.title} (${p.provider})\nID: ${id}\nQuelle: ${p.sourceId}\nLink: ${p.url}\nFrist: ${p.deadline}\nProblem: ${p.reason}\n${p.note||''}`}).join('\n\n');
- if(navigator.share){try{await navigator.share({title:'Win Win – Probleme prüfen',text});return}catch(error){if(error.name==='AbortError')return}}
- try{await navigator.clipboard.writeText(text);toast('Prüfliste kopiert – hier im Chat einfügen')}catch(error){$('#problemExport').value=text;$('#problemExport').hidden=false;$('#problemExport').select()}
+ const text=problemChecklistText();
+ if(!text)return toast('Noch keine Probleme vorgemerkt');
+ try{
+  if(navigator.share){await navigator.share({title:'Win Win – Prüfliste',text});toast('Prüfliste geöffnet – ChatGPT im Teilen-Menü auswählen');return}
+ }catch(error){if(error?.name==='AbortError')return}
+ await copyProblems(text);
+}
+async function copyProblems(text=problemChecklistText()){
+ if(!text)return toast('Noch keine Probleme vorgemerkt');
+ try{await navigator.clipboard.writeText(text);toast('Prüfliste kopiert – im Chat einfügen')}
+ catch(error){const field=$('#problemExport');field.value=text;field.hidden=false;field.focus();field.select();toast('Prüfliste markiert – jetzt kopieren')}
+}
+function setupDialogClosers(){
+ ['problemDialog','marksDialog','contestDialog','sourceDialog','winDialog'].forEach(id=>{
+  const dialog=$(`#${id}`);if(!dialog)return;
+  dialog.addEventListener('click',event=>{if(event.target===dialog)closeDialog(dialog)});
+  dialog.querySelectorAll('[data-close-dialog]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();closeDialog(button.dataset.closeDialog)}));
+ });
+ document.addEventListener('click',event=>{
+  const button=event.target.closest('[data-close-dialog]');if(button){event.preventDefault();closeDialog(button.dataset.closeDialog)}
+ });
+ document.addEventListener('keydown',event=>{if(event.key==='Escape')document.querySelectorAll('dialog[open]').forEach(closeDialog)});
 }
 document.addEventListener('click',event=>{const button=event.target.closest('[data-report-id]');if(button)openProblem(button.dataset.reportId)});
 function registerClick(id){markContestSeen(id);user.clicks[id]=(user.clicks[id]||0)+1;adjustPreferenceForContest(id,0.35);saveUser();renderCatalogUpdateSummary()}
@@ -2132,6 +2203,7 @@ $('#forceUpdateBtn')?.addEventListener('click',forceAppUpdate);
  $('#markNewSeenBtn')?.addEventListener('click',markAllCatalogueSeen);
 document.addEventListener('click',e=>{const m=e.target.closest('[data-metric]');if(!m)return;m.dataset.metric==='statsView'?openView('statsView'):openDiscover(m.dataset.metric)});
 setupIndependentWins();
+setupDialogClosers();
 if($('#saveWinBtn'))$('#saveWinBtn').onclick=saveWin;if($('#removeWinBtn'))$('#removeWinBtn').onclick=removeWin;if($('#cancelWinBtn'))$('#cancelWinBtn').onclick=()=>$('#winDialog')?.close();
 setupDataCenter();
 setupSourceManager();

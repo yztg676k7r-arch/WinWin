@@ -532,3 +532,16 @@ main{padding:0 16px}.view{display:none;animation:fade .18s ease}.view.active{dis
 #discoverView .view-title .section-kicker{display:none}
 .simple-filters button{min-height:44px}
 @media(max-width:430px){input,select,textarea{font-size:16px!important}.simple-tabs .chip{font-size:12px}main{padding-bottom:100px}}
+
+
+/* Win Win 8.6.1 – dialogs that remain usable on iPhone */
+.marks-dialog{width:min(560px,calc(100vw - 24px));max-height:88dvh;overflow:auto;padding:0;border:0;border-radius:22px;background:var(--surface);color:var(--ink);box-shadow:0 25px 80px rgba(0,0,0,.28)}
+.marks-dialog::backdrop{background:rgba(9,20,27,.58);backdrop-filter:blur(3px)}
+.marks-dialog-head{position:sticky;top:0;z-index:4;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 18px 13px;background:var(--surface);border-bottom:1px solid var(--line)}
+.marks-dialog-head h2{margin:3px 0 0;font-size:25px;max-width:360px}.marks-dialog-content{padding:0 18px 22px}.marks-dialog label{display:block;margin:14px 0;font-size:13px;font-weight:750;color:var(--muted)}
+.marks-dialog select,.marks-dialog textarea{display:block;width:100%;font:inherit;padding:12px;box-sizing:border-box;border:1px solid var(--line);border-radius:13px;background:var(--bg);color:var(--ink);margin-top:6px}.marks-dialog textarea{min-height:90px;resize:vertical}
+.dialog-close{display:grid;place-items:center;flex:0 0 auto;width:44px;height:44px;border:0;border-radius:50%;background:var(--surface-2);color:var(--ink);font-size:28px;line-height:1;cursor:pointer}.dialog-close:active{transform:scale(.96)}
+.dialog-contest-title{font-size:18px;line-height:1.25;font-weight:800;margin:17px 0 14px}.dialog-help{font-size:13px;line-height:1.5;color:var(--muted);margin:12px 0}.dialog-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.dialog-actions button{min-height:44px;border:1px solid var(--line);border-radius:13px;padding:11px 14px;background:var(--surface-2);color:var(--ink);font-weight:800}.dialog-actions .data-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.marks-share-bar{margin:14px 0 18px;padding:14px;border-radius:17px;background:linear-gradient(135deg,var(--surface-2),#edf8f6)}.marks-share-bar strong{display:block;font-size:16px}.marks-share-bar p{font-size:13px;line-height:1.45;color:var(--muted);margin:6px 0 0}.marks-share-bar .dialog-actions{margin-top:12px}.marks-share-bar .dialog-actions button{flex:1}
+.marks-row{border-bottom:1px solid var(--line);padding:15px 0}.marks-row h3{font-size:17px;line-height:1.25;margin:0 0 6px;overflow-wrap:anywhere}.marks-row p{font-size:13px;line-height:1.4;color:var(--muted);margin:0 0 10px;overflow-wrap:anywhere}.marks-row button{min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);font-weight:750}.marks-dialog #problemExport{min-height:160px;margin-top:13px}
+@media(max-width:430px){.marks-dialog{width:calc(100vw - 20px);max-height:90dvh}.marks-dialog-head{padding:15px 14px 12px}.marks-dialog-content{padding-inline:14px}.marks-dialog-head h2{font-size:23px}.marks-share-bar .dialog-actions{display:grid;grid-template-columns:1fr}.marks-share-bar .dialog-actions button{width:100%}}
