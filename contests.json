@@ -8942,13 +8942,13 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-18T06:37:30+02:00",
-    "checkedSources": 26,
-    "candidatePages": 545,
+    "lastRun": "2026-09-18T10:35:10+02:00",
+    "checkedSources": 30,
+    "candidatePages": 387,
     "published": 0,
-    "review": 464,
-    "rejected": 16,
-    "expiredArchived": 6
+    "review": 300,
+    "rejected": 15,
+    "expiredArchived": 0
   },
   "duplicateCountAtRelease": 0,
   "excludedCountAtRelease": 0,
@@ -8967,11 +8967,11 @@
   "updated": "2026-09-18",
   "version": "8.3.1",
   "secondPass": {
-    "lastRun": "2026-09-18T06:39:20+02:00",
+    "lastRun": "2026-09-18T10:37:04+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 522,
-    "rejected": 29,
+    "keptForReview": 811,
+    "rejected": 0,
     "autoHiddenForReview": 0
   }
 }
