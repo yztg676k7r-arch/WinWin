@@ -1,5 +1,5 @@
 {
-  "activeCountAtRelease": 193,
+  "activeCountAtRelease": 200,
   "activeExpansionStrategy": "Österreich/Schweiz: nur Deutschland-kompatible, kostenlose Web-Teilnahmen in den aktiven Katalog; Quellen mit wechselnder Länderfreigabe bleiben Monitoring-Quellen.",
   "appName": "Win Win",
   "catalogGoal": 1000,
@@ -573,7 +573,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -2723,7 +2723,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Familie",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -5389,7 +5389,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -5432,7 +5432,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -7437,7 +7437,7 @@
     },
     {
       "addedAt": "06.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Tickets & Events",
       "chanceScore": 72,
       "country": "Deutschland",
@@ -7963,7 +7963,7 @@
     },
     {
       "addedAt": "07.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Tickets & Events",
       "chanceScore": 62,
       "country": "Deutschland",
@@ -8942,13 +8942,13 @@
     }
   ],
   "dailyScout": {
-    "candidatePages": 201,
-    "checkedSources": 90,
-    "expiredArchived": 0,
-    "lastRun": "2026-09-04T07:04:12+00:00",
-    "published": 15,
-    "rejected": 10,
-    "review": 170
+    "lastRun": "2026-09-18T06:37:30+02:00",
+    "checkedSources": 26,
+    "candidatePages": 545,
+    "published": 0,
+    "review": 464,
+    "rejected": 16,
+    "expiredArchived": 6
   },
   "duplicateCountAtRelease": 0,
   "excludedCountAtRelease": 0,
@@ -8964,6 +8964,14 @@
   "release": "8.2.1 Quellenkatalog-Refresh",
   "removedExpiredInRelease": 42,
   "removedLegacyNonActiveInRelease": 12,
-  "updated": "2026-09-04",
-  "version": "8.3.1"
+  "updated": "2026-09-18",
+  "version": "8.3.1",
+  "secondPass": {
+    "lastRun": "2026-09-18T06:39:20+02:00",
+    "checked": 220,
+    "promoted": 0,
+    "keptForReview": 522,
+    "rejected": 29,
+    "autoHiddenForReview": 0
+  }
 }
