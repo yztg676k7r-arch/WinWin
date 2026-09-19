@@ -1,5 +1,5 @@
 {
-  "activeCountAtRelease": 200,
+  "activeCountAtRelease": 197,
   "activeExpansionStrategy": "Österreich/Schweiz: nur Deutschland-kompatible, kostenlose Web-Teilnahmen in den aktiven Katalog; Quellen mit wechselnder Länderfreigabe bleiben Monitoring-Quellen.",
   "appName": "Win Win",
   "catalogGoal": 1000,
@@ -5776,7 +5776,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -7483,7 +7483,7 @@
     },
     {
       "addedAt": "06.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Lifestyle & Wohnen",
       "chanceScore": 65,
       "country": "Deutschland",
@@ -8009,7 +8009,7 @@
     },
     {
       "addedAt": "08.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Freizeit & Kultur",
       "chanceScore": 82,
       "country": "Deutschland",
@@ -8942,13 +8942,13 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-18T10:35:10+02:00",
+    "lastRun": "2026-09-19T10:23:48+02:00",
     "checkedSources": 30,
-    "candidatePages": 387,
+    "candidatePages": 472,
     "published": 0,
-    "review": 300,
-    "rejected": 15,
-    "expiredArchived": 0
+    "review": 421,
+    "rejected": 10,
+    "expiredArchived": 3
   },
   "duplicateCountAtRelease": 0,
   "excludedCountAtRelease": 0,
@@ -8964,13 +8964,13 @@
   "release": "8.2.1 Quellenkatalog-Refresh",
   "removedExpiredInRelease": 42,
   "removedLegacyNonActiveInRelease": 12,
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "version": "8.3.1",
   "secondPass": {
-    "lastRun": "2026-09-18T10:37:04+02:00",
+    "lastRun": "2026-09-19T10:25:48+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 811,
+    "keptForReview": 1213,
     "rejected": 0,
     "autoHiddenForReview": 0
   }
