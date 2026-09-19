@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#eaf7f4">
+  <meta name="theme-color" content="#253741">
   <meta name="color-scheme" content="light dark">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,17 +11,21 @@
   <meta name="apple-mobile-web-app-title" content="Win Win">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
+  <link rel="icon" type="image/svg+xml" href="./logo-winwin.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=8.6.1">
+  <link rel="stylesheet" href="./styles.css?v=8.7.0">
   <title>Win Win</title>
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <div>
-        <p class="kicker">DEIN GEWINNSPIEL-ASSISTENT</p>
-        <h1>Win Win</h1>
+      <div class="brand-lockup">
+        <img src="./logo-winwin.svg" alt="Win Win Logo" class="brand-icon" width="48" height="48">
+        <div>
+          <p class="kicker">DEIN GEWINNSPIEL-ASSISTENT</p>
+          <h1>Win Win</h1>
+        </div>
       </div>
       <button id="refreshBtn" class="round-button" aria-label="Daten neu laden">↻</button>
     </header>
@@ -34,7 +38,7 @@
             <h2 id="heroTitle">Die besten Chancen auf einen Blick.</h2>
             <p class="welcome-copy" id="heroCopy">Automatisch bewertet und nach Nutzen sortiert.</p>
           </div>
-          <img src="./apple-touch-icon.png" alt="Win Win App-Icon" class="hero-icon">
+          <img src="./logo-winwin.svg" alt="Win Win App-Icon" class="hero-icon">
         </section>
 
         <section class="metric-grid" id="metrics"></section>
@@ -512,6 +516,6 @@
     <div id="marksList"></div>
   </div>
 </dialog>
-  <script src="./app.js?v=8.6.1"></script>
+  <script src="./app.js?v=8.7.0"></script>
 </body>
 </html>

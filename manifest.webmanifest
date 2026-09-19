@@ -1,6 +1,6 @@
 {
   "id": "./",
-  "name": "Win Win 8.3.1",
+  "name": "Win Win",
   "short_name": "Win Win",
   "description": "Persönlicher Gewinnspiel-Daily-Driver mit Chancen-, Effizienz- und Wiederholungspriorisierung",
   "lang": "de-DE",
@@ -11,8 +11,8 @@
     "standalone",
     "minimal-ui"
   ],
-  "background_color": "#eef8f6",
-  "theme_color": "#eef8f6",
+  "background_color": "#253741",
+  "theme_color": "#253741",
   "orientation": "portrait-primary",
   "icons": [
     {

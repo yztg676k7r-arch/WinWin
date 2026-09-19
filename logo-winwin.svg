@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Win Win Doppel-W</title>
+  <desc id="desc">Zwei überlappende W in Off-White und Salbeigrün auf dunkelblauem Grund</desc>
+  <rect width="180" height="180" rx="42" fill="#253741"/>
+  <path d="M31 58 49 122 70 73 91 122 110 58" fill="none" stroke="#F7F5EF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M66 58 84 122 105 73 126 122 145 58" fill="none" stroke="#AFC4BA" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

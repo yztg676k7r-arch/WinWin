@@ -1,15 +1,20 @@
-const CACHE='win-win-8.6.1';
+const CACHE='win-win-8.7.0';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.6.1',
- './app.js?v=8.6.1',
+ './styles.css?v=8.7.0',
+ './app.js?v=8.7.0',
  './manifest.webmanifest',
  './version.json',
+ './logo-winwin.svg',
  './apple-touch-icon.png',
+ './favicon-32.png',
  './icon-180.png',
  './icon-192.png',
- './icon-512.png'
+ './icon-512.png',
+ './icons/icon-180.png',
+ './icons/icon-192.png',
+ './icons/icon-512.png'
 ];
 const DATA_PATHS=['./contests.json','./data/sources.json','./sources.json'];
 
