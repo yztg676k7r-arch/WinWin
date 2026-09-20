@@ -8942,13 +8942,13 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-19T10:23:48+02:00",
+    "lastRun": "2026-09-20T10:53:59+02:00",
     "checkedSources": 30,
-    "candidatePages": 472,
+    "candidatePages": 435,
     "published": 0,
-    "review": 421,
+    "review": 360,
     "rejected": 10,
-    "expiredArchived": 3
+    "expiredArchived": 0
   },
   "duplicateCountAtRelease": 0,
   "excludedCountAtRelease": 0,
@@ -8964,13 +8964,13 @@
   "release": "8.2.1 Quellenkatalog-Refresh",
   "removedExpiredInRelease": 42,
   "removedLegacyNonActiveInRelease": 12,
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "version": "8.3.1",
   "secondPass": {
-    "lastRun": "2026-09-19T10:25:48+02:00",
+    "lastRun": "2026-09-20T10:56:27+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 1213,
+    "keptForReview": 1535,
     "rejected": 0,
     "autoHiddenForReview": 0
   }
