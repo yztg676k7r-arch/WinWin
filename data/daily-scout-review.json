@@ -1,75 +1,14 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "items": [
-    {
-      "url": "https://www.edeka.de/",
-      "sourceId": "edeka",
-      "title": "Mein EDEKA: Praktische Infos und Angebote",
-      "status": "review",
-      "reason": "fetch-failed",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.vinum.eu/de/studach",
-      "sourceId": "vinum",
-      "title": "Gewinnen Sie 2 signierte Flaschen von der Winzerlegende Thomas Studach",
-      "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.edeka.de/gewinnspiel/lego.jsp",
-      "sourceId": "edeka",
-      "title": "Gewinne 2 Tagestickets für das LEGOLAND® Deutschland Resort! | EDEKA",
-      "status": "review",
-      "reason": "fetch-failed",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.cosmopolitan.de/gewinnspiele/mit-quase-und-garmin-smart-durch-den-alltag",
-      "sourceId": "cosmopolitan",
-      "title": "Mit Quäse und Garmin smart durch den Alltag",
-      "status": "review",
-      "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.cosmopolitan.de/gewinnspiele/gewinne-1-von-4-fc-bayern-munchen-funko-sets",
-      "sourceId": "cosmopolitan",
-      "title": "Gewinne 1 von 4 FC Bayern München Funko Sets!",
-      "status": "review",
-      "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.cosmopolitan.de/gewinnspiele/5x-bett1de-bodyguard-matratze-gewinnen",
-      "sourceId": "cosmopolitan",
-      "title": "5x BETT1.DE BODYGUARD® Matratze gewinnen!",
-      "status": "review",
-      "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
-    },
-    {
-      "url": "https://www.cosmopolitan.de/gewinnspiele/stilsicher-mit-tchibo-durch-den-herbst",
-      "sourceId": "cosmopolitan",
-      "title": "Stilsicher mit Tchibo durch den Herbst",
-      "status": "review",
-      "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
-    },
     {
       "url": "https://www.hamburg-magazin.de/artikel/hamburger-dom",
       "sourceId": "hamburg-magazin",
       "title": "Der Hamburger Winterdom",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.swr.de/swr1/bw/pfaennle-meets-wasen-jetzt-gewinnen-100.html",
@@ -77,6 +16,103 @@
       "title": "Gewinnt SWR1 Pfännle meets Wasen auf dem Cannstatter Volksfest!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/hamburgkreativ-und-kuchenmesse-hamburg",
+      "sourceId": "hamburg-magazin",
+      "title": "Wir verlosen 1x2 Tickets für die HamburgKreativ 2026 und Kuchenmesse Hamburg",
+      "status": "review",
+      "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/winternotprogramm-startet-ab-november",
+      "sourceId": "hamburg-magazin",
+      "title": "Winternotprogramm für Obdachlose startet ab November",
+      "status": "review",
+      "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
+    },
+    {
+      "url": "https://www.ffh.de/aktionen/ffh-aktionen/476714-das-ffh-urlaubsglueck-gewinnt-eine-kreuzfahrt-mit-aida-1.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Das FFH Urlaubsglück: Gewinnt eine Kreuzfahrt mit AIDA",
+      "status": "review",
+      "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
+    },
+    {
+      "url": "https://www.otto.de/inspiration/shoppenundgewinnen",
+      "sourceId": "otto",
+      "title": "Shoppen und gewinnen!",
+      "status": "review",
+      "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
+    },
+    {
+      "url": "https://www.edeka.de/",
+      "sourceId": "edeka",
+      "title": "Mein EDEKA: Praktische Infos und Angebote",
+      "status": "review",
+      "reason": "fetch-failed",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.vinum.eu/de/studach",
+      "sourceId": "vinum",
+      "title": "Gewinnen Sie 2 signierte Flaschen von der Winzerlegende Thomas Studach",
+      "status": "review",
+      "reason": "germany-eligibility-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.edeka.de/gewinnspiel/lego.jsp",
+      "sourceId": "edeka",
+      "title": "Gewinne 2 Tagestickets für das LEGOLAND® Deutschland Resort! | EDEKA",
+      "status": "review",
+      "reason": "fetch-failed",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.cosmopolitan.de/gewinnspiele/mit-quase-und-garmin-smart-durch-den-alltag",
+      "sourceId": "cosmopolitan",
+      "title": "Mit Quäse und Garmin smart durch den Alltag",
+      "status": "review",
+      "reason": "free-entry-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.cosmopolitan.de/gewinnspiele/gewinne-1-von-4-fc-bayern-munchen-funko-sets",
+      "sourceId": "cosmopolitan",
+      "title": "Gewinne 1 von 4 FC Bayern München Funko Sets!",
+      "status": "review",
+      "reason": "free-entry-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.cosmopolitan.de/gewinnspiele/5x-bett1de-bodyguard-matratze-gewinnen",
+      "sourceId": "cosmopolitan",
+      "title": "5x BETT1.DE BODYGUARD® Matratze gewinnen!",
+      "status": "review",
+      "reason": "free-entry-not-confirmed",
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
+    },
+    {
+      "url": "https://www.cosmopolitan.de/gewinnspiele/stilsicher-mit-tchibo-durch-den-herbst",
+      "sourceId": "cosmopolitan",
+      "title": "Stilsicher mit Tchibo durch den Herbst",
+      "status": "review",
+      "reason": "fetch-failed",
       "lastReviewed": "2026-09-21",
       "reviewAttempts": 2
     },
@@ -86,8 +122,8 @@
       "title": "Gewinnspiele",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.erlebe-haleon.de/deals/gewinnspiel-Vereine",
@@ -95,8 +131,8 @@
       "title": "DAS GROSSE VOLTAREN VEREINS-GEWINNSPIEL",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://magazin.urlaub-tipps.reise/wandern-rad-aktiv-08-2026",
@@ -104,8 +140,8 @@
       "title": "Onlinemagazin Wandern, Radfahren, Aktiv-Urlaub",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/ep-news-gewinnspiel",
@@ -113,8 +149,8 @@
       "title": "EP News Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/attraktionen/kinder-karussell-winterland",
@@ -122,8 +158,8 @@
       "title": "Kinder-Karussell Winterland",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/uebernachten/angebote-events/winter/silvester/silvesterarrangement-colosseo",
@@ -131,8 +167,8 @@
       "title": "Silvesterarrangement \"Colosseo\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/gastronomie/winterland-bar",
@@ -140,8 +176,8 @@
       "title": "Winterland-Bar",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/attraktionen/nordisches-winterdorf",
@@ -149,8 +185,8 @@
       "title": "Nordisches Winterdorf",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/uebernachten/angebote-events/winter/silvester/silvesterarrangement-kronasar",
@@ -158,8 +194,8 @@
       "title": "Silvesterarrangement \"Krønasår\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/attraktionen/winterwunderwelt",
@@ -167,8 +203,8 @@
       "title": "WinterWunderWelt",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/hallowinter-im-europa-park",
@@ -176,8 +212,8 @@
       "title": "HALLOWinter im Europa-Park",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/uebernachten/angebote-events/winter/silvester/silvesterarrangement-bell-rock",
@@ -185,8 +221,8 @@
       "title": "Silvesterarrangement \"Bell Rock\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/rulantica/winter-rulantica",
@@ -194,8 +230,8 @@
       "title": "Winter in Rulantica",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/shows/eds-hallowinter-parade",
@@ -203,8 +239,8 @@
       "title": "Ed's HALLOWinter Parade",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/attraktionen/winterzauber-im-historischen-schlosspark-balthasar",
@@ -212,8 +248,8 @@
       "title": "Winterzauber im Historischen Schlosspark Balthasar",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/goodbye-euro-mir",
@@ -221,8 +257,8 @@
       "title": "Goodbye, Euro-Mir!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/uebernachten/angebote-events/winter/silvester/silvesterarrangement-el-andaluz",
@@ -230,8 +266,8 @@
       "title": "Silvesterarrangement \"El Andaluz\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/ep-news-gewinnspiel-2",
@@ -239,8 +275,8 @@
       "title": "EP news Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/ihr-grosser-tag-im-europa-park-rueckt-naeher-winter",
@@ -248,8 +284,8 @@
       "title": "Ihr großer Tag im Europa-Park rückt näher!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/infos/planen-sie-ihren-besuch/winterzauber-im-europa-park",
@@ -257,8 +293,8 @@
       "title": "Winterzauber im Europa-Park",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/winterland",
@@ -266,8 +302,8 @@
       "title": "Winterland",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/attraktionen/feria-swing",
@@ -275,8 +311,8 @@
       "title": "Feria Swing",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/uebernachten/angebote-events/winter/silvester/silvesterarrangement-castillo-alcazar",
@@ -284,8 +320,8 @@
       "title": "Silvesterarrangement \"Castillo Alcazar\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.europapark.de/de/freizeitpark/ihr-grosser-tag-im-europa-park-rueckt-naeher-hallowinter",
@@ -293,8 +329,8 @@
       "title": "Ihr großer Tag im Europa-Park rückt näher!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.biomagazin.de/gewinnspiele/gewinnspiel-bio-3-26-gebana/c-1884",
@@ -302,8 +338,8 @@
       "title": "Gewinnspiel BIO 3/26 gebana",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.biomagazin.de/gewinnspiele/gewinnspiel-bio-3-26-auszeit-bad-kissingen/c-1885",
@@ -311,8 +347,8 @@
       "title": "Gewinnspiel BIO 3/26 Auszeit Bad Kissingen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.polizei-dein-partner.de/gewinnspiel",
@@ -320,8 +356,8 @@
       "title": "Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.polizei-dein-partner.de/gewinnspiel.html",
@@ -329,8 +365,8 @@
       "title": "Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/teilnahmebedingungen/jugendbuch-jahresgewinnspiel",
@@ -338,8 +374,8 @@
       "title": "Teilnahmebedingungen",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/storm-das-internat-des-gruselns",
@@ -347,8 +383,8 @@
       "title": "Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gespenst-und-wassermann",
@@ -356,8 +392,8 @@
       "title": "Willkommen in der zauberhaften Welt von Otfried Preußler!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/juli-im-land-der-zeitgeister",
@@ -365,8 +401,8 @@
       "title": "Juli im Land der Zeitgeister – ein magisches Fantasy-Kinderbuch ab 10",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/triceratops-honigpops",
@@ -374,17 +410,17 @@
       "title": "Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/lesereise-briony-may-smith",
       "sourceId": "thienemann",
-      "title": "Gewinnspiel zur Lesereise",
+      "title": "Briony May Smith auf Lesereise: Magie, Drachen und Live-Zeichnungen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.thienemann.de/gewinnspiele/30-jahre-kleiner-rabe-socke-gewinnspiel",
@@ -392,8 +428,8 @@
       "title": "Großes Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/edeltour/teilnahmebedingungen-edeltour-gewinnspiel",
@@ -401,8 +437,8 @@
       "title": "Teilnahmebedingungen Edeltour Gewinnspiel",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/reise-und-abenteuer/sportliche-aktivitaeten/timo-boll-caravaning/teilnahmebedingungen-timo-boll-gewinnspiel",
@@ -410,8 +446,8 @@
       "title": "Teilnahmebedingungen Timo Boll Abschiedsgewinnspiel",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/das-ist-caravaning/gewinnspiele/caravan-urlaub-gewinnen/teilnahmebedingungen-messegewinnspiel-der-heisse-caravan",
@@ -419,8 +455,8 @@
       "title": "Teilnahmebedingungen Messegewinnspiel (Der heiße Caravan)",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/das-ist-caravaning/gewinnspiele/tor-des-monats",
@@ -428,8 +464,8 @@
       "title": "Tor des Monats",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/das-ist-caravaning/gewinnspiele/caravan-urlaub-gewinnen",
@@ -437,8 +473,8 @@
       "title": "(Beendet) Gewinnspiel: Eine Woche Caravan-Urlaub!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.caravaning.info/das-ist-caravaning/gewinnspiele/caravan-urlaub-gewinnen/teilnahmebedingungen-caravan-sommergewinnspiel-2026",
@@ -446,8 +482,8 @@
       "title": "Teilnahmebedingungen: Caravan Sommergewinnspiel 2026",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.dein-franz.de/winterzauber-in-bad-fuessing",
@@ -455,8 +491,8 @@
       "title": "Winterzauber in Bad Füssing",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.dein-franz.de/koffer-packen-glueck-gewinnen-bei-unserem-gewinnspiel",
@@ -464,8 +500,8 @@
       "title": "Koffer packen + Glück gewinnen – bei unserem Gewinnspiel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.dein-franz.de/saunahof-der-therme-eins-winterwaerme-mit-bayerischem-herz",
@@ -473,8 +509,8 @@
       "title": "Saunahof der Therme Eins – Winterwärme mit bayerischem Herz",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.quellonline.de/gewinnchance-bei-der-leser-umfrage",
@@ -482,8 +518,8 @@
       "title": "Gewinnchance bei der Leser-Umfrage",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.quellonline.de/gewinnen-sie-eine-zweitaegige-wohlfuehlauszeit-im-landhotel-mauthaeusl",
@@ -491,8 +527,8 @@
       "title": "Gewinnen Sie eine zweitägige Wohlfühlauszeit im Landhotel Mauthäusl",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://www.monetenfuchs.de/monetenfuchs-kreisaege-gewinnspiel.html",
@@ -500,8 +536,8 @@
       "title": "MonetenFuchs.de: Gewinne eine Mini-Handkreissäge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 3
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 4
     },
     {
       "url": "https://gewinnspiel.cantuccini.de/",
@@ -509,8 +545,8 @@
       "title": "DEIN WEG ZUM GEWINN:",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.handltyrol.at/landingpage/edubag-studentengewinnspiel/teilnahmebedingungen",
@@ -518,8 +554,8 @@
       "title": "Teilnahmebedingungen",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.1000thingsmagazine.com/de/a/2215860/gewinnspiel-true-comedy-tour",
@@ -527,8 +563,8 @@
       "title": "Gewinne 6×2 Tickets fÃ¼r „Das CafÃ© am Rande der Freundlichkeit“ in Graz und Salzburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.relax-guide.com/gewinnspiel-chalet-purmontes-2026",
@@ -536,8 +572,8 @@
       "title": "Luxus-Wellnessurlaub in Südtirol gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.relax-guide.com/stock-resort",
@@ -545,8 +581,8 @@
       "title": "Stock Resort *****s",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.relax-guide.com/winkler-sport-spa-resort",
@@ -554,25 +590,7 @@
       "title": "Winkler Sport & Spa Resort *****",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 4
-    },
-    {
-      "url": "https://www.hamburg-magazin.de/artikel/hamburgkreativ-und-kuchenmesse-hamburg",
-      "sourceId": "hamburg-magazin",
-      "title": "Wir verlosen 1x2 Tickets für die HamburgKreativ 2026 und Kuchenmesse Hamburg",
-      "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
-    },
-    {
-      "url": "https://www.hamburg-magazin.de/artikel/winternotprogramm-startet-ab-november",
-      "sourceId": "hamburg-magazin",
-      "title": "Winternotprogramm für Obdachlose startet ab November",
-      "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
+      "lastReviewed": "2026-09-22",
       "reviewAttempts": 5
     },
     {
@@ -581,8 +599,8 @@
       "title": "\"Schmidts Winterglitzer\" im Schmidt Theater",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://de.eoft.eu/de/win/photo-contest-realadventures",
@@ -590,8 +608,8 @@
       "title": "Foto­wett­bewerb",
       "status": "review",
       "reason": "contest-intent-not-specific",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://schrotundkorn.de/gewinnspiele",
@@ -599,8 +617,8 @@
       "title": "Alle aktuellen Aktionen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://schrotundkorn.de/leben/gewinnen",
@@ -608,8 +626,8 @@
       "title": "Produkte bewerten und gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.kosmos.de/pages/gewinnspiel/gewinnspiel-fur-lehrkrafte-schulklassen-zum-20-jahrigen-jubilaum-von-die-drei",
@@ -617,8 +635,8 @@
       "title": "Gewinnspiel für Lehrkräfte & Schulklassen: Zum 20-jährigen Jubiläum von „Die drei !!!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/sommer-festivals-2015-gewinnspiel.html",
@@ -626,8 +644,8 @@
       "title": "Festivals 2015: Fanpakete zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/nature-one-twenty-five-compilation-zum-elektro-festival-zu-gewinnen.html",
@@ -635,8 +653,8 @@
       "title": "Nature One: Gewinnspiel zum Festival-Jubiläum",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/wingenfelder-sieben-himmel-hoch-gewinnspiel.html",
@@ -644,8 +662,8 @@
       "title": "Neues Album von Wingenfelder zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/dj-zappi-compilations-zu-gewinnen.html",
@@ -653,8 +671,8 @@
       "title": "Gewinnspiel: Ibiza-Compilations von DJ Zappi abstauben",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/helmut-lotti-feiert-comeback-gewinnspiel.html",
@@ -662,8 +680,8 @@
       "title": "Helmut Lotti veröffentlicht Comeback-Album",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/neue-ep-von-ann-sophie-zu-gewinnen.html",
@@ -671,8 +689,8 @@
       "title": "Neue EP von Ann Sophie zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/oscar-gewinner-filme-2020-top-5.html",
@@ -680,8 +698,8 @@
       "title": "Top 5: Die wichtigsten Gewinner-Filme der Oscar-Verleihung 2020",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/kontor-top-of-the-clubs-vol-99-zu-gewinnen.html",
@@ -689,8 +707,8 @@
       "title": "Die große Beats-Attacke: Die neue „Kontor Top Of The Clubs“ serviert Hits von David Guetta, Robin Schulz und Co",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/le-mol-white-noise-everywhere-news-und-gewinnspiel.html",
@@ -698,8 +716,8 @@
       "title": "Einen Gang runter schalten mit le_mol",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/zehn-jahre-wingenfelder-doppelalbum-sendeschlusstestbild-zu-gewinnen.html",
@@ -707,8 +725,8 @@
       "title": "Zehn Jahre Wingenfelder: Jubiläumsalbum zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/spanische-sommerhits-2020-teil-1-mit-gewinnspiel.html",
@@ -716,8 +734,8 @@
       "title": "Spanische Sommerhits 2020 – Teil 1",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/hannibal-lilyhammer-komplettboxen-ab-dezember-gewinnspiel-news.html",
@@ -725,8 +743,8 @@
       "title": "''Hannibal'' und ''Lilyhammer'': Komplettboxen zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/teddy-hits-14-gewinnspiel.html",
@@ -734,8 +752,8 @@
       "title": "Radio Teddy Hits Vol. 14 zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/miese-quoten-fuer-du-gewinnst-hier-nicht-die-million.html",
@@ -743,8 +761,8 @@
       "title": "Für „Du gewinnst hier nicht die Million“ geht es weiter bergab",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/spanische-sommerhits-2020-teil-3-mit-gewinnspiel.html",
@@ -752,8 +770,8 @@
       "title": "Spanische Sommerhits 2020 – Teil 3",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/was-gewesen-waere-gewinnspiel-zum-kinostart.html",
@@ -761,8 +779,8 @@
       "title": "Was gewesen wäre: Gewinnspiel zum Kinostart",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/the-crown-season-3-termin-und-gewinnspiel.html",
@@ -770,8 +788,8 @@
       "title": "Netflix kündigt Staffel 3 von ''The Crown'' an",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/dragonball-z-ressurrection-f-heimkinostart-und-gewinnspiel-news.html",
@@ -779,8 +797,8 @@
       "title": "Anime-Action: Neuer ''Dragonball Z''-Film ab 9. Dezember im Heimkino",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/mama-thresl-02-news-und-gewinnspiel.html",
@@ -788,8 +806,8 @@
       "title": "Mama Thresl 02: Balearen-Sound direkt von der Alm",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/musik-fuer-silvester-news-und-gewinnspiel.html",
@@ -797,8 +815,8 @@
       "title": "Heiße CD-Tipps für die Silvester-Party",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/tv-film/neuigkeiten/neuer-wind-im-alten-land-neue-folgen-ab-27-april.html",
@@ -806,8 +824,8 @@
       "title": "Neuer Wind im Alten Land: Felicitas Woll auf der Jagd nach frischen Storys",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.hitchecker.de/musik/news/gewinnspiel-trance-energy-2018.html",
@@ -815,8 +833,8 @@
       "title": "Trance Energy 2018: Compilation zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.gala.de/beauty-fashion/fashion/brigitte-macron--beim-staatsempfang-legt-sie-eine-schippe-drauf-21411552.html",
@@ -824,8 +842,8 @@
       "title": "Brigitte Macron: Beim Staatsempfang legt sie eine Schippe drauf",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.autobild.de/artikel/vredestein-leseraktion-28521897.html",
@@ -833,8 +851,8 @@
       "title": "Vredestein Leseraktion",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.autobild.de/artikel/wahl-zum-goldenen-reisemobil-2026-28641887.html",
@@ -842,8 +860,8 @@
       "title": "Wahl zum \"Goldenen Reisemobil 2026\"",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.autobild.de/artikel/abstimmen-und-auto-bild-jahres-abonnement-gewinnen-28743383.html",
@@ -851,8 +869,8 @@
       "title": "Abstimmen und AUTO BILD Jahres-Abonnement gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.autobild.de/artikel/die-besten-marken-in-allen-klassen-2025-26-28395241.html",
@@ -860,8 +878,8 @@
       "title": "Die besten Marken in allen Klassen 2025/26",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.autobild.de/artikel/wer-verdient-das-goldene-lenkrad-2026-28705001.html",
@@ -869,8 +887,8 @@
       "title": "Wer verdient das Goldene Lenkrad 2026?",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.auto-motor-und-sport.de/formel-1/antonelli-strafe-monza-windschatten-fuer-russell",
@@ -878,8 +896,8 @@
       "title": "Formel 1: Doppelte Strafe: Muss Antonelli seinem WM-Rivalen in Monza helfen?",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.auto-motor-und-sport.de/fahrbericht/pure-v8-power-ohne-elektro-bentley-supersports-fahrbericht",
@@ -887,8 +905,8 @@
       "title": "Dieser Bentley bezwingt sogar Laguna Seca: Neuer Supersports im Fahrtest",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d2if/hamburg/winterhuder-marktplatz-8",
@@ -896,8 +914,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d3mi/windeck/rathausstrasse-31-37",
@@ -905,8 +923,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d4hi/frickenhausen/bodelschwinghstr-65",
@@ -914,8 +932,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.dm.de/store/d3m5/langen-hessen/an-der-winkelwiese-1",
@@ -923,8 +941,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d3cg/koenigswinter/aegidienberger-strasse-2a",
@@ -932,8 +950,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.dm.de/store/d24m/winterberg/neue-mitte-4",
@@ -941,8 +959,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d5f9/harsewinkel/alte-brockhaeger-strasse-16",
@@ -950,8 +968,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d18h/wuppertal/vohwinkeler-strasse-5-7",
@@ -959,8 +977,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.dm.de/store/d33d/koenigswinter/proffenweg-2d",
@@ -968,8 +986,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d2g4/vechelde/bodelschwinghstrasse-9",
@@ -977,8 +995,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.dm.de/store/d4kg/bad-windsheim/im-haespelein-11",
@@ -986,8 +1004,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.dm.de/store/d082/winnenden/marktstrasse-41",
@@ -995,8 +1013,8 @@
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/suesses/wintermarmelade",
@@ -1004,7 +1022,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/regionen/suedwest/tnb-gewinnspiel",
@@ -1012,7 +1030,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintersuppen-rezepte",
@@ -1020,7 +1038,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/anmeldung/index.jsp",
@@ -1028,7 +1046,7 @@
       "title": "Anmeldung erfolgreich | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/index.jsp",
@@ -1036,7 +1054,7 @@
       "title": "Gewinnspiele & Aktionen | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/magic-star.jsp",
@@ -1044,7 +1062,7 @@
       "title": "Magic Star Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/nord/gewinnspiel/tickets-gewinnen.jsp",
@@ -1052,7 +1070,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/minden-hannover/gewinnspiel/hemme-milch-kw-37.jsp",
@@ -1060,7 +1078,7 @@
       "title": "EDEKA und Hemme Milch verlosen 10 Familiengutscheine für einen Hofbesuch bei Gunnar Hemme in der Uckermark",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/suedbayern/gewinnspiel/fc-augsburg.jsp",
@@ -1068,7 +1086,7 @@
       "title": "10x2 Tickets für den EDEKA Familienblock beim FC Augsburg gewinnen",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintergemuese",
@@ -1076,7 +1094,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/index.jsp",
@@ -1084,7 +1102,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/wdr4-weihnachtsbonus.jsp",
@@ -1092,7 +1110,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/wissen/kuechenwissen/kraeuterkunde/winterharte-kraeuter",
@@ -1100,7 +1118,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/anmeldung/anmeldung-gs-und-nl-erfolgreich.jsp",
@@ -1108,7 +1126,7 @@
       "title": "Anmeldung erfolgreich | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/suedbayern/gewinnspiel/europark.jsp",
@@ -1116,7 +1134,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/winterrezepte",
@@ -1124,7 +1142,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/backen/winterkuchen",
@@ -1132,7 +1150,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/steinobst-aus-suedafrika.jsp",
@@ -1140,7 +1158,7 @@
       "title": "Steinobst aus Südafrika | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/regionen/nordbayern-sachsen-thueringen/allgemeine-insta-tnbs",
@@ -1148,7 +1166,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintersalate",
@@ -1156,7 +1174,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/lindt-gewinnspiel.jsp",
@@ -1164,7 +1182,7 @@
       "title": "5 x 1.000 € Gutscheine gewinnen | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/wissen/ernaehrung/bewusste-ernaehrung/wintermuedigkeit",
@@ -1172,7 +1190,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/chiquita.jsp",
@@ -1180,7 +1198,7 @@
       "title": "Chiquita Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/driscolls.jsp",
@@ -1188,7 +1206,7 @@
       "title": "Driscoll's Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/evelina-gewinnspiel-2026.jsp",
@@ -1196,7 +1214,7 @@
       "title": "Evelina Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/suedbayern/wir-in-suedbayern/edeka-mein-bayern/mein-bayern/24-winetsdorfer1.jsp",
@@ -1204,7 +1222,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/minden-hannover/gewinnspiel/estrel-kw29.jsp",
@@ -1212,7 +1230,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/herzstuecke-avocados.jsp",
@@ -1220,7 +1238,7 @@
       "title": "Herzstücke Avocados Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/nord/gewinnspiel/tauschtag-gewinnspiel.jsp",
@@ -1228,7 +1246,7 @@
       "title": "Tauschtag-Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/chiquita-bananen.jsp",
@@ -1236,7 +1254,7 @@
       "title": "Chiquita Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/rezeptwelt/rezeptsammlungen/kochen/wintergrillen",
@@ -1244,7 +1262,7 @@
       "title": "Mein EDEKA: Praktische Infos und Angebote",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/minden-hannover/gewinnspiel/hemme-milch-kw-16.jsp",
@@ -1252,7 +1270,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/kanzi.jsp",
@@ -1260,7 +1278,7 @@
       "title": "Kanzi Gewinnspiel | EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 1
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.edeka.de/minden-hannover/gewinnspiel/alba-berlin-sportstunde-kw-05.jsp",
@@ -1268,7 +1286,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.edeka.de/gewinnspiel/peter-maffay-tickets.jsp",
@@ -1276,7 +1294,7 @@
       "title": "EDEKA",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.elle.de/gewinnspiel-shoemakerchair",
@@ -1284,8 +1302,8 @@
       "title": "Scandi Design Lover aufgepasst! Elle Decoration verlost diesen Klassiker",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/fashion/miu-miu-morning-raves-naomi-campbell-anna-wintour-2026-html",
@@ -1293,8 +1311,8 @@
       "title": "„Elle the Edit“: Miu Miu, Morning-Raves und warum Noami Campbell & Anna Wintour bei Dolce & Gabbana warten mussten",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.elle.de/fashion/trends-wintermode-2026",
@@ -1302,8 +1320,8 @@
       "title": "Wintermode: Diese Trends vereinen Ästhetik mit Funktionalität",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.elle.de/gewinnspiel-blomus",
@@ -1311,8 +1329,8 @@
       "title": "So gemütlich! Gewinnen Sie diesen Lese-Sessel von Blomus im Wert von 1.000 Euro",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/decoration/edida-2026",
@@ -1320,8 +1338,8 @@
       "title": "EDIDA 2026: Das sind alle Gewinner*innen der Elle Deco International Design Awards",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/gewinnspiel-leserbefragung-elle-2025",
@@ -1329,8 +1347,8 @@
       "title": "Gewinnspiel: Unter allen Teilnehmenden der Leserbefragung verlosen wir exklusive Gewinne",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/gewinnspiel-gartenstuhl",
@@ -1338,8 +1356,8 @@
       "title": "Jetzt zieht der Sommer ein! Gewinnen Sie zwei Gartenstühle von Royal Botania im Wert von 2.600 Euro",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/gewinnspiele",
@@ -1347,8 +1365,8 @@
       "title": "Gewinnspiele",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/gewinnspiel-hotel-widder-zuerich",
@@ -1356,8 +1374,8 @@
       "title": "Jetzt gewinnen: Ein Wochenende im Luxus-Hotel „Widder“ in Zürich",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.elle.de/gewinnspiel-ledleuchte",
@@ -1365,8 +1383,8 @@
       "title": "Jetzt brauchen wir Licht! Gewinnen Sie die exklusive Original BTCs LED-Leuchte Blossom",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.eltern.de/familie-urlaub/gewinnspiele/mit-paediprotect-und-laessig-gewinnen-14074704.html",
@@ -1374,8 +1392,8 @@
       "title": "Nur das Beste für Kinderhaut: Sicheren Sonnenschutz mit PAEDIPROTECT gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.eltern.de/vergleich/windeln",
@@ -1383,8 +1401,8 @@
       "title": "Windel-Test 2026: Die besten Einwegwindeln im Vergleich",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.eltern.de/baby/baby-wickeln-infos",
@@ -1392,8 +1410,8 @@
       "title": "Windeln & Wickeln: Tipps und Infos zum Wickeln",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.eltern.de/familie-urlaub/gewinnspiele",
@@ -1401,8 +1419,8 @@
       "title": "Gewinnspiele - Fotowettbewerbe - Preise - Verlosungen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.eltern.de/vivien-windel-12796042.html",
@@ -1410,8 +1428,8 @@
       "title": "Vivien Windel",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-vilavita",
@@ -1419,8 +1437,8 @@
       "title": "Wellness-Kurzurlaub in Marburg zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-freixenet-weihnachten",
@@ -1428,8 +1446,8 @@
       "title": "Stilvolle Weihnachten mit Freixenet",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-twister-air",
@@ -1437,8 +1455,8 @@
       "title": "Twist in the air, like you just don’t care!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/lifestyle/gewinnspiele/heftgewinnspiele-freundinde",
@@ -1446,8 +1464,8 @@
       "title": "Heftgewinnspiele",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-bodenmaiserhof",
@@ -1455,8 +1473,8 @@
       "title": "Stylisch-bayerische Wellnessauszeit zu gewinnen",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/lifestyle/gewinnspiele",
@@ -1464,8 +1482,8 @@
       "title": "Gewinnspiele",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-rama",
@@ -1473,8 +1491,8 @@
       "title": "In der Weihnachtsbäckerei mit Rama Sooo BUTTRIG!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/lifestyle/frieda-lewin-kuechengespraeche-html",
@@ -1482,8 +1500,8 @@
       "title": "freundin-Küchengespräche: Frieda Lewin kocht ihr italienisches Lieblingsrezept",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/lifestyle/gewinnspiele/paris-alte-gefuehle-letzter-anfang",
@@ -1491,8 +1509,8 @@
       "title": "Paris, alte Gefühle und ein letzter Anfang",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-perwollrenewcolor",
@@ -1500,8 +1518,8 @@
       "title": "Valentinstagsshopping mit Perwoll",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/lifestyle/gewinnspiele/gewinnen-wochenende-fuer-zwei-plus-roadtrip-mit-nio",
@@ -1509,8 +1527,8 @@
       "title": "Raus aus dem Alltag! Gewinnen Sie ein Wochenende für zwei mit Roadtrip-Feeling",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-babyliss",
@@ -1518,8 +1536,8 @@
       "title": "Zauberhafte Looks mit BaByliss zum Valentinstag",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-nintendo",
@@ -1527,8 +1545,8 @@
       "title": "Party-Spaß mit dem Nintendo-Weihnachtspaket",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-milupa-adventskalender",
@@ -1536,8 +1554,8 @@
       "title": "MILUPA SAGT: DANKE, MAMA!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.freundin.de/gewinnspiele-kreuzwortraetsel-loesungswort-senden-und-gewinnen-69879.html",
@@ -1545,8 +1563,8 @@
       "title": "Das freundin Kreuzworträtsel",
       "status": "review",
       "reason": "free-entry-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.freundin.de/gewinnspiel-em-eukal",
@@ -1554,8 +1572,8 @@
       "title": "Süße Adventsüberraschung – wohltuende Bonbons!",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.radiohamburg.de/kontakt/Abonniert-jetzt-den-Radio-Hamburg-WhatsApp-Kanal-id1433426.html",
@@ -1563,8 +1581,8 @@
       "title": "Abonniert jetzt den Radio Hamburg WhatsApp Kanal",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Der-Radio-Hamburg-Festivalsommer-id1658152.html",
@@ -1572,7 +1590,7 @@
       "title": "Der Radio Hamburg Festivalsommer",
       "status": "review",
       "reason": "fetch-failed",
-      "reviewAttempts": 5
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.radiohamburg.de/config/config_spa/config_spa_section/config_spa_section_club/config_spa_section_club_gewinnspiele?channel=spa",
@@ -1580,8 +1598,8 @@
       "title": "config.spa.section.club_gewinnspiele | Radio Hamburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Registrieren-mitmachen-bei-Wer-schl%C3%A4gt-John-id389984.html",
@@ -1589,8 +1607,8 @@
       "title": "Registrieren & mitmachen bei \"Wer schlägt John?!\"",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Werdet-zum-Radio-Hamburg-Wettersch%C3%A4tzer-id1454912.html",
@@ -1598,8 +1616,8 @@
       "title": "Werdet zum Radio Hamburg Wetterschätzer",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Teilnahmebedingungen-bei-Gewinnspielen-id391123.html",
@@ -1607,8 +1625,8 @@
       "title": "Teilnahmebedingungen bei Gewinnspielen",
       "status": "review",
       "reason": "terms-only-page",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/config/config_spa/config_spa_section/config_spa_section_aktionen/config_spa_section_gewinnspiele?channel=spa",
@@ -1616,8 +1634,8 @@
       "title": "config.spa.section.gewinnspiele | Radio Hamburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/on_air/T%C3%A4glich-bestens-informiert-Neuer-Radio-Hamburg-Newsletter-id1670746.html",
@@ -1625,8 +1643,8 @@
       "title": "Täglich bestens informiert: Neuer \"Radio Hamburg\"-Newsletter",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktuelles/musik/Verletzung-am-Fu%C3%9F-Ariana-Grande-tritt-ohne-hohe-Schuhe-auf-id1712435.html",
@@ -1634,8 +1652,8 @@
       "title": "Verletzung am Fuß: Ariana Grande tritt ohne hohe Schuhe auf",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Gewinnt-10-Pizza-Klassiker-von-den-Smileys-Pizza-Profis-id395943.html",
@@ -1643,8 +1661,8 @@
       "title": "Gewinnt 10 Pizza Klassiker von den Smiley's Pizza Profis",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Wir-schenken-euch-Tickets-f%C3%BCr-die-Veolia-Towers-Hamburg-id1709297.html",
@@ -1652,8 +1670,8 @@
       "title": "Wir schenken euch Tickets für die Veolia Towers Hamburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen?channel=spa",
@@ -1661,8 +1679,8 @@
       "title": "Aktionen | Radio Hamburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/club/club-gewinnspiele?channel=spa",
@@ -1670,8 +1688,8 @@
       "title": "Club Gewinnspiele | Radio Hamburg",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Die-schnellsten-33-Sekunden-Deines-Lebens-Das-Elbduell-id1654568.html",
@@ -1680,7 +1698,7 @@
       "status": "review",
       "reason": "fetch-failed",
       "lastReviewed": "2026-09-20",
-      "reviewAttempts": 2
+      "reviewAttempts": 3
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-bio-rind-mit-gruenen-bohnen-und-disteloel/p/4305615554082",
@@ -1688,8 +1706,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-6-xl-30-stueck-14-20-kg/p/4068134192455",
@@ -1697,8 +1715,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-leberwurst/p/4068134054715",
@@ -1706,8 +1724,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-penaten-kleine-helfer-wind-und-wetter-creme/p/3574661264981",
@@ -1715,8 +1733,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 2
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 1
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-nuk-disney-baby-perfect-match-babyflasche-winnie-the-pooh-ab-3-monate-260-ml/p/4008600446057",
@@ -1724,8 +1742,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/pflege-und-duft-ogx-renewing-argan-oil-of-morocco-shampoo/p/3574661799438",
@@ -1733,8 +1751,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-winning-moves-top-trumps-weltfussballstars-6/p/5036905060257",
@@ -1742,8 +1760,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-splashers-schwimmwindeln-gr-4-5-9-15-kg-11-stueck/p/8001090698384",
@@ -1751,8 +1769,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-premium-trockenfutter-reich-an-huhn/p/4068134129345",
@@ -1760,8 +1778,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-7-xxl-jumbo-56-stueck-ab-16-kg/p/4068134138606",
@@ -1769,8 +1787,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-chicken-bones-reich-an-huhn-mit-calcium/p/4068134071019",
@@ -1778,8 +1796,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/make-up-catrice-jelly-sparks-lip-balm-020---twinkle-boss/p/4059729589026",
@@ -1787,8 +1805,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-hundekauknochen-ente/p/4068134074386",
@@ -1796,8 +1814,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-windeln-gr-4-maxi-9-14kg-single-overfill---34-st/p/8006530381512",
@@ -1805,8 +1823,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-huggies-windeln-newborn-groesse-1/p/5029054239773",
@@ -1814,8 +1832,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-21",
-      "reviewAttempts": 5
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 6
     },
     {
       "url": "https://www.rossmann.de/de/make-up-nyx-professional-makeup-line-loud-lip-pencil-35-no-wine-ing/p/0800897250034",
@@ -1823,8 +1841,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/haushalt-rubin-licht-duftglas-winterwald/p/4068134144225",
@@ -1832,8 +1850,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-feine-mahlzeit-mit-gefluegel-und-leber-in-gelee/p/4305615274652",
@@ -1841,8 +1859,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-premium-protection-windeln-gr-2-mini-4-8kg/p/8006530189804",
@@ -1850,8 +1868,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-pants-windeln-gr-9-extra-large-19kg/p/8006530276320",
@@ -1859,8 +1877,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.rossmann.de/de/baby-und-spielzeug-nuk-disney-winnie-puuh-first-choice-trinklernflasche-mit-temperature-control-150ml/p/4008600389057",
@@ -1868,7 +1886,7 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
+      "lastReviewed": "2026-09-22",
       "reviewAttempts": 1
     },
     {
@@ -1877,8 +1895,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-premium-reich-an-gefluegel-und-rind-mit-gartengemuese/p/4305615621326",
@@ -1886,8 +1904,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-gelenk-fit/p/4305615609713",
@@ -1895,8 +1913,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/make-up-neonail-uv-nagellack---wine-red/p/5907052816793",
@@ -1904,8 +1922,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-feine-mahlzeit-mit-huehnchen-in-joghurtsauce/p/4305615279701",
@@ -1913,8 +1931,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 1
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 2
     },
     {
       "url": "https://www.rossmann.de/de/pflege-und-duft-hawaiian-tropic-glowing-protection-lotion-lsf-50/p/5099821002817",
@@ -1922,8 +1940,8 @@
       "title": "Client Challenge",
       "status": "review",
       "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "lastReviewed": "2026-09-22",
+      "reviewAttempts": 5
     },
     {
       "url": "https://www.rossmann.de/de/pflege-und-duft-aviator-wingspeed-pour-homme-edp-100-ml/p/5055312924983",
@@ -1939,9 +1957,7 @@
       "sourceId": "rossmann",
       "title": "Client Challenge",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-20",
-      "reviewAttempts": 4
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.rossmann.de/de/tier-winston-schlemmer-menue-mit-gefluegel-und-nudeln/p/4305615185576",
@@ -2038,9 +2054,7 @@
       "sourceId": "rossmann",
       "title": "Client Challenge",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-19",
-      "reviewAttempts": 3
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.rossmann.de/de/ideenwelt-ideenwelt-windlicht-haus-beige/p/4068134135858",
@@ -2222,9 +2236,7 @@
       "sourceId": "dm",
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-19",
-      "reviewAttempts": 2
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.dm.de/p/d/3117569/pampers-premium-protection-windeln-gr-2-4-8-kg-big-pack",
@@ -2310,9 +2322,7 @@
       "sourceId": "dm",
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-18",
-      "reviewAttempts": 1
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.dm.de/p/d/3150490/artdeco-nagellack-art-couture-696-crimson-wine",
@@ -2346,9 +2356,7 @@
       "sourceId": "dm",
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-18",
-      "reviewAttempts": 1
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.dm.de/p/d/3117580/pampers-baby-dry-windeln-gr-4-10-15-kg-big-pack",
@@ -2362,9 +2370,7 @@
       "sourceId": "dm",
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-18",
-      "reviewAttempts": 1
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.dm.de/p/d/2973043/mikk-line-winterjacke-mit-rueschen-details-lila-gr-98-104",
@@ -2389,9 +2395,7 @@
       "sourceId": "dm",
       "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
       "status": "review",
-      "reason": "germany-eligibility-not-confirmed",
-      "lastReviewed": "2026-09-18",
-      "reviewAttempts": 1
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
       "url": "https://www.dm.de/p/d/1607606/cupper-gewuerztee-winter-spiced-orange-mit-orange-und-zimt-20-beutel",
@@ -5272,7 +5276,7 @@
     },
     {
       "url": "https://www.ikea.com/global/en/stories/our-roots/1996-time-capsule-260225",
-      "sourceId": "ikea",
+      "sourceId": "ikea-deutschland",
       "title": "1996",
       "status": "review",
       "reason": "deadline-or-entry-route-not-unambiguous"
@@ -12600,194 +12604,1356 @@
       "reason": "insufficient-confidence"
     },
     {
-      "url": "https://www.edeka.de/nordbayern/gewinnspiel/teilnahmebedingungen/nst.jsp",
-      "sourceId": "edeka",
-      "title": "Gewinnspiel zum Muttertag & Vatertag 2024 | EDEKA",
-      "status": "rejected",
-      "reason": "social-only"
+      "url": "https://www.elle.de/decoration/baobab-fall-winter-collection-2026",
+      "sourceId": "elle",
+      "title": "Die neue Baobab Fall/Winter 2026 Collection ist da!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
     },
     {
-      "url": "https://www.edeka.de/gewinnspiel/appvent.jsp",
-      "sourceId": "edeka",
-      "title": "APPvent: Der EDEKA App-Adventskalender",
+      "url": "https://www.gala.de/royals/briten/prinz-harry--jetzt-sorgt-sein-schulbesuch-fuer-aufsehen-24680424.html",
+      "sourceId": "gala",
+      "title": "Prinz Harry: Jetzt sorgt sein Schulbesuch für Aufsehen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1637423/trend-t-up-kuenstliche-wimpern-big-lash-love-swing-1-paar",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3116213/ebelin-haarklammer-winkekatze",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1521337/naty-windeltueten",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3079267/rascals-windeln-premium-gr-6-15-20-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1453999/balea-professional-haarbalsam-winter-protect",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1628664/moltex-windeln-pure-gr-5-junior-11-16-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1637376/tommee-tippee-nachfuellkassetten-fuer-windeleimer-twist-und-click-und-sangenic-tec",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3135277/pampers-baby-dry-windeln-gr-4-9-14-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1628668/moltex-windeln-pure-gr-6-xl-16-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3118714/nuk-geschenkset-babyflaschen-und-schnuller-perfect-match-disney-winnie-the-pooh-4tlg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1417593/huggies-windeln-newborn-extra-care-gr-2-3-6-kg-disney",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3117567/pampers-premium-protection-windeln-gr-1-2-5-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3087920/rascals-windeln-premium-gr-5-13-18-kg-monatsbox",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3087919/rascals-windeln-premium-gr-4-10-15-kg-monatsbox",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3146703/glade-duftkerze-festive-mulled-wine-112-g",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3087445/neonail-uv-nagellack-twinkle-white",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1615355/balea-professional-shampoo-winter-portect",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3067140/lillydoo-windeln-gr-1-2-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3096293/dove-antitranspirant-deo-roll-on-advanced-care-winter-berry-swirl",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3119192/pampers-baby-dry-windeln-gr-4-9-14-kg-xxl-pack",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3117605/pampers-baby-dry-windeln-gr-6-xl-13-18-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3096782/nivea-antitranspirant-deospray-winter-moment",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/3092620/pusblu-windelbadehose-mit-einhorn-motiv-rosa-gr-74-80",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.dm.de/p/d/1685837/naty-windeln-bioembrace-gr-1-2-5-kg",
+      "sourceId": "dm",
+      "title": "dm-drogerie markt - dauerhaft günstig online kaufen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktuelles/hamburg/Mehr-als-40.000-Besucher-zu-Windindustriemesse-erwartet-id1726036.html",
+      "sourceId": "radio-hamburg",
+      "title": "Mehr als 40.000 Besucher zu Windindustriemesse erwartet",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/haushalt-kuschelweich-weichspuelerkonzentrat-sommerwind-grosspackung-76wl/p/4013162031450",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-deluxe-mit-gefluegel-und-leber-in-wildgelee/p/4305615524405",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-nager-ringe-mit-mai-luzerne-und-karottengeschmack/p/4305615994741",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-medela-swing-maxi-elektrische-doppelmilchpumpe/p/7612367075268",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-schlemmer-menue-mit-lachs-und-kraeutersauce/p/4305615730370",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-senior-menue-reich-an-gefluegel-mit-gemuese/p/4305615185590",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-5-junior-plus-32-stueck-11-17-kg/p/4068134192448",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-dentinox-zinksalbe-gegen-windeldermatitis/p/4102963301135",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-wuerstchen-reich-an-rind-und-gefluegel/p/4305615382197",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-gourmet-filets-reich-an-huhn-in-sauce/p/4068134108449",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-pampers-baby-dry-windeln-pants-gr5-junior-11-17kg-bigeco-overfill---62-st/p/8006530385282",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-maybelline-new-york-super-stay-vinyl-ink-150-striking--gratis-color-sensational-shaping-lipliner-110-rich-wine/p/4056048150678",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-haeppchen-mit-huhn-in-karottensauce/p/4068134093066",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-premium-windeln-groesse-8-xxxl-26-stueck-ab-17-kg/p/4068134192486",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feinschmeckerli-mit-rind-und-gefluegel/p/4305615170794",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-deluxe-traumtaschen-haut-und-fell/p/4305615730790",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-mahlzeit-mit-truthahn-und-wild-in-delikater-sauce/p/4305615638638",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-wildvogelfutter/p/4068134013811",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-sabine-trend-crystal-cactus-growing-kit/p/4260021288856",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-mullwindeln-unisex/p/2001234017916",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-mini-filet-sticks-haehnchen/p/4068134102805",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-bella-baby-happy-windeln-gr-4-maxi-8-14-kg/p/5900516605445",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-babydream-extra-sensitiv-wind--und-wettercreme/p/4305615586786",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-premium-reich-an-rind/p/4305615621302",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/pflege-und-duft-bettina-barty-winter-vanilla-duo-geschenkset/p/4008268017392",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-tommee-tippee-windeleimer-twist-und-click-advanced-weiss-inkl-6-nachfuellkasetten/p/5010415510044",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/haushalt-rubin-licht-duft-im-glas-winterbeere/p/4305615558851",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-kleintier-streu/p/4305615172767",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-schlemmer-menue-mit-rind-und-leber/p/4305615185583",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/baby-und-spielzeug-winning-moves-trivial-pursuit-partyquiz-volume-2/p/5036905057226",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/ideenwelt-ideenwelt-rubinl-windlicht-beige-klein/p/4068134158086",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/make-up-manhattan-super-gel-nail-polish-farbe-99-winners-vibes/p/3616303403133",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-feine-pate-mit-pute/p/4305615973005",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-sensitiv-menue-pute-pur-mit-reis/p/4305615185323",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.rossmann.de/de/tier-winston-knabber-spass-mit-kaese-und-gefluegel/p/4305615172965",
+      "sourceId": "rossmann",
+      "title": "Client Challenge",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/ales-kaeks-wohlfuehl-cafe-in-winterhude",
+      "sourceId": "hamburg-magazin",
+      "title": "Ales Käks – Wohlfühl-Café in Winterhude",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/so-viele-windraeder-stehen-in-hamburg",
+      "sourceId": "hamburg-magazin",
+      "title": "So viele Windräder stehen in Hamburg",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/cafe-rumi-asiatisch-afghanischer-brunch-in-winterhude",
+      "sourceId": "hamburg-magazin",
+      "title": "Asiatisch-afghanischer Brunch im Café Rumi",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/vitamin-d-mangel-im-winter-vorbeugen",
+      "sourceId": "hamburg-magazin",
+      "title": "Vitamin-D-Mangel vorbeugen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/gesund-durch-herbst-und-winter",
+      "sourceId": "hamburg-magazin",
+      "title": "Risikofaktor Kälte: Gesund durch Herbst und Winter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.hamburg-magazin.de/artikel/wm-public-viewing-fussballspiele-in-hamburg-gucken",
+      "sourceId": "hamburg-magazin",
+      "title": "Public Viewing Hamburg zur Fußball-WM 2026: 9 Orte zum Fußballschauen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.garnier.de/sonnenschutz/vor-sonne-schuetzen/sonnenschutz-im-winter",
+      "sourceId": "garnier",
+      "title": "Sonnenschutz im Winter: Ein Must-have für Winterhaut",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/aktionen/ffh-aktionen/473577-das-grosse-ffh-schul-duell-60000-euro-mit-eurem-song.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Das große FFH Schul-Duell – 60.000 Euro mit euren Songs",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/aktionen/punkte-aktionen/477819-punkte-sammeln-im-september-nico-santos-tickets-gewinnen.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Punkte sammeln & im September Nico Santos-Tickets gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/musik/hit-quiz.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "HIT RADIO FFH: Musik-Quiz – Wie viele Songs errätst du?",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/aktionen/punkte-aktionen.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Punkte-Aktionen: Beim Radiohören Punkte sammeln & gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/nachrichten/magazin/153708-ffh-alexa-skill-aktivieren-alexa-oeffne-ffh.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "FFH Alexa-Skill aktivieren: Alexa, öffne FFH!",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/aktionen/ffh-aktionen/470415-gewinnt-einen-1000-euro-fluggutschein-mit-dem-urlaubsmatch.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Gewinnt einen 1.000-Euro-Fluggutschein mit dem Urlaubsmatch",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.ffh.de/on-air/sendungen/echt-evren/478781-radiopreis-evren-gezer-ist-deutschlands-beste-moderatorin.html",
+      "sourceId": "hit-radio-ffh",
+      "title": "Radiopreis: Evren Gezer ist Deutschlands beste Moderatorin",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-mit-zimtsahne-22091.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel mit Zimtsahne",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/wintersalat-mit-kaesenocken-7464.html",
+      "sourceId": "lecker",
+      "title": "Wintersalat mit Käsenocken",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-mit-zitronensahne-25792.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel mit Zitronensahne",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/blaetterteig-windmuehlen-mit-stachelbeeren-22990.html",
+      "sourceId": "lecker",
+      "title": "Blätterteig-Windmühlen mit Stachelbeeren",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/mini-windbeutel-mit-feigen-und-schinken-13901.html",
+      "sourceId": "lecker",
+      "title": "Mini-Windbeutel mit Feigen und Schinken",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winter-ratatouille-aus-dem-ofen-43232.html",
+      "sourceId": "lecker",
+      "title": "Winter-Ratatouille aus dem Ofen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/mini-windbeutel-41063.html",
+      "sourceId": "lecker",
+      "title": "Mini-Windbeutel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterlicher-eintopf-43680.html",
+      "sourceId": "lecker",
+      "title": "Winterlicher Eintopf",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/wintersalat-mit-frischkaesebaellchen-23515.html",
+      "sourceId": "lecker",
+      "title": "Wintersalat mit Frischkäsebällchen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterlicher-schwarzwurzel-salat-25854.html",
+      "sourceId": "lecker",
+      "title": "Winterlicher Schwarzwurzel-Salat",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-oesterreichisch-mit-marillen-fuellung-132176.html",
+      "sourceId": "lecker",
+      "title": "Österreichischer Windbeutel mit Marillen-Füllung",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-mit-kaffeesahne-und-eierlikoerguss-37401.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel mit Kaffeesahne und Eierlikörguss",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/erdbeer-eierlikoer-windbeutel-33966.html",
+      "sourceId": "lecker",
+      "title": "Erdbeer-Eierlikör-Windbeutel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-torte-12223.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel-Torte",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/gegrillte-chicken-wings-tandoori-marinade-zu-orangen-sherry-sosse-12209.html",
+      "sourceId": "lecker",
+      "title": "Gegrillte Chicken Wings in Tandoori-Marinade zu Orangen-Sherry-Soße",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/kalbsbraten-mit-wintergemuese-36685.html",
+      "sourceId": "lecker",
+      "title": "Kalbsbraten mit Wintergemüse",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterliche-kartoffel-gemuese-pfanne-26251.html",
+      "sourceId": "lecker",
+      "title": "Winterliche Kartoffel-Gemüse-Pfanne",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/gewinnspiele?page=2",
+      "sourceId": "lecker",
+      "title": "Gewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/kartoffel-pilz-rolle-mit-wintergemuese-und-gruyeresosse-7689.html",
+      "sourceId": "lecker",
+      "title": "Kartoffel-Pilz-Rolle mit Wintergemüse und Gruyèresoße",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterapfel-tiramisu-torte-33653.html",
+      "sourceId": "lecker",
+      "title": "Winterapfel-Tiramisu-Torte",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-mit-whisky-vanille-sahne-20342.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel mit Whisky-Vanille-Sahne",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/malzbierbraten-mit-wintergemuese-vom-blech-7695.html",
+      "sourceId": "lecker",
+      "title": "Malzbierbraten mit Wintergemüse vom Blech",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winzersalat-mit-wurst-und-kaese-26687.html",
+      "sourceId": "lecker",
+      "title": "Winzersalat mit Wurst und Käse",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/windbeutel-mit-quark-pflaumenmus-fuellung-534.html",
+      "sourceId": "lecker",
+      "title": "Windbeutel mit Quark-Pflaumenmus-Füllung",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterkonfituere-mit-ananas-und-mango-5415.html",
+      "sourceId": "lecker",
+      "title": "Winterkonfitüre mit Ananas und Mango",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterlicher-apfel-kaesekuchen-7996.html",
+      "sourceId": "lecker",
+      "title": "Winterlicher Apfel-Käsekuchen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/knackiger-wintersalat-43643.html",
+      "sourceId": "lecker",
+      "title": "Knackiger Wintersalat",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lecker.de/winterlicher-suesskartoffel-eintopf-132200.html",
+      "sourceId": "lecker",
+      "title": "Winterlicher Süßkartoffel-Eintopf",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lidl.de/p/lupilu-baby-kleinkinder-matsch-und-buddel-overall-wind-und-wasserdicht/p100371223",
+      "sourceId": "lidl",
+      "title": "Baby Kleinkinder Matsch- und Buddel-Overall, wind- und wasserdicht",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lidl.de/h/wintersport/h10067546",
+      "sourceId": "lidl",
+      "title": "Wintersport",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lidl.de/p/lupilu-baby-kleinkinder-matsch-und-buddeljacke-wind-und-wasserdicht/p100385819",
+      "sourceId": "lidl",
+      "title": "Baby Kleinkinder Matsch- und Buddeljacke, wind- und wasserdicht",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lidl.de/c/auto-ab-21-9/a10102808",
+      "sourceId": "lidl",
+      "title": "Auto, ab 21.9.",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.lidl.de/c/online-prospekte/s10005610",
+      "sourceId": "lidl",
+      "title": "Angebote & Prospekte",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.loreal-paris.de/tipps-und-trends/hautpflege/10-moeglichkeiten-um-trockene-fuesse-im-winter-zu-verwoehnen",
+      "sourceId": "l-or-al-paris",
+      "title": "10 Möglichkeiten, um trockene Füße im Winter zu verwöhnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.loreal-paris.de/tipps-und-trends/make-up/lidstrich-ziehen-so-gelingt-der-perfekte-wing",
+      "sourceId": "l-or-al-paris",
+      "title": "Lidstrich ziehen: So gelingt der perfekte Wing",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/apfelbaum-gewinnspiel",
+      "sourceId": "mein-schoener-garten",
+      "title": "Apfelbaum Gewinnspiel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/themen/winterharte-pflanzen",
+      "sourceId": "mein-schoener-garten",
+      "title": "Winterharte Pflanzen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/content/dieke-gewinnspiel-2022",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Gewinnspiel Dieke für einen Tag",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://shop.mein-schoener-garten.de/",
+      "sourceId": "mein-schoener-garten",
+      "title": "Mein schöner Garten Shop",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/themen/winterschutz-4891",
+      "sourceId": "mein-schoener-garten",
+      "title": "Winterschutz",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/themen/pflanzen/gemuese/postelein-winterportulak",
+      "sourceId": "mein-schoener-garten",
+      "title": "Postelein, Winterportulak",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/themen/wintergarten",
+      "sourceId": "mein-schoener-garten",
+      "title": "Wintergarten",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/service/gewinnspiele",
+      "sourceId": "mein-schoener-garten",
+      "title": "Gewinnspiele",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/wissenschaft/2021/01/covid-19-wird-nicht-verschwinden-aber-so-koennen-wir-damit-leben",
+      "sourceId": "national-geographic-deutschland",
+      "title": "COVID-19 wird nicht verschwinden – aber so können wir damit leben",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/wissenschaft/2021/03/warum-winken-wir-in-video-calls-zum-abschied",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Warum winken wir in Video Calls zum Abschied?",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/wissenschaft/2020/10/winzige-tyrannen-so-klein-begann-das-leben-der-tyrannosaurier",
+      "sourceId": "national-geographic-deutschland",
+      "title": "+ Winzige Tyrannen: So klein begann das Leben der Tyrannosaurier",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/umwelt/2017/11/bald-stehen-die-gewinner-der-fotochallenge-fest",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Bald stehen die Gewinner der Fotochallenge fest",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2019/02/verwandlungskuenstler-auf-leisen-schwingen",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Verwandlungskünstler auf leisen Schwingen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/umwelt/2024/06/der-groesste-suesswasserfisch-der-welt-erholt-sich-und-alle-gewinnen",
+      "sourceId": "national-geographic-deutschland",
+      "title": "+ Der größte Süßwasserfisch der Welt erholt sich – und alle gewinnen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/reise-und-abenteuer/2024/11/deutschlands-schoenste-ausflugsziele-im-winter",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Deutschlands schönste Ausflugsziele im Winter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/wetter/2024/12/11-winterwunder-erklaert-faszinierende-naturphaenomene-und-die-wissenschaft-dahinter",
+      "sourceId": "national-geographic-deutschland",
+      "title": "+ 11 Winterwunder erklärt: Faszinierende Naturphänomene und die Wissenschaft dahinter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/fotografie/2017/11/so-sehen-gewinnerbilder-aus",
+      "sourceId": "national-geographic-deutschland",
+      "title": "So sehen Gewinnerbilder aus",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2023/12/daenemark-statt-spanien-voegel-verfliegen-sich-auf-dem-weg-ins-winterquartier",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Dänemark statt Spanien: Vögel verfliegen sich auf dem Weg ins Winterquartier",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/menschen-und-kultur/2026/03/ephemeris-dolomiten-wattenmeer-mit-gewinnspiel",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Dolomiten und Wattenmeer im Dialog (mit Gewinnspiel)",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2023/11/tierkinder-im-winter-ueberleben-in-der-eiskalten-kinderstube",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Tierkinder im Winter: Überleben in der eiskalten Kinderstube",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2024/03/warme-winter-bedrohen-robbenwelpen-im-nordwestatlantik",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Warme Winter bedrohen Robbenwelpen im Nordwestatlantik",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/fotografie/2017/11/vertraeumte-fotografien-beleuchten-das-leben-im-dunklen-arktischen-winter",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Verträumte Fotografien beleuchten das Leben im dunklen arktischen Winter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/umwelt/2018/08/exklusiv-teile-des-arktischen-bodens-gefrieren-selbst-im-winter-nicht-mehr",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Exklusiv: Teile des arktischen Bodens gefrieren selbst im Winter nicht mehr",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/fotografie/2017/11/das-ist-das-gewinnerbild-des-fotowettbewerbs",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Das ist das Gewinnerbild des Fotowettbewerbs",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/wissenschaft/2026/09/die-zukunft-der-raumfahrt-koennte-von-dieser-kartoffel-abhaengen",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Die Zukunft der Raumfahrt könnte von dieser Kartoffel abhängen",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/geschichte-und-kultur/2025/01/sylt-historisches-schiffswrack-verschwindet-spurlos",
+      "sourceId": "national-geographic-deutschland",
+      "title": "+ Sylt: Historisches Schiffswrack verschwindet spurlos",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2023/03/gewinner-der-urbanisierung-welche-insekten-vom-stadtleben-profitieren",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Gewinner der Urbanisierung: Welche Insekten vom Stadtleben profitieren",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/fotografie/2023/10/mikrofotografie-2023-faszinierende-einblicke-in-eine-winzige-welt",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Mikrofotografie 2023: Faszinierende Einblicke in eine winzige Welt",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2024/12/gewinner-und-verlierer-so-erging-es-der-tierwelt-im-jahr-2024",
+      "sourceId": "national-geographic-deutschland",
+      "title": "Gewinner und Verlierer: So erging es der Tierwelt im Jahr 2024",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://nationalgeographic.de/tiere/2025/05/was-passiert-wenn-der-weisse-hai-verschwindet",
+      "sourceId": "national-geographic-deutschland",
+      "title": "+ Was passiert, wenn der Weiße Hai verschwindet?",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.nivea.de/artikel/engage/real-madrid-gewinnspiel/teilnahmebedingungen",
+      "sourceId": "nivea",
+      "title": "Teilnahmebedingungen | NIVEA",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.nivea.de/produkte/wind-and-wetter-creme-50ml-424678920001.html",
+      "sourceId": "nivea",
+      "title": "Wind & Wetter Creme 50ml",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.nivea.de/artikel/wissen/jahreszeitliche-hautpflege/winter-skin-focused",
+      "sourceId": "nivea",
+      "title": "Winterhaut RESCUE",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.nivea.de/artikel/wissen/jahreszeitliche-hautpflege/hautpflege-im-winter",
+      "sourceId": "nivea",
+      "title": "Trockene Haut im Winter: Richtige Hautpflege im Winter",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.otto.de/herren/schuhe?jahreszeit=winter",
+      "sourceId": "otto",
+      "title": "Herren Winterschuhe",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.otto.de/damen/mode/maentel?jahreszeit=winter",
+      "sourceId": "otto",
+      "title": "Winter Mäntel",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.otto.de/damen/mode/jacken?jahreszeit=winter",
+      "sourceId": "otto",
+      "title": "Winterjacken",
+      "status": "review",
+      "reason": "deadline-or-entry-route-not-unambiguous"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cYdE_khXkXs",
+      "sourceId": "scout-youtube-com",
+      "title": "- YouTube",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.goodmorningamerica.com/living/story/amazon-adds-garage-delivery-home-car-options-62568258",
+      "sourceId": "scout-goodmorningamerica-com",
+      "title": "Amazon adds in-garage delivery to in-home, in-car options - Good Morning America",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://screenrant.com/amazon-in-garage-delivery-service-key-cities",
+      "sourceId": "scout-screenrant-com",
+      "title": "Key by Amazon In-Garage Delivery Comes To More US Cities: How To Use It",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.theverge.com/2020/11/12/21562447/amazon-in-garage-delivery-service-available-areas-key",
+      "sourceId": "scout-theverge-com",
+      "title": "Amazon expands its in-garage delivery to 4,000 cities, including Chicago, Los Angeles, and New York",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.pocket-lint.com/smart-home/news/amazon/142667-what-are-amazon-key-and-in-car-delivery-and-how-do-they-work",
+      "sourceId": "scout-pocket-lint-com",
+      "title": "What are Amazon Key and how does it work?",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.preventpackagetheft.com/blog/how-amazon-in-garage-delivery-works",
+      "sourceId": "scout-preventpackagetheft-com",
+      "title": "How Amazon In-Garage Delivery Works",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.digitaltrends.com/home/amazon-key-garage-delivery",
+      "sourceId": "scout-digitaltrends-com",
+      "title": "",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://backstagecountry.com/2023/10/04/amazon-key-in-garage-delivery-changes-what-you-should-know",
+      "sourceId": "scout-backstagecountry-com",
+      "title": "Amazon Key In-Garage Delivery Changes: What You Should Know",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/indianapolis_in_movietimes",
+      "sourceId": "scout-fandango-com",
+      "title": "Movie times + Tickets near",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/fairfax_va_movietimes",
+      "sourceId": "scout-fandango-com",
+      "title": "Movie times + Tickets near",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/chattanooga_tn_movietimes",
+      "sourceId": "scout-fandango-com",
+      "title": "Movie times + Tickets near",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/the-grand-16-pier-park-aaujw/theater-page",
+      "sourceId": "scout-fandango-com",
+      "title": "The Grand 16 - Pier Park",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/cmx-countryside-aawms/theater-page",
+      "sourceId": "scout-fandango-com",
+      "title": "CMX Countryside",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.fandango.com/houston-texas_movietimes",
+      "sourceId": "scout-fandango-com",
+      "title": "Movie times + Tickets near",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "High-Quality Dietary Supplement Manufacturing Equipment - TES",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/client-appreciation-golf-tournament",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "Client Appreciation Golf Tournament: Strengthening Partnerships Beyond Business",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/equipment",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "Premium Supplement Manufacturing Equipment for Every Production Need",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/product/used-tes-5",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "Used TES 5 Semi-Auto Capsule Filler",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/product/cvc-300-wrap-labeler",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "CVC 300 Wrap Labeler",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/affiliate-home",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "Store Affiliates - TES Equipment Supplier",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://tesequipmentsupplier.com/product/tcp-100",
+      "sourceId": "scout-tesequipmentsupplier-com",
+      "title": "TCP 100A Capsule Polisher and Sorter",
+      "status": "review",
+      "reason": "insufficient-confidence"
+    },
+    {
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele?channel=spa",
+      "sourceId": "radio-hamburg",
+      "title": "Gewinnspiele | Radio Hamburg",
       "status": "rejected",
       "reason": "purchase"
     },
     {
-      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/tnb-naturkind-gewinnspiel.jsp",
-      "sourceId": "edeka",
-      "title": "EDEKA",
-      "status": "rejected",
-      "reason": "social-only"
-    },
-    {
-      "url": "https://www.edeka.de/rhein-ruhr/gewinnspiel/teilnahmebedingungen/datenschutzhinweise-instagram-movie-park.jsp",
-      "sourceId": "edeka",
-      "title": "EDEKA",
-      "status": "rejected",
-      "reason": "social-only"
-    },
-    {
-      "url": "https://www.freundin.de/lifestyle/gewinnspiele/spielspass-im-familien-alltag-mit-monopoly",
-      "sourceId": "freundin",
-      "title": "Milka und MONOPOLY bringen Spielspaß in den Familien-Alltag und echten Mehrwert für die Haushaltskasse",
+      "url": "https://www.radiohamburg.de/aktionen/gewinnspiele/Wir-erstatten-euren-Einkauf-und-verdoppeln-sogar-id1638123.html",
+      "sourceId": "radio-hamburg",
+      "title": "Wir erstatten euren Einkauf - und verdoppeln sogar!",
       "status": "rejected",
       "reason": "purchase"
     },
     {
-      "url": "https://www.bunte.de/vermischtes/gewinnspiele/brands-you-love/demakup-wattepads-jetzt-kostenlos-testen.html",
-      "sourceId": "bunte",
-      "title": "Demak'Up Wattepads jetzt kostenlos testen",
+      "url": "https://www.lidl.de/c/lidl-gewinnspiele/s10019702",
+      "sourceId": "lidl",
+      "title": "Freue dich über tolle Lidl Gewinnspiele und spannende Aktionen!",
+      "status": "rejected",
+      "reason": "purchase"
+    },
+    {
+      "url": "https://www.mein-schoener-garten.de/gartenpraxis/balkon-terrasse/wandelroeschen-ueberwintern-26351",
+      "sourceId": "mein-schoener-garten",
+      "title": "Überwinterungstipps für Wandelröschen",
       "status": "rejected",
       "reason": "social-only"
     },
     {
-      "url": "https://www.bunte.de/vermischtes/gewinnspiele/brands-you-love/elvital-bond-repair-haarpflegeserie-von-loral-paris-kostenlos-testen.html",
-      "sourceId": "bunte",
-      "title": "Elvital Bond Repair Haarpflegeserie von L’Oréal Paris kostenlos testen",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-gewinnspiel-garten-muenchen",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Gewinnspiel Garten München",
       "status": "rejected",
       "reason": "social-only"
     },
     {
-      "url": "https://www.bunte.de/vermischtes/gewinnspiele/gewinnspiel-gewinnt-3x2-tickets-fuer-frauen-100-the-stage-in-berlin.html",
-      "sourceId": "bunte",
-      "title": "Gewinnspiel: Gewinnt 3x2 Tickets für \"Frauen 100 The Stage\" in Berlin",
+      "url": "https://www.mein-schoener-garten.de/teilnahmebedingungen-gartenspass-gewinnspiel-jubilaeum",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für das gartenspaß-Gewinnspiel zum Jubiläum",
       "status": "rejected",
       "reason": "social-only"
     },
     {
-      "url": "https://www.bunte.de/vermischtes/gewinnspiele/brands-you-love/social-media-aktion-telekom-sharewithcare-werde-jetzt-teil-der-kampagne.html",
-      "sourceId": "bunte",
-      "title": "Social Media Aktion: Telekom #ShareWithCare: Werde JETZT Teil der Kampagne!",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-fuer-das-gewinnspiel-mit-einfachlos-und-sense-of-home",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für das Gewinnspiel mit einfachlos und Sense of Home",
       "status": "rejected",
       "reason": "social-only"
     },
     {
-      "url": "https://vip-club.computerbild.de/gewinnspiele-aktionen/Apple-Watch-SE-GPS-zu-gewinnen",
-      "sourceId": "computer-bild",
-      "title": "Immer alles im Blick mit der Apple Watch SE GPS",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-adventsgewinnspiel-lenzrosen-set-orientalisches-trio",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Adventsgewinnspiel Lenzrosen-Set \"Orientalisches Trio\"",
       "status": "rejected",
-      "reason": "call-or-sms-only"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-2",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-gewinnspiel-adventskalender-terre-unity",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Gewinnspiel Adventskalender Terre Unity",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-2-award-in-wines-5",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 2, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-fuer-das-gruenstadtmenschen-gewinnspiel-mit-dem-pflanzenarzt",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für das Grünstadtmenschen-Gewinnspiel mit dem Pflanzenarzt",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-6",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-fuer-das-gewinnspiel-mit-sense-of-home",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für das Gewinnspiel mit Sense of Home",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-2-award-in-wines-7",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 2, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-fuer-die-gewinnspiele-der-pflanz-dich-show",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für die Gewinnspiele der Pflanz Dich!-Show",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-3-award-in-wines-3",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-adventsgewinnspiel-komposter",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Adventsgewinnspiel Komposter",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-2-award-in-wines-6",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 2, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/gartenpraxis/ziergaerten/herbstduenger-fuer-den-rasen-4931",
+      "sourceId": "mein-schoener-garten",
+      "title": "Herbstdünger macht den Rasen fit",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-3-award-in-wines-6",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-adventsgewinnspiel-blaue-kegelzypresse",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Adventsgewinnspiel Blaue Kegelzypresse",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-7",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/gewinnspiel-teilnahmebedingungen-400000-abonnenten",
+      "sourceId": "mein-schoener-garten",
+      "title": "Gewinnspiel-Teilnahmebedingungen 400.000 Abonnenten",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-3-award-in-wines-5",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/news/wann-erntet-man-das-wintergemuese-video-83907",
+      "sourceId": "mein-schoener-garten",
+      "title": "Wann erntet man das Wintergemüse?",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-3",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/teilnahmebedingungen-fuer-das-gruenstadtmenschen-gewinnspiel-mit-floragard",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen für das Grünstadtmenschen-Gewinnspiel mit Floragard",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-4",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-adventsgewinnspiel-hochbeet-mit-fuessen",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Adventsgewinnspiel Hochbeet mit Füßen",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-3-award-in-wines-7",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/gartenpraxis/ziergaerten/ist-die-rudbeckia-winterhart-75454",
+      "sourceId": "mein-schoener-garten",
+      "title": "Ist die Rudbeckia winterhart?",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/ausbildung-wsetr-level-3-award-in-wines-4",
-      "sourceId": "vinum",
-      "title": "Ausbildung WSET® Level 3, Award in Wines",
+      "url": "https://www.mein-schoener-garten.de/content/teilnahmebedingungen-adventsgewinnspiel-amaryllis",
+      "sourceId": "mein-schoener-garten",
+      "title": "Teilnahmebedingungen Adventsgewinnspiel Amaryllis",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
     },
     {
-      "url": "https://www.vinum.eu/de/events/eventkalender/event/show/assistant-sommelier-dha-inkl-wsetr-level-3-award-in-wines-5",
-      "sourceId": "vinum",
-      "title": "Assistant Sommelier (DHA) inkl. WSET® Level 3, Award in Wines",
+      "url": "https://www.nivea.de/artikel/engage/teilnahmebedingungen-nivea-social-gewinnspiel",
+      "sourceId": "nivea",
+      "title": "Teilnahmebedingungen | NIVEA",
       "status": "rejected",
-      "reason": "non-contest-page",
-      "lastReviewed": "2026-09-21"
+      "reason": "social-only"
+    },
+    {
+      "url": "https://www.nivea.de/artikel/engage/real-madrid-gewinnspiel",
+      "sourceId": "nivea",
+      "title": "ERLEBE REAL MADRID LIVE IM STADION – ODER GEWINNE EIN EXKLUSIVES FANPAKET FÜR ZUHAUSE",
+      "status": "rejected",
+      "reason": "purchase"
     }
   ],
   "secondPass": {
-    "lastRun": "2026-09-21T11:22:23+02:00",
+    "lastRun": "2026-09-22T10:53:22+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 1741,
-    "rejected": 14,
+    "keptForReview": 1925,
+    "rejected": 0,
     "autoHiddenForReview": 0
   }
 }
