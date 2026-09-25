@@ -1,7 +1,7 @@
 {
   "dailyScoutLastRun": "2026-09-25T14:45:00+02:00",
   "newSourcesInRelease": 0,
-  "release": "Katalogoffensive Stufe 4 · Quellen-Ergiebigkeitsaudit",
+  "release": "HITCHECKER dauerhaft ausgeschlossen · 25.09.2026",
   "sourceAudit": {
     "date": "2026-08-27",
     "focus": "Österreich & Schweiz",
@@ -12866,10 +12866,10 @@
       "verification": "verified"
     },
     {
-      "active": true,
-      "activeContestCount": 63,
-      "automation": "green",
-      "catalogYield": "active",
+      "active": false,
+      "activeContestCount": 0,
+      "automation": "off",
+      "catalogYield": "excluded",
       "categories": [
         "Bücher"
       ],
@@ -12885,17 +12885,17 @@
       "id": "hitchecker",
       "lastCatalogReview": "2026-09-25",
       "lastChecked": "2026-09-25",
-      "lastResultCount": 28,
-      "monitoringPriority": "high",
+      "lastResultCount": 0,
+      "monitoringPriority": "excluded",
       "name": "HITCHECKER",
-      "notes": "In 7.9 anhand eines laufenden, kaufzwangfreien Teilnahmewegs verifiziert.",
-      "policyReview": "passed",
+      "notes": "Dauerhaft aus Win Win ausgeschlossen. Keine zukünftige Überwachung und keine neuen HITCHECKER-Gewinnspiele aufnehmen.",
+      "policyReview": "permanently-excluded",
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
       "successfulChecks": 4,
       "type": "Web",
-      "verification": "verified"
+      "verification": "excluded"
     },
     {
       "active": true,
@@ -14387,5 +14387,14 @@
     "auditedZeroSources": 39,
     "downgradedSources": 14,
     "focus": "Bestehende 0-Treffer-Quellen: aktive Treffer übernehmen, ineligible/ergebnislose Quellen abstufen."
+  },
+  "excludedSourceIds": [
+    "hitchecker"
+  ],
+  "latestCleanup": {
+    "date": "2026-09-25",
+    "sourceId": "hitchecker",
+    "removedContests": 63,
+    "rule": "Quelle dauerhaft deaktiviert und von zukünftigen Suchläufen ausgeschlossen."
   }
 }
