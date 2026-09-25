@@ -1,14 +1,14 @@
 {
-  "dailyScoutLastRun": "2026-09-25T12:21:00+02:00",
-  "newSourcesInRelease": 14,
-  "release": "Katalogoffensive 25.09.2026",
+  "dailyScoutLastRun": "2026-09-25T12:55:00+02:00",
+  "newSourcesInRelease": 9,
+  "release": "Katalogoffensive Stufe 2 · 25.09.2026",
   "sourceAudit": {
     "date": "2026-08-27",
     "focus": "Österreich & Schweiz",
     "newMonitoringSources": 15,
     "policy": "Monitoringquellen dürfen variable Länderfreigaben haben; aktiver Katalog weiterhin nur mit belegter Deutschland-Teilnahme."
   },
-  "sourceCount": 429,
+  "sourceCount": 438,
   "sources": [
     {
       "active": true,
@@ -8726,10 +8726,10 @@
     },
     {
       "active": true,
-      "activeContestCount": 0,
+      "activeContestCount": 1,
       "addedInVersion": "7.2",
       "automation": "green",
-      "catalogYield": "none-current",
+      "catalogYield": "active",
       "categories": [
         "Mobilität",
         "Sicherheit"
@@ -8744,13 +8744,13 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "polizei-dein-partner",
-      "lastCatalogReview": "2026-09-20",
-      "lastChecked": "2026-09-20",
-      "lastResultCount": 10,
-      "monitoringPriority": "medium",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
       "name": "Polizei Dein Partner",
       "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
-      "policyReview": "recheck-needed",
+      "policyReview": "passed",
       "quality": 5,
       "requiresLogin": false,
       "socialOnly": false,
@@ -12835,7 +12835,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 11,
+      "activeContestCount": 21,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12853,7 +12853,7 @@
       "id": "mucke-und-mehr",
       "lastCatalogReview": "2026-09-25",
       "lastChecked": "2026-09-25",
-      "lastResultCount": 45,
+      "lastResultCount": 10,
       "monitoringPriority": "high",
       "name": "MUCKE UND MEHR",
       "notes": "In 7.9 anhand eines laufenden, kaufzwangfreien Teilnahmewegs verifiziert.",
@@ -14077,15 +14077,313 @@
         "Wohnen",
         "Bad"
       ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "da-direkt",
+      "name": "DA Direkt",
+      "domain": "da-direkt.de",
+      "type": "Versicherung",
+      "categories": [
+        "Haushalt",
+        "Technik",
+        "Lifestyle"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "wohnidee",
+      "name": "WOHNIDEE",
+      "domain": "wohnidee.de",
+      "type": "Magazin",
+      "categories": [
+        "Wohnen",
+        "Technik"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "sweetango",
+      "name": "SweeTango",
+      "domain": "sweetango-apple.com",
+      "type": "Markenaktion",
+      "categories": [
+        "Reisen",
+        "Genuss"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "neb",
+      "name": "Niederbarnimer Eisenbahn (NEB)",
+      "domain": "neb.de",
+      "type": "Regionalanbieter",
+      "categories": [
+        "Regional",
+        "Mobilität"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 2,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 2,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "gefu",
+      "name": "GEFU",
+      "domain": "gefu.com",
+      "type": "Hersteller",
+      "categories": [
+        "Küche",
+        "Haushalt"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "aoste",
+      "name": "Aoste",
+      "domain": "aoste.de",
+      "type": "Hersteller",
+      "categories": [
+        "Genuss",
+        "Freizeit"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "eizo",
+      "name": "EIZO",
+      "domain": "eizo.de",
+      "type": "Hersteller",
+      "categories": [
+        "Technik"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 12,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 12,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "game2gether",
+      "name": "Game2Gether",
+      "domain": "game2gether.de",
+      "type": "Gaming-Magazin",
+      "categories": [
+        "Gaming",
+        "Technik"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "fertighausmagazin",
+      "name": "Fertighausmagazin",
+      "domain": "fertighausmagazin.de",
+      "type": "Magazin",
+      "categories": [
+        "Wohnen",
+        "Hausbau"
+      ]
     }
   ],
   "updated": "2026-09-25",
   "version": "8.3",
   "latestExpansion": {
     "date": "2026-09-25",
-    "newSources": 14,
-    "newContests": 28,
-    "activeContests": 218,
+    "stage": 2,
+    "newSources": 9,
+    "newContests": 32,
+    "activeContests": 250,
     "policy": "Direktteilnahme; keine Kauf-/Kassenbonpflicht, Social-only, Radio-Anruf-only oder Club-Pflicht."
   }
 }
