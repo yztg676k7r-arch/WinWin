@@ -1,5 +1,5 @@
 {
-  "activeCountAtRelease": 191,
+  "activeCountAtRelease": 190,
   "activeExpansionStrategy": "Österreich/Schweiz: nur Deutschland-kompatible, kostenlose Web-Teilnahmen in den aktiven Katalog; Quellen mit wechselnder Länderfreigabe bleiben Monitoring-Quellen.",
   "appName": "Win Win",
   "catalogGoal": 1000,
@@ -8363,12 +8363,12 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-24T10:49:54+02:00",
-    "checkedSources": 30,
-    "candidatePages": 509,
+    "lastRun": "2026-09-25T11:11:25+02:00",
+    "checkedSources": 22,
+    "candidatePages": 478,
     "published": 0,
-    "review": 424,
-    "rejected": 10,
+    "review": 393,
+    "rejected": 5,
     "expiredArchived": 0
   },
   "duplicateCountAtRelease": 0,
@@ -8385,14 +8385,14 @@
   "release": "8.2.1 Quellenkatalog-Refresh",
   "removedExpiredInRelease": 42,
   "removedLegacyNonActiveInRelease": 12,
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "version": "8.3.1",
   "secondPass": {
-    "lastRun": "2026-09-24T10:52:20+02:00",
+    "lastRun": "2026-09-25T11:14:02+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 2191,
-    "rejected": 14,
+    "keptForReview": 2425,
+    "rejected": 3,
     "autoHiddenForReview": 0
   }
 }
