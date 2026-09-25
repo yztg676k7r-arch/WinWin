@@ -1,14 +1,14 @@
 {
-  "dailyScoutLastRun": "2026-09-25T11:11:25+02:00",
-  "newSourcesInRelease": 15,
-  "release": "8.1 AT/CH source expansion",
+  "dailyScoutLastRun": "2026-09-25T12:21:00+02:00",
+  "newSourcesInRelease": 14,
+  "release": "Katalogoffensive 25.09.2026",
   "sourceAudit": {
     "date": "2026-08-27",
     "focus": "Österreich & Schweiz",
     "newMonitoringSources": 15,
     "policy": "Monitoringquellen dürfen variable Länderfreigaben haben; aktiver Katalog weiterhin nur mit belegter Deutschland-Teilnahme."
   },
-  "sourceCount": 415,
+  "sourceCount": 429,
   "sources": [
     {
       "active": true,
@@ -165,10 +165,10 @@
       "expiredRemovedIn80": 13,
       "germanyEligibility": "yes",
       "id": "brigitte",
-      "lastCatalogReview": "2026-09-20",
-      "lastChecked": "2026-09-20",
-      "lastResultCount": 7,
-      "monitoringPriority": "medium",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
       "name": "BRIGITTE",
       "notes": "Offizielle Gewinnspiel-/Aktionsquelle; Deutschland-Teilnahme bestätigt.",
       "policyReview": "passed",
@@ -233,9 +233,9 @@
       "expiredRemovedIn80": 10,
       "germanyEligibility": "yes",
       "id": "gala",
-      "lastCatalogReview": "2026-09-24",
-      "lastChecked": "2026-09-24",
-      "lastResultCount": 4,
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
       "monitoringPriority": "high",
       "name": "GALA",
       "notes": "Offizielle Gewinnspiel-/Aktionsquelle; Deutschland-Teilnahme bestätigt.",
@@ -584,7 +584,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 4,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -652,7 +652,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 2,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -820,7 +820,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 5,
+      "activeContestCount": 1,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -853,7 +853,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 4,
+      "activeContestCount": 1,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -1284,7 +1284,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 13,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -1351,7 +1351,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -1385,7 +1385,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 3,
+      "activeContestCount": 2,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -1419,7 +1419,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -1715,7 +1715,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 9,
+      "activeContestCount": 3,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -1734,9 +1734,9 @@
       "expiredRemovedIn80": 9,
       "germanyEligibility": "check",
       "id": "freundin",
-      "lastCatalogReview": "2026-09-24",
-      "lastChecked": "2026-09-24",
-      "lastResultCount": 18,
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 3,
       "monitoringPriority": "high",
       "name": "freundin",
       "notes": "Offizielle deutsche Quelle. Einzelne Gewinnspiele und Teilnahmebedingungen noch prüfen.",
@@ -1977,7 +1977,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -2011,7 +2011,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -2470,7 +2470,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -2733,7 +2733,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -3251,7 +3251,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 5,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -3285,7 +3285,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -3319,7 +3319,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 1,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -3479,7 +3479,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 5,
+      "activeContestCount": 1,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -5835,7 +5835,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 4,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6033,7 +6033,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6101,7 +6101,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6234,7 +6234,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6366,7 +6366,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6432,7 +6432,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6630,7 +6630,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -6957,7 +6957,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "yellow",
       "catalogYield": "active",
       "categories": [
@@ -7191,7 +7191,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -7429,7 +7429,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -7463,7 +7463,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -7497,7 +7497,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8247,7 +8247,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8281,7 +8281,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8315,7 +8315,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 2,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8417,7 +8417,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8554,10 +8554,10 @@
     },
     {
       "active": true,
-      "activeContestCount": 0,
+      "activeContestCount": 1,
       "addedInVersion": "7.2",
       "automation": "green",
-      "catalogYield": "none-current",
+      "catalogYield": "active",
       "categories": [
         "Freizeit",
         "Familie",
@@ -8573,13 +8573,13 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "europa-park",
-      "lastCatalogReview": "2026-09-20",
-      "lastChecked": "2026-09-20",
-      "lastResultCount": 34,
-      "monitoringPriority": "medium",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
       "name": "Europa-Park",
       "notes": "Aktives kostenloses Web-/Formular- oder Newsletter-Gewinnspiel im August 2026 belegt; kein Social-only- oder Kaufzwang in der geprüften Aktion.",
-      "policyReview": "recheck-needed",
+      "policyReview": "passed",
       "quality": 5,
       "requiresLogin": false,
       "socialOnly": false,
@@ -8589,7 +8589,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 0,
+      "activeContestCount": 1,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "none-current",
@@ -8657,7 +8657,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8897,7 +8897,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "addedInVersion": "7.2",
       "automation": "green",
       "catalogYield": "active",
@@ -8963,7 +8963,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9059,7 +9059,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9091,7 +9091,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9123,7 +9123,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9283,7 +9283,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9347,7 +9347,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9379,7 +9379,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9539,7 +9539,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 1,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9731,7 +9731,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9795,7 +9795,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -9987,7 +9987,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10019,7 +10019,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10083,7 +10083,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10243,7 +10243,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10307,7 +10307,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10339,7 +10339,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10371,7 +10371,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10499,7 +10499,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10659,7 +10659,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10755,7 +10755,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10819,7 +10819,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -10947,7 +10947,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11395,7 +11395,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11427,7 +11427,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11715,7 +11715,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11843,7 +11843,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11907,7 +11907,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -11971,7 +11971,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12035,7 +12035,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12067,7 +12067,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 3,
+      "activeContestCount": 2,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12131,7 +12131,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12163,7 +12163,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12227,7 +12227,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12291,7 +12291,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 2,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12323,7 +12323,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12387,7 +12387,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12419,7 +12419,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 4,
+      "activeContestCount": 2,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12483,7 +12483,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 3,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12771,7 +12771,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12803,7 +12803,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12835,7 +12835,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 16,
+      "activeContestCount": 11,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12867,7 +12867,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 10,
+      "activeContestCount": 35,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -12899,7 +12899,7 @@
     },
     {
       "active": true,
-      "activeContestCount": 1,
+      "activeContestCount": 0,
       "automation": "green",
       "catalogYield": "active",
       "categories": [
@@ -13501,9 +13501,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "hamburg-magazin",
-      "lastCatalogReview": "2026-09-24",
-      "lastChecked": "2026-09-24",
-      "lastResultCount": 45,
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 3,
       "monitoringPriority": "high",
       "name": "Hamburg Magazin",
       "notes": "Offizielle regionale Quelle. Teilnahmebedingungen bestätigen kostenlose, kaufunabhängige Teilnahme und Wohnsitz in Deutschland, Österreich oder der Schweiz.",
@@ -13614,8 +13614,478 @@
       "successfulChecks": 2,
       "type": "Hersteller",
       "verification": "verified"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "dvr",
+      "name": "Deutscher Verkehrssicherheitsrat (DVR)",
+      "domain": "dvr.de",
+      "type": "Verband",
+      "categories": [
+        "Mobilität",
+        "Sicherheit"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "adac-nordrhein",
+      "name": "ADAC Nordrhein",
+      "domain": "adac-nordrhein.de",
+      "type": "Verband",
+      "categories": [
+        "Familie",
+        "Reisen",
+        "Mobilität"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "juweliere-kraemer",
+      "name": "Juweliere Kraemer",
+      "domain": "juweliere-kraemer.de",
+      "type": "Handel",
+      "categories": [
+        "Schmuck",
+        "Gutscheine"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "niederegger",
+      "name": "Niederegger",
+      "domain": "niederegger.de",
+      "type": "Hersteller",
+      "categories": [
+        "Genuss",
+        "Gutscheine"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "mein-eigenheim",
+      "name": "Mein EigenHeim",
+      "domain": "mein-eigenheim.de",
+      "type": "Magazin",
+      "categories": [
+        "Wohnen",
+        "Haushalt"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 2,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 2,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "compo",
+      "name": "COMPO",
+      "domain": "compo.de",
+      "type": "Hersteller",
+      "categories": [
+        "Garten"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "gameswelt",
+      "name": "Gameswelt",
+      "domain": "gameswelt.ch",
+      "type": "Magazin",
+      "categories": [
+        "Gaming",
+        "Technik"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "runnersworld",
+      "name": "RUNNER'S WORLD",
+      "domain": "runnersworld.de",
+      "type": "Magazin",
+      "categories": [
+        "Sport",
+        "Laufen"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 2,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 2,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "aktiv-laufen",
+      "name": "aktiv Laufen",
+      "domain": "aktiv-laufen.de",
+      "type": "Magazin",
+      "categories": [
+        "Sport",
+        "Laufen"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 3,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 3,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "ksta",
+      "name": "Kölner Stadt-Anzeiger",
+      "domain": "ksta.de",
+      "type": "Regionalmagazin",
+      "categories": [
+        "Regional",
+        "Events",
+        "Sport"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "sichermobil-bayern",
+      "name": "Sicher Mobil Bayern",
+      "domain": "sichermobil.bayern.de",
+      "type": "Behördenportal",
+      "categories": [
+        "Mobilität",
+        "Sicherheit"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "falken-gewinnen",
+      "name": "Falken Zusatzgewinnspiel",
+      "domain": "mit-falken-gewinnen.de",
+      "type": "Markenaktion",
+      "categories": [
+        "Fahrrad",
+        "Mobilität"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "togu",
+      "name": "TOGU",
+      "domain": "togu.de",
+      "type": "Hersteller",
+      "categories": [
+        "Sport",
+        "Fitness"
+      ]
+    },
+    {
+      "active": true,
+      "activeContestCount": 2,
+      "automation": "green",
+      "catalogYield": "active",
+      "checkIntervalDays": 2,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "lastCatalogReview": "2026-09-25",
+      "lastChecked": "2026-09-25",
+      "lastResultCount": 2,
+      "monitoringPriority": "high",
+      "notes": "Offizielle Gewinnspiel-/Aktionsquelle; nur regelkonforme Direktteilnahmen in den Win-Win-Katalog übernehmen.",
+      "policyReview": "passed",
+      "quality": 5,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "verification": "verified",
+      "id": "splash-bad",
+      "name": "SPLASH",
+      "domain": "splash-bad.de",
+      "type": "Magazin",
+      "categories": [
+        "Wohnen",
+        "Bad"
+      ]
     }
   ],
   "updated": "2026-09-25",
-  "version": "8.3"
+  "version": "8.3",
+  "latestExpansion": {
+    "date": "2026-09-25",
+    "newSources": 14,
+    "newContests": 28,
+    "activeContests": 218,
+    "policy": "Direktteilnahme; keine Kauf-/Kassenbonpflicht, Social-only, Radio-Anruf-only oder Club-Pflicht."
+  }
 }
