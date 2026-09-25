@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.7.0';
+const APP_VERSION='8.7.1';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -536,7 +536,8 @@ function isContestIgnored(i){
  const decision=roundDecisionFor(i);if(decision?.decision==='hide')return true;
  return ignoredRoundHistory().some(entry=>entry.id!==i.id&&sameContestRound(i,entry.identity));
 }
-function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)}
+function hasOpenProblem(i){return Boolean(i&&user.items?.[i.id]?.problem?.open)}
+function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)||hasOpenProblem(i)}
 function recordRoundDecision(id,decision){
  const i=contests.find(x=>x.id===id);if(!i||!['show','hide'].includes(decision))return;
  const identity=contestIdentity(i);
@@ -552,7 +553,7 @@ function recordRoundDecision(id,decision){
  saveUser();refreshAllViews('round-review');
  toast(decision==='show'?'Diese neue Runde wird angezeigt':'Diese neue Runde bleibt ausgeblendet');
 }
-function pendingRoundReviews(){return allActive().filter(isRoundReviewPending)}
+function pendingRoundReviews(){return allActive().filter(i=>!hasOpenProblem(i)&&isRoundReviewPending(i))}
 function renderRoundReviews(){
  const panel=$('#roundReviewPanel'),list=$('#roundReviewList'),badge=$('#roundReviewBadge');if(!panel||!list)return;
  const pending=pendingRoundReviews();panel.hidden=!pending.length;
@@ -564,7 +565,7 @@ function renderRoundReviews(){
 }
 window.recordRoundDecision=recordRoundDecision;
 
-function scored(includeIgnored=false){return allActive().filter(i=>!isRoundReviewPending(i)).map(i=>({...i,...scoreContest(i)})).filter(i=>includeIgnored||!isContestIgnored(i))}
+function scored(includeIgnored=false){return allActive().filter(i=>!isRoundReviewPending(i)&&!hasOpenProblem(i)).map(i=>({...i,...scoreContest(i)})).filter(i=>includeIgnored||!isContestIgnored(i))}
 function recommended(i){return i.score>=72&&!completedForToday(i)}
 function secret(i){return i.score>=62&&i.score<78&&(i.winners||0)<50&&(i.effort||3)<=2}
 function matches(i,f){
@@ -654,13 +655,13 @@ function saveProblem(){
  const before=JSON.stringify(user);
  stateFor(id).problem={open:true,changedAt:Date.now(),title:item.title,provider:item.provider,url:item.url,deadline:item.deadline,sourceId:item.sourceId||'',reason:$('#problemReason').value,note:$('#problemNote').value.trim()};
  try{saveUser()}catch(error){user=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
- $('#problemDialog').close();refreshAllViews('problem');toast('Problem vorgemerkt – unter „Probleme“ teilen');
+ $('#problemDialog').close();refreshAllViews('problem');toast('Problem vorgemerkt – Gewinnspiel ausgeblendet');
 }
 function clearProblem(id){
  const problem=user.items[id]?.problem;if(!problem)return;
  const before=JSON.stringify(problem);problem.open=false;problem.changedAt=Date.now();
  try{saveUser()}catch(error){user.items[id].problem=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
- refreshAllViews('problem');renderManageMarks();
+ refreshAllViews('problem');renderManageMarks();toast('Problem bereinigt – Gewinnspiel wieder sichtbar');
 }
 function closeDialog(id){
  const dialog=typeof id==='string' ? $(id.startsWith('#')?id:`#${id}`) : id;
@@ -698,13 +699,13 @@ function saveProblem(){
  const before=JSON.stringify(user);
  stateFor(id).problem={open:true,changedAt:Date.now(),title:item.title,provider:item.provider,url:item.url,deadline:item.deadline,sourceId:item.sourceId||'',reason:$('#problemReason').value,note:$('#problemNote').value.trim()};
  try{saveUser()}catch(error){user=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
- closeDialog('problemDialog');refreshAllViews('problem');toast('Hinweis gespeichert – Prüfliste unter Mehr öffnen');
+ closeDialog('problemDialog');refreshAllViews('problem');toast('Problem vorgemerkt – Gewinnspiel ausgeblendet');
 }
 function clearProblem(id){
  const problem=user.items[id]?.problem;if(!problem)return;
  const before=JSON.stringify(problem);problem.open=false;problem.changedAt=Date.now();
  try{saveUser()}catch(error){user.items[id].problem=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
- refreshAllViews('problem');renderManageMarks();
+ refreshAllViews('problem');renderManageMarks();toast('Problem bereinigt – Gewinnspiel wieder sichtbar');
 }
 function openManageMarks(mode){
  const dialog=$('#marksDialog');if(!dialog)return;
@@ -716,7 +717,7 @@ function renderManageMarks(){
  const problems=dialog.dataset.mode==='problems';
  $('#marksTitle').textContent=problems?'Probleme prüfen':'Nicht interessant – zurücksetzen';
  $('#marksIntro').textContent=problems
-  ?'Du musst nur Hinweise erfassen. Die App erstellt daraus automatisch eine vollständige Prüfliste.'
+  ?'Vorgemerkte Gewinnspiele bleiben in Start, Heute, Entdecken, Favoriten und Dashboard ausgeblendet. Nach der Bereinigung kannst du sie hier wieder freigeben.'
   :'Hier kannst du versehentlich ausgeblendete Gewinnspiele wieder anzeigen.';
  $('#marksShareBar').hidden=!problems;
  const list=$('#marksList');list.replaceChildren();
@@ -726,7 +727,7 @@ function renderManageMarks(){
   const row=document.createElement('article');row.className='marks-row';
   const title=document.createElement('h3');title.textContent=(problems?state.problem.title:item.title)||id;row.append(title);
   const info=document.createElement('p');info.textContent=problems?state.problem.reason+(state.problem.note?' · '+state.problem.note:''):[item.provider,item.deadline].filter(Boolean).join(' · ');row.append(info);
-  const button=document.createElement('button');button.type='button';button.textContent=problems?'Meldung zurücknehmen':'Wieder anzeigen';button.onclick=()=>problems?clearProblem(id):restoreIgnored(id);row.append(button);list.append(row);
+  const button=document.createElement('button');button.type='button';button.textContent=problems?'Bereinigt – wieder anzeigen':'Wieder anzeigen';button.onclick=()=>problems?clearProblem(id):restoreIgnored(id);row.append(button);list.append(row);
  }
  if(!entries.length)list.textContent=problems?'Keine Probleme vorgemerkt.':'Keine ausgeblendeten Gewinnspiele.';
  $('#shareProblems').disabled=!entries.length;
