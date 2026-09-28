@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.7.1';
+const APP_VERSION='8.7.2';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -1803,9 +1803,9 @@ async function fetchBestContestCatalog(){
  // catalog directly, with the site copy available when GitHub is unreachable.
  const result=await fetchJsonFromPaths(
   ['https://raw.githubusercontent.com/yztg676k7r-arch/WinWin/main/contests.json','./contests.json'],
-  p=>p&&Array.isArray(p.contests)&&p.contests.length>0
+  p=>catalogPayloadRows(p).length>0
  );
- return {...result,totalCount:result.payload.contests.length};
+ return {...result,totalCount:catalogPayloadRows(result.payload).length};
 }
 
 async function loadSources(){
@@ -2135,13 +2135,14 @@ async function loadData(silent=false){
    // JSON-Anfragen mit Cache-Buster fälschlich als HTML beantworten.
    const result=await fetchBestContestCatalog();
    const p=result.payload;
-   const clean=p.contests.map(normalizeContest).filter(validContest);
+   const rows=catalogPayloadRows(p);
+   const clean=rows.map(normalizeContest).filter(validContest);
    if(!clean.length)throw new Error('Keine gültigen Gewinnspiele gefunden');
    baseContests=clean;
    const merged=mergeCatalog(baseContests,customContests);
    contests=merged.contests;
-   latestDataUpdate=p.updated||null;
-   dataVersion=p.version||'unbekannt';
+   latestDataUpdate=Array.isArray(p)?null:(p.updated||null);
+   dataVersion=Array.isArray(p)?APP_VERSION:(p.version||APP_VERSION);
    dataVersionGlobal=dataVersion;
    usingFallback=false;
  }catch(e){
