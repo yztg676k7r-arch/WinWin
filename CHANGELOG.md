@@ -1,3 +1,10 @@
+# Datenupdate 28.09.2026 – Quellenkatalog 500
+
+- Quellenkatalog von 438 auf 500 Quellen erweitert (+62 netto, keine neuen Domain-Dubletten im Ausbau).
+- Neue Quellen zunächst als Kandidaten/Beobachtungsquellen markiert; aktive Gewinnspiele müssen weiterhin das Per-Contest-Gate erfüllen: Teilnahme aus Deutschland, kostenlos, keine Kauf-/Kassenbonpflicht und kein Social-only.
+- Bestehende Gewinnspiele und lokale Nutzerstatus wurden nicht verändert.
+- Quellen-Datenversion auf 8.4 angehoben.
+
 ## 8.5 – Probleme melden und Markierungen zurücksetzen
 
 - Problem melden auf Start, Heute, Entdecken und Dashboard; lokale Prüfliste mit Teilen/Kopieren für die Prüfung im Chat. Keine automatische Übermittlung.
