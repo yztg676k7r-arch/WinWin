@@ -8,7 +8,7 @@
     "newMonitoringSources": 15,
     "policy": "Monitoringquellen dürfen variable Länderfreigaben haben; aktiver Katalog weiterhin nur mit belegter Deutschland-Teilnahme."
   },
-  "sourceCount": 550,
+  "sourceCount": 554,
   "sources": [
     {
       "active": true,
@@ -18046,6 +18046,143 @@
       "successfulChecks": 1,
       "type": "Hersteller",
       "verification": "candidate"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Reisen",
+        "Lifestyle"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "travelweekly.net",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "travel-weekly-germany",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Travel Weekly Germany",
+      "notes": "Neue Originalquelle aus Discovery-Lauf 28.09.2026; aktuelles Gewinnspiel mit Teilnahme aus Deutschland offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Reiseportal",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Wohnen",
+        "Möbel",
+        "Handel"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland",
+        "Österreich",
+        "Schweiz"
+      ],
+      "country": "Deutschland/Österreich/Schweiz",
+      "domain": "interliving.com",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "interliving",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Interliving",
+      "notes": "Neue Originalquelle aus Discovery-Lauf 28.09.2026; laufendes kostenloses Gewinnspiel mit Deutschland-Teilnahme bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Händler",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Regional",
+        "Events",
+        "Freizeit"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "echtstuttgart.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "echt-stuttgart",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Echt Stuttgart",
+      "notes": "Neue regionale Originalquelle aus Discovery-Lauf 28.09.2026; laufendes kostenloses Gewinnspiel offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Regionalmagazin",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Lebensmittel",
+        "Reisen",
+        "Freizeit"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "wicklein.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "wicklein",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Wicklein",
+      "notes": "Neue Originalquelle aus Discovery-Lauf 28.09.2026; laufendes kostenloses Gewinnspiel mit Wohnsitz Deutschland offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Marke",
+      "verification": "verified-current-campaign"
     }
   ],
   "updated": "2026-09-28",
