@@ -1,3 +1,13 @@
+# Datenupdate 28.09.2026 – 550 Quellen + Live-Suchlauf
+
+- 50 weitere Quellen ergänzt; Quellenkatalog jetzt 550 Einträge.
+- Alle 50 neuen Quellen per Live-Suche auf aktuelle Gewinnspiele geprüft.
+- 4 neue regelkonforme laufende Gewinnspiele ergänzt: Thalia Dänemark, Hugendubel/AHORN Hotels, waipu.tv und BurgenLandKlänge Leipzig.
+- Der bereits vorhandene Thalia-Schulzettel-Treffer wurde bestätigt und nicht dupliziert.
+- Treffer mit Mitgliedschaft, Kauf-/Kassenbonpflicht oder Social-only wurden weiterhin ausgeschlossen.
+- Bestehende Gewinnspiele und lokale Nutzerstatus wurden nicht verändert.
+- Katalogversion auf 8.5.1 angehoben; App-Version bleibt 8.7.1.
+
 # Datenupdate 28.09.2026 – Quellenkatalog 500
 
 - Quellenkatalog von 438 auf 500 Quellen erweitert (+62 netto, keine neuen Domain-Dubletten im Ausbau).
