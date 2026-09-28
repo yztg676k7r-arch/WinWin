@@ -1,5 +1,5 @@
 {
-  "activeCountAtRelease": 245,
+  "activeCountAtRelease": 242,
   "activeExpansionStrategy": "Katalogoffensive Stufe 4 (25.09.2026): bestehende 0-Treffer-Quellen nach Ergiebigkeit prüfen; regelkonforme Direktteilnahmen übernehmen, dauerhaft unergiebige bzw. nur Social/Kauf/Club liefernde Quellen im Monitoring abstufen.",
   "appName": "Win Win",
   "catalogGoal": 1000,
@@ -10407,12 +10407,12 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-27T11:34:34+02:00",
+    "lastRun": "2026-09-28T12:13:44+02:00",
     "checkedSources": 30,
-    "candidatePages": 329,
+    "candidatePages": 498,
     "published": 0,
-    "review": 258,
-    "rejected": 19,
+    "review": 426,
+    "rejected": 27,
     "expiredArchived": 0
   },
   "duplicateCountAtRelease": 0,
@@ -10429,14 +10429,14 @@
   "release": "8.2.1 Quellenkatalog-Refresh",
   "removedExpiredInRelease": 42,
   "removedLegacyNonActiveInRelease": 12,
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "version": "8.3.1",
   "secondPass": {
-    "lastRun": "2026-09-27T11:37:20+02:00",
+    "lastRun": "2026-09-28T12:16:27+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 2666,
-    "rejected": 16,
+    "keptForReview": 2847,
+    "rejected": 0,
     "autoHiddenForReview": 0
   },
   "lastCatalogExpansion": {
