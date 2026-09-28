@@ -8,7 +8,7 @@
     "newMonitoringSources": 15,
     "policy": "Monitoringquellen dürfen variable Länderfreigaben haben; aktiver Katalog weiterhin nur mit belegter Deutschland-Teilnahme."
   },
-  "sourceCount": 554,
+  "sourceCount": 558,
   "sources": [
     {
       "active": true,
@@ -18182,6 +18182,146 @@
       "socialOnly": false,
       "successfulChecks": 1,
       "type": "Marke",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Kultur",
+        "Geschichte",
+        "Freizeit"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland",
+        "Österreich",
+        "Schweiz"
+      ],
+      "country": "Deutschland",
+      "domain": "klassik-stiftung.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "klassik-stiftung-weimar",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Klassik Stiftung Weimar",
+      "notes": "Neue Originalquelle aus Discovery-Lauf 2 vom 28.09.2026; aktuelles kostenloses Themenjahr-Gewinnspiel offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Kulturinstitution",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Reisen",
+        "Wellness",
+        "Freizeit"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Niederlande",
+      "domain": "noordwijk.info",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "noordwijk-tourismus",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Noordwijk Tourismus",
+      "notes": "Neue internationale Originalquelle aus Discovery-Lauf 2 vom 28.09.2026; kostenlose Teilnahme mit Wohnsitz Deutschland offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Tourismus",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Regional",
+        "Bahn",
+        "Bücher"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "country": "Deutschland",
+      "domain": "arverio-bw.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "arverio-bw",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "Arverio Baden-Württemberg",
+      "notes": "Neue regionale Originalquelle aus Discovery-Lauf 2 vom 28.09.2026; kostenloses E-Mail-Gewinnspiel unabhängig von einem Kauf offiziell bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Verkehrsunternehmen",
+      "verification": "verified-current-campaign"
+    },
+    {
+      "active": true,
+      "activeContestCount": 1,
+      "automation": "green",
+      "catalogYield": "active",
+      "categories": [
+        "Studium",
+        "Technik",
+        "Bildung"
+      ],
+      "checkIntervalDays": 3,
+      "countriesAllowed": [
+        "Deutschland",
+        "Österreich",
+        "Schweiz"
+      ],
+      "country": "Deutschland",
+      "domain": "studium.utb.de",
+      "emptyChecks": 0,
+      "expiredRemovedIn80": 0,
+      "germanyEligibility": "yes",
+      "id": "utb-studium",
+      "lastCatalogReview": "2026-09-28",
+      "lastChecked": "2026-09-28",
+      "lastResultCount": 1,
+      "monitoringPriority": "high",
+      "name": "UTB Studium",
+      "notes": "Neue Originalquelle aus Discovery-Lauf 2 vom 28.09.2026; kostenlose, kaufunabhängige Semesteraktion für Volljährige in DE/AT/CH bestätigt.",
+      "policyReview": "passed",
+      "quality": 4,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "successfulChecks": 1,
+      "type": "Bildungsportal",
       "verification": "verified-current-campaign"
     }
   ],
