@@ -1,6 +1,8 @@
 {
-  "version": "8.7.2",
+  "version": "8.8.0",
   "catalogVersion": "8.7.2",
-  "released": "2026-09-28",
-  "name": "Katalog-Ladefix + Discovery mit 339 Gewinnspielen"
+  "released": "2026-09-29",
+  "name": "Katalog-Ladefix + Discovery mit 339 Gewinnspielen",
+  "catalogCount": 410,
+  "activeCount": 405
 }
