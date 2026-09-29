@@ -1,7 +1,7 @@
 {
   "version": "8.7.2",
-  "updated": "2026-09-28",
-  "activeCountAtRelease": 357,
+  "updated": "2026-09-29",
+  "activeCountAtRelease": 355,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -7775,7 +7775,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 84,
       "country": "Deutschland",
       "daily": false,
@@ -9657,7 +9657,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 61,
       "country": "Deutschland",
       "daily": false,
@@ -15232,5 +15232,22 @@
       "winnerKnown": true,
       "winners": 10
     }
-  ]
+  ],
+  "dailyScout": {
+    "lastRun": "2026-09-29T12:09:14+02:00",
+    "checkedSources": 30,
+    "candidatePages": 324,
+    "published": 0,
+    "review": 231,
+    "rejected": 21,
+    "expiredArchived": 2
+  },
+  "secondPass": {
+    "lastRun": "2026-09-29T12:12:01+02:00",
+    "checked": 220,
+    "promoted": 0,
+    "keptForReview": 2882,
+    "rejected": 0,
+    "autoHiddenForReview": 0
+  }
 }
