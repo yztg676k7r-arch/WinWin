@@ -1,0 +1,66 @@
+name: WinWin Fast Bulk Discovery 2026-09-30
+
+on:
+  push:
+    branches: [bulk-fast-20260930]
+    paths:
+      - '.github/workflows/bulk-discovery-fast-20260930.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: winwin-fast-bulk-20260930
+  cancel-in-progress: false
+
+jobs:
+  fast-bulk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Europe/Berlin
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: bulk-fast-20260930
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements-scout.txt pypdf==6.1.0
+
+      - name: Run parallel strict discovery
+        env:
+          WINWIN_BULK_TARGET: '50'
+          WINWIN_BULK_MAX_DETAILS: '900'
+          WINWIN_BULK_WORKERS: '20'
+        run: python tools/bulk_discovery_fast_20260930.py
+
+      - name: Validate result
+        run: |
+          python -m json.tool contests.json >/dev/null
+          python -m json.tool sources.json >/dev/null
+          python -m json.tool version.json >/dev/null
+          python -m json.tool data/bulk-discovery-fast-2026-09-30.json >/dev/null
+          python - <<'PY'
+          import json
+          r=json.load(open('data/bulk-discovery-fast-2026-09-30.json'))
+          assert r['success'] is True, r
+          assert r['added'] == 50, r
+          print(json.dumps(r, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit verified catalog to branch
+        shell: bash
+        run: |
+          git config user.name "winwin-fast-bulk[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add contests.json sources.json version.json data/bulk-discovery-fast-2026-09-30.json
+          git commit -m "feat: add 50 verified contests via fast bulk discovery"
+          git push origin HEAD:bulk-fast-20260930
