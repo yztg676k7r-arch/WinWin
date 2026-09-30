@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.8.0';
+const APP_VERSION='8.9.0';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -34,7 +34,7 @@ const STATUS_ARCHIVE_KEY='winwin-status-archive-v1';
 const STATUS_RECOVERY_META_KEY='winwin-status-recovery-meta-v1';
 const CATALOG_SEEN_KEY='winwin-catalog-seen-v1';
 const DAILY_CATALOG_CHECK_KEY='winwin-daily-catalog-check-v1';
-const USER_SCHEMA_VERSION=5;
+const USER_SCHEMA_VERSION=6;
 const CUSTOM_DATA_KEY='winwin-custom-contests-v1';
 const IMPORT_BACKUP_KEY='winwin-catalog-backup-v1';
 const IMPORT_HISTORY_KEY='winwin-import-history-v1';
@@ -91,6 +91,8 @@ function statusRecordStrength(record){
  if(record.ignored)score+=6;
  if(record.favorite)score+=2;
  if(record.won)score+=8;
+ if(record.resultStatus&&record.resultStatus!=='open')score+=3;
+ if(record.newsletterStatus&&record.newsletterStatus!=='unknown')score+=2;
  if(record.note)score+=1;
  if(record.doneAt)score+=1;
  if(Array.isArray(record.participationDates))score+=record.participationDates.length;
@@ -106,7 +108,22 @@ function mergeStatusRecord(primary,backup){
  const b=backup&&typeof backup==='object'?backup:{};
  a.favorite=Boolean(a.favorite||b.favorite);
  a.done=Boolean(a.done||b.done);
- a.won=Boolean(a.won||b.won);
+ const aResultChanged=Number(a.resultChangedAt||0),bResultChanged=Number(b.resultChangedAt||0);
+ const latestResult=aResultChanged>=bResultChanged?a:b;
+ if(aResultChanged||bResultChanged){
+  a.resultStatus=['open','not_won','won'].includes(latestResult.resultStatus)?latestResult.resultStatus:(latestResult.won?'won':'open');
+  a.resultChangedAt=Math.max(aResultChanged,bResultChanged);
+  a.won=a.resultStatus==='won';
+  if(!a.won){a.wonAt=null;a.winDetails={}}
+ }else{
+  a.won=Boolean(a.won||b.won);
+  a.resultStatus=a.won?'won':'open';
+ }
+ const aNewsletterChanged=Number(a.newsletterChangedAt||0),bNewsletterChanged=Number(b.newsletterChangedAt||0);
+ const latestNewsletter=aNewsletterChanged>=bNewsletterChanged?a:b;
+ const validNewsletter=['unknown','review','subscribed','none','keep','unsubscribed'];
+ a.newsletterStatus=validNewsletter.includes(latestNewsletter.newsletterStatus)?latestNewsletter.newsletterStatus:'unknown';
+ a.newsletterChangedAt=Math.max(aNewsletterChanged,bNewsletterChanged);
  const latestIgnore=Number(a.ignoredChangedAt||0)>=Number(b.ignoredChangedAt||0)?a:b;
  a.ignored=(a.ignoredChangedAt||b.ignoredChangedAt)?Boolean(latestIgnore.ignored):Boolean(a.ignored||b.ignored);
  a.ignoredChangedAt=Math.max(Number(a.ignoredChangedAt||0),Number(b.ignoredChangedAt||0));
@@ -121,7 +138,10 @@ function mergeStatusRecord(primary,backup){
  a.participationDates=[...new Set(dates)].sort();
  const aWin=a.winDetails&&typeof a.winDetails==='object'?a.winDetails:{};
  const bWin=b.winDetails&&typeof b.winDetails==='object'?b.winDetails:{};
- a.winDetails={...bWin,...aWin};
+ if(a.won){
+  a.winDetails={...bWin,...aWin};
+  if(!a.wonAt&&b.wonAt)a.wonAt=b.wonAt;
+ }else a.winDetails={};
  return a;
 }
 function mergeUserSnapshots(primary,backup){
@@ -363,6 +383,9 @@ function stateFor(id){
  if(contest)s._identity=contestIdentity(contest);
  if(typeof s.ignored!=='boolean')s.ignored=false;
  if(typeof s.won!=='boolean')s.won=false;
+ if(!['open','not_won','won'].includes(s.resultStatus))s.resultStatus=s.won?'won':'open';
+ if(s.won)s.resultStatus='won';
+ if(!['unknown','review','subscribed','none','keep','unsubscribed'].includes(s.newsletterStatus))s.newsletterStatus='unknown';
  if(!s.winDetails||typeof s.winDetails!=='object')s.winDetails={};
  if(!Array.isArray(s.participationDates))s.participationDates=[];
  // Bestehende Markierungen aus älteren Versionen verlustfrei in die Historie übernehmen.
@@ -790,7 +813,7 @@ function setupIndependentWins(){
 function openWinDialog(id){
  setupIndependentWins();
  const i=contests.find(x=>x.id===id),stored=id?user.items[id]:null;
- if(id&&!i&&!stored?.won)return;
+ if(id&&!i&&!stored)return;
  const s=stored||{},d=s.winDetails||{};
  winDialogContestId=id||null;
  $('#winDialogTitle').textContent=s.won?'Gewinn bearbeiten':'Gewinn eintragen';
@@ -817,7 +840,7 @@ function saveWin(){
  const previous=user.items[id]?JSON.parse(JSON.stringify(user.items[id])):null;
  const s=stateFor(id);
  if(manual)s.manualWin=true;
- s.won=true;s.wonAt=s.wonAt||new Date().toISOString();
+ s.won=true;s.wonAt=s.wonAt||new Date().toISOString();s.resultStatus='won';s.resultChangedAt=Date.now();
  // A later win notification is not another participation on today's date.
  if(!manual){
   s.done=true;
@@ -835,11 +858,148 @@ function saveWin(){
 function removeWin(){
  if(!winDialogContestId)return;
  const s=stateFor(winDialogContestId),previous=JSON.parse(JSON.stringify(s));
- s.won=false;s.wonAt=null;s.winDetails={};
+ s.won=false;s.wonAt=null;s.winDetails={};s.resultStatus='open';s.resultChangedAt=Date.now();
  try{saveUser()}catch(error){user.items[winDialogContestId]=previous;toast('Änderung konnte nicht gespeichert werden');return}
  $('#winDialog').close();renderAll();toast('Gewinn aus dem Archiv entfernt');
 }
 window.toggleFavorite=toggleFavorite;window.toggleDone=toggleDone;window.toggleIgnored=toggleIgnored;window.registerClick=registerClick;window.openWinDialog=openWinDialog;
+let lifecycleFilter='all';
+function lifecycleContestFromState(id,state){
+ const current=contests.find(i=>i.id===id);
+ if(current)return current;
+ const identity=state?._identity||{};
+ return {
+  id,
+  title:identity.title||'Gewinnspiel',
+  provider:identity.provider||'Anbieter nicht angegeben',
+  prize:identity.prize||'Gewinn nicht angegeben',
+  deadline:identity.deadline||'',
+  url:identity.url||'',
+  catalogStatus:'active'
+ };
+}
+function hasLifecycleParticipation(state){
+ return Boolean(state&&(state.done||state.won||(Array.isArray(state.participationDates)&&state.participationDates.length)));
+}
+function lifecycleRunning(item){
+ if(!item?.deadline)return false;
+ const status=String(item.catalogStatus||'active').trim().toLowerCase();
+ return status==='active'&&daysLeft(item)>=0;
+}
+function lifecycleStatusOf(item,state){
+ if(state?.won||state?.resultStatus==='won')return 'won';
+ if(state?.resultStatus==='not_won')return 'not_won';
+ return lifecycleRunning(item)?'running':'ended';
+}
+function lifecycleStatusLabel(status){
+ return status==='running'?'Gewinnspiel läuft':status==='ended'?'Gewinnspiel beendet':status==='not_won'?'Nicht gewonnen':'Gewonnen';
+}
+function newsletterLabel(status){
+ return ({unknown:'Nicht erfasst',review:'Newsletter prüfen',subscribed:'Newsletter aktiv',none:'Kein Newsletter',keep:'Behalten',unsubscribed:'Abbestellt'})[status]||'Nicht erfasst';
+}
+function newsletterNeedsReview(item,state){
+ if(lifecycleRunning(item))return false;
+ return ['unknown','review','subscribed'].includes(state?.newsletterStatus||'unknown');
+}
+function lifecycleRows(){
+ return Object.entries(user.items||{}).map(([id])=>{
+  const state=stateFor(id);
+  if(state.manualWin||!hasLifecycleParticipation(state))return null;
+  const item=lifecycleContestFromState(id,state);
+  const status=lifecycleStatusOf(item,state);
+  return {id,item,state,status,newsletterReview:newsletterNeedsReview(item,state)};
+ }).filter(Boolean).sort((a,b)=>{
+  const rank={running:0,ended:1,not_won:2,won:3};
+  const r=(rank[a.status]??9)-(rank[b.status]??9);
+  if(r)return r;
+  return a.status==='running'?daysLeft(a.item)-daysLeft(b.item):String(b.item.deadline||'').localeCompare(String(a.item.deadline||''));
+ });
+}
+function setLifecycleFilter(filter){
+ lifecycleFilter=filter||'all';
+ renderContestLifecycle();
+}
+function changeNewsletterStatus(id,value){
+ const allowed=['unknown','review','subscribed','none','keep','unsubscribed'];
+ if(!allowed.includes(value))return;
+ const previous=JSON.parse(JSON.stringify(user.items[id]||{}));
+ const state=stateFor(id);state.newsletterStatus=value;state.newsletterChangedAt=Date.now();
+ try{saveUser()}catch(error){user.items[id]=previous;toast('Newsletterstatus konnte nicht gespeichert werden');return}
+ renderContestLifecycle();toast(`Newsletter: ${newsletterLabel(value)}`);
+}
+function setContestResult(id,value){
+ if(!['open','not_won','won'].includes(value))return;
+ const previous=JSON.parse(JSON.stringify(user.items[id]||{}));
+ const state=stateFor(id),item=lifecycleContestFromState(id,state);
+ if(value==='won'){
+  renderContestLifecycle();
+  openWinDialog(id);
+  return;
+ }
+ if(value==='not_won'&&lifecycleRunning(item)){
+  renderContestLifecycle();toast('Das Gewinnspiel läuft noch');return;
+ }
+ if(state.won){
+  if(!confirm('Den Gewinnstatus wirklich ändern? Der bisherige Gewinneintrag wird entfernt.')){renderContestLifecycle();return}
+  state.won=false;state.wonAt=null;state.winDetails={};
+ }
+ state.resultStatus=value;state.resultChangedAt=Date.now();
+ try{saveUser()}catch(error){user.items[id]=previous;toast('Status konnte nicht gespeichert werden');return}
+ renderAll();toast(value==='not_won'?'Als „Nicht gewonnen“ markiert':'Ergebnisstatus zurückgesetzt');
+}
+function lifecycleResultAdvice(item,state,status){
+ if(status==='running')return `Teilnahmeschluss: ${item.deadline||'offen'}`;
+ if(status==='won')return 'Gewinn erfasst – der Status kann jederzeit wieder geändert werden.';
+ if(status==='not_won')return 'Als nicht gewonnen markiert – bei einer späteren Gewinnnachricht einfach auf „Gewonnen“ ändern.';
+ const elapsed=Math.max(0,-daysLeft(item));
+ return elapsed>=30
+  ?'Ergebnis noch offen. Wenn inzwischen keine Gewinnnachricht kam, kannst du auf „Nicht gewonnen“ setzen.'
+  :'Ergebnis noch offen. Mit dem Newsletter-Aufräumen lieber warten, bis die Gewinnbenachrichtigung sicher durch ist.';
+}
+function lifecycleCard(row){
+ const {id,item,state,status,newsletterReview}=row;
+ const selected=state.won?'won':(state.resultStatus||'open');
+ const openLabel=lifecycleRunning(item)?'Gewinnspiel läuft':'Gewinnspiel beendet';
+ const participation=state.participationDates?.length?`${state.participationDates.length} Teilnahme${state.participationDates.length===1?'':'n'}`:(state.done?'Teilgenommen':'');
+ const link=item.url?`<a href="${esc(item.url)}" target="_blank" rel="noopener">Gewinnspiel ↗</a>`:'';
+ return `<article class="lifecycle-card status-${status}">
+  <div class="lifecycle-card-head"><div><span class="lifecycle-provider">${esc(item.provider||'Anbieter')}</span><h3>${esc(item.title||'Gewinnspiel')}</h3></div><span class="lifecycle-status">${esc(lifecycleStatusLabel(status))}</span></div>
+  <p class="lifecycle-prize">🎁 ${esc(item.prize||'Gewinn nicht angegeben')}</p>
+  <p class="lifecycle-meta">${[participation,item.deadline?`Ende ${item.deadline}`:''].filter(Boolean).map(esc).join(' · ')}</p>
+  <p class="lifecycle-advice">${esc(lifecycleResultAdvice(item,state,status))}</p>
+  ${newsletterReview?'<p class="newsletter-reminder">Newsletter prüfen: Falls du ihn nur für dieses Gewinnspiel bestellt hast, kannst du nach abgeschlossener Gewinnbenachrichtigung über eine Abmeldung nachdenken.</p>':''}
+  <div class="lifecycle-controls">
+   <label><span>Status</span><select onchange="setContestResult('${esc(id)}',this.value)">
+    <option value="open"${selected==='open'?' selected':''}>${esc(openLabel)}</option>
+    <option value="not_won"${selected==='not_won'?' selected':''}>Nicht gewonnen</option>
+    <option value="won"${selected==='won'?' selected':''}>Gewonnen</option>
+   </select></label>
+   <label><span>Newsletter</span><select onchange="changeNewsletterStatus('${esc(id)}',this.value)">
+    ${['unknown','review','subscribed','none','keep','unsubscribed'].map(v=>`<option value="${v}"${(state.newsletterStatus||'unknown')===v?' selected':''}>${newsletterLabel(v)}</option>`).join('')}
+   </select></label>
+  </div>
+  <div class="lifecycle-actions">${link}${state.won?`<button type="button" onclick="openWinDialog('${esc(id)}')">Gewinn bearbeiten</button>`:''}</div>
+ </article>`;
+}
+function renderContestLifecycle(){
+ const list=$('#lifecycleList'),summary=$('#lifecycleSummary'),hint=$('#lifecycleHint');if(!list)return;
+ const rows=lifecycleRows();
+ const counts={
+  running:rows.filter(r=>r.status==='running').length,
+  ended:rows.filter(r=>!lifecycleRunning(r.item)).length,
+  not_won:rows.filter(r=>r.status==='not_won').length,
+  won:rows.filter(r=>r.status==='won').length,
+  newsletter:rows.filter(r=>r.newsletterReview).length
+ };
+ if(summary)summary.innerHTML=`<div><strong>${rows.length}</strong><span>Teilnahmen</span></div><div><strong>${counts.running}</strong><span>läuft</span></div><div><strong>${counts.ended}</strong><span>beendet</span></div><div><strong>${counts.newsletter}</strong><span>Newsletter prüfen</span></div>`;
+ const filtered=rows.filter(r=>lifecycleFilter==='all'||lifecycleFilter==='running'&&r.status==='running'||lifecycleFilter==='ended'&&!lifecycleRunning(r.item)||lifecycleFilter==='not_won'&&r.status==='not_won'||lifecycleFilter==='won'&&r.status==='won'||lifecycleFilter==='newsletter'&&r.newsletterReview);
+ $('#lifecycleFilters [data-lifecycle-filter]').forEach(button=>button.classList.toggle('active',button.dataset.lifecycleFilter===lifecycleFilter));
+ if(hint)hint.textContent=lifecycleFilter==='newsletter'
+  ?'Hier erscheinen beendete Gewinnspiele, bei denen der Newsletterstatus noch offen oder aktiv ist.'
+  :`${filtered.length} von ${rows.length} persönlichen Gewinnspielen`;
+ list.innerHTML=filtered.map(lifecycleCard).join('')||empty(lifecycleFilter==='all'?'Sobald du an einem Gewinnspiel teilgenommen hast, erscheint es hier.':'Für diesen Status gibt es aktuell keine Einträge.');
+}
+window.setLifecycleFilter=setLifecycleFilter;window.changeNewsletterStatus=changeNewsletterStatus;window.setContestResult=setContestResult;
 
 function prizeValueOf(i){return Math.max(0,Number(i.estimatedPrizeValue||i.prizeValue)||0)}
 function formatPrizeValue(i){const v=prizeValueOf(i);return v?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(v):'Wert offen'}
@@ -1208,12 +1368,13 @@ function renderAll(){
  safeRender('Daily Driver',renderDailyDriverStatus);
  safeRender('Entdecken',renderDiscover);
  safeRender('Dashboard',renderPersonal);
+ safeRender('Gewinnspielstatus',renderContestLifecycle);
  safeRender('Vorlieben',renderPreferencePanel);
  safeRender('Neue Runden',renderRoundReviews);
 }
 function openView(id){
  if(id==='homeView'||id==='todayView')id='discoverView';
- const navId=['statsView','dataView'].includes(id)?'moreView':id;
+ const navId=['statsView','dataView','statusView'].includes(id)?'moreView':id;
  $$('.view').forEach(v=>v.classList.toggle('active',v.id===id));
  $$('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
  window.scrollTo({top:0,behavior:'auto'});
