@@ -819,7 +819,7 @@ function openWinDialog(id){
  $('#winDialogTitle').textContent=s.won?'Gewinn bearbeiten':'Gewinn eintragen';
  $('#winProvider').value=d.provider||i?.provider||s._identity?.provider||'';
  $('#winProviderLabel').hidden=Boolean(i&&!s.manualWin);
- $('#winPrizeName').value=d.prizeName||i?.prize||'';
+ $('#winPrizeName').value=d.prizeName||i?.prize||s._identity?.prize||'';
  $('#winValue').value=d.value??'';
  $('#winDate').value=d.date||dayKey();
  $('#winDeliveryStatus').value=d.deliveryStatus||'ausstehend';
