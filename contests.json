@@ -1,7 +1,7 @@
 {
   "version": "8.8.0",
-  "updated": "29.09.2026",
-  "activeCountAtRelease": 405,
+  "updated": "2026-09-30",
+  "activeCountAtRelease": 400,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -8954,7 +8954,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Events",
       "chanceScore": 78,
       "country": "Deutschland",
@@ -15019,7 +15019,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Regional",
       "chanceScore": 73,
       "country": "Deutschland",
@@ -17114,20 +17114,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-09-29T12:09:14+02:00",
+    "lastRun": "2026-09-30T12:02:25+02:00",
     "checkedSources": 30,
-    "candidatePages": 324,
+    "candidatePages": 227,
     "published": 0,
-    "review": 231,
-    "rejected": 21,
+    "review": 183,
+    "rejected": 4,
     "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-09-29T12:12:01+02:00",
+    "lastRun": "2026-09-30T12:05:16+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 2882,
-    "rejected": 0,
+    "keptForReview": 2926,
+    "rejected": 16,
     "autoHiddenForReview": 0
   }
 }
