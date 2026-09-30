@@ -57,6 +57,12 @@ INDEX_PAGES = (
     "https://www.gewinnhai.de/gewinnspiele/januar-2027",
 )
 
+# Broaden the pool after the near-term month pages. /neu catches the freshest
+# discoveries; generic pages cover contests without a reliable month index.
+INDEX_PAGES = INDEX_PAGES + ("https://www.gewinnhai.de/neu",) + tuple(
+    f"https://www.gewinnhai.de/gewinnspiele?page={i}" for i in range(1, 21)
+)
+
 SOCIAL_HOSTS = {
     "instagram.com", "www.instagram.com", "facebook.com", "www.facebook.com",
     "tiktok.com", "www.tiktok.com", "x.com", "twitter.com",
@@ -160,7 +166,14 @@ def strings_after_label(soup: BeautifulSoup, label: str, stop_labels: tuple[str,
 
 
 def parse_german_date(raw: str) -> date | None:
-    raw = re.sub(r"\s+", " ", raw.strip().lower()).replace("/", ".").replace("-", ".")
+    raw0 = re.sub(r"\s+", " ", raw.strip().lower())
+    miso = re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", raw0)
+    if miso:
+        try:
+            return date(int(miso.group(1)), int(miso.group(2)), int(miso.group(3)))
+        except ValueError:
+            return None
+    raw = raw0.replace("/", ".").replace("-", ".")
     m = re.fullmatch(r"(\d{1,2})\.(\d{1,2})\.(\d{2,4})", raw)
     if m:
         y = int(m.group(3))
@@ -179,7 +192,7 @@ def parse_german_date(raw: str) -> date | None:
     return None
 
 
-DATE_TOKEN = r"(\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{1,2}\.?\s+(?:Januar|Februar|März|Maerz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\s+\d{4})"
+DATE_TOKEN = r"(\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{4}-\d{1,2}-\d{1,2}|\d{1,2}\.?\s+(?:Januar|Februar|März|Maerz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\s+\d{4})"
 DEADLINE_PATTERNS = [
     rf"(?:teilnahmeschluss|einsendeschluss|aktionsende|teilnahmefrist)\s*[:\-]?\s*(?:am\s*)?{DATE_TOKEN}",
     rf"(?:gewinnspiel|aktion|teilnahme|aktionszeitraum|teilnahmezeitraum).{{0,180}}?(?:endet\s*(?:am)?|läuft\s*(?:bis|bis zum)?|laeuft\s*(?:bis|bis zum)?|bis\s*(?:zum|einschließlich|einschliesslich)?|ende\s*[:\-]?)\s*(?:am\s*)?{DATE_TOKEN}",
@@ -275,6 +288,32 @@ def has_web_entry(text: str, soup: BeautifulSoup) -> bool:
         "formular ausfullen", "formular ausfuellen", "newsletter anmelden",
         "e mail senden", "per e mail",
     ))
+
+
+def fetch_rules_context(base_url: str, soup: BeautifulSoup) -> str:
+    """Fetch up to three same-domain rules/terms pages linked by the entry page."""
+    base_domain = domain(base_url)
+    links = []
+    for a in soup.find_all("a", href=True):
+        href = urllib.parse.urljoin(base_url, a.get("href"))
+        if domain(href) != base_domain:
+            continue
+        marker = norm((a.get_text(" ", strip=True) or "") + " " + urllib.parse.urlsplit(href).path)
+        if any(k in marker for k in (
+            "teilnahmebedingungen", "gewinnspielbedingungen", "gewinnspiel bedingungen",
+            "teilnahme bedingungen", "aktionsbedingungen", "teilnahmebedingungen gewinnspiel",
+        )):
+            links.append(canonical_url(href))
+    texts = []
+    for href in list(dict.fromkeys(links))[:3]:
+        rr = get(href)
+        if not rr:
+            continue
+        _ss, tt = soup_and_text(rr)
+        if tt:
+            texts.append(tt)
+        time.sleep(0.04)
+    return " ".join(texts)
 
 
 def child_or_baby_specific(title: str, prize: str) -> bool:
@@ -457,35 +496,38 @@ def main():
             continue
 
         soup, text = soup_and_text(go_r)
-        low = text.lower()
         path_low = urllib.parse.urlsplit(official_url).path.lower()
 
         if ("teilnahmebedingungen" in path_low or "datenschutz" in path_low) and not has_web_entry(text, soup):
             reject("terms-not-entry-page", detail_url, title, official_url)
             continue
-        deadline = official_deadline(text)
+
+        rules_text = fetch_rules_context(official_url, soup)
+        combined_text = (text + " " + rules_text).strip()
+
+        deadline = official_deadline(combined_text)
         if not deadline:
             reject("deadline-not-confirmed", detail_url, title, official_url)
             continue
-        if not has_germany_eligibility(text):
+        if not has_germany_eligibility(combined_text):
             reject("germany-eligibility-not-confirmed", detail_url, title, official_url)
             continue
-        if purchase_required(text):
+        if purchase_required(combined_text):
             reject("purchase-required", detail_url, title, official_url)
             continue
-        if club_required(text):
+        if club_required(combined_text):
             reject("club-required", detail_url, title, official_url)
             continue
-        if social_required(text):
+        if social_required(combined_text):
             reject("social-required", detail_url, title, official_url)
             continue
-        if call_or_sms_only(text, soup):
+        if call_or_sms_only(combined_text, soup):
             reject("call-or-sms-only", detail_url, title, official_url)
             continue
         if not has_web_entry(text, soup):
             reject("web-entry-not-confirmed", detail_url, title, official_url)
             continue
-        if any(x in low for x in ("gewinner stehen fest", "gewinnspiel beendet", "aktion beendet")):
+        if any(x in text.lower() for x in ("gewinner stehen fest", "gewinnspiel beendet", "aktion beendet")):
             reject("marked-ended", detail_url, title, official_url)
             continue
 
@@ -514,7 +556,7 @@ def main():
             "deadline": deadline.strftime("%d.%m.%Y"),
             "winners": winners,
             "new": True,
-            "daily": bool(re.search(r"täglich|taeglich|jeden tag", text, re.I)),
+            "daily": bool(re.search(r"täglich|taeglich|jeden tag", combined_text, re.I)),
             "international": False,
             "requirements": "Kostenlose Teilnahme über direkte Veranstalterseite; Deutschland-Teilnahme bestätigt",
             "purchaseRequired": False,
@@ -524,13 +566,13 @@ def main():
             "providerTrust": 4,
             "effort": 1 if entry_type == "form" else 2,
             "entryType": entry_type,
-            "multipleEntry": bool(re.search(r"mehrfach|täglich|taeglich|jeden tag", text, re.I)),
+            "multipleEntry": bool(re.search(r"mehrfach|täglich|taeglich|jeden tag", combined_text, re.I)),
             "highValuePrize": any(x in norm(title + " " + prize) for x in ("auto", "reise", "iphone", "bargeld", "playstation", "fernseher")),
             "tags": ["Bulk Discovery", "30.09.2026", "direkter Link", "DE bestätigt"],
             "addedAt": TODAY.strftime("%d.%m.%Y"),
             "sourceId": sid,
             "deEligibility": "bestätigt",
-            "participationFrequency": "täglich" if re.search(r"täglich|taeglich|jeden tag", text, re.I) else "einmalig",
+            "participationFrequency": "täglich" if re.search(r"täglich|taeglich|jeden tag", combined_text, re.I) else "einmalig",
             "chanceScore": score,
             "priority": priority,
             "qualityScore": 97,
