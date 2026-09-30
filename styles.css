@@ -568,3 +568,21 @@ main{padding:0 16px}.view{display:none;animation:fade .18s ease}.view.active{dis
  :root{--bg:#111b20;--surface:#18262c;--surface-2:#22343a;--ink:#f4f3ee;--muted:#afbfbd;--line:rgba(244,243,238,.12);--shadow:0 12px 32px rgba(0,0,0,.24)}
  .welcome-card,.smart-tile,.data-hero,.catalog-update-panel,.maintenance-panel,.daily-driver-status{background:var(--surface)}
 }
+
+
+/* Win Win 8.9 – persönlicher Gewinnspielstatus & Newsletter */
+.lifecycle-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:14px 0 16px}
+.lifecycle-summary>div{display:flex;flex-direction:column;gap:4px;padding:13px 11px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
+.lifecycle-summary strong{font-size:22px;line-height:1;color:var(--ink)}.lifecycle-summary span{font-size:12px;color:var(--muted)}
+.lifecycle-filters{margin-bottom:8px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.lifecycle-filters .chip{flex:0 0 auto}
+.lifecycle-hint{margin:7px 0 14px}.lifecycle-list{display:grid;gap:12px}
+.lifecycle-card{padding:16px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 7px 22px rgba(37,55,65,.045)}
+.lifecycle-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.lifecycle-card-head h3{font-size:18px;line-height:1.28;margin:3px 0 0}
+.lifecycle-provider{font-size:12px;font-weight:800;letter-spacing:.03em;color:var(--muted);text-transform:uppercase}.lifecycle-status{flex:0 0 auto;max-width:44%;padding:7px 9px;border-radius:999px;background:var(--surface-2);font-size:12px;font-weight:800;text-align:center;color:var(--ink)}
+.lifecycle-card.status-won .lifecycle-status{background:var(--mint)}.lifecycle-card.status-not_won .lifecycle-status{opacity:.82}.lifecycle-card.status-running .lifecycle-status{border:1px solid var(--green)}
+.lifecycle-prize{font-weight:750;margin:13px 0 5px}.lifecycle-meta,.lifecycle-advice,.newsletter-reminder{font-size:13px;line-height:1.45;color:var(--muted);margin:6px 0}
+.newsletter-reminder{padding:10px 11px;border-radius:12px;background:var(--surface-2);color:var(--ink)}
+.lifecycle-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}.lifecycle-controls label{font-size:12px;font-weight:800;color:var(--muted)}
+.lifecycle-controls select{display:block;width:100%;min-height:44px;margin-top:5px;padding:9px 10px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}
+.lifecycle-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.lifecycle-actions a,.lifecycle-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);color:var(--ink);font-weight:800;text-decoration:none}
+@media(max-width:560px){.lifecycle-summary{grid-template-columns:1fr 1fr}.lifecycle-controls{grid-template-columns:1fr}.lifecycle-status{max-width:48%}.lifecycle-card{padding:14px}}
