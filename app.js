@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.9.0';
+const APP_VERSION='8.9.1';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -416,7 +416,8 @@ function completedForCurrentPeriod(i){
   const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
   return s.participationDates.some(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
  }
- if(f==='multiple')return false;
+ // Without a specified interval, keep repeated entries out of today's open list.
+ if(f==='multiple')return participatedOn(i.id);
  return s.done;
 }
 function participatedOn(id,date=dayKey()){
@@ -993,7 +994,7 @@ function renderContestLifecycle(){
  };
  if(summary)summary.innerHTML=`<div><strong>${rows.length}</strong><span>Teilnahmen</span></div><div><strong>${counts.running}</strong><span>läuft</span></div><div><strong>${counts.ended}</strong><span>beendet</span></div><div><strong>${counts.newsletter}</strong><span>Newsletter prüfen</span></div>`;
  const filtered=rows.filter(r=>lifecycleFilter==='all'||lifecycleFilter==='running'&&r.status==='running'||lifecycleFilter==='ended'&&!lifecycleRunning(r.item)||lifecycleFilter==='not_won'&&r.status==='not_won'||lifecycleFilter==='won'&&r.status==='won'||lifecycleFilter==='newsletter'&&r.newsletterReview);
- $('#lifecycleFilters [data-lifecycle-filter]').forEach(button=>button.classList.toggle('active',button.dataset.lifecycleFilter===lifecycleFilter));
+ $$('#lifecycleFilters [data-lifecycle-filter]').forEach(button=>button.classList.toggle('active',button.dataset.lifecycleFilter===lifecycleFilter));
  if(hint)hint.textContent=lifecycleFilter==='newsletter'
   ?'Hier erscheinen beendete Gewinnspiele, bei denen der Newsletterstatus noch offen oder aktiv ist.'
   :`${filtered.length} von ${rows.length} persönlichen Gewinnspielen`;

@@ -1,8 +1,8 @@
 {
-  "version": "8.9.0",
+  "version": "8.9.1",
   "catalogVersion": "8.8.0",
   "released": "2026-09-30",
-  "name": "Gewinnspielstatus + Newsletter-Nachbereitung",
+  "name": "Teilnahmefilter und Gewinnspielstatus korrigiert",
   "catalogCount": 410,
   "activeCount": 405
 }
