@@ -19900,9 +19900,477 @@
       "verification": "verified",
       "policyReview": "passed",
       "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+    },
+    {
+      "id": "bulk-radio886-at",
+      "name": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "domain": "radio886.at",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-dealdoktor-de",
+      "name": "DealDoktor",
+      "domain": "dealdoktor.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-schweizerkaese-de",
+      "name": "Le Gruyère AOP",
+      "domain": "schweizerkaese.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-mogli-de",
+      "name": "MOGLi",
+      "domain": "mogli.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-letsgogorilla-de",
+      "name": "GORILLA",
+      "domain": "letsgogorilla.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-brossler-de",
+      "name": "Brossler",
+      "domain": "brossler.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-calumet-de",
+      "name": "Calumet",
+      "domain": "calumet.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-whic-de",
+      "name": "whic",
+      "domain": "whic.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-familyflair-de",
+      "name": "ShowSlot",
+      "domain": "familyflair.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-ing-de",
+      "name": "ING-DiBa AG",
+      "domain": "ing.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-aldi-glueckskorb-de",
+      "name": "ALDI Nord",
+      "domain": "aldi-glueckskorb.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-leboat-com",
+      "name": "Le Boat",
+      "domain": "leboat.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-mein-alpaka-shop-de",
+      "name": "Waytalla Alpakas",
+      "domain": "mein-alpaka-shop.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-berentzen-de",
+      "name": "Berentzen-Gruppe Aktiengesellschaft",
+      "domain": "berentzen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-pilotpen-de",
+      "name": "Pilot Pen (Deutschland) GmbH",
+      "domain": "pilotpen.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-landskron-de",
+      "name": "Landskron",
+      "domain": "landskron.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-shop-ridelink-com",
+      "name": "RideLink",
+      "domain": "shop.ridelink.com",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
+    },
+    {
+      "id": "bulk-keessmit-de",
+      "name": "Kees Smit Gartenmöbel",
+      "domain": "keessmit.de",
+      "country": "Deutschland",
+      "countriesAllowed": [
+        "Deutschland"
+      ],
+      "type": "Bulk-Discovery",
+      "categories": [
+        "Sonstiges"
+      ],
+      "automation": "yellow",
+      "quality": 4,
+      "active": true,
+      "requiresLogin": false,
+      "socialOnly": false,
+      "checkIntervalDays": 3,
+      "lastChecked": "2026-10-01",
+      "lastCatalogReview": "2026-10-01",
+      "notes": "Am 01.10.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+      "germanyEligibility": "yes",
+      "verification": "direct-page+terms",
+      "monitoringPriority": "medium",
+      "policyReview": "bulk-discovery-strict"
     }
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "version": "8.8.0",
   "latestExpansion": {
     "date": "2026-09-28",
