@@ -499,8 +499,11 @@ def main():
         soup, text = soup_and_text(go_r)
         path_low = urllib.parse.urlsplit(official_url).path.lower()
 
-        if ("teilnahmebedingungen" in path_low or "datenschutz" in path_low) and not has_web_entry(text, soup):
-            reject("terms-not-entry-page", detail_url, title, official_url)
+        # WinWin requires a direct participation/campaign page, never a FAQ,
+        # terms/conditions, privacy or AGB page as the primary participation link.
+        non_entry_markers = ("faq", "teilnahmebeding", "gewinnspielbeding", "aktionsbeding", "/agb", "/agbs", "/terms", "datenschutz")
+        if any(marker in path_low for marker in non_entry_markers):
+            reject("non-entry-link", detail_url, title, official_url)
             continue
 
         rules_text = fetch_rules_context(official_url, soup)
