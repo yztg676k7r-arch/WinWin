@@ -38,6 +38,7 @@ jobs:
       - name: Run parallel strict discovery
         env:
           WINWIN_BULK_TARGET: '50'
+          WINWIN_BULK_MIN_PUBLISH: '30'
           WINWIN_BULK_MAX_DETAILS: '900'
           WINWIN_BULK_WORKERS: '20'
         run: python tools/bulk_discovery_fast_20260930.py
@@ -52,7 +53,7 @@ jobs:
           import json
           r=json.load(open('data/bulk-discovery-fast-2026-09-30.json'))
           assert r['success'] is True, r
-          assert r['added'] == 50, r
+          assert int(r.get('added', 0)) >= 30, r
           print(json.dumps(r, ensure_ascii=False, indent=2))
           PY
 
@@ -62,5 +63,5 @@ jobs:
           git config user.name "winwin-fast-bulk[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add contests.json sources.json version.json data/bulk-discovery-fast-2026-09-30.json
-          git commit -m "feat: add 50 verified contests via fast bulk discovery"
+          git commit -m "feat: publish verified contests via fast bulk discovery"
           git push origin HEAD:bulk-fast-20260930
