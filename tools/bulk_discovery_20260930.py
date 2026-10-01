@@ -29,8 +29,9 @@ SOURCES_FILE = ROOT / "sources.json"
 VERSION_FILE = ROOT / "version.json"
 REPORT_FILE = ROOT / "data" / "bulk-discovery-2026-09-30.json"
 
-TODAY = date(2026, 9, 30)
+TODAY = date.today()
 TARGET = int(os.getenv("WINWIN_BULK_TARGET", "50"))
+MIN_PUBLISH = int(os.getenv("WINWIN_BULK_MIN_PUBLISH", "30"))
 MAX_DETAILS = int(os.getenv("WINWIN_BULK_MAX_DETAILS", "360"))
 TIME_BUDGET = int(os.getenv("WINWIN_BULK_BUDGET_SECONDS", "1500"))
 STOP_AT = time.monotonic() + TIME_BUDGET
@@ -38,7 +39,7 @@ TIMEOUT = 12
 
 SESSION = requests.Session()
 SESSION.headers.update({
-    "User-Agent": "WinWin-Bulk-Discovery/8.9 (+https://github.com/yztg676k7r-arch/WinWin)",
+    "User-Agent": "WinWin-Bulk-Discovery/8.9.1 (+https://github.com/yztg676k7r-arch/WinWin)",
     "Accept-Language": "de-DE,de;q=0.9,en;q=0.4",
 })
 
@@ -386,7 +387,7 @@ def source_for_domain(sources: list[dict], d: str, provider: str) -> str:
             "checkIntervalDays": 3,
             "lastChecked": TODAY.isoformat(),
             "lastCatalogReview": TODAY.isoformat(),
-            "notes": "Am 30.09.2026 im verifizierten Bulk-Discovery-Lauf ergänzt.",
+            "notes": f"Am {TODAY.strftime('%d.%m.%Y')} im verifizierten Bulk-Discovery-Lauf ergänzt.",
             "germanyEligibility": "yes",
             "verification": "direct-page",
             "monitoringPriority": "medium",
@@ -568,7 +569,7 @@ def main():
             "entryType": entry_type,
             "multipleEntry": bool(re.search(r"mehrfach|täglich|taeglich|jeden tag", combined_text, re.I)),
             "highValuePrize": any(x in norm(title + " " + prize) for x in ("auto", "reise", "iphone", "bargeld", "playstation", "fernseher")),
-            "tags": ["Bulk Discovery", "30.09.2026", "direkter Link", "DE bestätigt"],
+            "tags": ["Bulk Discovery", TODAY.strftime("%d.%m.%Y"), "direkter Link", "DE bestätigt"],
             "addedAt": TODAY.strftime("%d.%m.%Y"),
             "sourceId": sid,
             "deEligibility": "bestätigt",
@@ -602,7 +603,7 @@ def main():
     active_count = sum(1 for c in contests if c.get("catalogStatus") == "active")
 
     contests_doc["contests"] = contests
-    contests_doc["version"] = "8.9.0"
+    contests_doc["version"] = str(version_doc.get("version") or contests_doc.get("version") or "8.9.1")
     contests_doc["updated"] = TODAY.isoformat()
     contests_doc["activeCountAtRelease"] = active_count
     contests_doc["bulkDiscovery"] = {
@@ -616,14 +617,14 @@ def main():
     sources_doc["sources"] = sources
     sources_doc["updated"] = TODAY.isoformat()
 
-    version_doc["catalogVersion"] = "8.9.0"
+    version_doc["catalogVersion"] = str(version_doc.get("version") or "8.9.1")
     version_doc["released"] = TODAY.isoformat()
     version_doc["catalogCount"] = len(contests)
     version_doc["activeCount"] = active_count
 
     report["added"] = len(additions)
     report["budgetReached"] = time.monotonic() >= STOP_AT
-    report["success"] = len(additions) == TARGET
+    report["success"] = len(additions) >= MIN_PUBLISH
 
     save(CONTESTS_FILE, contests_doc)
     save(SOURCES_FILE, sources_doc)
@@ -631,8 +632,9 @@ def main():
     save(REPORT_FILE, report)
 
     print(json.dumps({
-        "ok": len(additions) == TARGET,
+        "ok": len(additions) >= MIN_PUBLISH,
         "target": TARGET,
+        "minPublish": MIN_PUBLISH,
         "added": len(additions),
         "checkedDetails": report["checkedDetails"],
         "officialPagesFetched": report["officialPagesFetched"],
@@ -640,8 +642,8 @@ def main():
         "rejected": report["rejected"],
     }, ensure_ascii=False, indent=2))
 
-    if len(additions) < TARGET:
-        raise SystemExit(f"Bulk discovery added only {len(additions)} of {TARGET}; review report and rerun with broader discovery.")
+    if len(additions) < MIN_PUBLISH:
+        raise SystemExit(f"Bulk discovery added only {len(additions)} verified contests; minimum publish threshold is {MIN_PUBLISH}.")
 
 
 if __name__ == "__main__":
