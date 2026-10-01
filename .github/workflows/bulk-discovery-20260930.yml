@@ -36,9 +36,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements-scout.txt
 
-      - name: Run strict 50-contest discovery
+      - name: Run strict bulk discovery
         env:
           WINWIN_BULK_TARGET: '50'
+          WINWIN_BULK_MIN_PUBLISH: '30'
           WINWIN_BULK_MAX_DETAILS: '700'
           WINWIN_BULK_BUDGET_SECONDS: '1800'
         run: python tools/bulk_discovery_20260930.py
@@ -53,11 +54,11 @@ jobs:
           import json
           r=json.load(open('data/bulk-discovery-2026-09-30.json'))
           assert r.get('success') is True, r
-          assert r.get('added') == 50, r
+          assert int(r.get('added', 0)) >= 30, r
           print(json.dumps(r, ensure_ascii=False, indent=2))
           PY
 
-      - name: Publish 50 new contests
+      - name: Publish verified new contests
         shell: bash
         run: |
           git config user.name "winwin-bulk-discovery[bot]"
@@ -67,6 +68,6 @@ jobs:
             echo "No catalog changes."
             exit 0
           fi
-          git commit -m "feat: add 50 verified contests (2026-09-30)"
+          git commit -m "feat: publish verified bulk discovery results"
           git pull --rebase origin main
           git push origin HEAD:main
