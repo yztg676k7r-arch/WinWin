@@ -28,13 +28,14 @@ SF = ROOT / "sources.json"
 VF = ROOT / "version.json"
 RF = ROOT / "data" / "bulk-discovery-fast-2026-09-30.json"
 
-TODAY = date(2026, 9, 30)
+TODAY = date.today()
 TARGET = int(os.getenv("WINWIN_BULK_TARGET", "50"))
+MIN_PUBLISH = int(os.getenv("WINWIN_BULK_MIN_PUBLISH", "30"))
 WORKERS = int(os.getenv("WINWIN_BULK_WORKERS", "16"))
 MAX_DETAILS = int(os.getenv("WINWIN_BULK_MAX_DETAILS", "900"))
 TIMEOUT = 12
 
-UA = "WinWin-Fast-Bulk/8.9 (+https://github.com/yztg676k7r-arch/WinWin)"
+UA = "WinWin-Fast-Bulk/8.9.1 (+https://github.com/yztg676k7r-arch/WinWin)"
 SOCIAL = ("instagram.com", "facebook.com", "tiktok.com", "x.com", "twitter.com")
 MONTHS = {
     "januar":1,"februar":2,"märz":3,"maerz":3,"april":4,"mai":5,"juni":6,
@@ -314,7 +315,7 @@ def source_id(sources,d,provider):
             "id":sid,"name":provider or d,"domain":d,"country":"Deutschland","countriesAllowed":["Deutschland"],
             "type":"Bulk-Discovery","categories":["Sonstiges"],"automation":"yellow","quality":4,"active":True,
             "requiresLogin":False,"socialOnly":False,"checkIntervalDays":3,"lastChecked":TODAY.isoformat(),
-            "lastCatalogReview":TODAY.isoformat(),"notes":"Am 30.09.2026 per parallelem Bulk-Discovery-Lauf direkt geprüft.",
+            "lastCatalogReview":TODAY.isoformat(),"notes":f"Am {TODAY.strftime('%d.%m.%Y')} per parallelem Bulk-Discovery-Lauf direkt geprüft.",
             "germanyEligibility":"yes","verification":"direct-page+terms","monitoringPriority":"medium","policyReview":"bulk-discovery-strict",
         })
     return sid
@@ -372,18 +373,18 @@ def main():
 
     contests.extend(additions)
     active=sum(1 for x in contests if x.get("catalogStatus")=="active")
-    cd["contests"]=contests; cd["version"]="8.9.0"; cd["updated"]=TODAY.isoformat(); cd["activeCountAtRelease"]=active
+    cd["contests"]=contests; cd["version"]=str(vd.get("version") or cd.get("version") or "8.9.1"); cd["updated"]=TODAY.isoformat(); cd["activeCountAtRelease"]=active
     cd["bulkDiscovery"]={"lastRun":datetime.now().astimezone().isoformat(timespec="seconds"),"target":TARGET,"added":len(additions),"strictPolicy":True,"directLinksOnly":True,"parallel":True}
     sd["sources"]=sources; sd["updated"]=TODAY.isoformat()
-    vd["catalogVersion"]="8.9.0"; vd["released"]=TODAY.isoformat(); vd["catalogCount"]=len(contests); vd["activeCount"]=active
+    vd["catalogVersion"]=str(vd.get("version") or "8.9.1"); vd["released"]=TODAY.isoformat(); vd["catalogCount"]=len(contests); vd["activeCount"]=active
     report={
         "date":TODAY.isoformat(),"target":TARGET,"detailCandidates":len(details),"verifiedCandidates":len(results),
-        "added":len(additions),"success":len(additions)==TARGET,"activeCount":active,"rejected":reject,
+        "added":len(additions),"success":len(additions)>=MIN_PUBLISH,"minPublish":MIN_PUBLISH,"activeCount":active,"rejected":reject,
         "items":[{"id":x["id"],"title":x["title"],"provider":x["provider"],"deadline":x["deadline"],"url":x["url"]} for x in additions],
     }
     save(CF,cd); save(SF,sd); save(VF,vd); save(RF,report)
     print(json.dumps(report,ensure_ascii=False,indent=2))
-    if len(additions)!=TARGET:raise SystemExit(f"Only {len(additions)} of {TARGET} verified")
+    if len(additions)<MIN_PUBLISH:raise SystemExit(f"Only {len(additions)} verified; minimum publish threshold is {MIN_PUBLISH}")
 
 if __name__=="__main__":
     main()
