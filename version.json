@@ -1,8 +1,8 @@
 {
   "version": "8.9.1",
-  "catalogVersion": "8.8.0",
-  "released": "2026-09-30",
+  "catalogVersion": "8.9.1",
+  "released": "2026-10-01",
   "name": "Teilnahmefilter und Gewinnspielstatus korrigiert",
-  "catalogCount": 410,
-  "activeCount": 405
+  "catalogCount": 452,
+  "activeCount": 445
 }

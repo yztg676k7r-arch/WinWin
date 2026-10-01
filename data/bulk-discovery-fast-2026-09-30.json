@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-01",
+  "target": 50,
+  "detailCandidates": 674,
+  "verifiedCandidates": 70,
+  "added": 45,
+  "success": true,
+  "minPublish": 30,
+  "activeCount": 445,
+  "rejected": {
+    "direct-unreachable": 61,
+    "deadline": 380,
+    "germany": 115,
+    "child-baby-or-title": 12,
+    "social-required": 15,
+    "entry": 5,
+    "club": 2,
+    "purchase": 11,
+    "ended": 1,
+    "terms-only": 1,
+    "no-go-link": 1
+  },
+  "items": [
+    {
+      "id": "bulk-mueller-de-7fb8ae2731",
+      "title": "BIOTURM Pflegeset gewinnen",
+      "provider": "BIOTURM",
+      "deadline": "04.10.2026",
+      "url": "https://www.mueller.de/aktuelles/gewinnspiele/gewinnspiel-bioturm"
+    },
+    {
+      "id": "bulk-radio886-at-072c11fa80",
+      "title": "Deep Purple in Wien: Konzerttickets gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "05.10.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/deep_purple_stadthalle_wien"
+    },
+    {
+      "id": "bulk-radio886-at-096be5a810",
+      "title": "Duality Tickets gewinnen",
+      "provider": "Radio 88.6",
+      "deadline": "09.10.2026",
+      "url": "https://www.radio886.at/Winzone/Gewinnspiele/Duality"
+    },
+    {
+      "id": "bulk-computerbild-de-2cc18e93d5",
+      "title": "SwitchBot Lock Ultra Vision Pro gewinnen",
+      "provider": "COMPUTER BILD",
+      "deadline": "09.10.2026",
+      "url": "https://www.computerbild.de/artikel/Mission-Gold-Die-grosse-COMPUTER-BILD-Schatzsuche-40923435.html"
+    },
+    {
+      "id": "bulk-mueller-de-aa81858bee",
+      "title": "BOSS Bottled Beyond Duft gewinnen",
+      "provider": "BOSS",
+      "deadline": "11.10.2026",
+      "url": "https://www.mueller.de/aktuelles/gewinnspiele/gewinnspiel-hugo-boss"
+    },
+    {
+      "id": "bulk-dealdoktor-de-f5bfa51b33",
+      "title": "PlayStation 5 Pro gewinnen",
+      "provider": "DealDoktor",
+      "deadline": "13.10.2026",
+      "url": "https://www.dealdoktor.de/magazin/ps5-pro-gta-6-gewinnspiel"
+    },
+    {
+      "id": "bulk-schweizerkaese-de-db4be28ab8",
+      "title": "Premium-Kontaktgrill gewinnen",
+      "provider": "Le Gruyère AOP",
+      "deadline": "15.10.2026",
+      "url": "https://www.schweizerkaese.de/storyroom/gewinnspiele/le-gruyere-aop-2608/teilnahme-konsument"
+    },
+    {
+      "id": "bulk-soebbeke-gewinnspiel-de-b75f5530fd",
+      "title": "VW Camper gewinnen",
+      "provider": "Söbbeke",
+      "deadline": "15.10.2026",
+      "url": "https://www.soebbeke-gewinnspiel.de/faq.html"
+    },
+    {
+      "id": "bulk-mogli-de-b7c32bc291",
+      "title": "roadsurfer Reisegutschein gewinnen",
+      "provider": "MOGLi",
+      "deadline": "20.10.2026",
+      "url": "https://mogli.de/pages/gewinnspiel-mogli-roadsurfers"
+    },
+    {
+      "id": "bulk-radio886-at-a946870a2a",
+      "title": "Circus Frankello Tickets gewinnen",
+      "provider": "Radio 88.6",
+      "deadline": "26.10.2026",
+      "url": "https://www.radio886.at/Winzone/Gewinnspiele/circus_frankello_wels_und_micheldorf"
+    },
+    {
+      "id": "bulk-radio886-at-a23949a67b",
+      "title": "ANTHEM Tickets Wien gewinnen",
+      "provider": "Radio 88.6",
+      "deadline": "30.10.2026",
+      "url": "https://www.radio886.at/Winzone/Gewinnspiele/anthem_viper_room_wien"
+    },
+    {
+      "id": "bulk-letsgogorilla-de-e531d23b11",
+      "title": "5 limitierte Skateboard-Sets gewinnen",
+      "provider": "GORILLA",
+      "deadline": "31.10.2026",
+      "url": "https://www.letsgogorilla.de/food/thepowerofwater/gowin-spiel"
+    },
+    {
+      "id": "bulk-thueringerenergie-de-17c3efe6e7",
+      "title": "Apple AirPods Max gewinnen",
+      "provider": "TEAG Thüringer Energie",
+      "deadline": "31.10.2026",
+      "url": "https://www.thueringerenergie.de/teilnahmebedingungen_gewinnspiel-vertrieb"
+    },
+    {
+      "id": "bulk-thueringerenergie-de-6076218432",
+      "title": "Apple iPad Air 11 gewinnen",
+      "provider": "TEAG Thüringer Energie",
+      "deadline": "31.10.2026",
+      "url": "https://www.thueringerenergie.de/teilnahmebedingungen_7981"
+    },
+    {
+      "id": "bulk-radio886-at-cdef952153",
+      "title": "Beast In Black in Wien: Konzerttickets gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "31.10.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/beast_in_black_gasometer_wien"
+    },
+    {
+      "id": "bulk-aoste-de-167e8c4cad",
+      "title": "Vespa gewinnen",
+      "provider": "Aoste Deutschland",
+      "deadline": "31.10.2026",
+      "url": "https://www.aoste.de/sommer"
+    },
+    {
+      "id": "bulk-gewinnspiel-spezi-com-c756f33ba5",
+      "title": "Vespa im Spezi-Look gewinnen",
+      "provider": "Spezi",
+      "deadline": "31.10.2026",
+      "url": "https://gewinnspiel.spezi.com/teilnehmen"
+    },
+    {
+      "id": "bulk-gewinnspiel-spezi-com-cdbe07b7b1",
+      "title": "Vespa Sprint S 50 gewinnen",
+      "provider": "Spezi",
+      "deadline": "31.10.2026",
+      "url": "https://gewinnspiel.spezi.com/faq"
+    },
+    {
+      "id": "bulk-monetenfuchs-de-333975bc6a",
+      "title": "Voghion Elektroroller gewinnen",
+      "provider": "Voghion",
+      "deadline": "31.10.2026",
+      "url": "https://www.monetenfuchs.de/teilnahmebedingungen-voghion-gewinnspiel.htm"
+    },
+    {
+      "id": "bulk-mueller-drone-service-and-re-2d0c9b9342",
+      "title": "DJI Mavic 4 Pro gewinnen",
+      "provider": "Müller Drone Service and Rental",
+      "deadline": "01.11.2026",
+      "url": "https://mueller-drone-service-and-rental.com/pages/agbs-gewinnspiel"
+    },
+    {
+      "id": "bulk-brossler-de-a8b27952a8",
+      "title": "TraumRaum Möbel gewinnen",
+      "provider": "Brossler",
+      "deadline": "07.11.2026",
+      "url": "https://www.brossler.de/traumraum-gewinnspiel"
+    },
+    {
+      "id": "bulk-calumet-de-e3ea529051",
+      "title": "Calumet Gutscheine gewinnen",
+      "provider": "Calumet",
+      "deadline": "11.11.2026",
+      "url": "https://www.calumet.de/wettbewerbe/calumet-gewinnspiel-teilnahme"
+    },
+    {
+      "id": "bulk-compo-de-b64952c891",
+      "title": "COMPO-Gartenpaket per Newsletter-Anmeldung gewinnen",
+      "provider": "COMPO GmbH, Gildenstraße 38, 48157 Münster",
+      "deadline": "15.11.2026",
+      "url": "https://www.compo.de/aktionen"
+    },
+    {
+      "id": "bulk-whic-de-a981bcf617",
+      "title": "Rhum J.M La Dame Jeanne gewinnen",
+      "provider": "whic",
+      "deadline": "30.11.2026",
+      "url": "https://whic.de/rum-gewinnspiel"
+    },
+    {
+      "id": "bulk-radio886-at-7f49c3a292",
+      "title": "BAP-Jubiläumstour: Tickets für die Stadthalle gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "04.12.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/bap_konzert_wien_stadthalle"
+    },
+    {
+      "id": "bulk-radio886-at-355deedac4",
+      "title": "Avatar live in Linz: Konzerttickets gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "09.12.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/avatar_linz_innsbruck"
+    },
+    {
+      "id": "bulk-familyflair-de-27b988f7bf",
+      "title": "Aschenbrödel Musical Tickets gewinnen",
+      "provider": "ShowSlot",
+      "deadline": "10.12.2026",
+      "url": "https://familyflair.de/artikel/maerchenhafte-weihnachten-tickets-fuer-aschenbroedel-gewinnen.html"
+    },
+    {
+      "id": "bulk-radio886-at-47656b8d3b",
+      "title": "Seiler und Speer: Tickets für die Wiener Stadthalle gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "12.12.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/seiler_und_speer_wiener_stadthalle"
+    },
+    {
+      "id": "bulk-schweizerkaese-de-898b79de68",
+      "title": "XL Airfryer gewinnen",
+      "provider": "Tête de Moine AOP",
+      "deadline": "15.12.2026",
+      "url": "https://www.schweizerkaese.de/storyroom/gewinnspiele/tdm-2609/teilnahme-konsumenten"
+    },
+    {
+      "id": "bulk-radio886-at-0165259ded",
+      "title": "Wanda-Weihnachtskonzert: Tickets für die Stadthalle gewinnen",
+      "provider": "Radio 88.6 (Radio Eins Privatradio GmbH)",
+      "deadline": "19.12.2026",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/weihnachten_mit_wanda_stadthalle_wien"
+    },
+    {
+      "id": "bulk-ffn-de-e76570a5d7",
+      "title": "Trikotsatz gewinnen",
+      "provider": "ffn",
+      "deadline": "20.12.2026",
+      "url": "https://www.ffn.de/aktionen/das-ffn-vereinkleiden"
+    },
+    {
+      "id": "bulk-ing-de-be846ccb91",
+      "title": "15x100-Euro-WUNSCHGUTSCHEIN",
+      "provider": "ING-DiBa AG",
+      "deadline": "31.12.2026",
+      "url": "https://www.ing.de/lp/ing-denkfabrik"
+    },
+    {
+      "id": "bulk-aldi-glueckskorb-de-19ba12e195",
+      "title": "5 € Einkaufsgutschein gewinnen",
+      "provider": "ALDI Nord",
+      "deadline": "31.12.2026",
+      "url": "https://www.aldi-glueckskorb.de/"
+    },
+    {
+      "id": "bulk-computerbild-de-a909501c36",
+      "title": "540 Euro jaehrlich gewinnen",
+      "provider": "Scalable Capital",
+      "deadline": "31.12.2026",
+      "url": "https://www.computerbild.de/artikel/News-Finanzen-540-Euro-jedes-Jahr-bis-zur-Rente-Scalable-startet-Aktion-00002-41177421.html"
+    },
+    {
+      "id": "bulk-leboat-com-21bd120b94",
+      "title": "7-Nächte-Bootsurlaub gewinnen",
+      "provider": "Le Boat",
+      "deadline": "31.12.2026",
+      "url": "https://www.leboat.com/de/gewinnen"
+    },
+    {
+      "id": "bulk-mein-alpaka-shop-de-5fb5201bc9",
+      "title": "Alpaka-Wanderung gewinnen",
+      "provider": "Waytalla Alpakas",
+      "deadline": "31.12.2026",
+      "url": "https://mein-alpaka-shop.de/pages/eure-alpaka-momente-2026"
+    },
+    {
+      "id": "bulk-berentzen-de-668ad55e9f",
+      "title": "Berentzen verlost VIP-Kohlfahrt-Wochenenden",
+      "provider": "Berentzen-Gruppe Aktiengesellschaft",
+      "deadline": "31.12.2026",
+      "url": "https://www.berentzen.de/gewinnspiel-kohlfahrt"
+    },
+    {
+      "id": "bulk-pilotpen-de-f757c420f1",
+      "title": "Jetzt Jeden Monat 10 FriXion-Überraschungspakete gewinnen",
+      "provider": "Pilot Pen (Deutschland) GmbH",
+      "deadline": "31.12.2026",
+      "url": "https://www.pilotpen.de/FriXion-das-Original-Gewinnspiel-tnb"
+    },
+    {
+      "id": "bulk-tchibo-de-5183b77c2a",
+      "title": "Kaffeegutschein gewinnen",
+      "provider": "Tchibo",
+      "deadline": "31.12.2026",
+      "url": "https://www.tchibo.de/c/newsletter-kaffee-gewinnspiel"
+    },
+    {
+      "id": "bulk-monetenfuchs-de-aa35a08be6",
+      "title": "Mini-Handkreissäge gewinnen",
+      "provider": "MonetenFuchs",
+      "deadline": "31.12.2026",
+      "url": "https://www.monetenfuchs.de/monetenfuchs-kreisaege-gewinnspiel.html"
+    },
+    {
+      "id": "bulk-landskron-de-2b4ed10be7",
+      "title": "Opel Corsa gewinnen",
+      "provider": "Landskron",
+      "deadline": "31.12.2026",
+      "url": "https://www.landskron.de/gewinn"
+    },
+    {
+      "id": "bulk-shop-ridelink-com-e334941d17",
+      "title": "RideLink WingMan 4G gewinnen",
+      "provider": "RideLink",
+      "deadline": "31.12.2026",
+      "url": "https://shop.ridelink.com/en/pages/gewinnspiel"
+    },
+    {
+      "id": "bulk-gewinnspiele-bmw-motorrad-de-2798ec9333",
+      "title": "Jetzt gewinnen: BMW-Motorrad-Saisonbegleiter 2027 nach Wahl aus mehreren Modellen",
+      "provider": "BMW Motorrad",
+      "deadline": "07.01.2027",
+      "url": "https://www.gewinnspiele-bmw-motorrad.de/verlosung/gewinnspiel2026"
+    },
+    {
+      "id": "bulk-radio886-at-99b5a46c69",
+      "title": "Trivium & In Flames Tickets gewinnen",
+      "provider": "Radio886",
+      "deadline": "21.04.2027",
+      "url": "https://www.radio886.at/Winzone/Konzert-Tickets/in_flames_trivium_konzert_stadthalle_wien"
+    },
+    {
+      "id": "bulk-keessmit-de-fded62ff19",
+      "title": "2000-Euro-Gutschein von Kees Smit gewinnen",
+      "provider": "Kees Smit Gartenmöbel",
+      "deadline": "30.06.2027",
+      "url": "https://www.keessmit.de/gutschein-gewinnen"
+    }
+  ]
+}
