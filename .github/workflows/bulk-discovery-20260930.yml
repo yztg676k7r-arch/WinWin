@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/bulk-discovery-20260930.yml'
+      - 'tools/bulk_discovery_20260930.py'
   workflow_dispatch:
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 
 concurrency:
   group: winwin-bulk-discovery-20260930
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   bulk-discovery:
