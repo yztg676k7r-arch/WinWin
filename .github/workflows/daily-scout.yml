@@ -42,15 +42,15 @@ jobs:
 
       - name: Run Daily Scout
         env:
-          WINWIN_SCOUT_MAX_SOURCES: '30'
-          WINWIN_SCOUT_BUDGET_SECONDS: '600'
-          WINWIN_SCOUT_MAX_NEW: '15'
+          WINWIN_SCOUT_MAX_SOURCES: '120'
+          WINWIN_SCOUT_BUDGET_SECONDS: '1200'
+          WINWIN_SCOUT_MAX_NEW: '30'
         run: python scripts/daily_scout.py
 
       - name: Re-check review queue
         env:
           WINWIN_REVIEW_BUDGET_SECONDS: '600'
-          WINWIN_SCOUT_MAX_NEW: '15'
+          WINWIN_SCOUT_MAX_NEW: '30'
         run: python scripts/review_queue.py
 
       - name: Validate generated JSON
