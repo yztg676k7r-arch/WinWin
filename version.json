@@ -1,8 +1,8 @@
 {
-  "version": "8.10.2",
-  "catalogVersion": "8.10.2",
+  "version": "8.10.3",
+  "catalogVersion": "8.10.3",
   "released": "2026-10-03",
-  "name": "Performance-Optimierung für iPhone",
+  "name": "Schneller Start durch bedarfsgesteuertes Rendering",
   "catalogCount": 442,
   "activeCount": 389
 }
