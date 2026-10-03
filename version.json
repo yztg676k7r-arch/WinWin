@@ -1,8 +1,8 @@
 {
-  "version": "8.9.1",
-  "catalogVersion": "8.9.1",
-  "released": "2026-10-01",
-  "name": "Teilnahmefilter und Gewinnspielstatus korrigiert",
+  "version": "8.10.0",
+  "catalogVersion": "8.10.0",
+  "released": "2026-10-03",
+  "name": "Rätsel & Lösungswörter – nur kostenlos online",
   "catalogCount": 446,
   "activeCount": 384
 }
