@@ -409,6 +409,16 @@ function repeatLabel(i){
  const f=participationFrequencyOf(i);
  return f==='daily'?'Täglich möglich':f==='weekly'?'Wöchentlich möglich':f==='multiple'?'Mehrfach möglich':'Einmalig';
 }
+function matchingParticipationStates(i){
+ if(!i)return [];
+ const matches=[];
+ Object.entries(user.items||{}).forEach(([id,state])=>{
+  if(!state)return;
+  if(id===String(i.id)){matches.push(state);return}
+  if(state._identity&&sameContestRound(i,state._identity))matches.push(state);
+ });
+ return matches;
+}
 function completedForCurrentPeriod(i){
  const s=stateFor(i.id),f=participationFrequencyOf(i);
  if(f==='daily')return participatedOn(i.id);
@@ -418,7 +428,9 @@ function completedForCurrentPeriod(i){
  }
  // Without a specified interval, keep repeated entries out of today's open list.
  if(f==='multiple')return participatedOn(i.id);
- return s.done;
+ // One-time contests stay completed across catalogue/discovery duplicate IDs,
+ // but a genuinely new round with a different deadline remains open.
+ return matchingParticipationStates(i).some(state=>Boolean(state?.done));
 }
 function participatedOn(id,date=dayKey()){
  const s=stateFor(id);return s.participationDates.includes(date)
@@ -1161,8 +1173,7 @@ function renderMetrics(){
 }
 function homeEligibleContest(i){
  if(!i||!active(i))return false;
- const s=stateFor(i.id);
- return !isContestSuppressed(i)&&!s.done;
+ return !isContestSuppressed(i)&&!completedForToday(i);
 }
 function renderHome(){
  const a=scored().filter(homeEligibleContest).sort((x,y)=>y.score-x.score);
