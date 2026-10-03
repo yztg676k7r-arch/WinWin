@@ -237,7 +237,17 @@ let preferences=safeJSON(localStorage.getItem(PREFERENCE_KEY),null);
 let ignoredRoundHistoryCache=null;
 const roundDecisionCache=new Map();
 const previousIgnoredRoundCache=new Map();
-function invalidateRoundReviewCache(){ignoredRoundHistoryCache=null;roundDecisionCache.clear();previousIgnoredRoundCache.clear()}
+// Performance caches: status/round matching is used across several views.
+// Keep these derived indexes in memory and invalidate them whenever user state changes.
+const participationMatchCache=new Map();
+let winStatsCache=null;
+function invalidateRoundReviewCache(){
+ ignoredRoundHistoryCache=null;
+ roundDecisionCache.clear();
+ previousIgnoredRoundCache.clear();
+ participationMatchCache.clear();
+ winStatsCache=null;
+}
 function defaultPreferences(){return {enabled:true,initialized:false,categories:{},entryTypes:{},updatedAt:null}}
 if(!preferences||typeof preferences!=='object')preferences=defaultPreferences();
 if(!preferences.categories||typeof preferences.categories!=='object')preferences.categories={};
@@ -264,12 +274,19 @@ function preferenceBoost(i){
  return Math.max(-10,Math.min(12,Math.round(cat*.32+type*.16)));
 }
 function historicalWinBoost(i){
- let categoryWins=0,providerWins=0;
- contests.forEach(c=>{
-  const st=user.items[c.id];if(!st)return;
-  if(c.category===i.category&&st.won)categoryWins++;
-  if(String(c.provider||'').toLowerCase()===String(i.provider||'').toLowerCase()&&st.won)providerWins++;
- });
+ if(!winStatsCache){
+  const categories=new Map(),providers=new Map();
+  contests.forEach(c=>{
+   const st=user.items[c.id];if(!st?.won)return;
+   const category=c.category||'Sonstiges';
+   const provider=String(c.provider||'').toLowerCase();
+   categories.set(category,(categories.get(category)||0)+1);
+   providers.set(provider,(providers.get(provider)||0)+1);
+  });
+  winStatsCache={categories,providers};
+ }
+ const categoryWins=winStatsCache.categories.get(i.category||'Sonstiges')||0;
+ const providerWins=winStatsCache.providers.get(String(i.provider||'').toLowerCase())||0;
  let boost=0;
  if(categoryWins)boost+=Math.min(5,categoryWins*2);
  if(providerWins)boost+=Math.min(5,providerWins*3);
@@ -411,12 +428,15 @@ function repeatLabel(i){
 }
 function matchingParticipationStates(i){
  if(!i)return [];
+ const key=roundReviewCacheKey(i);
+ if(participationMatchCache.has(key))return participationMatchCache.get(key);
  const matches=[];
  Object.entries(user.items||{}).forEach(([id,state])=>{
   if(!state)return;
   if(id===String(i.id)){matches.push(state);return}
   if(state._identity&&sameContestRound(i,state._identity))matches.push(state);
  });
+ participationMatchCache.set(key,matches);
  return matches;
 }
 function completedForCurrentPeriod(i){
