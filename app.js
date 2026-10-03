@@ -1392,23 +1392,41 @@ function renderPreferencePanel(){
 function safeRender(name,fn){
  try{fn()}catch(error){console.error(`Win Win: ${name} konnte nicht gerendert werden`,error)}
 }
-function renderAll(){
- safeRender('Start-Kennzahlen',renderMetrics);
- safeRender('Startseite',renderHome);
- safeRender('Smart Discovery',renderSmartDiscovery);
- safeRender('Heute',renderToday);
- safeRender('Daily Driver',renderDailyDriverStatus);
- safeRender('Entdecken',renderDiscover);
- safeRender('Dashboard',renderPersonal);
- safeRender('Gewinnspielstatus',renderContestLifecycle);
- safeRender('Vorlieben',renderPreferencePanel);
- safeRender('Neue Runden',renderRoundReviews);
+function activeViewId(){return $('.view.active')?.id||'discoverView'}
+function renderView(id=activeViewId()){
+ // Only render the view the user can currently see. This keeps iPhone startup
+ // and status changes responsive as the catalogue grows.
+ if(id==='discoverView'){
+  safeRender('Smart Discovery',renderSmartDiscovery);
+  safeRender('Entdecken',renderDiscover);
+  safeRender('Neue Runden',renderRoundReviews);
+  return;
+ }
+ if(id==='homeView'){
+  safeRender('Start-Kennzahlen',renderMetrics);
+  safeRender('Startseite',renderHome);
+  safeRender('Daily Driver',renderDailyDriverStatus);
+  return;
+ }
+ if(id==='todayView'){safeRender('Heute',renderToday);return}
+ if(id==='statsView'||id==='favoritesView'){
+  safeRender('Dashboard',renderPersonal);
+  return;
+ }
+ if(id==='statusView'){safeRender('Gewinnspielstatus',renderContestLifecycle);return}
+ if(id==='moreView'){
+  safeRender('Vorlieben',renderPreferencePanel);
+  safeRender('Daily Driver',renderDailyDriverStatus);
+  return;
+ }
 }
+function renderAll(){renderView()}
 function openView(id){
  if(id==='homeView'||id==='todayView')id='discoverView';
  const navId=['statsView','dataView','statusView'].includes(id)?'moreView':id;
- $$('.view').forEach(v=>v.classList.toggle('active',v.id===id));
- $$('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
+ $('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+ $('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
+ renderView(id);
  window.scrollTo({top:0,behavior:'auto'});
 }
 function openDiscover(f){discoverRenderLimit=DISCOVER_PAGE_SIZE;currentFilter=f;$$('.chip').forEach(c=>c.classList.toggle('active',c.dataset.filter===f));openView('discoverView');renderDiscover()}
