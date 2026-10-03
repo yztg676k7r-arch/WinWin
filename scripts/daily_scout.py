@@ -38,7 +38,7 @@ UA = "WinWin-Daily-Scout/8.4 (+https://github.com/yztg676k7r-arch/WinWin)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA, "Accept-Language": "de-DE,de;q=0.9,en;q=0.5"})
 
-KEYWORDS = ("gewinnspiel", "verlosung", "gewinnen", "giveaway", "win")
+KEYWORDS = ("gewinnspiel", "verlosung", "gewinnen", "giveaway", "win", "kreuzwortraetsel", "kreuzworträtsel", "preisraetsel", "preisrätsel", "gewinnraetsel", "gewinnrätsel", "loesungswort", "lösungswort")
 DISCOVERY_PATHS = ("/gewinnspiele", "/gewinnspiel", "/aktionen", "/aktion")
 AGGREGATORS = {
     "gewinnspiele.de", "gewinnspielmarkt.de", "gewinnspielverzeichnis.de",
@@ -54,7 +54,7 @@ REJECT_RULES = {
     ],
     "paid": [
         r"premium[- ]?sms", r"0137\d", r"0900\d", r"kostenpflichtig(?:e|er)?\s+(?:anruf|sms|teilnahme)",
-        r"los(?:e)? kaufen", r"loseinsatz", r"spieleinsatz", r"kostenpflichtig(?:es|en)?\s+abo",
+        r"los(?:e)? kaufen", r"loseinsatz", r"spieleinsatz", r"kostenpflichtig(?:es|en)?\s+abo", r"paywall", r"(?:heft|zeitschrift|zeitung).{0,45}(?:kaufen|erwerben|bestellen)",
     ],
     "club": [
         r"nur f[uü]r (?:club)?mitglieder", r"mitgliedschaft\s+(?:ist\s+)?erforderlich",
@@ -350,6 +350,11 @@ def make_contest(source: dict, page: Page, deadline: date) -> dict:
         "catalogStatus": "active",
         "scoutStatus": "verified",
         "scoutAdded": True,
+        "puzzleType": "crossword" if re.search(r"kreuzwortr[aä]tsel", page.text, re.I) else ("prize-puzzle" if re.search(r"preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort", page.text, re.I) else None),
+        "puzzleOnlineFree": True if re.search(r"kreuzwortr[aä]tsel|preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort", page.text, re.I) else None,
+        "solution": None,
+        "solutionStatus": "unknown" if re.search(r"kreuzwortr[aä]tsel|preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort", page.text, re.I) else None,
+        "solutionSource": None,
     }
 
 
@@ -364,6 +369,9 @@ def discover_external() -> list[str]:
         f'Gewinnspiel Hamburg {TODAY.strftime("%B %Y")}',
         f'Gewinnspiel Bremen {TODAY.strftime("%B %Y")}',
         f'Gewinnspiel Deutschland Teilnahmeschluss {TODAY.year}',
+        f'Kreuzworträtsel Gewinnspiel online Lösungswort {TODAY.year}',
+        f'Preisrätsel Gewinnspiel kostenlos online {TODAY.year}',
+        f'Gewinnrätsel Lösungswort online Teilnahmeschluss {TODAY.year}',
     ]
     urls = []
     for q in queries:
