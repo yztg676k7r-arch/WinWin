@@ -2385,7 +2385,31 @@ setupSourceManager();
 setupContestManager();
 setupHitInbox();
 setupSourceQueue();
-if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+async function setupServiceWorkerUpdates(){
+ if(!('serviceWorker' in navigator))return;
+ try{
+  const registration=await navigator.serviceWorker.register('./sw.js?v='+encodeURIComponent(APP_VERSION),{updateViaCache:'none'});
+  let reloading=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+   if(reloading)return;
+   reloading=true;
+   location.reload();
+  });
+  const activateWaiting=()=>{if(registration.waiting)registration.waiting.postMessage({type:'SKIP_WAITING'})};
+  activateWaiting();
+  registration.addEventListener('updatefound',()=>{
+   const worker=registration.installing;
+   if(!worker)return;
+   worker.addEventListener('statechange',()=>{
+    if(worker.state==='installed'&&navigator.serviceWorker.controller)activateWaiting();
+   });
+  });
+  await registration.update();
+ }catch(error){
+  console.warn('Win Win: Service-Worker-Update fehlgeschlagen',error);
+ }
+}
+setupServiceWorkerUpdates();
 Promise.allSettled([loadSources(),loadData()]).then(async results=>{
  const failed=results.filter(result=>result.status==='rejected');
  if(failed.length){
