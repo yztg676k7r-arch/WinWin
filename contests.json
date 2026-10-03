@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-02",
-  "activeCountAtRelease": 378,
+  "updated": "2026-10-03",
+  "activeCountAtRelease": 371,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -6180,7 +6180,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 54,
       "country": "Deutschland",
       "daily": false,
@@ -6755,7 +6755,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 64,
       "country": "Deutschland, Österreich & Schweiz",
       "daily": false,
@@ -6796,7 +6796,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 58,
       "country": "Deutschland, Österreich & Schweiz",
       "daily": false,
@@ -10039,7 +10039,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Familie",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -10417,7 +10417,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Regional & Events",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -13944,7 +13944,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Regional",
       "chanceScore": 68,
       "country": "Deutschland",
@@ -13987,7 +13987,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Regional",
       "chanceScore": 76,
       "country": "Deutschland",
@@ -17895,20 +17895,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-02T12:06:54+02:00",
+    "lastRun": "2026-10-03T06:09:44+02:00",
     "checkedSources": 30,
-    "candidatePages": 482,
+    "candidatePages": 403,
     "published": 0,
-    "review": 370,
-    "rejected": 27,
-    "expiredArchived": 39
+    "review": 325,
+    "rejected": 25,
+    "expiredArchived": 7
   },
   "secondPass": {
-    "lastRun": "2026-10-02T12:09:17+02:00",
+    "lastRun": "2026-10-03T06:12:15+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 3010,
-    "rejected": 0,
+    "keptForReview": 3123,
+    "rejected": 14,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
