@@ -20,7 +20,7 @@ STOP_AT=time.monotonic()+int(os.getenv("WINWIN_REVIEW_BUDGET_SECONDS","600"))
 MAX_NEW=int(os.getenv("WINWIN_SCOUT_MAX_NEW","15"))
 CONTEST_WORDS=('gewinnspiel','verlosung','gewinnen','giveaway')
 NON_CONTEST=('gewinner stehen fest','die gewinner','eventkalender','ausbildung','seminar','kurs','produkttest','winterreifen-test','gebrauchtwagen','styletrend','firmenwagen award')
-BAD=(r'kassenbon',r'kaufbeleg',r'bon hochladen',r'produkt(?:e)? kaufen',r'mindestbestellwert',r'premium[- ]?sms',r'0137\d',r'0900\d',r'kostenpflichtig.{0,25}(?:anruf|sms|teilnahme|abo)',r'nur f[uü]r (?:club)?mitglieder',r'kostenpflichtige mitgliedschaft')
+BAD=(r'kassenbon',r'kaufbeleg',r'bon hochladen',r'produkt(?:e)? kaufen',r'mindestbestellwert',r'premium[- ]?sms',r'0137\d',r'0900\d',r'kostenpflichtig.{0,25}(?:anruf|sms|teilnahme|abo)',r'nur f[uü]r (?:club)?mitglieder',r'kostenpflichtige mitgliedschaft',r'paywall',r'(?:heft|zeitschrift|zeitung).{0,45}(?:kaufen|erwerben|bestellen)')
 DATE_PATTERNS=(r'(?:teilnahmeschluss|einsendeschluss|aktionsende|endet am|bis zum)\s*[:\-]?\s*(\d{1,2}[.\-/]\d{1,2}[.\-/]\d{2,4})',)
 
 def load(p): return json.loads(p.read_text(encoding='utf-8'))
@@ -82,6 +82,13 @@ def classify(url,t,text,soup,raw):
  path=urllib.parse.urlsplit(url).path.rstrip('/')
  if path in ('','/'): return 'rejected','generic-homepage',None
  if any(re.search(p,low,re.I) for p in BAD): return 'rejected','policy-exclusion',None
+ puzzle=bool(re.search(r'kreuzwortr[aä]tsel|preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort',low,re.I))
+ if puzzle:
+  # WinWin puzzle rule: the actual puzzle/question must itself be freely accessible online.
+  # A participation form alone is not enough when the clues are print-only.
+  online_puzzle=bool(re.search(r'(?:r[aä]tsel|kreuzwortr[aä]tsel).{0,120}(?:online|pdf|download|hier)|(?:online|pdf|download).{0,120}(?:r[aä]tsel|kreuzwortr[aä]tsel)',low,re.I))
+  print_only=bool(re.search(r'(?:im|aus dem).{0,35}(?:heft|magazin|zeitschrift|zeitung)|ausgabe.{0,35}(?:kaufen|erh[aä]ltlich)',low,re.I))
+  if print_only or not online_puzzle: return 'review','puzzle-not-proven-free-online',None
  # Require contest intent in URL/title, not merely somewhere in a generic page.
  if not any(w in n for w in CONTEST_WORDS): return 'review','contest-intent-not-specific',None
  if not extract_prize(text,t): return 'review','prize-not-unambiguous',None
@@ -109,7 +116,7 @@ def main():
    old['reason']='missing-source'; kept.append(old); continue
   src=sm.get(old.get('sourceId'),{}); sid=src.get('id') or old.get('sourceId') or 'scout'; digest=hashlib.sha1((u+d.isoformat()).encode()).hexdigest()[:8]; cid=f'{sid}-{d.strftime("%Y%m%d")}-{digest}'
   if cid in ids: continue
-  item={'id':cid,'title':t,'provider':src.get('name') or urllib.parse.urlsplit(u).netloc,'prize':extract_prize(text,t) or t,'url':u,'category':(src.get('categories') or ['Sonstiges'])[0],'country':'Deutschland','deadline':d.strftime('%d.%m.%Y'),'winners':None,'new':True,'daily':bool(re.search(r'täglich|taeglich|jeden tag',text,re.I)),'international':False,'requirements':'Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft','purchaseRequired':False,'receiptRequired':False,'winnerKnown':False,'verified':TODAY.strftime('%d.%m.%Y'),'providerTrust':min(5,max(3,int(src.get('quality') or 4))),'effort':1,'entryType':'form' if soup.find('form') else 'email','multipleEntry':bool(re.search(r'täglich|taeglich|jeden tag|mehrfach',text,re.I)),'highValuePrize':False,'tags':['Daily Scout','2× geprüft','kostenlos','neu'],'addedAt':TODAY.strftime('%d.%m.%Y'),'sourceId':sid,'deEligibility':'bestätigt','participationFrequency':'täglich' if re.search(r'täglich|taeglich|jeden tag',text,re.I) else 'einmalig','chanceScore':45,'priority':'mittel','qualityScore':97,'shortDescription':t,'dataCompleteness':88,'lastVerified':TODAY.strftime('%d.%m.%Y'),'catalogStatus':'active','scoutStatus':'verified-second-pass','scoutAdded':True}
+  item={'id':cid,'title':t,'provider':src.get('name') or urllib.parse.urlsplit(u).netloc,'prize':extract_prize(text,t) or t,'url':u,'category':(src.get('categories') or ['Sonstiges'])[0],'country':'Deutschland','deadline':d.strftime('%d.%m.%Y'),'winners':None,'new':True,'daily':bool(re.search(r'täglich|taeglich|jeden tag',text,re.I)),'international':False,'requirements':'Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft','purchaseRequired':False,'receiptRequired':False,'winnerKnown':False,'verified':TODAY.strftime('%d.%m.%Y'),'providerTrust':min(5,max(3,int(src.get('quality') or 4))),'effort':1,'entryType':'form' if soup.find('form') else 'email','multipleEntry':bool(re.search(r'täglich|taeglich|jeden tag|mehrfach',text,re.I)),'highValuePrize':False,'tags':['Daily Scout','2× geprüft','kostenlos','neu'],'addedAt':TODAY.strftime('%d.%m.%Y'),'sourceId':sid,'deEligibility':'bestätigt','participationFrequency':'täglich' if re.search(r'täglich|taeglich|jeden tag',text,re.I) else 'einmalig','chanceScore':45,'priority':'mittel','qualityScore':97,'shortDescription':t,'dataCompleteness':88,'lastVerified':TODAY.strftime('%d.%m.%Y'),'catalogStatus':'active','scoutStatus':'verified-second-pass','scoutAdded':True,'puzzleType':'crossword' if re.search(r'kreuzwortr[aä]tsel',text,re.I) else ('prize-puzzle' if re.search(r'preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort',text,re.I) else None),'puzzleOnlineFree':True if re.search(r'kreuzwortr[aä]tsel|preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort',text,re.I) else None,'solution':None,'solutionStatus':'unknown' if re.search(r'kreuzwortr[aä]tsel|preisr[aä]tsel|gewinnr[aä]tsel|l[oö]sungswort',text,re.I) else None,'solutionSource':None}
   contests.append(item); promoted.append(cid); ids.add(cid); urls.add(canon(u))
  # Audit auto-published pages from the first pass: obvious non-contest pages are hidden, never deleted.
  archived=[]
