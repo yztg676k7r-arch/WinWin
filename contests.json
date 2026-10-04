@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-03",
-  "activeCountAtRelease": 389,
+  "updated": "2026-10-04",
+  "activeCountAtRelease": 387,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -5471,7 +5471,7 @@
     },
     {
       "addedAt": "04.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher",
       "chanceScore": 69,
       "country": "Deutschland",
@@ -8024,7 +8024,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Hörbücher",
       "chanceScore": 74,
       "country": "Deutschland",
@@ -18669,19 +18669,19 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-03T16:35:09+02:00",
-    "checkedSources": 55,
-    "candidatePages": 709,
+    "lastRun": "2026-10-04T12:20:32+02:00",
+    "checkedSources": 92,
+    "candidatePages": 1229,
     "published": 0,
-    "review": 548,
-    "rejected": 20,
-    "expiredArchived": 0
+    "review": 923,
+    "rejected": 124,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-10-03T16:37:56+02:00",
+    "lastRun": "2026-10-04T12:22:59+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 3503,
+    "keptForReview": 4192,
     "rejected": 0,
     "autoHiddenForReview": 0
   },
