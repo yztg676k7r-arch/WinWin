@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-04",
-  "activeCountAtRelease": 387,
+  "updated": "2026-10-05",
+  "activeCountAtRelease": 370,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -8146,7 +8146,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 61,
       "country": "Deutschland",
       "daily": false,
@@ -9677,7 +9677,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Events & Freizeit",
       "chanceScore": 60,
       "country": "Deutschland",
@@ -9719,7 +9719,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Kino",
       "chanceScore": 62,
       "country": "Deutschland",
@@ -17962,27 +17962,27 @@
       "shortDescription": "Kaffee-Vollautomat mit EDEKA Bio Kaffee",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-04T12:20:32+02:00",
-    "checkedSources": 92,
-    "candidatePages": 1229,
+    "lastRun": "2026-10-05T13:05:51+02:00",
+    "checkedSources": 68,
+    "candidatePages": 1009,
     "published": 0,
-    "review": 923,
-    "rejected": 124,
-    "expiredArchived": 2
+    "review": 767,
+    "rejected": 51,
+    "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-10-04T12:22:59+02:00",
+    "lastRun": "2026-10-05T13:08:24+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 4192,
-    "rejected": 0,
+    "keptForReview": 4524,
+    "rejected": 1,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
