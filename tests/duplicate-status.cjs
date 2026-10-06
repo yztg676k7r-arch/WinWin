@@ -1,0 +1,21 @@
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+const source=fs.readFileSync('app.js','utf8');
+function fn(name){const a=source.indexOf('function '+name+'('),b=source.indexOf('\nfunction ',a+10);assert(a>=0,name);return source.slice(a,b)}
+const c={console,URL,Date,JSON,Map,Set,Number,Boolean,String,Array,Math,location:{href:'https://example.test/WinWin/'},user:{items:{},urlIndex:{},roundReviews:[]},contests:[],participationMatchCache:new Map(),roundDecisionCache:new Map(),previousIgnoredRoundCache:new Map(),saveUser(){c.invalidateRoundReviewCache()},USER_SCHEMA_VERSION:6,dayKey:(v)=>new Date(v||Date.now()).toISOString().slice(0,10)};
+vm.createContext(c);
+for(const name of ['normalizeText','normalizeUrl','normalizeUser','mergeStatusRecord','statusRecordStrength','contestIdentity','identityTokens','identitySimilarity','sameContestFamily','sameContestRound','sameContestOccurrence','isCampaignUrl','parseDate','parseFlexibleDate','identityFingerprint','invalidateRoundReviewCache','migrateContestStates','stateFor','roundReviewCacheKey','matchingParticipationStates','participationFrequencyOf','completedForCurrentPeriod','participatedOn','isRepeatable'])vm.runInContext(fn(name),c);
+const base={id:'old',title:'Garmin Vivoactive Smartwatch gewinnen',prize:'Garmin Vivoactive 6',provider:'FUNKE / TV direkt',url:'https://www.funke.fun/gewinnspiele/tvdirekt/detail-353?utm_source=test',deadline:'31.10.2026',participationFrequency:'einmalig'};
+const dup={...base,id:'new',provider:'FUNKE FUN',url:'https://funke.fun/gewinnspiele/spiel-353'};
+assert.equal(c.sameContestOccurrence(dup,base),true,'publisher and magazine URL variants');
+c.user.items={old:{done:true,doneAt:'2026-10-05T12:00:00Z',favorite:true,note:'keep',_identity:c.contestIdentity(base)},new:{done:false}};c.contests=[dup];c.migrateContestStates();assert.equal(c.completedForCurrentPeriod(dup),true,'existing blank record migrated');assert.equal(c.user.items.new.note,'keep');assert.equal(c.user.items.old.favorite,true);
+c.CONTEST_HISTORY={old:base};c.user.items={old:{done:true,ignored:true,note:'legacy'}};c.migrateContestStates();assert.equal(c.user.items.new.done,true,'orphan id without identity');assert.equal(c.user.items.old.note,'legacy');
+assert.equal(c.sameContestOccurrence({...dup,deadline:'30.11.2026'},base),false,'new monthly round stays new');
+assert.equal(c.sameContestOccurrence({...dup,url:'https://funke.fun/',title:'Andere Reise',prize:'Urlaub'}, {...base,url:'https://funke.fun/'}),false,'shared landing page not identity');
+assert.equal(c.sameContestOccurrence({...dup,deadline:'02.11.2026'},base),true,'small deadline correction');
+assert.equal(c.participationFrequencyOf({...dup,requirements:'Mehrfachteilnahme nicht erlaubt',multipleEntry:true}), 'once','explicit one-time wins');
+assert.equal(c.participationFrequencyOf({requirements:'Mehrfachteilnahme ausgeschlossen'}),'once','negative prose');
+assert.equal(c.normalizeUrl('http://www.example.com/Prize/?b=2&a=1&utm_id=foo#x'),'https://example.com/Prize?a=1&b=2');
+assert.notEqual(c.normalizeUrl('https://example.com/?id=1'),c.normalizeUrl('https://example.com/?id=2'),'meaningful query kept');
+c.user.items={old:{done:true,participationDates:[c.dayKey()],_identity:c.contestIdentity(base)}};c.invalidateRoundReviewCache();assert.equal(c.completedForCurrentPeriod({...dup,participationFrequency:'täglich'}),true,'repeat status shared today');
+const m=c.mergeStatusRecord({done:false,doneChangedAt:20,participationDates:[]},{done:true,doneChangedAt:10,participationDates:['2026-10-05']});assert.equal(m.done,false);assert.equal(m.participationDates.length,0,'undo is not resurrected by archive');
+console.log('PASS duplicate migration, historical IDs, frequency, round boundaries, query identity, repeat status, undo');

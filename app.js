@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.10.7';
+const APP_VERSION='8.10.8';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -107,7 +107,11 @@ function mergeStatusRecord(primary,backup){
  const a=primary&&typeof primary==='object'?JSON.parse(JSON.stringify(primary)):{};
  const b=backup&&typeof backup==='object'?backup:{};
  a.favorite=Boolean(a.favorite||b.favorite);
- a.done=Boolean(a.done||b.done);
+ const latestDone=Number(a.doneChangedAt||0)>=Number(b.doneChangedAt||0)?a:b;
+ a.done=(a.doneChangedAt||b.doneChangedAt)?Boolean(latestDone.done):Boolean(a.done||b.done);
+ a.doneChangedAt=Math.max(Number(a.doneChangedAt||0),Number(b.doneChangedAt||0));
+ const doneDates=latestDone.participationDates;
+ const doneAt=latestDone.doneAt;
  const aResultChanged=Number(a.resultChangedAt||0),bResultChanged=Number(b.resultChangedAt||0);
  const latestResult=aResultChanged>=bResultChanged?a:b;
  if(aResultChanged||bResultChanged){
@@ -135,7 +139,8 @@ function mergeStatusRecord(primary,backup){
   ...(Array.isArray(a.participationDates)?a.participationDates:[]),
   ...(Array.isArray(b.participationDates)?b.participationDates:[])
  ].filter(Boolean);
- a.participationDates=[...new Set(dates)].sort();
+ a.participationDates=a.doneChangedAt?[...new Set(doneDates||[])].sort():[...new Set(dates)].sort();
+ if(a.doneChangedAt)a.doneAt=doneAt||null;
  const aWin=a.winDetails&&typeof a.winDetails==='object'?a.winDetails:{};
  const bWin=b.winDetails&&typeof b.winDetails==='object'?b.winDetails:{};
  if(a.won){
@@ -322,6 +327,7 @@ function contestIdentity(i){
  if(!i)return null;
  return {
   id:String(i.id||''),
+  campaignId:String(i.campaignId||''),
   title:String(i.title||'').trim().toLowerCase(),
   provider:String(i.provider||'').trim().toLowerCase(),
   sourceId:String(i.sourceId||'').trim().toLowerCase(),
@@ -341,33 +347,65 @@ function identitySimilarity(a,b){
  return hit/Math.max(A.size,B.size);
 }
 function sameContestFamily(contest,storedIdentity){
- const a=contestIdentity(contest),b=storedIdentity;if(!a||!b)return false;
- const sameSource=a.sourceId&&b.sourceId&&a.sourceId===String(b.sourceId).toLowerCase();
- const sameProvider=a.provider&&b.provider&&a.provider===String(b.provider).toLowerCase();
+ const a=contestIdentity(contest),b=contestIdentity(storedIdentity);if(!a||!b)return false;
+ // A campaign URL is stronger evidence than a publisher's changing display name.
+ if(a.url&&a.url===b.url)return true;
+ const sameSource=a.sourceId&&a.sourceId===b.sourceId;
+ const sameProvider=normalizeText(a.provider)===normalizeText(b.provider)&&Boolean(a.provider);
  if(!sameSource&&!sameProvider)return false;
- if(a.url&&b.url&&a.url===normalizeUrl(b.url))return true;
- const titleScore=identitySimilarity(a.title,b.title||'');
+ const titleScore=identitySimilarity(a.title,b.title);
  const prizeScore=a.prize&&b.prize?identitySimilarity(a.prize,b.prize):0;
  return titleScore>=.72||(titleScore>=.58&&prizeScore>=.5);
 }
+
 function sameContestRound(contest,storedIdentity){
  if(!sameContestFamily(contest,storedIdentity))return false;
  const current=String(contest?.deadline||''),previous=String(storedIdentity?.deadline||'');
  return Boolean(current&&previous&&current===previous);
 }
 function sameContestOccurrence(contest,storedIdentity){
- if(!sameContestFamily(contest,storedIdentity))return false;
- const a=contestIdentity(contest),b=storedIdentity||{};
- const current=String(a?.deadline||''),previous=String(b.deadline||'');
- if(current&&previous&&current===previous)return true;
- const sameUrl=Boolean(a?.url&&b.url&&a.url===normalizeUrl(b.url));
- const titleScore=identitySimilarity(a?.title||'',b.title||'');
- const prizeScore=a?.prize&&b.prize?identitySimilarity(a.prize,b.prize):0;
- if(sameUrl&&titleScore>=.78)return true;
- return titleScore>=.9&&prizeScore>=.82;
+ const a=contestIdentity(contest),b=contestIdentity(storedIdentity);
+ if(!a||!b||!sameContestFamily(a,b))return false;
+ if(a.campaignId&&b.campaignId)return a.campaignId===b.campaignId;
+ const sameUrl=Boolean(a.url&&a.url===b.url);
+ const titleScore=identitySimilarity(a.title,b.title);
+ const prizeScore=a.prize&&b.prize?identitySimilarity(a.prize,b.prize):0;
+ const current=parseFlexibleDate(a.deadline),previous=parseFlexibleDate(b.deadline);
+ const sameDate=current&&previous&&current.getTime()===previous.getTime();
+ // Landing pages may contain several unrelated prizes. Never equate them on URL alone.
+ if(sameDate)return titleScore>=.58||prizeScore>=.72||(sameUrl&&isCampaignUrl(a.url));
+ // A corrected closing date does not create a new campaign. Monthly rounds stay separate.
+ const smallCorrection=current&&previous&&Math.abs(current-previous)<=7*86400000;
+ return Boolean(smallCorrection&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.9&&prizeScore>=.82);
 }
+function isCampaignUrl(value){
+ try{const u=new URL(value);return !/^\/?(?:gewinnspiele?|aktionen?|wettbewerbe?)?\/?$/i.test(u.pathname)}catch{return false}
+}
+
 function migrateContestStates(){
  let changed=false;
+ invalidateRoundReviewCache();
+ const history=typeof CONTEST_HISTORY==='undefined'?{}:CONTEST_HISTORY;
+ const currentById=new Map(contests.map(i=>[String(i.id),i]));
+ Object.entries(user.items||{}).forEach(([id,state])=>{
+  if(state&&!state._identity){
+   const original=history[id]||currentById.get(id);
+   if(original){state._identity=contestIdentity(original);changed=true}
+  }
+ });
+ // Reconcile existing blank records too: older renders created them before migration.
+ const marked=Object.entries(user.items||{}).filter(([,state])=>statusRecordStrength(state)>0||state?.problem);
+ contests.forEach(item=>{
+  let combined=user.items[item.id];
+  marked.forEach(([id,state])=>{
+   if(id!==String(item.id)&&state._identity&&sameContestOccurrence(item,state._identity)){
+    combined=mergeStatusRecord(combined,state);
+   }
+  });
+  if(combined&&JSON.stringify(combined)!==JSON.stringify(user.items[item.id])){
+   user.items[item.id]=combined;changed=true;
+  }
+ });
  const byUrl=new Map();
  contests.forEach(i=>{const key=normalizeUrl(i.url||'');if(key){if(!byUrl.has(key))byUrl.set(key,[]);byUrl.get(key).push(i)}});
  // Mehrfach verwendete Aktionsseiten sind keine eindeutige Identität. Alte URL-Zuordnungen
@@ -379,24 +417,6 @@ function migrateContestStates(){
  contests.forEach(i=>{
    const identity=contestIdentity(i),key=identity.url;
    let state=user.items[i.id];
-   if(!state){
-    // 1) Starke Migration über die zuletzt gespeicherte Identität.
-    const fp=identityFingerprint(identity);
-    const matches=orphanEntries.filter(([,candidate])=>identityFingerprint(candidate&&candidate._identity)===fp);
-    if(matches.length===1){state=JSON.parse(JSON.stringify(matches[0][1]));user.items[i.id]=state;changed=true}
-    // 2) Fehlertolerante Migration nur innerhalb exakt derselben Runde.
-    if(!state){
-     const fuzzy=orphanEntries.filter(([,candidate])=>candidate?._identity&&sameContestRound(i,candidate._identity));
-     if(fuzzy.length===1){state=JSON.parse(JSON.stringify(fuzzy[0][1]));user.items[i.id]=state;changed=true}
-    }
-    // 3) URL-Migration nur bei eindeutiger URL und identischer Runde. Eine neue
-    // Runde auf derselben Aktionsseite darf keinen alten Status erben.
-    if(!state&&key&&(byUrl.get(key)||[]).length===1){
-     const oldId=user.urlIndex[key];
-     const oldState=oldId&&user.items[oldId];
-     if(oldState&&oldState._identity&&sameContestRound(i,oldState._identity)){state=JSON.parse(JSON.stringify(oldState));user.items[i.id]=state;changed=true}
-    }
-   }
    if(state){
     const nextIdentity=identity;
     if(JSON.stringify(state._identity||null)!==JSON.stringify(nextIdentity)){state._identity=nextIdentity;changed=true}
@@ -426,12 +446,15 @@ function stateFor(id){
 }
 function participationFrequencyOf(i){
  const raw=String(i?.participationFrequency||'').trim().toLowerCase();
- const text=`${raw} ${String(i?.requirements||'').toLowerCase()} ${String(i?.note||'').toLowerCase()}`;
- if(i?.daily||/täglich|taeglich|jeden tag|daily/.test(text))return 'daily';
- if(/wöchentlich|woechentlich|jede woche|weekly/.test(text))return 'weekly';
- if(i?.multipleEntry||/mehrfach|mehrmals|multiple/.test(text))return 'multiple';
+ // Explicit catalogue frequency wins. Free-text negations and incidental words
+ // must not turn one-time contests into a new daily task.
+ if(/^(einmalig|einmal|once)$/.test(raw))return 'once';
+ if(i?.daily||/^(täglich|taeglich|daily)$/.test(raw))return 'daily';
+ if(/^(wöchentlich|woechentlich|weekly)$/.test(raw))return 'weekly';
+ if(i?.multipleEntry||/^(mehrfach möglich|mehrfach|multiple)$/.test(raw))return 'multiple';
  return 'once';
 }
+
 function isRepeatable(i){return participationFrequencyOf(i)!=='once'}
 function repeatLabel(i){
  const f=participationFrequencyOf(i);
@@ -445,23 +468,25 @@ function matchingParticipationStates(i){
  Object.entries(user.items||{}).forEach(([id,state])=>{
   if(!state)return;
   if(id===String(i.id)){matches.push(state);return}
-  if(state._identity&&sameContestOccurrence(i,state._identity))matches.push(state);
+  if((statusRecordStrength(state)>0||state.problem?.open)&&state._identity&&sameContestOccurrence(i,state._identity))matches.push(state);
  });
  participationMatchCache.set(key,matches);
  return matches;
 }
 function completedForCurrentPeriod(i){
  const s=stateFor(i.id),f=participationFrequencyOf(i);
- if(f==='daily')return participatedOn(i.id);
+ const states=matchingParticipationStates(i);
+ const dates=[...new Set(states.flatMap(x=>x.participationDates||[]))];
+ if(f==='daily')return dates.includes(dayKey());
  if(f==='weekly'){
   const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
-  return s.participationDates.some(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
+  return dates.some(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
  }
  // Without a specified interval, keep repeated entries out of today's open list.
- if(f==='multiple')return participatedOn(i.id);
+ if(f==='multiple')return dates.includes(dayKey());
  // One-time contests stay completed across catalogue/discovery duplicate IDs,
  // but a genuinely new round with a different deadline remains open.
- return matchingParticipationStates(i).some(state=>Boolean(state?.done));
+ return states.some(state=>Boolean(state?.done||state?.won||state?.participationDates?.length));
 }
 function participatedOn(id,date=dayKey()){
  const s=stateFor(id);return s.participationDates.includes(date)
@@ -610,14 +635,9 @@ function hasOpenProblem(i){
 }
 function hasProcessedOccurrence(i){
  if(!i||isRepeatable(i))return false;
- return Object.entries(user.items||{}).some(([id,state])=>{
-  if(!state)return false;
-  const processed=Boolean(state.done||state.ignored||state.problem?.open||state.won||state.resultStatus==='not_won'||state.resultStatus==='won');
-  if(!processed)return false;
-  if(id===String(i.id))return true;
-  return Boolean(state._identity&&sameContestOccurrence(i,state._identity));
- });
+ return matchingParticipationStates(i).some(state=>Boolean(state.done||state.participationDates?.length||state.ignored||state.problem?.open||state.won||state.resultStatus==='not_won'||state.resultStatus==='won'));
 }
+
 function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)||hasOpenProblem(i)||hasProcessedOccurrence(i)}
 function recordRoundDecision(id,decision){
  const i=contests.find(x=>x.id===id);if(!i||!['show','hide'].includes(decision))return;
@@ -694,6 +714,13 @@ function toggleDone(id){
    if(s.done){s.doneAt=new Date().toISOString();if(!s.participationDates.includes(today))s.participationDates.push(today);sessionStorage.setItem('winwin-done-session',String(Number(sessionStorage.getItem('winwin-done-session')||0)+1))}
    else{s.doneAt=null;s.participationDates=[]}
   }
+  s.doneChangedAt=Date.now();
+  Object.entries(user.items).forEach(([otherId,other])=>{
+   if(otherId!==String(id)&&sameContestOccurrence(item,other._identity)){
+    other.done=s.done;other.doneAt=s.doneAt;other.doneChangedAt=s.doneChangedAt;
+    other.participationDates=[...s.participationDates];
+   }
+  });
  },()=>isRepeatable(i)?(adding?'Heute als teilgenommen markiert':'Heutige Teilnahme entfernt'):(adding?'Als teilgenommen markiert':'Markierung entfernt'));
 }
 function restoreIgnored(id){
@@ -702,11 +729,11 @@ function restoreIgnored(id){
  const before=JSON.stringify(user),now=Date.now();
  const target=stateFor(id);target.ignored=false;target.ignoredChangedAt=now;
  Object.entries(user.items).forEach(([key,state])=>{
-  if(key===id||sameContestRound(item,state._identity)){
+  if(key===id||sameContestOccurrence(item,state._identity)){
    state.ignored=false;state.ignoredChangedAt=now;
   }
  });
- user.roundReviews=(user.roundReviews||[]).filter(entry=>!sameContestRound(item,entry.identity));
+ user.roundReviews=(user.roundReviews||[]).filter(entry=>!sameContestOccurrence(item,entry.identity));
  user.roundReviews.push({identity:contestIdentity(item),decision:'show',decidedAt:new Date().toISOString()});
  try{saveUser()}catch(error){user=JSON.parse(before);invalidateRoundReviewCache();toast('Speichern fehlgeschlagen');return}
  refreshAllViews('restore-ignored');renderManageMarks();toast('Markierung zurückgesetzt');
@@ -739,11 +766,18 @@ function saveProblem(){
  $('#problemDialog').close();refreshAllViews('problem');toast('Problem vorgemerkt – Gewinnspiel ausgeblendet');
 }
 function clearProblem(id){
- const problem=user.items[id]?.problem;if(!problem)return;
- const before=JSON.stringify(problem);problem.open=false;problem.changedAt=Date.now();
- try{saveUser()}catch(error){user.items[id].problem=JSON.parse(before);toast('Speichern fehlgeschlagen');return}
+ const item=contests.find(i=>i.id===id)||user.items[id]?._identity;
+ if(!item)return;
+ const before=JSON.stringify(user),now=Date.now();
+ Object.entries(user.items).forEach(([key,state])=>{
+  if(state.problem&&(key===String(id)||sameContestOccurrence(item,state._identity))){
+   state.problem.open=false;state.problem.changedAt=now;
+  }
+ });
+ try{saveUser()}catch(error){user=JSON.parse(before);invalidateRoundReviewCache();toast('Speichern fehlgeschlagen');return}
  refreshAllViews('problem');renderManageMarks();toast('Problem bereinigt – Gewinnspiel wieder sichtbar');
 }
+
 function closeDialog(id){
  const dialog=typeof id==='string' ? $(id.startsWith('#')?id:`#${id}`) : id;
  if(!dialog)return;
@@ -1449,8 +1483,8 @@ function renderAll(){renderView()}
 function openView(id){
  if(id==='homeView'||id==='todayView')id='discoverView';
  const navId=['statsView','dataView','statusView'].includes(id)?'moreView':id;
- $('.view').forEach(v=>v.classList.toggle('active',v.id===id));
- $('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
+ $$('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+ $$('.nav-item').forEach(n=>{const selected=n.dataset.view===navId;n.classList.toggle('active',selected);if(selected)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')});
  renderView(id);
  window.scrollTo({top:0,behavior:'auto'});
 }
@@ -1483,8 +1517,19 @@ function endingSoon(i){
 
 
 function normalizeUrl(value=''){
- try{const u=new URL(value,location.href);u.hash='';['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid'].forEach(k=>u.searchParams.delete(k));return u.href.replace(/\/$/,'').toLowerCase()}catch{return String(value).trim().replace(/\/$/,'').toLowerCase()}
+ try{
+  const u=new URL(value,location.href);u.hash='';u.protocol='https:';u.hostname=u.hostname.toLowerCase().replace(/^www\./,'');
+  [...u.searchParams.keys()].forEach(k=>{if(/^utm_|^(fbclid|gclid|msclkid|mc_cid|mc_eid)$/i.test(k))u.searchParams.delete(k)});
+  u.searchParams.sort();u.pathname=u.pathname.replace(/\/+$/,'')||'/';
+  // FUNKE exposes one draw through different magazine skins and URL types.
+  if(u.hostname==='funke.fun'){
+   const match=u.pathname.match(/\/(?:spiel|detail)-(\d+)$/);
+   if(match)u.pathname='/gewinnspiele/spiel-'+match[1];
+  }
+  return u.href.replace(/\/$/,'');
+ }catch{return String(value).trim().replace(/\/$/,'')}
 }
+
 function makeContestId(i){
  const raw=`${i.provider||'anbieter'}-${i.title||'gewinnspiel'}`.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
  return raw.slice(0,80)||`import-${Date.now()}`
@@ -1555,8 +1600,7 @@ function mergeCatalog(base,extra){
    // Der veröffentlichte Basiskatalog darf mehrere eigenständige Gewinne mit
    // derselben Aktionsseite enthalten. Nur lokale/importierte Datensätze werden
    // zusätzlich anhand URL und Fingerabdruck auf Dubletten geprüft.
-   if(isImport&&pos===undefined)pos=byUrl.get(urlKey);
-   if(isImport&&pos===undefined)pos=byFingerprint.get(fp);
+   if(isImport&&pos===undefined){const match=out.findIndex(existing=>sameContestOccurrence(existing,i));if(match>=0)pos=match}
    if(pos!==undefined){
      if(isImport){
        const stableId=out[pos].id;
@@ -2387,6 +2431,7 @@ async function loadData(silent=false){
    const merged=mergeCatalog(baseContests,customContests);contests=merged.contests;
    dataVersionGlobal=dataVersion;
  }
+ invalidateRoundReviewCache();
  try{migrateContestStates()}catch(e){console.warn('Win Win: Statusmigration fehlgeschlagen',e)}
  initializeCatalogueSeen();
  initializePreferences();

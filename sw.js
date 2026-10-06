@@ -1,9 +1,10 @@
-const CACHE='win-win-8.10.6';
+const CACHE='win-win-8.10.8';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.10.6',
- './app.js?v=8.10.6',
+ './styles.css?v=8.10.8',
+ './app.js?v=8.10.8',
+ './contest-history.js?v=8.10.8',
  './manifest.webmanifest',
  './version.json',
  './logo-winwin.svg',
@@ -39,7 +40,7 @@ self.addEventListener('message',event=>{
 self.addEventListener('activate',event=>{
  event.waitUntil((async()=>{
   const keys=await caches.keys();
-  await Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)));
+  await Promise.all(keys.filter(key=>key.startsWith('win-win-')&&key!==CACHE).map(key=>caches.delete(key)));
   await self.clients.claim();
  })());
 });
