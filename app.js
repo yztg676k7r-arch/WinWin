@@ -445,7 +445,7 @@ function matchingParticipationStates(i){
  Object.entries(user.items||{}).forEach(([id,state])=>{
   if(!state)return;
   if(id===String(i.id)){matches.push(state);return}
-  if(state._identity&&sameContestRound(i,state._identity))matches.push(state);
+  if(state._identity&&sameContestOccurrence(i,state._identity))matches.push(state);
  });
  participationMatchCache.set(key,matches);
  return matches;
@@ -601,9 +601,13 @@ function isContestIgnored(i){
  if(!i)return false;
  if(Boolean(user.items?.[i.id]?.ignored))return true;
  const decision=roundDecisionFor(i);if(decision?.decision==='hide')return true;
- return ignoredRoundHistory().some(entry=>entry.id!==i.id&&sameContestRound(i,entry.identity));
+ return ignoredRoundHistory().some(entry=>entry.id!==i.id&&sameContestOccurrence(i,entry.identity));
 }
-function hasOpenProblem(i){return Boolean(i&&user.items?.[i.id]?.problem?.open)}
+function hasOpenProblem(i){
+ if(!i)return false;
+ if(Boolean(user.items?.[i.id]?.problem?.open))return true;
+ return Object.entries(user.items||{}).some(([id,state])=>id!==String(i.id)&&Boolean(state?.problem?.open)&&state?._identity&&sameContestOccurrence(i,state._identity));
+}
 function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)||hasOpenProblem(i)}
 function recordRoundDecision(id,decision){
  const i=contests.find(x=>x.id===id);if(!i||!['show','hide'].includes(decision))return;
