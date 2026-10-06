@@ -1,9 +1,9 @@
-const CACHE='win-win-8.10.4';
+const CACHE='win-win-8.10.5';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.10.4',
- './app.js?v=8.10.4',
+ './styles.css?v=8.10.5',
+ './app.js?v=8.10.5',
  './manifest.webmanifest',
  './version.json',
  './logo-winwin.svg',
