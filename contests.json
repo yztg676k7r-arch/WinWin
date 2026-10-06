@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-05",
-  "activeCountAtRelease": 370,
+  "updated": "2026-10-06",
+  "activeCountAtRelease": 360,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -88,7 +88,7 @@
     },
     {
       "addedAt": "08.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Auto & Reisen",
       "chanceScore": 80,
       "country": "Deutschland",
@@ -5602,7 +5602,7 @@
     },
     {
       "addedAt": "06.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Tickets & Events",
       "chanceScore": 72,
       "country": "Deutschland",
@@ -7124,7 +7124,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Regional & Mobilität",
       "chanceScore": 75,
       "country": "Deutschland",
@@ -8228,7 +8228,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 70,
       "country": "Deutschland",
       "daily": false,
@@ -9635,7 +9635,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Familie & Wellness",
       "chanceScore": 64,
       "country": "Deutschland",
@@ -14399,7 +14399,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Lifestyle",
       "chanceScore": 48,
       "country": "Deutschland",
@@ -14479,7 +14479,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Sport & Mobilität",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -14519,7 +14519,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Haushalt",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -15040,7 +15040,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Sport & Outdoor",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -15560,7 +15560,7 @@
       "shortDescription": "2 Tickets für das Konzert von Deep Purple am 05.10.2026 in der Wiener Stadthalle, Halle D",
       "dataCompleteness": 90,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -17969,20 +17969,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-05T13:05:51+02:00",
-    "checkedSources": 68,
-    "candidatePages": 1009,
+    "lastRun": "2026-10-06T12:59:14+02:00",
+    "checkedSources": 83,
+    "candidatePages": 845,
     "published": 0,
-    "review": 767,
-    "rejected": 51,
-    "expiredArchived": 4
+    "review": 724,
+    "rejected": 18,
+    "expiredArchived": 10
   },
   "secondPass": {
-    "lastRun": "2026-10-05T13:08:24+02:00",
+    "lastRun": "2026-10-06T13:01:52+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 4524,
-    "rejected": 1,
+    "keptForReview": 4656,
+    "rejected": 13,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
