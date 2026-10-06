@@ -608,7 +608,17 @@ function hasOpenProblem(i){
  if(Boolean(user.items?.[i.id]?.problem?.open))return true;
  return Object.entries(user.items||{}).some(([id,state])=>id!==String(i.id)&&Boolean(state?.problem?.open)&&state?._identity&&sameContestOccurrence(i,state._identity));
 }
-function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)||hasOpenProblem(i)}
+function hasProcessedOccurrence(i){
+ if(!i||isRepeatable(i))return false;
+ return Object.entries(user.items||{}).some(([id,state])=>{
+  if(!state)return false;
+  const processed=Boolean(state.done||state.ignored||state.problem?.open||state.won||state.resultStatus==='not_won'||state.resultStatus==='won');
+  if(!processed)return false;
+  if(id===String(i.id))return true;
+  return Boolean(state._identity&&sameContestOccurrence(i,state._identity));
+ });
+}
+function isContestSuppressed(i){return isContestIgnored(i)||isRoundReviewPending(i)||hasOpenProblem(i)||hasProcessedOccurrence(i)}
 function recordRoundDecision(id,decision){
  const i=contests.find(x=>x.id===id);if(!i||!['show','hide'].includes(decision))return;
  const identity=contestIdentity(i);
