@@ -355,6 +355,17 @@ function sameContestRound(contest,storedIdentity){
  const current=String(contest?.deadline||''),previous=String(storedIdentity?.deadline||'');
  return Boolean(current&&previous&&current===previous);
 }
+function sameContestOccurrence(contest,storedIdentity){
+ if(!sameContestFamily(contest,storedIdentity))return false;
+ const a=contestIdentity(contest),b=storedIdentity||{};
+ const current=String(a?.deadline||''),previous=String(b.deadline||'');
+ if(current&&previous&&current===previous)return true;
+ const sameUrl=Boolean(a?.url&&b.url&&a.url===normalizeUrl(b.url));
+ const titleScore=identitySimilarity(a?.title||'',b.title||'');
+ const prizeScore=a?.prize&&b.prize?identitySimilarity(a.prize,b.prize):0;
+ if(sameUrl&&titleScore>=.78)return true;
+ return titleScore>=.9&&prizeScore>=.82;
+}
 function migrateContestStates(){
  let changed=false;
  const byUrl=new Map();
