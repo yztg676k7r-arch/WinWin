@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-06",
-  "activeCountAtRelease": 366,
+  "updated": "2026-10-07",
+  "activeCountAtRelease": 359,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -4863,7 +4863,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -4949,7 +4949,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -17564,20 +17564,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-06T12:59:14+02:00",
-    "checkedSources": 83,
-    "candidatePages": 845,
+    "lastRun": "2026-10-07T12:49:54+02:00",
+    "checkedSources": 98,
+    "candidatePages": 1017,
     "published": 0,
-    "review": 724,
-    "rejected": 18,
-    "expiredArchived": 10
+    "review": 713,
+    "rejected": 43,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-10-06T13:01:52+02:00",
+    "lastRun": "2026-10-07T12:52:52+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 4656,
-    "rejected": 13,
+    "keptForReview": 5022,
+    "rejected": 0,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
