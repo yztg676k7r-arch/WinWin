@@ -3,7 +3,7 @@ const source=fs.readFileSync('app.js','utf8');
 function fn(name){const a=source.indexOf('function '+name+'('),b=source.indexOf('\nfunction ',a+10);assert(a>=0,name);return source.slice(a,b)}
 const c={console,URL,Date,JSON,Map,Set,Number,Boolean,String,Array,Math,location:{href:'https://example.test/WinWin/'},user:{items:{},urlIndex:{},roundReviews:[]},contests:[],participationMatchCache:new Map(),roundDecisionCache:new Map(),previousIgnoredRoundCache:new Map(),saveUser(){c.invalidateRoundReviewCache()},USER_SCHEMA_VERSION:6,dayKey:(v)=>new Date(v||Date.now()).toISOString().slice(0,10)};
 vm.createContext(c);
-for(const name of ['normalizeText','normalizeUrl','normalizeUser','mergeStatusRecord','statusRecordStrength','contestIdentity','identityTokens','identitySimilarity','sameContestFamily','sameContestRound','sameContestOccurrence','isCampaignUrl','parseDate','parseFlexibleDate','identityFingerprint','invalidateRoundReviewCache','migrateContestStates','stateFor','roundReviewCacheKey','matchingParticipationStates','participationFrequencyOf','completedForCurrentPeriod','participatedOn','isRepeatable'])vm.runInContext(fn(name),c);
+for(const name of ['normalizeText','normalizeUrl','normalizeUser','mergeStatusRecord','statusRecordStrength','contestIdentity','identityTokens','identitySimilarity','sameContestFamily','sameContestRound','sameContestOccurrence','isCampaignUrl','parseDate','parseFlexibleDate','identityFingerprint','invalidateRoundReviewCache','migrateContestStates','stateFor','roundReviewCacheKey','matchingParticipationStates','participationFrequencyOf','participationPeriodKey','completedForCurrentPeriod','participatedOn','isRepeatable'])vm.runInContext(fn(name),c);
 const base={id:'old',title:'Garmin Vivoactive Smartwatch gewinnen',prize:'Garmin Vivoactive 6',provider:'FUNKE / TV direkt',url:'https://www.funke.fun/gewinnspiele/tvdirekt/detail-353?utm_source=test',deadline:'31.10.2026',participationFrequency:'einmalig'};
 const dup={...base,id:'new',provider:'FUNKE FUN',url:'https://funke.fun/gewinnspiele/spiel-353'};
 assert.equal(c.sameContestOccurrence(dup,base),true,'publisher and magazine URL variants');
@@ -19,3 +19,19 @@ assert.notEqual(c.normalizeUrl('https://example.com/?id=1'),c.normalizeUrl('http
 c.user.items={old:{done:true,participationDates:[c.dayKey()],_identity:c.contestIdentity(base)}};c.invalidateRoundReviewCache();assert.equal(c.completedForCurrentPeriod({...dup,participationFrequency:'täglich'}),true,'repeat status shared today');
 const m=c.mergeStatusRecord({done:false,doneChangedAt:20,participationDates:[]},{done:true,doneChangedAt:10,participationDates:['2026-10-05']});assert.equal(m.done,false);assert.equal(m.participationDates.length,0,'undo is not resurrected by archive');
 console.log('PASS duplicate migration, historical IDs, frequency, round boundaries, query identity, repeat status, undo');
+
+
+// A multiple-entry flag is not evidence of a daily reset.
+const yesterday=new Date();yesterday.setDate(yesterday.getDate()-1);
+const monthly={...dup,participationFrequency:'monatlich',multipleEntry:true};
+assert.equal(c.participationFrequencyOf(monthly),'monthly');
+for(const frequency of ['once','multiple']){
+ c.user.items={new:{done:true,participationDates:[c.dayKey(yesterday)]}};c.invalidateRoundReviewCache();
+ assert(c.completedForCurrentPeriod({...dup,participationFrequency:frequency}),'completed '+frequency+' remains completed tomorrow');
+}
+assert.equal(c.participationPeriodKey('2026-10-01','monthly'),c.participationPeriodKey('2026-10-31','monthly'));
+assert.notEqual(c.participationPeriodKey('2026-10-31','monthly'),c.participationPeriodKey('2026-11-01','monthly'));
+assert.equal(c.participationPeriodKey('2026-10-01','quarterly'),c.participationPeriodKey('2026-12-31','quarterly'));
+c.user.items={new:{done:true}};c.invalidateRoundReviewCache();assert(c.completedForCurrentPeriod({...dup,participationFrequency:'täglich'}),'undated legacy completion retained');
+c.user.items={new:{done:true,participationDates:[c.dayKey(yesterday)]}};c.invalidateRoundReviewCache();assert.equal(c.completedForCurrentPeriod({...dup,participationFrequency:'täglich'}),false,'explicit daily interval remains supported');
+console.log('PASS multiple-entry persistence, monthly/quarterly boundaries, legacy flags and daily reset');

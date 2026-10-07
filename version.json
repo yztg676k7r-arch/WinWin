@@ -1,8 +1,8 @@
 {
-  "version": "8.10.8",
+  "version": "8.10.9",
   "catalogVersion": "8.10.8",
-  "released": "2026-10-06",
-  "name": "Dublettenstatus und historische Teilnahmen",
+  "released": "2026-10-07",
+  "name": "Teilnahmestatus und Wiederholungsintervalle",
   "catalogCount": 431,
   "activeCount": 366
 }

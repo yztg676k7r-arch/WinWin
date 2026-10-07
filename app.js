@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.10.8';
+const APP_VERSION='8.10.9';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -451,6 +451,8 @@ function participationFrequencyOf(i){
  if(/^(einmalig|einmal|once)$/.test(raw))return 'once';
  if(i?.daily||/^(täglich|taeglich|daily)$/.test(raw))return 'daily';
  if(/^(wöchentlich|woechentlich|weekly)$/.test(raw))return 'weekly';
+ if(/^(monatlich|monthly)$/.test(raw))return 'monthly';
+ if(/^(quartalsweise|vierteljährlich|quarterly)$/.test(raw))return 'quarterly';
  if(i?.multipleEntry||/^(mehrfach möglich|mehrfach|multiple)$/.test(raw))return 'multiple';
  return 'once';
 }
@@ -458,7 +460,7 @@ function participationFrequencyOf(i){
 function isRepeatable(i){return participationFrequencyOf(i)!=='once'}
 function repeatLabel(i){
  const f=participationFrequencyOf(i);
- return f==='daily'?'Täglich möglich':f==='weekly'?'Wöchentlich möglich':f==='multiple'?'Mehrfach möglich':'Einmalig';
+ return f==='daily'?'Täglich möglich':f==='weekly'?'Wöchentlich möglich':f==='monthly'?'Monatlich möglich':f==='quarterly'?'Quartalsweise möglich':f==='multiple'?'Mehrfach möglich':'Einmalig';
 }
 function matchingParticipationStates(i){
  if(!i)return [];
@@ -473,20 +475,30 @@ function matchingParticipationStates(i){
  participationMatchCache.set(key,matches);
  return matches;
 }
+function participationPeriodKey(date,frequency){
+ const d=new Date(date+'T12:00:00');
+ if(Number.isNaN(d.getTime()))return '';
+ if(frequency==='weekly')d.setDate(d.getDate()-(d.getDay()+6)%7);
+ if(frequency==='monthly')return `${d.getFullYear()}-${d.getMonth()}`;
+ if(frequency==='quarterly')return `${d.getFullYear()}-${Math.floor(d.getMonth()/3)}`;
+ return dayKey(d);
+}
 function completedForCurrentPeriod(i){
- const s=stateFor(i.id),f=participationFrequencyOf(i);
- const states=matchingParticipationStates(i);
- const dates=[...new Set(states.flatMap(x=>x.participationDates||[]))];
- if(f==='daily')return dates.includes(dayKey());
- if(f==='weekly'){
-  const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
-  return dates.some(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
+ stateFor(i.id);
+ const f=participationFrequencyOf(i),states=matchingParticipationStates(i);
+ if(states.some(state=>state.won))return true;
+ if(['daily','weekly','monthly','quarterly'].includes(f)){
+  const period=participationPeriodKey(dayKey(),f);
+  return states.some(state=>{
+   const dates=[...(state.participationDates||[])];
+   if(state.doneAt)dates.push(dayKey(state.doneAt));
+   // An old completed flag without a date must not silently become an open task.
+   if(state.done&&!dates.some(date=>participationPeriodKey(date,f)))return true;
+   return dates.some(date=>participationPeriodKey(date,f)===period);
+  });
  }
- // Without a specified interval, keep repeated entries out of today's open list.
- if(f==='multiple')return dates.includes(dayKey());
- // One-time contests stay completed across catalogue/discovery duplicate IDs,
- // but a genuinely new round with a different deadline remains open.
- return states.some(state=>Boolean(state?.done||state?.won||state?.participationDates?.length));
+ // Multiple entries alone provide no reset interval. Keep the saved completion.
+ return states.some(state=>Boolean(state.done||state.participationDates?.length));
 }
 function participatedOn(id,date=dayKey()){
  const s=stateFor(id);return s.participationDates.includes(date)
@@ -699,12 +711,12 @@ function toggleDone(id){
  const i=contests.find(x=>x.id===id);if(!i)return;
  const today=dayKey();let adding=false;
  commitStatusChange(id,(s,item)=>{
-  if(isRepeatable(item)){
+  if(isRepeatable(item)&&participationFrequencyOf(item)!=='multiple'){
    const freq=participationFrequencyOf(item);
    let idx=s.participationDates.indexOf(today);
-   if(freq==='weekly'&&completedForCurrentPeriod(item)){
-    const now=new Date(),day=(now.getDay()+6)%7,start=new Date(now);start.setHours(0,0,0,0);start.setDate(now.getDate()-day);
-    idx=s.participationDates.findLastIndex(k=>{const d=new Date(k+'T12:00:00');return !Number.isNaN(d.getTime())&&d>=start});
+   if(['weekly','monthly','quarterly'].includes(freq)){
+    const period=participationPeriodKey(today,freq);
+    idx=s.participationDates.findLastIndex(k=>participationPeriodKey(k,freq)===period);
    }
    adding=idx<0;
    if(adding){if(!s.participationDates.includes(today))s.participationDates.push(today);s.participationDates.sort();s.done=true;s.doneAt=new Date().toISOString();adjustPreferenceForContest(id,3);sessionStorage.setItem('winwin-done-session',String(Number(sessionStorage.getItem('winwin-done-session')||0)+1))}
@@ -2537,3 +2549,4 @@ Promise.allSettled([loadSources(),loadData()]).then(async results=>{
  if(text)text.textContent='Startfehler – Navigation bleibt verfügbar';
 });
 setInterval(()=>loadData(true),30*60*1000);
+

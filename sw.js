@@ -1,10 +1,10 @@
-const CACHE='win-win-8.10.8';
+const CACHE='win-win-8.10.9';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.10.8',
- './app.js?v=8.10.8',
- './contest-history.js?v=8.10.8',
+ './styles.css?v=8.10.9',
+ './app.js?v=8.10.9',
+ './contest-history.js?v=8.10.9',
  './manifest.webmanifest',
  './version.json',
  './logo-winwin.svg',
@@ -126,3 +126,4 @@ self.addEventListener('fetch',event=>{
   }
  })());
 });
+
