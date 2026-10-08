@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-07",
-  "activeCountAtRelease": 359,
+  "updated": "2026-10-08",
+  "activeCountAtRelease": 351,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -4734,7 +4734,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -4820,7 +4820,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 62,
       "country": "Deutschland",
@@ -6374,7 +6374,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 72,
       "country": "Deutschland",
       "daily": false,
@@ -7970,7 +7970,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 66,
       "country": "Deutschland",
       "daily": false,
@@ -12907,7 +12907,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Regional",
       "chanceScore": 64,
       "country": "Deutschland",
@@ -13692,7 +13692,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Garten & Heimwerken",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -13972,7 +13972,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Haushalt",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -14575,7 +14575,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Events & Regional",
       "chanceScore": 65,
       "country": "Deutschland",
@@ -17564,20 +17564,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-07T12:49:54+02:00",
-    "checkedSources": 98,
-    "candidatePages": 1017,
+    "lastRun": "2026-10-08T13:10:50+02:00",
+    "checkedSources": 57,
+    "candidatePages": 766,
     "published": 0,
-    "review": 713,
-    "rejected": 43,
-    "expiredArchived": 2
+    "review": 608,
+    "rejected": 35,
+    "expiredArchived": 8
   },
   "secondPass": {
-    "lastRun": "2026-10-07T12:52:52+02:00",
+    "lastRun": "2026-10-08T13:13:53+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 5022,
-    "rejected": 0,
+    "keptForReview": 5235,
+    "rejected": 2,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
