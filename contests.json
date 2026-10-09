@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-08",
-  "activeCountAtRelease": 351,
+  "updated": "2026-10-09",
+  "activeCountAtRelease": 347,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -12615,7 +12615,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Regional",
       "chanceScore": 78,
       "country": "Deutschland",
@@ -16375,7 +16375,7 @@
       "shortDescription": "SKS Standpumpe im 1966er Stil",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -16773,20 +16773,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-08T13:10:50+02:00",
-    "checkedSources": 57,
-    "candidatePages": 766,
+    "lastRun": "2026-10-09T13:09:31+02:00",
+    "checkedSources": 74,
+    "candidatePages": 694,
     "published": 0,
-    "review": 608,
-    "rejected": 35,
-    "expiredArchived": 8
+    "review": 579,
+    "rejected": 32,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-10-08T13:13:53+02:00",
+    "lastRun": "2026-10-09T13:13:02+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 5235,
-    "rejected": 2,
+    "keptForReview": 5358,
+    "rejected": 14,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
