@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-09",
-  "activeCountAtRelease": 347,
+  "updated": "2026-10-10",
+  "activeCountAtRelease": 334,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -5494,7 +5494,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 62,
       "country": "Deutschland",
       "daily": false,
@@ -5907,7 +5907,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 52,
       "country": "Deutschland",
       "daily": false,
@@ -7216,7 +7216,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 78,
       "country": "Deutschland",
       "daily": false,
@@ -7257,7 +7257,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 66,
       "country": "Deutschland",
       "daily": false,
@@ -7298,7 +7298,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 66,
       "country": "Deutschland",
       "daily": false,
@@ -7339,7 +7339,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 74,
       "country": "Deutschland",
       "daily": false,
@@ -7380,7 +7380,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 80,
       "country": "Deutschland",
       "daily": false,
@@ -7626,7 +7626,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 66,
       "country": "Deutschland",
       "daily": false,
@@ -9459,7 +9459,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Hotels",
       "chanceScore": 57,
       "country": "Deutschland",
@@ -10335,7 +10335,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Musik",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -10376,7 +10376,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Musik",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -14146,7 +14146,7 @@
       "shortDescription": "Tickets für Duality (88.6 Metal-Event), U4 Wien, 09.10.2026",
       "dataCompleteness": 90,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -14190,7 +14190,7 @@
       "shortDescription": "8x SwitchBot Lock Ultra Vision Pro Combo Set · 2x ECOVACS DEEBOT X12S OmniCyclone · 2x Teufel ROCKSTER 2 · 7x Ryobi Akku-Schlagbohrschrauber RPD18X1-2C52S im Set mit zwei Akkus · 5x COSORI Turbo Tower Compact 8,6 Liter",
       "dataCompleteness": 94,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -16773,20 +16773,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-09T13:09:31+02:00",
-    "checkedSources": 74,
-    "candidatePages": 694,
+    "lastRun": "2026-10-10T12:24:02+02:00",
+    "checkedSources": 52,
+    "candidatePages": 714,
     "published": 0,
-    "review": 579,
-    "rejected": 32,
-    "expiredArchived": 2
+    "review": 565,
+    "rejected": 12,
+    "expiredArchived": 13
   },
   "secondPass": {
-    "lastRun": "2026-10-09T13:13:02+02:00",
+    "lastRun": "2026-10-10T12:26:58+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 5358,
-    "rejected": 14,
+    "keptForReview": 5504,
+    "rejected": 0,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
