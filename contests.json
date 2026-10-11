@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-10",
-  "activeCountAtRelease": 334,
+  "updated": "2026-10-11",
+  "activeCountAtRelease": 330,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -8451,7 +8451,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Kino",
       "chanceScore": 69,
       "country": "Deutschland",
@@ -8577,7 +8577,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Haushalt",
       "chanceScore": 67,
       "country": "Deutschland",
@@ -13703,7 +13703,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Filme",
       "chanceScore": 47,
       "country": "Deutschland",
@@ -15773,7 +15773,7 @@
       "shortDescription": "HAPPYSOY Adventskalender mit 24 Sojawachskerzen",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -16773,19 +16773,19 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-10T12:24:02+02:00",
-    "checkedSources": 52,
-    "candidatePages": 714,
+    "lastRun": "2026-10-11T12:34:34+02:00",
+    "checkedSources": 75,
+    "candidatePages": 985,
     "published": 0,
-    "review": 565,
-    "rejected": 12,
-    "expiredArchived": 13
+    "review": 691,
+    "rejected": 70,
+    "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-10-10T12:26:58+02:00",
+    "lastRun": "2026-10-11T12:37:56+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 5504,
+    "keptForReview": 5679,
     "rejected": 0,
     "autoHiddenForReview": 0
   },
