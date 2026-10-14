@@ -1378,6 +1378,12 @@ function renderDiscover(){
  let detail=document.getElementById('winwinStatusOrigins');
  if(!detail){detail=document.createElement('p');detail.id='winwinStatusOrigins';detail.style.cssText='font-size:12px;line-height:1.5;color:#60716c;margin:6px 0';diagnosticEl.insertAdjacentElement('afterend',detail)}
  detail.textContent=`Statusherkunft: Teilnahmen ${direct.done} direkt / ${inherited.done} übertragen · Ausgeblendet ${direct.ignored} direkt / ${inherited.ignored} übertragen · Probleme ${direct.problem} direkt / ${inherited.problem} übertragen`;
+ // Review suspected mixed statuses individually. This view never modifies local data.
+ let review=document.getElementById('winwinStatusReview');
+ if(!review){review=document.createElement('details');review.id='winwinStatusReview';review.style.cssText='font-size:13px;margin:10px 0;padding:10px;border:1px solid #ccd5d0;border-radius:12px';detail.insertAdjacentElement('afterend',review)}
+ const suspects=totalActive.filter(i=>{const st=user.items?.[i.id];return Boolean(st?.ignored&&(st.done||st.participationDates?.length||st.won||st.resultStatus==='not_won'))});
+ const reviewRows=suspects.slice(0,40).map(i=>{const st=user.items[i.id];return '<li style="margin:8px 0"><strong>'+esc(i.provider)+' — '+esc(i.title)+'</strong><div>Teilnahmen: '+(st.participationDates?.length||Number(Boolean(st.done)))+' · ausgeblendet: ja · letzter Status: '+esc(st.ignoredChangedAt?new Date(st.ignoredChangedAt).toLocaleDateString('de-DE'):'unbekannt')+'</div></li>'}).join('');
+ review.innerHTML='<summary style="cursor:pointer;font-weight:650">Statusprüfung: '+suspects.length+' gleichzeitig bearbeitet und ausgeblendet</summary><p>Nur zur Kontrolle – keine Markierungen werden verändert. Diese Einträge können bewusst doppelt markiert sein.</p><ol style="padding-left:20px">'+reviewRows+'</ol>'+(suspects.length>40?'<p>Es werden zunächst 40 Beispiele angezeigt.</p>':'');
  $('#contestList').innerHTML=l.length?l.slice(0,discoverRenderLimit).map(full).join(''):empty('Keine passenden offenen Gewinnspiele. Wähle „Offen“, um Suche und Filter zurückzusetzen.');
  const more=$('#loadMoreContests');if(more){more.hidden=shown>=l.length;more.textContent=`Weitere anzeigen (${l.length-shown})`;}
  renderCategoryQuickFilters();
