@@ -1363,6 +1363,21 @@ function renderDiscover(){
  let diagnosticEl=document.getElementById('winwinOpenDiagnostic');
  if(!diagnosticEl){diagnosticEl=document.createElement('p');diagnosticEl.id='winwinOpenDiagnostic';diagnosticEl.style.cssText='font-size:12px;line-height:1.5;color:#60716c;margin:8px 0';$('#resultCount').parentElement?.insertAdjacentElement('afterend',diagnosticEl)}
  diagnosticEl.textContent=diagnosticText;
+ // Compare direct user flags with inherited matching; do not mutate any saved record.
+ const direct={done:0,ignored:0,problem:0},inherited={done:0,ignored:0,problem:0};
+ totalActive.forEach(i=>{
+  const st=user.items?.[i.id];
+  const ownDone=Boolean(st?.done||st?.participationDates?.length||st?.won||st?.resultStatus==='not_won'||st?.resultStatus==='won');
+  if(ownDone)direct.done++;
+  else if(hasProcessedOccurrence(i))inherited.done++;
+  if(st?.ignored)direct.ignored++;
+  else if(isContestIgnored(i))inherited.ignored++;
+  if(st?.problem?.open)direct.problem++;
+  else if(hasOpenProblem(i))inherited.problem++;
+ });
+ let detail=document.getElementById('winwinStatusOrigins');
+ if(!detail){detail=document.createElement('p');detail.id='winwinStatusOrigins';detail.style.cssText='font-size:12px;line-height:1.5;color:#60716c;margin:6px 0';diagnosticEl.insertAdjacentElement('afterend',detail)}
+ detail.textContent=`Statusherkunft: Teilnahmen ${direct.done} direkt / ${inherited.done} übertragen · Ausgeblendet ${direct.ignored} direkt / ${inherited.ignored} übertragen · Probleme ${direct.problem} direkt / ${inherited.problem} übertragen`;
  $('#contestList').innerHTML=l.length?l.slice(0,discoverRenderLimit).map(full).join(''):empty('Keine passenden offenen Gewinnspiele. Wähle „Offen“, um Suche und Filter zurückzusetzen.');
  const more=$('#loadMoreContests');if(more){more.hidden=shown>=l.length;more.textContent=`Weitere anzeigen (${l.length-shown})`;}
  renderCategoryQuickFilters();
