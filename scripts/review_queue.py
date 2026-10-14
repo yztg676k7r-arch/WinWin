@@ -103,7 +103,7 @@ def main():
  promoted=[]; kept=[]; rejected=[]; checked=0
  pending=rd.get('items',[])
  # Prioritize never-reviewed candidates; preserve every queued item.
- pending.sort(key=lambda item: int(item.get('reviewAttempts') or 0))
+ pending.sort(key=lambda item: (item.get('reason') != 'first-pass-passed', int(item.get('reviewAttempts') or 0)))
  for index, old in enumerate(pending):
   if checked>=MAX_REVIEW or time.monotonic()>=STOP_AT or len(promoted)>=MAX_NEW:
    kept.extend(pending[index:]); break
