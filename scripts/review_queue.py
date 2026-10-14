@@ -102,6 +102,8 @@ def main():
  cd=load(CF); sd=load(SF); rd=load(RF) if RF.exists() else {'items':[]}; contests=cd['contests']; sources=sd['sources']; sm={s.get('id'):s for s in sources}; urls={canon(c.get('url','')) for c in contests if c.get('url')}; ids={str(c.get('id')) for c in contests}
  promoted=[]; kept=[]; rejected=[]; checked=0
  pending=rd.get('items',[])
+ # Prioritize never-reviewed candidates; preserve every queued item.
+ pending.sort(key=lambda item: int(item.get('reviewAttempts') or 0))
  for index, old in enumerate(pending):
   if checked>=MAX_REVIEW or time.monotonic()>=STOP_AT or len(promoted)>=MAX_NEW:
    kept.extend(pending[index:]); break
