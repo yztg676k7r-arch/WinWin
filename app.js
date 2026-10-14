@@ -376,7 +376,13 @@ function sameContestOccurrence(contest,storedIdentity){
  if(sameDate)return titleScore>=.58||prizeScore>=.72||(sameUrl&&isCampaignUrl(a.url));
  // A corrected closing date does not create a new campaign. Monthly rounds stay separate.
  const smallCorrection=current&&previous&&Math.abs(current-previous)<=7*86400000;
- return Boolean(smallCorrection&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.9&&prizeScore>=.82);
+ if(smallCorrection&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.9&&prizeScore>=.82)return true;
+ // A changed ID and a moderately corrected deadline must not resurrect an already
+ // processed one-time draw. Require an identical campaign page and near-identical
+ // title AND prize; do not bridge a monthly or other recurring campaign.
+ const extendedCorrection=current&&previous&&Math.abs(current-previous)<=21*86400000;
+ const recurring=/monat|monthly|wöchent|weekly|täglich|daily|runde|ausgabe/i.test(`${a.title} ${b.title}`);
+ return Boolean(extendedCorrection&&!recurring&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.95&&prizeScore>=.95);
 }
 function isCampaignUrl(value){
  try{const u=new URL(value);return !/^\/?(?:gewinnspiele?|aktionen?|wettbewerbe?)?\/?$/i.test(u.pathname)}catch{return false}
