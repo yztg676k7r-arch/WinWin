@@ -100,7 +100,7 @@ def classify(url,t,text,soup,raw):
  return 'verified','second-pass-verified',d
 def main():
  cd=load(CF); sd=load(SF); rd=load(RF) if RF.exists() else {'items':[]}; contests=cd['contests']; sources=sd['sources']; sm={s.get('id'):s for s in sources}; urls={canon(c.get('url','')) for c in contests if c.get('url')}; ids={str(c.get('id')) for c in contests}
- promoted=[]; kept=[]; rejected=[]; checked=0
+ promoted=[]; kept=[]; rejected=[]; checked=0; reasons={}
  pending=rd.get('items',[])
  # Prioritize never-reviewed candidates; preserve every queued item.
  pending.sort(key=lambda item: (item.get('reason') != 'first-pass-passed', int(item.get('reviewAttempts') or 0)))
@@ -111,6 +111,7 @@ def main():
   got=fetch(old.get('url','')); checked+=1
   if not got: old['reviewAttempts']=int(old.get('reviewAttempts',0))+1; old['reason']='fetch-failed'; kept.append(old); continue
   u,soup,text,raw=got; t=title(soup); status,reason,d=classify(u,t,text,soup,raw)
+  reasons[reason]=reasons.get(reason,0)+1
   if status=='rejected': old.update({'url':u,'title':t,'status':'rejected','reason':reason,'lastReviewed':TODAY.isoformat()}); rejected.append(old); continue
   if status=='review': old.update({'url':u,'title':t,'status':'review','reason':reason,'lastReviewed':TODAY.isoformat(),'reviewAttempts':int(old.get('reviewAttempts',0))+1}); kept.append(old); continue
   if canon(u) in urls: continue
@@ -127,7 +128,7 @@ def main():
   n=norm(c.get('title','')+' '+c.get('url',''))
   if any(x in n for x in NON_CONTEST) or not any(w in n for w in CONTEST_WORDS):
    c['catalogStatus']='review'; c['scoutStatus']='needs-second-pass'; archived.append(c.get('id'))
- cd['contests']=contests; cd['activeCountAtRelease']=sum(1 for c in contests if c.get('catalogStatus')=='active'); cd['secondPass']={'lastRun':datetime.now().astimezone().isoformat(timespec='seconds'),'checked':checked,'promoted':len(promoted),'keptForReview':len(kept),'rejected':len(rejected),'autoHiddenForReview':len(archived)}
+ cd['contests']=contests; cd['activeCountAtRelease']=sum(1 for c in contests if c.get('catalogStatus')=='active'); cd['secondPass']={'lastRun':datetime.now().astimezone().isoformat(timespec='seconds'),'checked':checked,'promoted':len(promoted),'keptForReview':len(kept),'rejected':len(rejected),'autoHiddenForReview':len(archived),'reviewReasonCounts':dict(sorted(reasons.items(), key=lambda pair: -pair[1]))}
  save(CF,cd); save(RF,{'date':TODAY.isoformat(),'items':kept+rejected[-80:],'secondPass':cd['secondPass']})
  report=load(PF) if PF.exists() else {'date':TODAY.isoformat()}; report['secondPass']=cd['secondPass']; report['secondPass']['promotedIds']=promoted; report['secondPass']['autoHiddenIds']=archived; save(PF,report)
  print(json.dumps({'ok':True,**cd['secondPass']},ensure_ascii=False))
