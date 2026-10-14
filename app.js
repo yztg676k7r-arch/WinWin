@@ -1348,6 +1348,21 @@ function renderDiscover(){
  renderSimpleSummary();
  const l=discoverItems(),extra=activeFilterLabels().length,shown=Math.min(discoverRenderLimit,l.length);
  $('#resultCount').textContent=l.length?`${shown} von ${l.length} Ergebnis${l.length===1?'':'sen'}${extra?` · ${extra} Filter`:''}`:`0 Ergebnisse${extra?` · ${extra} Filter`:''}`;
+ // Read-only on-device diagnostic: never change participation data to investigate suppression.
+ const totalActive=allActive();
+ const diagnosis={done:0,ignored:0,round:0,problem:0,repeatToday:0,other:0};
+ totalActive.forEach(i=>{
+  if(isContestIgnored(i))diagnosis.ignored++;
+  else if(isRoundReviewPending(i))diagnosis.round++;
+  else if(hasOpenProblem(i))diagnosis.problem++;
+  else if(hasProcessedOccurrence(i))diagnosis.done++;
+  else if(completedForToday(i))diagnosis.repeatToday++;
+  else if(!matches(i,currentFilter)||!passesAdvancedFilters(i))diagnosis.other++;
+ });
+ const diagnosticText=`Diagnose: ${totalActive.length} aktiv · ${diagnosis.done} bereits bearbeitet · ${diagnosis.ignored} ausgeblendet · ${diagnosis.round} Rundenprüfung · ${diagnosis.problem} Problemhinweise · ${diagnosis.repeatToday} heute erledigt · ${diagnosis.other} Filter`;
+ let diagnosticEl=document.getElementById('winwinOpenDiagnostic');
+ if(!diagnosticEl){diagnosticEl=document.createElement('p');diagnosticEl.id='winwinOpenDiagnostic';diagnosticEl.style.cssText='font-size:12px;line-height:1.5;color:#60716c;margin:8px 0';$('#resultCount').parentElement?.insertAdjacentElement('afterend',diagnosticEl)}
+ diagnosticEl.textContent=diagnosticText;
  $('#contestList').innerHTML=l.length?l.slice(0,discoverRenderLimit).map(full).join(''):empty('Keine passenden offenen Gewinnspiele. Wähle „Offen“, um Suche und Filter zurückzusetzen.');
  const more=$('#loadMoreContests');if(more){more.hidden=shown>=l.length;more.textContent=`Weitere anzeigen (${l.length-shown})`;}
  renderCategoryQuickFilters();
