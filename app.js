@@ -382,7 +382,13 @@ function sameContestOccurrence(contest,storedIdentity){
  // title AND prize; do not bridge a monthly or other recurring campaign.
  const extendedCorrection=current&&previous&&Math.abs(current-previous)<=21*86400000;
  const recurring=/monat|monthly|wöchent|weekly|täglich|daily|runde|ausgabe/i.test(`${a.title} ${b.title}`);
- return Boolean(extendedCorrection&&!recurring&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.95&&prizeScore>=.95);
+ if(extendedCorrection&&!recurring&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.95&&prizeScore>=.95)return true;
+ // Identical, specific campaign page and exact title/prize are stronger than
+ // a catalog deadline that was previously entered incorrectly. Keep separate
+ // yearly draws and generic collection pages distinct.
+ const sameNamedCampaign=sameUrl&&isCampaignUrl(a.url)&&a.title===b.title&&a.prize===b.prize;
+ const boundedDates=current&&previous&&Math.abs(current-previous)<=120*86400000;
+ return Boolean(sameNamedCampaign&&!recurring&&boundedDates);
 }
 function isCampaignUrl(value){
  try{const u=new URL(value);return !/^\/?(?:gewinnspiele?|aktionen?|wettbewerbe?)?\/?$/i.test(u.pathname)}catch{return false}
