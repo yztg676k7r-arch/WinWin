@@ -1,5 +1,5 @@
 {
-  "dailyScoutLastRun": "2026-10-14T11:17:10+02:00",
+  "dailyScoutLastRun": "2026-10-14T19:03:11+02:00",
   "newSourcesInRelease": 14,
   "release": "572 Quellen · Regional-Discovery Norddeutschland · 28.09.2026",
   "sourceAudit": {
@@ -12822,9 +12822,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "kultur-in-karlsruhe",
-      "lastCatalogReview": "2026-08-18",
-      "lastChecked": "2026-08-18",
-      "lastResultCount": 1,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 5,
       "monitoringPriority": "medium",
       "name": "Kultur in Karlsruhe",
       "notes": "In 7.9 anhand eines laufenden, kaufzwangfreien Teilnahmewegs verifiziert.",
@@ -12832,7 +12832,7 @@
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
-      "successfulChecks": 1,
+      "successfulChecks": 2,
       "type": "Web",
       "verification": "verified"
     },
@@ -12918,9 +12918,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "ernst-august-galerie",
-      "lastCatalogReview": "2026-08-18",
-      "lastChecked": "2026-08-18",
-      "lastResultCount": 1,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 2,
       "monitoringPriority": "medium",
       "name": "Ernst-August-Galerie Hannover",
       "notes": "In 8.0 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
@@ -12928,7 +12928,7 @@
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
-      "successfulChecks": 1,
+      "successfulChecks": 2,
       "type": "Web",
       "verification": "verified"
     },
@@ -12946,13 +12946,13 @@
       ],
       "country": "Deutschland",
       "domain": "aok.de",
-      "emptyChecks": 0,
+      "emptyChecks": 1,
       "expiredRemovedIn80": 0,
       "germanyEligibility": "yes",
       "id": "aok-bayern",
-      "lastCatalogReview": "2026-08-18",
-      "lastChecked": "2026-08-18",
-      "lastResultCount": 1,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 0,
       "monitoringPriority": "medium",
       "name": "AOK Bayern",
       "notes": "In 8.0 anhand eines laufenden, kostenlosen Web-Gewinnspiels verifiziert.",
@@ -13123,9 +13123,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "conditional",
       "id": "servus",
-      "lastCatalogReview": "2026-08-27",
-      "lastChecked": "2026-08-27",
-      "lastResultCount": 0,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 20,
       "monitoringPriority": "medium",
       "name": "Servus",
       "notes": "Große Gewinnspielübersicht mit Web-Aktionen; Länderfreigabe wechselt je Aktion, daher nur nach DE-Prüfung importieren.",
@@ -13133,7 +13133,7 @@
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
-      "successfulChecks": 1,
+      "successfulChecks": 2,
       "type": "Web",
       "verification": "source-verified_contest-level-required"
     },
@@ -13158,9 +13158,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "conditional",
       "id": "weekend-at",
-      "lastCatalogReview": "2026-08-27",
-      "lastChecked": "2026-08-27",
-      "lastResultCount": 0,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 45,
       "monitoringPriority": "medium",
       "name": "Weekend Magazin Österreich",
       "notes": "Regelmäßig viele Online-Verlosungen; häufig Österreich-bezogen. Als Monitoringquelle aufgenommen, nur DE-freigegebene Aktionen importieren.",
@@ -13168,7 +13168,7 @@
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
-      "successfulChecks": 1,
+      "successfulChecks": 2,
       "type": "Web",
       "verification": "source-verified_contest-level-required"
     },
@@ -13193,9 +13193,9 @@
       "expiredRemovedIn80": 0,
       "germanyEligibility": "conditional",
       "id": "bergwelten",
-      "lastCatalogReview": "2026-08-27",
-      "lastChecked": "2026-08-27",
-      "lastResultCount": 0,
+      "lastCatalogReview": "2026-10-14",
+      "lastChecked": "2026-10-14",
+      "lastResultCount": 2,
       "monitoringPriority": "medium",
       "name": "Bergwelten",
       "notes": "DACH-Outdoormedium mit Gewinnspielpotenzial. Aufnahme in Monitoring, Länderfreigabe pro Aktion zwingend prüfen.",
@@ -13203,7 +13203,7 @@
       "quality": 4,
       "requiresLogin": false,
       "socialOnly": false,
-      "successfulChecks": 1,
+      "successfulChecks": 2,
       "type": "Web",
       "verification": "source-verified_contest-level-required"
     },
@@ -18820,11 +18820,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun-klosterfrau",
@@ -18842,11 +18845,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun-tchibo",
@@ -18864,11 +18870,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun-takko",
@@ -18886,11 +18895,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun-zagg",
@@ -18908,11 +18920,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun-henkell",
@@ -18930,11 +18945,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-myself-funke-fun",
@@ -18952,11 +18970,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-buchszene-de",
@@ -18974,11 +18995,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-buchszene-de",
@@ -18996,11 +19020,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-buchszene-de",
@@ -19018,11 +19045,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-buchszene-de-trias",
@@ -19040,11 +19070,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-lecker-bett1-de",
@@ -19062,11 +19095,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-lecker-amica",
@@ -19084,11 +19120,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-mein-sch-nes-zuhause-biz-verlag",
@@ -19106,11 +19145,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-henchman",
@@ -19128,11 +19170,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 2,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-swr-kultur",
@@ -19150,11 +19195,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 3,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-piper-verlag",
@@ -19172,11 +19220,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-piper-verlag",
@@ -19194,11 +19245,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-piper-verlag",
@@ -19216,11 +19270,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-piper-verlag",
@@ -19238,11 +19295,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-piper-verlag",
@@ -19260,11 +19320,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-piper-verlag",
@@ -19282,11 +19345,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 0,
+      "emptyChecks": 1,
+      "successfulChecks": 0
     },
     {
       "id": "expansion-homeplaza-epr",
@@ -19304,11 +19370,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 13,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-homeplaza-epr",
@@ -19326,11 +19395,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 13,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-gardenplaza-epr",
@@ -19348,11 +19420,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 11,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-reiseplaza-epr",
@@ -19370,11 +19445,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 10,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun",
@@ -19392,11 +19470,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun",
@@ -19414,11 +19495,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-funke-fun",
@@ -19436,11 +19520,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 31,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-bio-oekom-verlag",
@@ -19458,11 +19545,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-bio-oekom-verlag",
@@ -19480,11 +19570,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-bio-oekom-verlag",
@@ -19502,11 +19595,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-schrot-korn",
@@ -19524,11 +19620,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-schrot-korn",
@@ -19546,11 +19645,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-vinum",
@@ -19568,11 +19670,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 38,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-k-lner-stadt-anzeiger",
@@ -19590,11 +19695,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 15,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-wir-leben-outdoor-msv-medien",
@@ -19612,11 +19720,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-wir-leben-outdoor-msv-medien",
@@ -19634,11 +19745,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 45,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-rolling-stone",
@@ -19656,11 +19770,14 @@
       "socialOnly": false,
       "catalogYield": "active",
       "activeContestCount": 1,
-      "lastChecked": "2026-09-29",
-      "lastCatalogReview": "2026-09-29",
+      "lastChecked": "2026-10-14",
+      "lastCatalogReview": "2026-10-14",
       "verification": "verified",
       "policyReview": "passed",
-      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht."
+      "notes": "Direkte Teilnahme-/Aktionsseite; kostenlose Teilnahme ohne Kaufpflicht.",
+      "lastResultCount": 43,
+      "emptyChecks": 0,
+      "successfulChecks": 1
     },
     {
       "id": "expansion-spezialit-ten-haus",
