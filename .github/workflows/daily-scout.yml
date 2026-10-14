@@ -3,6 +3,7 @@ name: Win Win Daily Scout
 on:
   schedule:
     # One daily run; delayed starts must still scan.
+    # Manual maintenance push: re-run scout after review-priority fix (2026-10-14).
     - cron: '35 3 * * *'
   push:
     branches: [main]
