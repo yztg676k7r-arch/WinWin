@@ -373,7 +373,7 @@ function sameContestOccurrence(contest,storedIdentity){
  const current=parseFlexibleDate(a.deadline),previous=parseFlexibleDate(b.deadline);
  const sameDate=current&&previous&&current.getTime()===previous.getTime();
  // Landing pages may contain several unrelated prizes. Never equate them on URL alone.
- if(sameDate)return titleScore>=.58||prizeScore>=.72||(sameUrl&&isCampaignUrl(a.url));
+ if(sameDate)return titleScore>=.72||(titleScore>=.58&&prizeScore>=.72)||(sameUrl&&isCampaignUrl(a.url)&&titleScore>=.85&&prizeScore>=.7);
  // A corrected closing date does not create a new campaign. Monthly rounds stay separate.
  const smallCorrection=current&&previous&&Math.abs(current-previous)<=7*86400000;
  if(smallCorrection&&sameUrl&&isCampaignUrl(a.url)&&titleScore>=.9&&prizeScore>=.82)return true;
@@ -640,6 +640,9 @@ function previousIgnoredRoundFor(i){
  const key=roundReviewCacheKey(i);if(previousIgnoredRoundCache.has(key))return previousIgnoredRoundCache.get(key);
  const previous=ignoredRoundHistory().find(entry=>{
   if(entry.id===i.id||!sameContestFamily(i,entry.identity))return false;
+  // A shared provider landing page must not hide unrelated new prizes.
+  const a=contestIdentity(i),b=contestIdentity(entry.identity);
+  if(identitySimilarity(a.title,b.title)<.72||identitySimilarity(a.prize,b.prize)<.5)return false;
   const current=String(i.deadline||''),previous=String(entry.identity?.deadline||'');
   return Boolean(current&&previous&&current!==previous);
  })||null;
