@@ -15798,20 +15798,20 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-13T13:15:18+02:00",
-    "checkedSources": 63,
-    "candidatePages": 707,
+    "lastRun": "2026-10-14T11:17:10+02:00",
+    "checkedSources": 73,
+    "candidatePages": 1000,
     "published": 0,
-    "review": 556,
-    "rejected": 52,
-    "expiredArchived": 8
+    "review": 716,
+    "rejected": 88,
+    "expiredArchived": 0
   },
   "secondPass": {
-    "lastRun": "2026-10-13T13:19:28+02:00",
+    "lastRun": "2026-10-14T11:20:37+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 6032,
-    "rejected": 0,
+    "keptForReview": 6206,
+    "rejected": 1,
     "autoHiddenForReview": 0
   },
   "bulkDiscovery": {
