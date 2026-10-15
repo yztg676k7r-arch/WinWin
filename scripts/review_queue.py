@@ -59,6 +59,25 @@ def extract_prize(text,title):
    return clean[:220]
  return title[:220] if re.search(r'\b(?:gewinnen|gewinn)\b',title,re.I) else None
 
+def eligibility_evidence(url,soup,text):
+ # Contest terms are often on a linked page, rather than the landing page.
+ # Only read same-host terms; never treat generic site terms as proof.
+ if re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',text,re.I):
+  return text
+ host=urllib.parse.urlsplit(url).netloc.lower().removeprefix('www.')
+ for a in soup.find_all('a',href=True):
+  label=a.get_text(' ',strip=True).lower()
+  href=urllib.parse.urljoin(url,a.get('href',''))
+  parsed=urllib.parse.urlsplit(href)
+  if parsed.scheme not in ('https','http') or parsed.netloc.lower().removeprefix('www.')!=host: continue
+  if not (re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',label,re.I) or re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',parsed.path,re.I)): continue
+  linked=fetch(href)
+  if not linked: continue
+  extra=linked[2]
+  if re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',extra,re.I):
+   return text+' '+extra
+ return text
+
 def classify(url,t,text,soup,raw):
  n=norm(t+' '+url); low=text.lower()
  if any(x in n for x in NON_CONTEST): return 'rejected','non-contest-page',None
@@ -73,6 +92,8 @@ def classify(url,t,text,soup,raw):
   return 'rejected','contest-hub',None
  if 'iamstudent' in url.lower(): return 'rejected','excluded-provider',None
  if re.search(r'teilnahmebedingungen|datenschutz',t,re.I): return 'review','terms-only-page',None
+ if not re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',low):
+  low=eligibility_evidence(url,soup,text).lower()
  if not re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',low):
   return 'review','germany-eligibility-not-confirmed',None
  if not re.search(r'(?:teilnahme.{0,40}(?:kostenlos|kostenfrei|unentgeltlich)|(?:kein|ohne).{0,25}kauf)',low):
