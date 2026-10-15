@@ -10,6 +10,7 @@ on:
     paths:
       - '.github/workflows/daily-scout.yml'
       - 'scripts/**'
+  # Trigger a fresh verification run after eligibility terms fix (2026-10-15).
   workflow_dispatch:
 
 permissions:
