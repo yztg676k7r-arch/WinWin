@@ -59,11 +59,19 @@ def extract_prize(text,title):
    return clean[:220]
  return title[:220] if re.search(r'\b(?:gewinnen|gewinn)\b',title,re.I) else None
 
+ELIGIBILITY_PATTERNS=(
+ r'(?:wohnsitz|wohnhaft|wohnort|hauptwohnsitz|staendiger wohnsitz|ständiger wohnsitz).{0,120}(?:deutschland|bundesrepublik|\bbrd\b)',
+ r'(?:teilnahmeberechtigt|teilnehmen dürfen|teilnehmen können|teilnehmen koennen|teilnehmen darf|teilnahme ist).{0,150}(?:deutschland|bundesrepublik)',
+ r'(?:deutschland|bundesrepublik).{0,100}(?:wohnhaft|wohnsitz|wohnort)',
+ r'(?:personen|teilnehmer|teilnehmende).{0,80}(?:mit (?:einem )?wohnsitz|aus).{0,80}deutschland',
+)
+def has_german_eligibility(text):
+ return any(re.search(p,text,re.I|re.S) for p in ELIGIBILITY_PATTERNS)
+
 def eligibility_evidence(url,soup,text):
- # Contest terms are often on a linked page, rather than the landing page.
- # Only read same-host terms; never treat generic site terms as proof.
- if re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',text,re.I):
-  return text
+ # Look for contest-specific terms on the same host; generic site terms do
+ # not independently establish eligibility for this particular promotion.
+ if has_german_eligibility(text): return text
  host=urllib.parse.urlsplit(url).netloc.lower().removeprefix('www.')
  checked_links=set()
  for a in soup.find_all('a',href=True):
@@ -71,14 +79,14 @@ def eligibility_evidence(url,soup,text):
   href=urllib.parse.urljoin(url,a.get('href',''))
   parsed=urllib.parse.urlsplit(href)
   if parsed.scheme not in ('https','http') or parsed.netloc.lower().removeprefix('www.')!=host: continue
-  if not (re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',label,re.I) or re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',parsed.path,re.I)): continue
+  if not (re.search(r'teilnahme.{0,12}bedingungen|gewinnspiel.{0,12}bedingungen|aktionsbedingungen',label,re.I) or re.search(r'teilnahme.{0,12}bedingungen|gewinnspiel.{0,12}bedingungen|aktionsbedingungen',parsed.path,re.I)): continue
   if href in checked_links: continue
-  if len(checked_links)>=2: break
+  if len(checked_links)>=3: break
   checked_links.add(href)
   linked=fetch(href)
   if not linked: continue
   extra=linked[2]
-  if re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',extra,re.I):
+  if has_german_eligibility(extra):
    return text+' '+extra
  return text
 
@@ -96,9 +104,9 @@ def classify(url,t,text,soup,raw):
   return 'rejected','contest-hub',None
  if 'iamstudent' in url.lower(): return 'rejected','excluded-provider',None
  if re.search(r'teilnahmebedingungen|datenschutz',t,re.I): return 'review','terms-only-page',None
- if not re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',low):
+ if not has_german_eligibility(low):
   low=eligibility_evidence(url,soup,text).lower()
- if not re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',low):
+ if not has_german_eligibility(low):
   return 'review','germany-eligibility-not-confirmed',None
  if not re.search(r'(?:teilnahme.{0,40}(?:kostenlos|kostenfrei|unentgeltlich)|(?:kein|ohne).{0,25}kauf)',low):
   return 'review','free-entry-not-confirmed',None
