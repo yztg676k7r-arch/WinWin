@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-14",
-  "activeCountAtRelease": 299,
+  "updated": "2026-10-15",
+  "activeCountAtRelease": 293,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -4433,7 +4433,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Musik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -4476,7 +4476,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Familie",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -4519,7 +4519,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Familie",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -8909,7 +8909,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Outdoor & Mode",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -15056,7 +15056,7 @@
       "shortDescription": "Apple iPhone 17 Pro",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -15486,7 +15486,7 @@
       "shortDescription": "2 Tickets für FC Bayern München gegen Arsenal",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -15846,28 +15846,27 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-14T19:47:39+02:00",
-    "checkedSources": 66,
-    "candidatePages": 1067,
+    "lastRun": "2026-10-15T10:51:26+02:00",
+    "checkedSources": 76,
+    "candidatePages": 675,
     "published": 0,
-    "review": 761,
-    "rejected": 134,
-    "expiredArchived": 0
+    "review": 515,
+    "rejected": 21,
+    "expiredArchived": 6
   },
   "secondPass": {
-    "lastRun": "2026-10-14T19:52:06+02:00",
+    "lastRun": "2026-10-15T10:55:47+02:00",
     "checked": 220,
-    "promoted": 1,
-    "keptForReview": 6907,
-    "rejected": 5,
+    "promoted": 0,
+    "keptForReview": 6885,
+    "rejected": 16,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 146,
-      "terms-only-page": 7,
-      "non-contest-page": 3,
-      "free-entry-not-confirmed": 2,
+      "germany-eligibility-not-confirmed": 143,
+      "non-contest-page": 14,
+      "free-entry-not-confirmed": 6,
+      "terms-only-page": 6,
       "contest-hub": 2,
-      "second-pass-verified": 1,
       "prize-not-unambiguous": 1
     }
   },

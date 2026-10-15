@@ -1,32 +1,29 @@
 {
-  "date": "2026-10-14",
-  "checkedSources": 66,
-  "candidatePages": 1067,
+  "date": "2026-10-15",
+  "checkedSources": 76,
+  "candidatePages": 675,
   "published": 0,
-  "review": 761,
-  "rejected": 134,
-  "expiredArchived": 0,
+  "review": 515,
+  "rejected": 21,
+  "expiredArchived": 6,
   "budgetReached": true,
   "newIds": [],
   "secondPass": {
-    "lastRun": "2026-10-14T19:52:06+02:00",
+    "lastRun": "2026-10-15T10:55:47+02:00",
     "checked": 220,
-    "promoted": 1,
-    "keptForReview": 6907,
-    "rejected": 5,
+    "promoted": 0,
+    "keptForReview": 6885,
+    "rejected": 16,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 146,
-      "terms-only-page": 7,
-      "non-contest-page": 3,
-      "free-entry-not-confirmed": 2,
+      "germany-eligibility-not-confirmed": 143,
+      "non-contest-page": 14,
+      "free-entry-not-confirmed": 6,
+      "terms-only-page": 6,
       "contest-hub": 2,
-      "second-pass-verified": 1,
       "prize-not-unambiguous": 1
     },
-    "promotedIds": [
-      "bulk-whic-de-20261231-c12bcaaa"
-    ],
+    "promotedIds": [],
     "autoHiddenIds": []
   }
 }
