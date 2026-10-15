@@ -15846,28 +15846,27 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-15T10:51:26+02:00",
-    "checkedSources": 76,
-    "candidatePages": 675,
+    "lastRun": "2026-10-15T17:54:32+02:00",
+    "checkedSources": 71,
+    "candidatePages": 745,
     "published": 0,
-    "review": 515,
-    "rejected": 21,
-    "expiredArchived": 6
+    "review": 560,
+    "rejected": 20,
+    "expiredArchived": 0
   },
   "secondPass": {
-    "lastRun": "2026-10-15T10:55:47+02:00",
+    "lastRun": "2026-10-15T17:58:35+02:00",
     "checked": 220,
     "promoted": 0,
-    "keptForReview": 6885,
-    "rejected": 16,
+    "keptForReview": 7041,
+    "rejected": 4,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 143,
-      "non-contest-page": 14,
-      "free-entry-not-confirmed": 6,
-      "terms-only-page": 6,
-      "contest-hub": 2,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 185,
+      "free-entry-not-confirmed": 12,
+      "terms-only-page": 8,
+      "deadline-not-unambiguous": 4,
+      "policy-exclusion": 4
     }
   },
   "bulkDiscovery": {
