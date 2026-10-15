@@ -65,12 +65,16 @@ def eligibility_evidence(url,soup,text):
  if re.search(r'(?:wohnsitz|wohnhaft|wohnort).{0,100}deutschland',text,re.I):
   return text
  host=urllib.parse.urlsplit(url).netloc.lower().removeprefix('www.')
+ checked_links=set()
  for a in soup.find_all('a',href=True):
   label=a.get_text(' ',strip=True).lower()
   href=urllib.parse.urljoin(url,a.get('href',''))
   parsed=urllib.parse.urlsplit(href)
   if parsed.scheme not in ('https','http') or parsed.netloc.lower().removeprefix('www.')!=host: continue
   if not (re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',label,re.I) or re.search(r'teilnahmebedingungen|gewinnspielbedingungen|teilnahme-bedingungen',parsed.path,re.I)): continue
+  if href in checked_links: continue
+  if len(checked_links)>=2: break
+  checked_links.add(href)
   linked=fetch(href)
   if not linked: continue
   extra=linked[2]
