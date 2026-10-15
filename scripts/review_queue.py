@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 CF=ROOT/'contests.json'; SF=ROOT/'sources.json'; RF=ROOT/'data/daily-scout-review.json'; PF=ROOT/'data/daily-scout-report.json'
 TODAY=date.today(); SESSION=requests.Session(); SESSION.headers.update({'User-Agent':'WinWin-Review-Gate/8.4.1','Accept-Language':'de-DE,de;q=0.9'})
-MAX_REVIEW=220; TIMEOUT=10
+MAX_REVIEW=int(os.getenv('WINWIN_REVIEW_MAX_ITEMS','450')); TIMEOUT=10
 STOP_AT=time.monotonic()+int(os.getenv("WINWIN_REVIEW_BUDGET_SECONDS","600"))
 MAX_NEW=int(os.getenv("WINWIN_SCOUT_MAX_NEW","15"))
 CONTEST_WORDS=('gewinnspiel','verlosung','gewinnen','giveaway')
