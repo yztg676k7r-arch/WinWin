@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-15",
-  "activeCountAtRelease": 293,
+  "updated": "2026-10-16",
+  "activeCountAtRelease": 278,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -2412,7 +2412,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Technik",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -5769,7 +5769,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 68,
       "country": "Deutschland",
       "daily": false,
@@ -5851,7 +5851,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 48,
       "country": "Deutschland",
       "daily": false,
@@ -10492,7 +10492,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Outdoor & Fahrrad",
       "chanceScore": 59,
       "country": "Deutschland",
@@ -15381,26 +15381,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-15T19:21:09+02:00",
-    "checkedSources": 69,
-    "candidatePages": 518,
+    "lastRun": "2026-10-16T10:45:32+02:00",
+    "checkedSources": 73,
+    "candidatePages": 1043,
     "published": 0,
-    "review": 395,
-    "rejected": 62,
-    "expiredArchived": 0
+    "review": 878,
+    "rejected": 33,
+    "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-10-15T19:26:01+02:00",
-    "checked": 220,
+    "lastRun": "2026-10-16T10:55:32+02:00",
+    "checked": 291,
     "promoted": 0,
-    "keptForReview": 7335,
-    "rejected": 1,
+    "keptForReview": 7725,
+    "rejected": 2,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 192,
-      "terms-only-page": 15,
-      "free-entry-not-confirmed": 8,
-      "contest-hub": 1
+      "germany-eligibility-not-confirmed": 172,
+      "free-entry-not-confirmed": 14,
+      "contest-intent-not-specific": 6,
+      "deadline-not-unambiguous": 6,
+      "terms-only-page": 2,
+      "contest-hub": 1,
+      "non-contest-page": 1
     }
   },
   "bulkDiscovery": {
