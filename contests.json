@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
   "updated": "2026-10-17",
-  "activeCountAtRelease": 278,
+  "activeCountAtRelease": 283,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -7201,7 +7201,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 36,
       "country": "Deutschland",
       "daily": false,
@@ -7608,7 +7608,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 63,
       "country": "Deutschland, Österreich & Schweiz",
       "daily": false,
@@ -9780,7 +9780,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -14634,7 +14634,7 @@
       "shortDescription": "Hotelaufenthalt, Lufthansa-Koffer, Mind-Games-Düfte sowie Design-Leuchten/Tee-Pakete",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -15732,29 +15732,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-16T10:45:32+02:00",
-    "checkedSources": 73,
-    "candidatePages": 1043,
+    "lastRun": "2026-10-17T10:18:38+02:00",
+    "checkedSources": 72,
+    "candidatePages": 1038,
     "published": 0,
-    "review": 878,
-    "rejected": 33,
+    "review": 749,
+    "rejected": 78,
     "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-10-16T10:55:32+02:00",
-    "checked": 291,
+    "lastRun": "2026-10-17T10:23:24+02:00",
+    "checked": 450,
     "promoted": 0,
-    "keptForReview": 7725,
-    "rejected": 2,
+    "keptForReview": 7897,
+    "rejected": 14,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 172,
-      "free-entry-not-confirmed": 14,
-      "contest-intent-not-specific": 6,
-      "deadline-not-unambiguous": 6,
-      "terms-only-page": 2,
-      "contest-hub": 1,
-      "non-contest-page": 1
+      "germany-eligibility-not-confirmed": 373,
+      "contest-intent-not-specific": 13,
+      "non-contest-page": 13,
+      "free-entry-not-confirmed": 9,
+      "terms-only-page": 9,
+      "deadline-not-unambiguous": 7,
+      "contest-hub": 1
     }
   },
   "bulkDiscovery": {
