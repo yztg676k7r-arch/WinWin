@@ -1,35 +1,32 @@
 {
-  "date": "2026-10-19",
-  "checkedSources": 66,
-  "candidatePages": 858,
+  "date": "2026-10-20",
+  "checkedSources": 93,
+  "candidatePages": 1073,
   "published": 0,
-  "review": 742,
-  "rejected": 24,
-  "expiredArchived": 1,
+  "review": 734,
+  "rejected": 100,
+  "expiredArchived": 6,
   "budgetReached": true,
   "newIds": [],
   "secondPass": {
-    "lastRun": "2026-10-19T11:38:33+02:00",
+    "lastRun": "2026-10-20T11:13:17+02:00",
     "checked": 450,
-    "promoted": 1,
-    "keptForReview": 8060,
+    "promoted": 0,
+    "keptForReview": 8209,
     "rejected": 3,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 266,
-      "free-entry-not-confirmed": 55,
-      "deadline-not-unambiguous": 9,
-      "terms-only-page": 3,
-      "contest-intent-not-specific": 3,
-      "non-contest-page": 2,
-      "social-requirements-need-review": 1,
-      "contest-hub": 1,
-      "prize-not-unambiguous": 1,
-      "second-pass-verified": 1
+      "germany-eligibility-not-confirmed": 384,
+      "terms-only-page": 15,
+      "contest-intent-not-specific": 11,
+      "free-entry-not-confirmed": 8,
+      "deadline-not-unambiguous": 5,
+      "contest-hub": 2,
+      "entry-route-not-unambiguous": 2,
+      "non-contest-page": 1,
+      "prize-not-unambiguous": 1
     },
-    "promotedIds": [
-      "kosmos-20261031-f3a6c44c"
-    ],
+    "promotedIds": [],
     "autoHiddenIds": []
   }
 }
