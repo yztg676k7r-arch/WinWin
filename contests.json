@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
   "updated": "2026-10-21",
-  "activeCountAtRelease": 274,
+  "activeCountAtRelease": 268,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -15238,31 +15238,28 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-20T11:08:18+02:00",
-    "checkedSources": 93,
-    "candidatePages": 1073,
+    "lastRun": "2026-10-21T11:08:29+02:00",
+    "checkedSources": 91,
+    "candidatePages": 1047,
     "published": 0,
-    "review": 734,
-    "rejected": 100,
-    "expiredArchived": 6
+    "review": 748,
+    "rejected": 143,
+    "expiredArchived": 0
   },
   "secondPass": {
-    "lastRun": "2026-10-20T11:13:17+02:00",
+    "lastRun": "2026-10-21T11:12:47+02:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 8209,
-    "rejected": 3,
+    "keptForReview": 8375,
+    "rejected": 18,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 384,
-      "terms-only-page": 15,
-      "contest-intent-not-specific": 11,
-      "free-entry-not-confirmed": 8,
-      "deadline-not-unambiguous": 5,
-      "contest-hub": 2,
-      "entry-route-not-unambiguous": 2,
-      "non-contest-page": 1,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 304,
+      "non-contest-page": 18,
+      "terms-only-page": 12,
+      "free-entry-not-confirmed": 10,
+      "contest-intent-not-specific": 3,
+      "prize-not-unambiguous": 2
     }
   },
   "bulkDiscovery": {
