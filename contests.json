@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-21",
-  "activeCountAtRelease": 268,
+  "updated": "2026-10-22",
+  "activeCountAtRelease": 265,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -47,7 +47,7 @@
     },
     {
       "addedAt": "08.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Auto & Pflege",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -6543,7 +6543,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Heimkino",
       "chanceScore": 77,
       "country": "Deutschland",
@@ -8953,7 +8953,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Auto & Pflege",
       "chanceScore": 62,
       "country": "Deutschland",
@@ -15238,28 +15238,30 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-21T11:08:29+02:00",
-    "checkedSources": 91,
-    "candidatePages": 1047,
+    "lastRun": "2026-10-22T11:10:48+02:00",
+    "checkedSources": 48,
+    "candidatePages": 637,
     "published": 0,
-    "review": 748,
-    "rejected": 143,
-    "expiredArchived": 0
+    "review": 553,
+    "rejected": 7,
+    "expiredArchived": 3
   },
   "secondPass": {
-    "lastRun": "2026-10-21T11:12:47+02:00",
+    "lastRun": "2026-10-22T11:17:53+02:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 8375,
-    "rejected": 18,
+    "keptForReview": 8287,
+    "rejected": 3,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 304,
-      "non-contest-page": 18,
-      "terms-only-page": 12,
-      "free-entry-not-confirmed": 10,
-      "contest-intent-not-specific": 3,
-      "prize-not-unambiguous": 2
+      "germany-eligibility-not-confirmed": 343,
+      "free-entry-not-confirmed": 32,
+      "deadline-not-unambiguous": 8,
+      "contest-intent-not-specific": 4,
+      "terms-only-page": 3,
+      "non-contest-page": 2,
+      "contest-hub": 1,
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {
