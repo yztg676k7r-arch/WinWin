@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
   "updated": "2026-10-23",
-  "activeCountAtRelease": 265,
+  "activeCountAtRelease": 252,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -13745,7 +13745,7 @@
       "shortDescription": "Thule Motion 3 XL Limited Edition Dachbox",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -14720,30 +14720,30 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-22T11:10:48+02:00",
-    "checkedSources": 48,
-    "candidatePages": 637,
+    "lastRun": "2026-10-23T11:06:10+02:00",
+    "checkedSources": 60,
+    "candidatePages": 825,
     "published": 0,
-    "review": 553,
-    "rejected": 7,
-    "expiredArchived": 3
+    "review": 578,
+    "rejected": 81,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-10-22T11:17:53+02:00",
+    "lastRun": "2026-10-23T11:11:39+02:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 8287,
+    "keptForReview": 8435,
     "rejected": 3,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 343,
-      "free-entry-not-confirmed": 32,
-      "deadline-not-unambiguous": 8,
-      "contest-intent-not-specific": 4,
-      "terms-only-page": 3,
+      "germany-eligibility-not-confirmed": 349,
+      "free-entry-not-confirmed": 52,
+      "terms-only-page": 10,
+      "contest-intent-not-specific": 5,
+      "deadline-not-unambiguous": 2,
+      "prize-not-unambiguous": 2,
       "non-contest-page": 2,
-      "contest-hub": 1,
-      "prize-not-unambiguous": 1
+      "policy-exclusion": 1
     }
   },
   "bulkDiscovery": {
