@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
   "updated": "2026-10-26",
-  "activeCountAtRelease": 244,
+  "activeCountAtRelease": 242,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -821,7 +821,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Wellness",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -7989,7 +7989,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "DIY & Garten",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -14549,27 +14549,33 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-25T09:58:59+01:00",
-    "checkedSources": 59,
-    "candidatePages": 736,
+    "lastRun": "2026-10-26T10:35:51+01:00",
+    "checkedSources": 64,
+    "candidatePages": 1035,
     "published": 0,
-    "review": 610,
-    "rejected": 22,
-    "expiredArchived": 0
+    "review": 782,
+    "rejected": 58,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-10-25T10:06:21+01:00",
+    "lastRun": "2026-10-26T10:42:05+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 8562,
-    "rejected": 4,
+    "keptForReview": 8697,
+    "rejected": 20,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 342,
-      "free-entry-not-confirmed": 18,
-      "terms-only-page": 7,
+      "germany-eligibility-not-confirmed": 400,
+      "non-contest-page": 16,
+      "terms-only-page": 8,
+      "free-entry-not-confirmed": 4,
       "deadline-not-unambiguous": 4,
-      "non-contest-page": 4
+      "contest-intent-not-specific": 3,
+      "contest-hub": 2,
+      "policy-exclusion": 2,
+      "entry-route-not-unambiguous": 2,
+      "social-requirements-need-review": 1,
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {
