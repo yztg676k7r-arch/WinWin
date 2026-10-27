@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-26",
-  "activeCountAtRelease": 242,
+  "updated": "2026-10-27",
+  "activeCountAtRelease": 240,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -12075,7 +12075,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Genuss",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -13617,7 +13617,7 @@
       "shortDescription": "3x2 Tickets für Placebo in der LANXESS arena Köln",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -14549,32 +14549,26 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-26T10:35:51+01:00",
-    "checkedSources": 64,
-    "candidatePages": 1035,
+    "lastRun": "2026-10-27T10:35:45+01:00",
+    "checkedSources": 78,
+    "candidatePages": 819,
     "published": 0,
-    "review": 782,
-    "rejected": 58,
+    "review": 616,
+    "rejected": 37,
     "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-10-26T10:42:05+01:00",
+    "lastRun": "2026-10-27T10:42:53+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 8697,
-    "rejected": 20,
+    "keptForReview": 8747,
+    "rejected": 23,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 400,
-      "non-contest-page": 16,
-      "terms-only-page": 8,
-      "free-entry-not-confirmed": 4,
-      "deadline-not-unambiguous": 4,
-      "contest-intent-not-specific": 3,
-      "contest-hub": 2,
-      "policy-exclusion": 2,
-      "entry-route-not-unambiguous": 2,
-      "social-requirements-need-review": 1,
+      "germany-eligibility-not-confirmed": 288,
+      "non-contest-page": 23,
+      "free-entry-not-confirmed": 15,
+      "terms-only-page": 5,
       "prize-not-unambiguous": 1
     }
   },
