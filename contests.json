@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-30",
-  "activeCountAtRelease": 231,
+  "updated": "2026-10-31",
+  "activeCountAtRelease": 222,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -4476,7 +4476,7 @@
     },
     {
       "addedAt": "18.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 60,
       "country": "Deutschland",
@@ -4519,7 +4519,7 @@
     },
     {
       "addedAt": "18.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Essen & Trinken",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -8787,7 +8787,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Serien",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -8955,7 +8955,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -9037,7 +9037,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Fotografie",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -9283,7 +9283,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -9616,7 +9616,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Technik",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -10711,7 +10711,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Film & Regional",
       "chanceScore": 72,
       "country": "Deutschland",
@@ -13326,7 +13326,7 @@
       "shortDescription": "30x Bosch ConnectModule inkl. Einbau",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -13369,7 +13369,7 @@
       "shortDescription": "20x Bosch ConnectModule inkl. Einbau",
       "dataCompleteness": 94,
       "lastVerified": "03.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "scoutAdded": false,
       "discoverySource": "Manuelle Verifikation 03.10.2026"
@@ -14173,33 +14173,81 @@
       "solution": null,
       "solutionStatus": null,
       "solutionSource": null
+    },
+    {
+      "id": "schrot-korn-20261126-43f26f39",
+      "title": "Produkte bewerten und gewinnen",
+      "provider": "Schrot & Korn",
+      "prize": "Produkte bewerten und gewinnen Lust auf mehr WÃ¼rze in der KÃ¼che?",
+      "url": "https://schrotundkorn.de/leben/gewinnen",
+      "category": "Bücher",
+      "country": "Deutschland",
+      "deadline": "26.11.2026",
+      "winners": null,
+      "new": true,
+      "daily": false,
+      "international": false,
+      "requirements": "Kostenlose Teilnahme über offizielles Web-Angebot; automatisch zweifach geprüft",
+      "purchaseRequired": false,
+      "receiptRequired": false,
+      "winnerKnown": false,
+      "verified": "31.10.2026",
+      "providerTrust": 4,
+      "effort": 1,
+      "entryType": "form",
+      "multipleEntry": false,
+      "highValuePrize": false,
+      "tags": [
+        "Daily Scout",
+        "2× geprüft",
+        "kostenlos",
+        "neu"
+      ],
+      "addedAt": "31.10.2026",
+      "sourceId": "schrot-korn",
+      "deEligibility": "bestätigt",
+      "participationFrequency": "einmalig",
+      "chanceScore": 45,
+      "priority": "mittel",
+      "qualityScore": 97,
+      "shortDescription": "Produkte bewerten und gewinnen",
+      "dataCompleteness": 88,
+      "lastVerified": "31.10.2026",
+      "catalogStatus": "active",
+      "scoutStatus": "verified-second-pass",
+      "scoutAdded": true,
+      "puzzleType": null,
+      "puzzleOnlineFree": null,
+      "solution": null,
+      "solutionStatus": null,
+      "solutionSource": null
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-30T11:41:22+01:00",
-    "checkedSources": 85,
-    "candidatePages": 1094,
+    "lastRun": "2026-10-31T11:13:01+01:00",
+    "checkedSources": 68,
+    "candidatePages": 825,
     "published": 0,
-    "review": 891,
-    "rejected": 21,
-    "expiredArchived": 1
+    "review": 652,
+    "rejected": 32,
+    "expiredArchived": 10
   },
   "secondPass": {
-    "lastRun": "2026-10-30T11:51:23+01:00",
-    "checked": 376,
-    "promoted": 0,
-    "keptForReview": 8954,
-    "rejected": 18,
+    "lastRun": "2026-10-31T11:21:44+01:00",
+    "checked": 450,
+    "promoted": 1,
+    "keptForReview": 9060,
+    "rejected": 15,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 242,
-      "free-entry-not-confirmed": 73,
-      "terms-only-page": 15,
-      "non-contest-page": 12,
-      "contest-intent-not-specific": 8,
-      "deadline-not-unambiguous": 7,
-      "contest-hub": 6,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 344,
+      "free-entry-not-confirmed": 28,
+      "terms-only-page": 10,
+      "policy-exclusion": 8,
+      "non-contest-page": 7,
+      "deadline-not-unambiguous": 5,
+      "contest-intent-not-specific": 1,
+      "second-pass-verified": 1
     }
   },
   "bulkDiscovery": {
