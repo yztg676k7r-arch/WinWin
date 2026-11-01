@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-10-31",
-  "activeCountAtRelease": 222,
+  "updated": "2026-11-01",
+  "activeCountAtRelease": 162,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -391,7 +391,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Freizeit",
       "chanceScore": 78,
       "country": "Deutschland",
@@ -563,7 +563,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Gesundheit & Wellness",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -1122,7 +1122,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -1208,7 +1208,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -1251,7 +1251,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -1380,7 +1380,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Haus & Garten",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -1552,7 +1552,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Familie",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -2068,7 +2068,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Outdoor",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -2111,7 +2111,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Genuss",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -2240,7 +2240,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -2283,7 +2283,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Sport",
       "chanceScore": 76,
       "country": "Deutschland",
@@ -2326,7 +2326,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -2455,7 +2455,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Lifestyle",
       "chanceScore": 52,
       "country": "Deutschland",
@@ -2928,7 +2928,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Haushalt",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -3530,7 +3530,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Auto & Mobilität",
       "chanceScore": 57,
       "country": "Deutschland",
@@ -3573,7 +3573,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Technik",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -3616,7 +3616,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Wohnen",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -3659,7 +3659,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 72,
       "country": "Deutschland",
@@ -3702,7 +3702,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Freizeit & Kultur",
       "chanceScore": 58,
       "country": "Deutschland",
@@ -3831,7 +3831,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Freizeit & Kultur",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -4003,7 +4003,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -4046,7 +4046,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 76,
       "country": "Deutschland",
@@ -4089,7 +4089,7 @@
     },
     {
       "addedAt": "11.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Haus & Garten",
       "chanceScore": 68,
       "country": "Deutschland",
@@ -5188,7 +5188,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 83,
       "country": "Deutschland",
       "daily": false,
@@ -5311,7 +5311,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 88,
       "country": "Deutschland",
       "daily": false,
@@ -5435,7 +5435,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 82,
       "country": "Deutschland",
       "daily": false,
@@ -6009,7 +6009,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Haushalt",
       "chanceScore": 61,
       "country": "Deutschland",
@@ -6050,7 +6050,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Küche & Haushalt",
       "chanceScore": 61,
       "country": "Deutschland",
@@ -6091,7 +6091,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Freizeit & Mobilität",
       "chanceScore": 70,
       "country": "Deutschland",
@@ -6132,7 +6132,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Technik",
       "chanceScore": 65,
       "country": "Deutschland",
@@ -6376,7 +6376,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 62,
       "country": "Deutschland",
       "daily": false,
@@ -7695,7 +7695,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Freizeit",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -7947,7 +7947,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Geschichte",
       "chanceScore": 68,
       "country": "Deutschland/Österreich/Schweiz",
@@ -7989,7 +7989,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Sport & Fußball",
       "chanceScore": 66,
       "country": "Deutschland",
@@ -8031,7 +8031,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Haushalt & Tier",
       "chanceScore": 53,
       "country": "Deutschland/Luxemburg",
@@ -8073,7 +8073,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Tierbedarf & Gutscheine",
       "chanceScore": 64,
       "country": "Deutschland/Luxemburg",
@@ -8157,7 +8157,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Geschichte",
       "chanceScore": 58,
       "country": "Deutschland/Österreich/Schweiz",
@@ -8367,7 +8367,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Küche",
       "chanceScore": 68,
       "country": "Deutschland",
@@ -9826,7 +9826,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Beauty & Wellness",
       "chanceScore": 65,
       "country": "Deutschland/Österreich",
@@ -10078,7 +10078,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Mobilität & Technik",
       "chanceScore": 56,
       "country": "Deutschland",
@@ -10204,7 +10204,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Wellness",
       "chanceScore": 60,
       "country": "Deutschland/Österreich",
@@ -10330,7 +10330,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Hotels",
       "chanceScore": 58,
       "country": "Deutschland/Österreich",
@@ -10414,7 +10414,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Regional",
       "chanceScore": 70,
       "country": "Deutschland",
@@ -10540,7 +10540,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Freizeit",
       "chanceScore": 72,
       "country": "Deutschland",
@@ -10582,7 +10582,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Regional",
       "chanceScore": 78,
       "country": "Deutschland",
@@ -10754,7 +10754,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Regional",
       "chanceScore": 66,
       "country": "Deutschland",
@@ -10840,7 +10840,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Gesundheit & Technik",
       "chanceScore": 69,
       "country": "Deutschland",
@@ -11012,7 +11012,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Beauty & Regional",
       "chanceScore": 64,
       "country": "Deutschland",
@@ -11548,7 +11548,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Lifestyle",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -11668,7 +11668,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Bücher & Lifestyle",
       "chanceScore": 48,
       "country": "Deutschland",
@@ -12029,7 +12029,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 46,
       "country": "Deutschland",
@@ -12109,7 +12109,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Genuss",
       "chanceScore": 51,
       "country": "Deutschland",
@@ -12318,7 +12318,7 @@
       "shortDescription": "5 limitierte Special-Edition-Skateboard-Sets im freshen \"THE POWER OF WATER\"-Design · cooler Trinkflasche",
       "dataCompleteness": 90,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -12362,7 +12362,7 @@
       "shortDescription": "1 Vespa inklusive Anlieferung im Wert von ca. 5.000 €",
       "dataCompleteness": 94,
       "lastVerified": "30.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)",
@@ -13566,7 +13566,7 @@
       "lastVerified": "06.10.2026",
       "verified": "06.10.2026",
       "addedAt": "06.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "tags": [
         "Discovery 06.10.2026",
@@ -13650,7 +13650,7 @@
       "lastVerified": "06.10.2026",
       "verified": "06.10.2026",
       "addedAt": "06.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "tags": [
         "Discovery 06.10.2026",
@@ -13692,7 +13692,7 @@
       "lastVerified": "06.10.2026",
       "verified": "06.10.2026",
       "addedAt": "06.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "tags": [
         "Discovery 06.10.2026",
@@ -13739,7 +13739,7 @@
       "lastVerified": "06.10.2026",
       "verified": "06.10.2026",
       "addedAt": "06.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "tags": [
         "Discovery 06.10.2026",
@@ -13889,7 +13889,7 @@
       "priority": "mittel",
       "shortDescription": "10 × XXL-Pflegepaket mit je 10 Produkten von L’Oréal Paris, Garnier, L’Oréal Men Expert und Mixa im Wert von je 102,90 €",
       "lastVerified": "17.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified"
     },
     {
@@ -14165,7 +14165,7 @@
       "shortDescription": "Dein Ostsee-Urlaub für die ganze Familie!",
       "dataCompleteness": 88,
       "lastVerified": "19.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-second-pass",
       "scoutAdded": true,
       "puzzleType": null,
@@ -14224,30 +14224,30 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-10-31T11:13:01+01:00",
-    "checkedSources": 68,
-    "candidatePages": 825,
+    "lastRun": "2026-11-01T12:03:44+01:00",
+    "checkedSources": 79,
+    "candidatePages": 1296,
     "published": 0,
-    "review": 652,
-    "rejected": 32,
-    "expiredArchived": 10
+    "review": 978,
+    "rejected": 48,
+    "expiredArchived": 60
   },
   "secondPass": {
-    "lastRun": "2026-10-31T11:21:44+01:00",
+    "lastRun": "2026-11-01T12:09:16+01:00",
     "checked": 450,
-    "promoted": 1,
-    "keptForReview": 9060,
-    "rejected": 15,
+    "promoted": 0,
+    "keptForReview": 9142,
+    "rejected": 17,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 344,
-      "free-entry-not-confirmed": 28,
-      "terms-only-page": 10,
-      "policy-exclusion": 8,
-      "non-contest-page": 7,
-      "deadline-not-unambiguous": 5,
-      "contest-intent-not-specific": 1,
-      "second-pass-verified": 1
+      "germany-eligibility-not-confirmed": 376,
+      "free-entry-not-confirmed": 17,
+      "non-contest-page": 13,
+      "contest-intent-not-specific": 12,
+      "deadline-not-unambiguous": 12,
+      "terms-only-page": 9,
+      "contest-hub": 4,
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {

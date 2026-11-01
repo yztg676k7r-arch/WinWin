@@ -1,33 +1,31 @@
 {
-  "date": "2026-10-31",
-  "checkedSources": 68,
-  "candidatePages": 825,
+  "date": "2026-11-01",
+  "checkedSources": 79,
+  "candidatePages": 1296,
   "published": 0,
-  "review": 652,
-  "rejected": 32,
-  "expiredArchived": 10,
+  "review": 978,
+  "rejected": 48,
+  "expiredArchived": 60,
   "budgetReached": true,
   "newIds": [],
   "secondPass": {
-    "lastRun": "2026-10-31T11:21:44+01:00",
+    "lastRun": "2026-11-01T12:09:16+01:00",
     "checked": 450,
-    "promoted": 1,
-    "keptForReview": 9060,
-    "rejected": 15,
+    "promoted": 0,
+    "keptForReview": 9142,
+    "rejected": 17,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 344,
-      "free-entry-not-confirmed": 28,
-      "terms-only-page": 10,
-      "policy-exclusion": 8,
-      "non-contest-page": 7,
-      "deadline-not-unambiguous": 5,
-      "contest-intent-not-specific": 1,
-      "second-pass-verified": 1
+      "germany-eligibility-not-confirmed": 376,
+      "free-entry-not-confirmed": 17,
+      "non-contest-page": 13,
+      "contest-intent-not-specific": 12,
+      "deadline-not-unambiguous": 12,
+      "terms-only-page": 9,
+      "contest-hub": 4,
+      "prize-not-unambiguous": 1
     },
-    "promotedIds": [
-      "schrot-korn-20261126-43f26f39"
-    ],
+    "promotedIds": [],
     "autoHiddenIds": []
   }
 }
