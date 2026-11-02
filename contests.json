@@ -1,7 +1,7 @@
 {
   "version": "8.9.1",
-  "updated": "2026-11-01",
-  "activeCountAtRelease": 162,
+  "updated": "2026-11-02",
+  "activeCountAtRelease": 160,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -3229,7 +3229,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Familie",
       "chanceScore": 82,
       "country": "Deutschland",
@@ -14185,30 +14185,31 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-01T12:03:44+01:00",
-    "checkedSources": 79,
-    "candidatePages": 1296,
+    "lastRun": "2026-11-02T12:54:21+01:00",
+    "checkedSources": 66,
+    "candidatePages": 733,
     "published": 0,
-    "review": 978,
-    "rejected": 48,
-    "expiredArchived": 60
+    "review": 643,
+    "rejected": 21,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-01T12:09:16+01:00",
+    "lastRun": "2026-11-02T13:01:41+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 9142,
-    "rejected": 17,
+    "keptForReview": 9234,
+    "rejected": 15,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 376,
-      "free-entry-not-confirmed": 17,
+      "germany-eligibility-not-confirmed": 286,
+      "deadline-not-unambiguous": 39,
+      "free-entry-not-confirmed": 34,
+      "terms-only-page": 14,
       "non-contest-page": 13,
-      "contest-intent-not-specific": 12,
-      "deadline-not-unambiguous": 12,
-      "terms-only-page": 9,
-      "contest-hub": 4,
-      "prize-not-unambiguous": 1
+      "contest-intent-not-specific": 10,
+      "prize-not-unambiguous": 2,
+      "contest-hub": 2,
+      "social-requirements-need-review": 1
     }
   },
   "bulkDiscovery": {
