@@ -1,6 +1,7 @@
 {
-  "version": "8.10.15",
-  "catalogVersion": "8.10.8",
-  "released": "2026-10-14",
-  "name": "Statusprüfung ohne Datenänderung"
+  "version": "8.10.16",
+  "catalogVersion": "8.10.16",
+  "released": "2026-11-03",
+  "name": "Neue Gewinnspiele beim Start anzeigen",
+  "catalogUpdated": "2026-11-03"
 }

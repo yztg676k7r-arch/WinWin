@@ -1,10 +1,10 @@
-const CACHE='win-win-8.10.15';
+const CACHE='win-win-8.10.16';
 const CORE=[
  './',
  './index.html',
- './styles.css?v=8.10.15',
- './app.js?v=8.10.15',
- './contest-history.js?v=8.10.15',
+ './styles.css?v=8.10.16',
+ './app.js?v=8.10.16',
+ './contest-history.js?v=8.10.16',
  './manifest.webmanifest',
  './version.json',
  './logo-winwin.svg',

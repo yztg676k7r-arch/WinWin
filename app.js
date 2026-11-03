@@ -1,5 +1,5 @@
 
-const APP_VERSION='8.10.15';
+const APP_VERSION='8.10.16';
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const safeJSON=(v,f)=>{try{return v?JSON.parse(v):f}catch{return f}};
@@ -7,7 +7,13 @@ function catalogueSeenSet(){return new Set(safeJSON(localStorage.getItem(CATALOG
 function saveCatalogueSeen(set){localStorage.setItem(CATALOG_SEEN_KEY,JSON.stringify([...set]))}
 function initializeCatalogueSeen(){
  if(localStorage.getItem(CATALOG_SEEN_KEY)!==null)return;
- saveCatalogueSeen(new Set(contests.map(i=>String(i.id))));
+ const cutoff=new Date();
+ cutoff.setDate(cutoff.getDate()-7);
+ const older=contests.filter(i=>{
+  const added=parseFlexibleDate(i.addedAt);
+  return !added||added<cutoff;
+ });
+ saveCatalogueSeen(new Set(older.map(i=>String(i.id))));
 }
 function markContestSeen(id){const seen=catalogueSeenSet();seen.add(String(id));saveCatalogueSeen(seen)}
 function markAllCatalogueSeen(){saveCatalogueSeen(new Set(contests.map(i=>String(i.id))));renderAll();renderCatalogUpdateSummary();toast('Neue Einträge als gesehen markiert')}
@@ -536,7 +542,7 @@ function formatUpdate(v){
  if(!d)return 'Aktualisierungsdatum unbekannt';
  return `Datenstand: ${new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(d)} Uhr`
 }
-function daysLeft(i){const d=parseDate(i.deadline);return d?Math.ceil((d-new Date())/86400000):9999}
+function daysLeft(i){const d=parseDate(i.deadline),now=new Date();return d?Math.round((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())-Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()))/86400000):9999}
 function active(i){
  // winnerKnown describes whether the number of winners is known (see readContestForm).
  // It does not mean the draw has finished. Availability comes from status and deadline.
@@ -2128,15 +2134,17 @@ function recordSourceResult(id,found){const s=sourceById(id);if(!s)return;const 
 async function fetchJsonFromPaths(paths, validator){
  const errors=[];
  for(const path of paths){
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),8000);
   try{
-   const r=await fetch(path,{cache:'no-store',headers:{'Accept':'application/json'}});
+   const r=await fetch(path,{signal:controller.signal,cache:'no-store',headers:{'Accept':'application/json'}});
    if(!r.ok)throw new Error(`HTTP ${r.status}`);
    const raw=await r.text();
    if(raw.trim().startsWith('<'))throw new Error('HTML statt JSON');
    const payload=JSON.parse(raw);
    if(validator&&!validator(payload))throw new Error('Ungültiges Datenformat');
    return {payload,path};
-  }catch(error){errors.push(`${path}: ${error.message}`)}
+  }catch(error){errors.push(`${path}: ${error.message}`)}finally{clearTimeout(timeout)}
  }
  throw new Error(errors.join(' · '));
 }
