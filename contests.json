@@ -649,7 +649,7 @@
     },
     {
       "addedAt": "10.08.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 78,
       "country": "Deutschland",
@@ -15209,31 +15209,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-02T12:54:21+01:00",
-    "checkedSources": 66,
-    "candidatePages": 733,
+    "lastRun": "2026-11-03T12:32:57+01:00",
+    "checkedSources": 67,
+    "candidatePages": 778,
     "published": 0,
-    "review": 643,
-    "rejected": 21,
+    "review": 636,
+    "rejected": 16,
     "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-02T13:01:41+01:00",
+    "lastRun": "2026-11-03T12:41:54+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 9234,
-    "rejected": 15,
+    "keptForReview": 9242,
+    "rejected": 14,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 286,
-      "deadline-not-unambiguous": 39,
-      "free-entry-not-confirmed": 34,
-      "terms-only-page": 14,
-      "non-contest-page": 13,
-      "contest-intent-not-specific": 10,
-      "prize-not-unambiguous": 2,
-      "contest-hub": 2,
-      "social-requirements-need-review": 1
+      "germany-eligibility-not-confirmed": 384,
+      "free-entry-not-confirmed": 18,
+      "non-contest-page": 12,
+      "contest-intent-not-specific": 11,
+      "deadline-not-unambiguous": 7,
+      "terms-only-page": 4,
+      "contest-hub": 2
     }
   },
   "bulkDiscovery": {
