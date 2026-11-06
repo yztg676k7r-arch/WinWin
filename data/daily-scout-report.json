@@ -1,35 +1,29 @@
 {
-  "date": "2026-11-05",
-  "checkedSources": 79,
-  "candidatePages": 867,
+  "date": "2026-11-06",
+  "checkedSources": 76,
+  "candidatePages": 837,
   "published": 0,
-  "review": 689,
-  "rejected": 26,
-  "expiredArchived": 1,
+  "review": 610,
+  "rejected": 50,
+  "expiredArchived": 0,
   "budgetReached": true,
   "newIds": [],
   "secondPass": {
-    "lastRun": "2026-11-05T12:48:31+01:00",
+    "lastRun": "2026-11-06T12:48:18+01:00",
     "checked": 450,
-    "promoted": 2,
-    "keptForReview": 9588,
-    "rejected": 19,
+    "promoted": 0,
+    "keptForReview": 9672,
+    "rejected": 0,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 320,
-      "contest-intent-not-specific": 18,
-      "non-contest-page": 16,
-      "deadline-not-unambiguous": 11,
-      "free-entry-not-confirmed": 8,
-      "terms-only-page": 4,
-      "contest-hub": 3,
-      "second-pass-verified": 2,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 353,
+      "free-entry-not-confirmed": 25,
+      "terms-only-page": 12,
+      "deadline-not-unambiguous": 6,
+      "entry-route-not-unambiguous": 3,
+      "prize-not-unambiguous": 2
     },
-    "promotedIds": [
-      "expansion-tolino-20270723-5fb480fe",
-      "expansion-tolino-20270724-1e996691"
-    ],
+    "promotedIds": [],
     "autoHiddenIds": []
   }
 }
