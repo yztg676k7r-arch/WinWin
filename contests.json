@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-06",
-  "activeCountAtRelease": 176,
+  "updated": "2026-11-07",
+  "activeCountAtRelease": 174,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -4920,7 +4920,7 @@
     },
     {
       "addedAt": "08.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Wohnen",
       "chanceScore": 55,
       "country": "Deutschland",
@@ -13480,7 +13480,7 @@
       "lastVerified": "06.10.2026",
       "verified": "06.10.2026",
       "addedAt": "06.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified",
       "tags": [
         "Discovery 06.10.2026",
@@ -15125,28 +15125,31 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-06T12:41:11+01:00",
-    "checkedSources": 76,
-    "candidatePages": 837,
+    "lastRun": "2026-11-07T11:55:15+01:00",
+    "checkedSources": 57,
+    "candidatePages": 1002,
     "published": 0,
-    "review": 610,
-    "rejected": 50,
-    "expiredArchived": 0
+    "review": 780,
+    "rejected": 57,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-11-06T12:48:18+01:00",
+    "lastRun": "2026-11-07T12:00:30+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 9672,
-    "rejected": 0,
+    "keptForReview": 9869,
+    "rejected": 8,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 353,
-      "free-entry-not-confirmed": 25,
-      "terms-only-page": 12,
+      "germany-eligibility-not-confirmed": 310,
+      "free-entry-not-confirmed": 28,
+      "contest-intent-not-specific": 8,
+      "terms-only-page": 8,
       "deadline-not-unambiguous": 6,
+      "contest-hub": 4,
+      "non-contest-page": 4,
       "entry-route-not-unambiguous": 3,
-      "prize-not-unambiguous": 2
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {
