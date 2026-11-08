@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-07",
-  "activeCountAtRelease": 174,
+  "updated": "2026-11-08",
+  "activeCountAtRelease": 173,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -12279,7 +12279,7 @@
       "shortDescription": "TraumRaum Möbel/Küche nach Wahl",
       "dataCompleteness": 90,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -15125,31 +15125,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-07T11:55:15+01:00",
-    "checkedSources": 57,
-    "candidatePages": 1002,
+    "lastRun": "2026-11-08T12:00:21+01:00",
+    "checkedSources": 89,
+    "candidatePages": 913,
     "published": 0,
-    "review": 780,
-    "rejected": 57,
-    "expiredArchived": 2
+    "review": 731,
+    "rejected": 40,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-07T12:00:30+01:00",
+    "lastRun": "2026-11-08T12:05:12+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 9869,
-    "rejected": 8,
+    "keptForReview": 9940,
+    "rejected": 17,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 310,
-      "free-entry-not-confirmed": 28,
-      "contest-intent-not-specific": 8,
-      "terms-only-page": 8,
-      "deadline-not-unambiguous": 6,
-      "contest-hub": 4,
-      "non-contest-page": 4,
-      "entry-route-not-unambiguous": 3,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 339,
+      "non-contest-page": 17,
+      "free-entry-not-confirmed": 16,
+      "terms-only-page": 5,
+      "deadline-not-unambiguous": 5,
+      "prize-not-unambiguous": 1,
+      "contest-intent-not-specific": 1
     }
   },
   "bulkDiscovery": {
