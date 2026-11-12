@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-11",
-  "activeCountAtRelease": 167,
+  "updated": "2026-11-12",
+  "activeCountAtRelease": 163,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -6902,7 +6902,7 @@
     },
     {
       "addedAt": "25.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "chanceScore": 78,
       "country": "Deutschland",
       "daily": false,
@@ -11780,7 +11780,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen & Gutscheine",
       "chanceScore": 65,
       "country": "Deutschland",
@@ -12243,7 +12243,7 @@
       "shortDescription": "4x Calumet Gutschein 250 € für Eigenmarken (Mathorn, GlareOne, Brilliant, Calumet) · 4x Gutschein für 2 Calumet Workshops · 4x Gutschein für 1 Woche Calumet Rent (Kamera + Objektiv)",
       "dataCompleteness": 94,
       "lastVerified": "01.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-direct-page+terms",
       "scoutAdded": false,
       "discoverySource": "GewinnHai (nur Discovery; Veranstalterseite/Teilnahmebedingungen direkt geprüft)"
@@ -13798,7 +13798,7 @@
       "priority": "mittel",
       "shortDescription": "1 × Chrome Recruit Backpack mit 22 Litern Volumen",
       "lastVerified": "17.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified"
     },
     {
@@ -14955,30 +14955,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-11T12:41:14+01:00",
-    "checkedSources": 64,
-    "candidatePages": 563,
+    "lastRun": "2026-11-12T13:00:38+01:00",
+    "checkedSources": 58,
+    "candidatePages": 796,
     "published": 0,
-    "review": 481,
-    "rejected": 11,
-    "expiredArchived": 0
+    "review": 600,
+    "rejected": 25,
+    "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-11-11T12:48:10+01:00",
+    "lastRun": "2026-11-12T13:08:03+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 10132,
-    "rejected": 17,
+    "keptForReview": 10246,
+    "rejected": 3,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 289,
-      "free-entry-not-confirmed": 37,
-      "non-contest-page": 14,
-      "contest-intent-not-specific": 13,
-      "deadline-not-unambiguous": 6,
-      "terms-only-page": 3,
-      "contest-hub": 3,
-      "prize-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 335,
+      "free-entry-not-confirmed": 24,
+      "terms-only-page": 9,
+      "deadline-not-unambiguous": 4,
+      "contest-intent-not-specific": 3,
+      "non-contest-page": 2,
+      "contest-hub": 1
     }
   },
   "bulkDiscovery": {
