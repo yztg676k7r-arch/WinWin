@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-18",
-  "activeCountAtRelease": 146,
+  "updated": "2026-11-19",
+  "activeCountAtRelease": 145,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -13308,7 +13308,7 @@
       "priority": "mittel",
       "shortDescription": "3 × 1 Paket mit einer Longchamp-Tasche und 26 SHEGLAM-Produkten",
       "lastVerified": "17.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "manual-verified"
     },
     {
@@ -14377,29 +14377,29 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-18T13:24:45+01:00",
-    "checkedSources": 79,
-    "candidatePages": 731,
+    "lastRun": "2026-11-19T13:19:35+01:00",
+    "checkedSources": 76,
+    "candidatePages": 1177,
     "published": 0,
-    "review": 544,
-    "rejected": 42,
-    "expiredArchived": 0
+    "review": 872,
+    "rejected": 51,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-18T13:32:02+01:00",
+    "lastRun": "2026-11-19T13:27:16+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 10825,
-    "rejected": 4,
+    "keptForReview": 10937,
+    "rejected": 8,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 368,
-      "free-entry-not-confirmed": 12,
-      "deadline-not-unambiguous": 10,
-      "contest-intent-not-specific": 7,
-      "terms-only-page": 3,
-      "non-contest-page": 3,
-      "contest-hub": 1,
+      "germany-eligibility-not-confirmed": 336,
+      "free-entry-not-confirmed": 19,
+      "contest-intent-not-specific": 12,
+      "terms-only-page": 12,
+      "non-contest-page": 6,
+      "deadline-not-unambiguous": 5,
+      "contest-hub": 2,
       "entry-route-not-unambiguous": 1
     }
   },
