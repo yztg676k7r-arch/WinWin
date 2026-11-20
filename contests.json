@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
   "updated": "2026-11-20",
-  "activeCountAtRelease": 144,
+  "activeCountAtRelease": 142,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -11331,7 +11331,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Genuss",
       "chanceScore": 48,
       "country": "Deutschland, Österreich, Schweiz",
@@ -11371,7 +11371,7 @@
     },
     {
       "addedAt": "29.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Reisen",
       "chanceScore": 46,
       "country": "Deutschland, Österreich, Schweiz",
@@ -14334,30 +14334,31 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-19T13:19:35+01:00",
-    "checkedSources": 76,
-    "candidatePages": 1177,
+    "lastRun": "2026-11-20T13:20:21+01:00",
+    "checkedSources": 78,
+    "candidatePages": 843,
     "published": 0,
-    "review": 872,
-    "rejected": 51,
-    "expiredArchived": 1
+    "review": 733,
+    "rejected": 21,
+    "expiredArchived": 2
   },
   "secondPass": {
-    "lastRun": "2026-11-19T13:27:16+01:00",
+    "lastRun": "2026-11-20T13:28:45+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 10937,
-    "rejected": 8,
+    "keptForReview": 11016,
+    "rejected": 16,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 336,
-      "free-entry-not-confirmed": 19,
-      "contest-intent-not-specific": 12,
-      "terms-only-page": 12,
-      "non-contest-page": 6,
-      "deadline-not-unambiguous": 5,
-      "contest-hub": 2,
-      "entry-route-not-unambiguous": 1
+      "germany-eligibility-not-confirmed": 356,
+      "free-entry-not-confirmed": 49,
+      "non-contest-page": 15,
+      "deadline-not-unambiguous": 10,
+      "terms-only-page": 4,
+      "contest-intent-not-specific": 3,
+      "entry-route-not-unambiguous": 2,
+      "prize-not-unambiguous": 1,
+      "policy-exclusion": 1
     }
   },
   "bulkDiscovery": {
