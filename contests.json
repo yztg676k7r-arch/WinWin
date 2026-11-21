@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-20",
-  "activeCountAtRelease": 142,
+  "updated": "2026-11-21",
+  "activeCountAtRelease": 138,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -8659,7 +8659,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -8823,7 +8823,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -8987,7 +8987,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Kultur & Ausstellung",
       "chanceScore": 63,
       "country": "Deutschland",
@@ -13560,7 +13560,7 @@
         "Manuell geprüft",
         "November 2026"
       ],
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "verificationEvidence": {
         "checkedAt": "2026-11-01",
         "method": "manual-primary-source-review",
@@ -14334,30 +14334,28 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-20T13:20:21+01:00",
-    "checkedSources": 78,
-    "candidatePages": 843,
+    "lastRun": "2026-11-21T12:55:51+01:00",
+    "checkedSources": 85,
+    "candidatePages": 906,
     "published": 0,
-    "review": 733,
-    "rejected": 21,
-    "expiredArchived": 2
+    "review": 687,
+    "rejected": 32,
+    "expiredArchived": 4
   },
   "secondPass": {
-    "lastRun": "2026-11-20T13:28:45+01:00",
+    "lastRun": "2026-11-21T13:01:00+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 11016,
-    "rejected": 16,
+    "keptForReview": 11104,
+    "rejected": 6,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 356,
-      "free-entry-not-confirmed": 49,
-      "non-contest-page": 15,
-      "deadline-not-unambiguous": 10,
+      "germany-eligibility-not-confirmed": 367,
+      "free-entry-not-confirmed": 31,
+      "contest-intent-not-specific": 8,
+      "deadline-not-unambiguous": 6,
+      "non-contest-page": 5,
       "terms-only-page": 4,
-      "contest-intent-not-specific": 3,
-      "entry-route-not-unambiguous": 2,
-      "prize-not-unambiguous": 1,
       "policy-exclusion": 1
     }
   },
