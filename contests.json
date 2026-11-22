@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-21",
-  "activeCountAtRelease": 138,
+  "updated": "2026-11-22",
+  "activeCountAtRelease": 137,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -8156,7 +8156,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Wohnen & Möbel",
       "chanceScore": 52,
       "country": "Deutschland",
@@ -14334,29 +14334,30 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-21T12:55:51+01:00",
-    "checkedSources": 85,
-    "candidatePages": 906,
+    "lastRun": "2026-11-22T13:09:48+01:00",
+    "checkedSources": 56,
+    "candidatePages": 840,
     "published": 0,
-    "review": 687,
-    "rejected": 32,
-    "expiredArchived": 4
+    "review": 658,
+    "rejected": 59,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-21T13:01:00+01:00",
+    "lastRun": "2026-11-22T13:16:29+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 11104,
-    "rejected": 6,
+    "keptForReview": 11218,
+    "rejected": 20,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 367,
-      "free-entry-not-confirmed": 31,
-      "contest-intent-not-specific": 8,
-      "deadline-not-unambiguous": 6,
-      "non-contest-page": 5,
-      "terms-only-page": 4,
-      "policy-exclusion": 1
+      "germany-eligibility-not-confirmed": 320,
+      "free-entry-not-confirmed": 48,
+      "terms-only-page": 28,
+      "non-contest-page": 13,
+      "deadline-not-unambiguous": 8,
+      "contest-hub": 7,
+      "contest-intent-not-specific": 5,
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {
