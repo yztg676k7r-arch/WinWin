@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-23",
-  "activeCountAtRelease": 135,
+  "updated": "2026-11-24",
+  "activeCountAtRelease": 132,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -7316,7 +7316,7 @@
     },
     {
       "addedAt": "28.09.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "category": "Musik & Events",
       "chanceScore": 70,
       "country": "Deutschland",
@@ -13776,7 +13776,7 @@
         "Manuell geprüft",
         "November 2026"
       ],
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "verificationEvidence": {
         "checkedAt": "2026-11-01",
         "method": "manual-primary-source-review",
@@ -13880,7 +13880,7 @@
         "Manuell geprüft",
         "November 2026"
       ],
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "verificationEvidence": {
         "checkedAt": "2026-11-01",
         "method": "manual-primary-source-review",
@@ -14244,30 +14244,28 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-23T14:49:35+01:00",
-    "checkedSources": 70,
-    "candidatePages": 984,
+    "lastRun": "2026-11-24T15:27:48+01:00",
+    "checkedSources": 79,
+    "candidatePages": 755,
     "published": 0,
-    "review": 816,
-    "rejected": 19,
-    "expiredArchived": 0
+    "review": 565,
+    "rejected": 27,
+    "expiredArchived": 3
   },
   "secondPass": {
-    "lastRun": "2026-11-23T14:56:00+01:00",
+    "lastRun": "2026-11-24T15:35:28+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 11260,
-    "rejected": 15,
+    "keptForReview": 11316,
+    "rejected": 11,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 314,
-      "free-entry-not-confirmed": 31,
-      "non-contest-page": 14,
-      "deadline-not-unambiguous": 10,
-      "contest-intent-not-specific": 6,
-      "terms-only-page": 6,
-      "prize-not-unambiguous": 2,
-      "social-requirements-need-review": 1,
+      "germany-eligibility-not-confirmed": 360,
+      "free-entry-not-confirmed": 16,
+      "contest-intent-not-specific": 10,
+      "non-contest-page": 10,
+      "terms-only-page": 5,
+      "deadline-not-unambiguous": 4,
       "contest-hub": 1
     }
   },
