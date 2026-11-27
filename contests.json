@@ -1,7 +1,7 @@
 {
   "version": "8.10.16",
-  "updated": "2026-11-26",
-  "activeCountAtRelease": 128,
+  "updated": "2026-11-27",
+  "activeCountAtRelease": 127,
   "contests": [
     {
       "addedAt": "31.07.2026",
@@ -13430,7 +13430,7 @@
       "shortDescription": "Produkte bewerten und gewinnen",
       "dataCompleteness": 88,
       "lastVerified": "31.10.2026",
-      "catalogStatus": "active",
+      "catalogStatus": "expired",
       "scoutStatus": "verified-second-pass",
       "scoutAdded": true,
       "puzzleType": null,
@@ -14202,31 +14202,30 @@
     }
   ],
   "dailyScout": {
-    "lastRun": "2026-11-26T14:20:03+01:00",
-    "checkedSources": 69,
-    "candidatePages": 918,
+    "lastRun": "2026-11-27T14:17:27+01:00",
+    "checkedSources": 70,
+    "candidatePages": 731,
     "published": 0,
-    "review": 767,
-    "rejected": 18,
-    "expiredArchived": 3
+    "review": 555,
+    "rejected": 28,
+    "expiredArchived": 1
   },
   "secondPass": {
-    "lastRun": "2026-11-26T14:26:47+01:00",
+    "lastRun": "2026-11-27T14:23:10+01:00",
     "checked": 450,
     "promoted": 0,
-    "keptForReview": 11483,
-    "rejected": 21,
+    "keptForReview": 11547,
+    "rejected": 16,
     "autoHiddenForReview": 0,
     "reviewReasonCounts": {
-      "germany-eligibility-not-confirmed": 365,
-      "free-entry-not-confirmed": 20,
-      "non-contest-page": 20,
-      "deadline-not-unambiguous": 7,
-      "entry-route-not-unambiguous": 5,
+      "germany-eligibility-not-confirmed": 363,
+      "free-entry-not-confirmed": 19,
+      "non-contest-page": 8,
+      "policy-exclusion": 8,
+      "deadline-not-unambiguous": 4,
       "contest-intent-not-specific": 4,
-      "terms-only-page": 3,
-      "prize-not-unambiguous": 3,
-      "contest-hub": 1
+      "terms-only-page": 2,
+      "prize-not-unambiguous": 1
     }
   },
   "bulkDiscovery": {
